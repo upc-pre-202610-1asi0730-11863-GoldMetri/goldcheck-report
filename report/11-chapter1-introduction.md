@@ -106,3 +106,41 @@ Debe ser intuitiva mediante el uso de dashboards, de esta manera brindara una na
 #### 1.2.2.4. Lean UX Canvas
 ![Lean UX Canvas Goldmetrics](../assets/img/chapter-i/LeanUXCanvas.png)
 ## 1.3. Segmentos Objetivo
+### Segmento 1: Empresas mineras
+#### Descripción general:
+Se refiere a las empresas que se dedican a la extracción de los minerales que terminan siendo procesados en productos pero que tienen problemas en la trazabilidad de sus operaciones.
+
+#### Perfil Operativo:
+Incluye a ingenieros y supervisores de entre 30 a 60 años que trabajan en las zonas mineras del Perú.
+
+#### Datos del sector:
+Según Canchari (2025), los problemas de trazabilidad y control en el sector minero genera mas de 22 mil millones de soles como perdidas al año.
+
+#### Necesidad:
+Este segmento necesita herramientas tecnológicas que permita el monitoreo en tiempo real para optimizar la logística en el ámbito minero.
+
+### Segmento 2: Joyerías 
+#### Descripción general:
+Se refiere a empresas que venden productos cuyo material principal son los minerales pero que tienen dificultades al momento de garantizar el origen de dichos productos.
+
+#### Perfil Operativo:
+Incluye a dueños y gerentes de dichas tiendas cuya edad varia entre 26 a 60 años ubicados en zonas comerciales del Perú.
+
+#### Datos del sector:
+Según el presidente de la Sociedad Nacional de Mineria, Petroleo y Energia, Victor Gobitz, la minería ilegal implementa más del millón de onzas de oro al mercado (Cruz, 2024). Esta alarmante cantidad significa que existe una alta probabilidad de que las joyerías vendan productos con una trazabilidad inexistente.
+
+#### Necesidad:
+Este segmento necesita herramientas tecnológicas que permitan validar el origen del mineral para ofrecer una certificación confiable a los clientes.
+
+### Segmento 3: Consumidores finales
+#### Descripción general:
+Se refiere a personas que compran productos como joyas.
+
+#### Perfil Operativo:
+Incluye adultos jóvenes de entre 18 a 25 años con un interés en el consumo responsable.
+
+#### Datos del sector:
+Según el Anuario Minero 2024 del Minem, el Perú produjo 100 mil toneladas de oro, pero exporto 200 mil (Nuñez, 2025). Esto indica que alrededor de 100 mil toneladas de oro ilegales pueden ser exportadas mediante canales formales los cuales terminan siendo compradas por los consumidores.
+
+#### Necesidad:
+Este segmento necesita herramientas que les permita acceder a la información del producto de manera sencilla para poder reconocer su origen y autenticidad.
