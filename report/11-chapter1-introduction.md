@@ -63,6 +63,32 @@ Hemos observado que el consumidor no tiene una forma de verificar si el producto
 **¿Cómo puede nuestro producto fomentar la venta de productos hechos en base a minerales con origen ético?**
 
 #### 1.2.2.2. Lean UX Assumptions
+**Business Assumptions:**
+- Creemos que nuestros usuarios necesitan tener una herramienta con la que puedan validar el recorrido de los minerales.
+- Estas necesidades se pueden satisfacer con una solucion web que brinde informacion detallada sobre los minerales tratados.
+- Nuestros clientes iniciales seran las empresas, joyerias y los usuarios finales.
+- El valor mas importante que un cliente quiere de nuestros servicios es la trazabilidad de los minerales, incluyendo informacion desde su origen.
+- El cliente tambien va a obtener reduccion de perdidas y apoyo en las decisiones logísticas.
+- Vamos a obtener la mayoria de los clientes mediante alianzas con empresas relacionadas al sector minero al igual que marketing B2B y demostraciones del sistema en eventos del sector.
+- Vamos a obtener ingresos mediante suscripciones mensuales las cuales dependan de un numero de productos analizados preestablecido.
+- Nuestra competencia en el mercado seran soluciones que monitoreen los minerales de manera incompleta con software caro y poco flexible.
+- Vamos a tener ventaja frente a nuestra competencia debido a la integración de tecnologías IoT, IA y WEB en el enfoque de la trazabilidad del mineral.
+- El mayor riesgo del servicio es la adaptación del sistema en productos ya existentes y errores manuales al momento de registrar datos.
+- Lo resolveremos realizando interfaces simple y sesiones de entrenamiento simulando casos reales.
+
+**User Assumptions:**
+- ¿Quien es el usuario?
+Los usuarios son empresas mineras que necesiten gestionar los bienes obtenidos. Tambien estan, las joyerías que requieran validar dichos insumos. Finalmente son los usuarios finales que esten interesados en conocer el origen de los productos y evitar ser estafados en el proceso.
+- ¿Que problemas tiene nuestro producto que resolver?
+Nuestro producto tiene que resolver las dificultades en el monitoreo de los minerales, al igual que necesita verificar tanto la autenticidad como el origen etico de estos.
+- ¿Que caracteristicas son importantes?
+Se incluye el registro y monitoreo en tiempo real del traslado de los minerales, en estos registros estará información como el peso del mineral, la cantidad de este, las condiciones del envió y la verificación de la carga y de la descarga. Del mismo modo es necesaria la generacion de reportes especificando quien superviso, quien manipulo, cuando y donde.
+- ¿Donde encaja nuestro producto en su trabajo o vida?
+El producto encaja en la gestión operativa y en la logística de las empresas mineras para que estas puedan tener un mejor control sobre los minerales obtenidos. También encaja tanto en tiendas como en consumidores pues estos pueden validar y verificar información sobre los productos.
+- ¿Cuando y como es nuestro producto usado?
+Se utiliza durante todo el proceso del ámbito minero, llendo desde la extracción, incluyendo el traslado, el deposito o el procesamiento hasta la venta final. El producto puede ser usado mediante una plataforma web en cualquier momento siendo limitado por el rol del usuario.
+- ¿Como debe verse nuestro producto y como debe comportarse?
+Debe ser intuitiva mediante el uso de dashboards, de esta manera brindara una navegación sencilla a los usuarios mientras brinda información confiable y lo suficientemente rápida como para estar a tiempo real.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
