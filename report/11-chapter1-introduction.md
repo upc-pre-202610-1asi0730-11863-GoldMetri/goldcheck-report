@@ -5,9 +5,6 @@
 ### 1.1.1. Descripción del Startup
 
 ### 1.1.2. Perfiles de integrantes del equipo
-
-## 1.1. Solution Profile
-
 | Integrantes | Descripción |
 | :--- | :--- |
 | | |
@@ -15,6 +12,8 @@
 | | |
 |![Katty](../assets/img/chapter-i/Philco.png)  | **Nombres y Apellidos:** Katty Yolanda Philco Mota <br> **Código:** U202416107<br> **Carrera:** Ingeniería de Software<br> Soy una persona organizada, responsable y comprometida con mi crecimiento académico. Cuento con conocimientos en programación, especialmente en C++, así como en estructuras de datos, algoritmos y desarrollo de soluciones tecnológicas orientadas a proyectos reales. Me destaco por mi capacidad de análisis, resiliencia frente a los desafíos y disposición para el trabajo en equipo. Me interesa el desarrollo de proyectos innovadores que generen impacto, manteniendo siempre una actitud de aprendizaje constante y mejora continua.|
 | |  |
+
+## 1.1. Solution Profile
 
 ### 1.2.1. Antecedentes y problemática
 
