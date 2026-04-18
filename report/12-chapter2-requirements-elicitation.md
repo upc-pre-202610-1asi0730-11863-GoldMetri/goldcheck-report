@@ -223,10 +223,24 @@ En conjunto, el segmento minero evidencia una dualidad operativa: mientras el 67
 ![Chart 1](../assets/img/chapter-ii/chart-1.png)
 
 
+**Análisis Segundo Segmento Joyerías:** En conjunto, el segmento joyería presenta una diversidad de perfiles que reflejan distintas realidades del sector: la empresaria tradicional (Ginny), la emprendedora emergente (Vicky) y la secretaria (Yesiliany). A pesar de sus diferencias, el 100% coincide en operar con esquemas tradicionales sin uso de sistemas digitales formales para la gestión de inventarios lo que evidencia un bajo nivel de digitalización en el rubro. En cuanto a la verificación de autenticidad, el 67% se basa en conocimiento técnico especializado (orfebres y la prueba de ácido nítrico), mientras que el 33% usa métodos empíricos como el uso personal del producto. 
 
-**Análisis Segundo Segmento Joyerías:** Tras las entrevistas a trabajadores pertenecientes al rubro de joyerías
+Respecto a la trazabilidad, el 100% presenta ausencia o limitaciones en el registro formal del origen de los materiales. Esta situación está directamente relacionada con factores estructurales del mercado, como la informalidad y el alto costo del oro legal. Por ejemplo, adquirir oro con factura puede costar hasta 550 soles por gramo, mientras que el precio competitivo del mercado ronda los 460 soles, lo que obliga a recurrir a proveedores informales para mantener la rentabilidad.
+![Chart 2](../assets/img/chapter-ii/chart-2.jpg)
 
-**Análisis Tercer Segmento Consumidor Final :** Tras las entrevistas a personas consumidoras de productos realizados con minerales
+En el aspecto operativo, se identifican ineficiencias en el manejo del material, como pérdidas de hasta 30% en procesos de purificación al trabajar con oro de clientes. Desde la perspectiva del cliente, el 67% de entrevistadas indica que no existe una demanda activa por certificaciones, especialmente en productos de menor valor como el acero, donde se prioriza la estética. Sin embargo, en joyas de mayor valor la importancia de su autenticidad alcanza niveles altos, especialmente en piezas con piedras preciosas. Finalmente, el 100% de los entrevistados muestra apertura hacia la implementación de tecnologías que permitan mostrar al cliente el origen del producto (como códigos QR) considerándolas una oportunidad para diferenciarse y fortalecer la confianza del cliente.
+![Chart 3](../assets/img/chapter-ii/chart-3.png)
+
+
+**Análisis Tercer Segmento Consumidor Final :** En conjunto, los consumidores entrevistados presentan un comportamiento de compra poco frecuente, orientado principalmente a ocasiones específicas. El 100% prioriza factores como la calidad, durabilidad y precio, mientras que la marca tiene una relevancia baja en la decisión de compra.
+
+Respecto a la confianza y autenticidad, el 100% de los entrevistados manifiesta preocupación por la veracidad del producto, aunque reconoce tener un bajo conocimiento técnico para verificarlo. Como consecuencia, recurren a métodos como consultar al vendedor o usar pruebas básicas, lo que incrementa la incertidumbre durante la compra.
+
+En cuanto a la confianza en las marcas, el 67% presenta un nivel de confianza bajo o moderado, percibiendo que muchas empresas utilizan el marketing sin garantizar realmente la autenticidad o el origen del producto.
+
+Por otro lado, el 100% de los entrevistados valora el origen ético de los productos y estaría dispuesto a pagar un costo adicional (moderado) por garantizar autenticidad y condiciones laborales justas. Asimismo, el 100% muestra interés en herramientas tecnológicas como códigos QR o aplicaciones, que permitan verificar la procedencia, pureza y legalidad del producto antes de la compra.
+
+![Chart 4](../assets/img/chapter-ii/chart-4.png)
 
 
 ## 2.3. Needfinding
