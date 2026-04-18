@@ -210,21 +210,19 @@
 ### 2.2.3. Análisis de entrevistas
 Analisis por segmento y gráficas y porcentajes:
 
-**Análisis Primer Segmento Empresas Mineras:** En conjunto, el segmento minero evidencia una dualidad operativa: mientras el 67% (2 de 3) presenta un alto nivel de digitalización enfocado en mantenimiento predictivo y monitoreo en tiempo real, el 33% (1 de 3) aún depende de procesos manuales para el control productivo. A pesar de esta diferencia, el 100% considera excelente contar con un sistema que rastree el mineral o los componentes desde su origen. Sin embargo, existe una resistencia total a compartir información con la competencia o distribuidores externos por temor a perder competitividad o exponer debilidades operativas. Esto revela que la oportunidad no está solo en digitalizar, sino en automatizar y asegurar la información, conectando datos técnicos con impacto económico en toda la cadena de valor.
+**Análisis Primer Segmento Empresas Mineras:** En primer lugar, existe una desconexión entre la data técnica y el impacto financiero. Según Lynn Marín, los sistemas actuales permiten recolectar información detallada sobre fallas y mantenimiento, pero no logran traducir estos datos en indicadores económicos claros. Esto evidencia la necesidad de soluciones que conviertan automáticamente la información técnica en pérdidas o ganancias en tiempo real, facilitando la toma de decisiones.
+
+En segundo lugar, en el área de operaciones se identifica un problema crítico en la precisión del pesaje. La principal frustración no radica en la falta de tecnología digital, sino en errores físicos en el tonelaje de los volquetes, los cuales afectan directamente el cálculo del concentrado.
+
+En tercer lugar, se evidencia una resistencia a los procesos manuales, especialmente en el uso de checklists en papel. Los operarios consideran estas tareas como una pérdida de tiempo, lo que genera una clara oportunidad para implementar sistemas automatizados mediante sensores que optimicen la captura de datos.
+
+En cuarto lugar, se identifica una ruptura en la trazabilidad de la cadena de suministro. Una vez que el mineral es vendido a terceros, se pierde el seguimiento del mismo, dificultando la validación de su origen especialmente en industrias como la joyería. Esta desconexión limita la transparencia y el control a lo largo del ciclo de vida del mineral.
+
+En conjunto, el segmento minero evidencia una dualidad operativa: mientras el 67% (2 de 3) presenta un alto nivel de digitalización enfocado en mantenimiento predictivo y monitoreo en tiempo real, el 33% (1 de 3) aún depende de procesos manuales para el control productivo. A pesar de esta diferencia, el 100% considera excelente contar con un sistema que rastree el mineral o los componentes desde su origen. Sin embargo, existe una resistencia total a compartir información con la competencia o distribuidores externos por temor a perder competitividad o exponer debilidades operativas. Esto revela que la oportunidad no está solo en digitalizar, sino en automatizar y asegurar la información, conectando datos técnicos con impacto económico en toda la cadena de valor.
 
 ![Chart 1](../assets/img/chapter-ii/chart-1.png)
 
 
-
-En cuanto a la digitalización del registro de fallas, 66% lo hace mediante sistemas integrados o sensores mientras que el 33% lo hace de forma escrita a través de supervisores.
-
-- Hallazgos de Valor:
-1. La "Monetización" de los Datos: Un hallazgo crítico mencionado por Lynn Marín es que los sistemas actuales fallan en conectar la data técnica con el impacto financiero. Un sistema ganador debería traducir automáticamente las horas de mantenimiento o las fallas en pérdida o ganancia de dinero en tiempo real
-2. El Cuello de Botella del Pesaje: Para el área de operaciones, la mayor frustración no es la falta de tecnología inalámbrica, sino la imprecisión física. El error en el tonelaje de los volquetes repercute gravemente en el control del concentrado, sugiriendo que la solución de software debe integrarse con hardware de pesaje más preciso
-3. Resistencia a la Carga Manual: Los técnicos y operarios 
-ven los "checklists" manuales como una pérdida de tiempo. Existe una demanda clara por automatizar la captura de datos mediante sensores para que el personal se enfoque en tareas de mayor valor
-
-5. Desconexión en la Cadena de Suministro: Existe una ruptura de trazabilidad una vez que el mineral se vende a terceros. El seguimiento ético (por ejemplo, para joyería) es difícil porque la relación directa se pierde en el intercambio comercial con refinadoras o compradores externos.
 
 **Análisis Segundo Segmento Joyerías:** Tras las entrevistas a trabajadores pertenecientes al rubro de joyerías
 
