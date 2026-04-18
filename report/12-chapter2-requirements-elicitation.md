@@ -82,50 +82,50 @@
 ### 2.2.2. Registro de entrevistas
 | Segmento: Empresas Mineras | Entrevista #1 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
-| Timming inicio | |
-| Duración | |
+| Nombres y Apellidos | Maximiliano Lopez Melgarejo|
+| Edad | 22 años |
+| Distrito | Callao |
+| Ocupación | Especialista en mecatrónica de camiones mineros |
+| Timming inicio |  |
+| Duración | 11 minutos y 38 segundos|
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Maximiliano](../assets/img/chapter-ii/interview-Maximiliano.png) |
+| Resumen | El entrevistado es Maximiliano Lopez Melgarejo, un joven de 22 años residente en el Callao, especializado en mecatrónica de camiones mineros. Su trabajo se enfoca en el mantenimiento de equipos pesados utilizando tecnologías como sensores, cámaras y módulos electrónicos que permiten monitorear en tiempo real el rendimiento, condiciones del vehículo y carga transportada. En el proceso de traslado de minerales, destaca la importancia del control de carga, ya que exceder los límites establecidos puede generar riesgos operativos, pérdidas económicas e incluso accidentes. Además, menciona que uno de los principales problemas es la pérdida de material durante el trasbordo entre camiones, lo que afecta la eficiencia del proceso. Respecto a la trazabilidad, señala que existe una ruptura en la cadena una vez que el mineral es vendido a terceros, perdiéndose el seguimiento hasta el consumidor final. También enfatiza que cualquier sistema de monitoreo debe garantizar la confidencialidad de los datos, ya que la información sobre extracción y producción es altamente sensible para las empresas. Finalmente, indica que las fallas se gestionan mediante sistemas de monitoreo y mantenimiento preventivo, aunque las paradas por reparación representan un alto costo operativo. En este contexto, resalta la necesidad de equilibrar la continuidad de la producción con la seguridad y el buen estado de los equipos. |
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Empresas Mineras | Entrevista #2 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
+| Nombres y Apellidos | Lynn Marin |
+| Edad |30 años|
 | Distrito | |
-| Ocupación | |
+| Ocupación | Ingeniera mecatrónica |
 | Timming inicio | |
-| Duración | |
+| Duración | 17 minutos y 37 segundos|
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Lynn](../assets/img/chapter-ii/interview-Lynn.png) |
+| Resumen | La entrevistada es una ingeniera mecatrónica de 30 años que trabaja en un laboratorio de electrónica en Ferreyros, enfocada en la confiabilidad del armado y mantenimiento de motores para minería. Su labor está altamente vinculada al uso de tecnologías avanzadas, como sensores, actuadores y sistemas digitales para el monitoreo y análisis de datos en tiempo real.En cuanto a la gestión y monitoreo, utiliza herramientas como el software Tracking para rastrear componentes, así como plataformas como Smarty y Daris, que permiten recolectar información técnica y controlar equipos de forma remota. Su principal objetivo es maximizar la vida útil de los motores, asegurar su confiabilidad y reducir los tiempos de entrega, todo bajo un enfoque orientado a resultados económicos medibles. Respecto a la trazabilidad, destaca que es un elemento clave en procesos complejos, permitiendo conocer el estado, ubicación e historial de los componentes en todo momento. Sin embargo, señala que las empresas mineras son cautelosas al compartir esta información por motivos de confidencialidad y competencia. Además, enfatiza la importancia de analizar datos históricos y en tiempo real para implementar mantenimiento predictivo y evitar fallas recurrentes. En conclusión, identifica como principal frustración la dependencia de registros manuales, los cuales generan pérdida de tiempo y menor eficiencia operativa. En este sentido, promueve la automatización mediante sensores y sistemas integrados que permitan capturar datos de manera automática, optimizando los procesos y mejorando la toma de decisiones. |
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Empresas Mineras | Entrevista #3 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
+| Nombres y Apellidos | Max Alonso Yapo Figueroa|
+| Edad | 31 años |
+| Distrito | Arequipa (Cercado)|
+| Ocupación | Ingeniero metalurgista |
 | Timming inicio | |
-| Duración | |
+| Duración | 6 minutos y 27 segundos|
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Max](../assets/img/chapter-ii/interview-Max.jpg)|
+| Resumen | El entrevistado es un profesional de 31 años, residente en Arequipa, que se desempeña como jefe de metalurgia y operaciones. En su trabajo utiliza principalmente el celular y la laptop, además de herramientas especializadas como Molycop. Actualmente, el registro del traslado de minerales se realiza mediante plantillas de Excel, complementadas con personal encargado del seguimiento desde la mina hasta la planta. Sin embargo, este proceso presenta limitaciones, ya que el control es en gran parte empírico, lo que genera errores en el pesaje de los volquetes y en las balanzas. Estos errores, aunque inicialmente pequeños, se acumulan con el tiempo y generan cuellos de botella operativos, afectando la precisión de los datos. Si bien existe un monitoreo constante mediante personal distribuido en la ruta, la trazabilidad no siempre es completamente precisa. Respecto a las fallas, suelen ser de nivel leve a moderado y están relacionadas con factores operativos. Además, el registro de incidentes se realiza de forma manual (en papel), utilizando dispositivos digitales solo para comunicación, lo que limita la eficiencia del proceso. Finalmente, el entrevistado considera que la implementación de un sistema digital de rastreo desde la extracción sería altamente beneficiosa, destaca la importancia de contar con información precisa sobre la ubicación del mineral y el tonelaje exacto, ya que los errores en estos datos afectan directamente el control del concentrado y la toma de decisiones en la planta.|
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Joyerías | Entrevista #1 |
 | --- | --- |
 | Nombres y Apellidos | Yesiliany Canchica Muñoz |
-| Edad | 21 |
+| Edad | 21 años |
 | Distrito | Surquillo |
 | Ocupación | Secretaria de Joyería |
 | Timming inicio | |
@@ -138,36 +138,36 @@
 
 | Segmento: Joyerías | Entrevista #2 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
+| Nombres y Apellidos | Ginny Céspedes Mundaca |
+| Edad | 54 años |
+| Distrito | Tarapoto, San Martin |
+| Ocupación | Dueña de Joyería|
 | Timming inicio | |
-| Duración | |
+| Duración | 08 minutos y 34 segundos|
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Ginny](../assets/img/chapter-ii/interview-Ginny.png)|
+| Resumen |La entrevistada es la propietaria de una joyería en Tarapoto con aproximadamente 26 años de experiencia en el rubro. Trabaja junto a su esposo, quien es el orfebre del negocio, y basa gran parte de la verificación de autenticidad en su conocimiento técnico y experiencia. No utilizan sistemas digitales ni llevan un registro formal del origen de los materiales, lo que evidencia un manejo tradicional del negocio. En cuanto a la autenticidad y calidad, confían plenamente en la experiencia del orfebre para identificar materiales genuinos, lo que les ha permitido evitar problemas con proveedores. Sin embargo, reconocen que muchos consumidores sí son engañados en el mercado informal, lo que refuerza la importancia del conocimiento técnico en el sector. Respecto a la trazabilidad, los clientes no suelen exigir certificaciones ni información sobre el origen de las joyas, ya que la confianza se basa principalmente en la trayectoria del negocio y la garantía de calidad (oro de 18 quilates). No obstante, la entrevistada considera que implementar herramientas como códigos QR o sellos de certificación sería una oportunidad para diferenciarse y generar mayor confianza. Finalmente, uno de los principales desafíos es la informalidad del mercado, ya que adquirir oro con documentación legal eleva considerablemente los costos, reduciendo la competitividad y los márgenes de ganancia. Esto obliga al negocio a recurrir a proveedores informales, lo que limita la trazabilidad completa del material a pesar de mantener estándares de calidad en el producto final. |
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Joyerías | Entrevista #3 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
+| Nombres y Apellidos | Vicky Ríos Macedo |
+| Edad | 42 años |
+| Distrito | Tarapoto, San Martin |
+| Ocupación | Dueña de Joyería |
 | Timming inicio | |
-| Duración | |
+| Duración | 14 minutos y 32 segundos |
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot |![Screenshot Vicky](../assets/img/chapter-ii/interview-Vicky.png) |
+| Resumen |La entrevistada es Vicky, una emprendedora del rubro de joyería de acero en Tarapoto. Su negocio se basa en la reventa de productos, y utiliza herramientas digitales básicas como videollamadas para coordinar con proveedores y medios de pago electrónicos. No cuenta con sistemas formales de gestión ni registros detallados del origen de los productos, lo que evidencia un manejo operativo simple. En cuanto a la autenticidad y calidad, la validación se realiza a través del uso personal. Tanto ella como su hija prueban los productos para asegurar que no pierdan brillo, no se oxiden y no causen alergias. La confianza hacia los clientes se construye mediante esta experiencia directa y ofreciendo garantías de cambio o devolución, más que a través de certificaciones formales. Respecto a la trazabilidad, existe un conocimiento limitado sobre el origen de los productos, ya que solo identifica que provienen de China y se distribuyen desde Lima. Los clientes, por su parte, no suelen exigir información sobre procedencia o certificaciones, priorizando más bien la estética, el precio accesible y la durabilidad del producto. Finalmente, la entrevistada muestra interés en la implementación de herramientas tecnológicas como códigos de trazabilidad, considerándolas una oportunidad para diferenciar su negocio. Esto refleja una apertura hacia la innovación, aunque actualmente el sector en el que opera no exige altos niveles de transparencia en comparación con otros rubros. |
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Usuario consumidor | Entrevista #1 |
 | --- | --- |
 | Nombres y Apellidos | Carla Gallardo Morales |
-| Edad | 19 |
+| Edad | 19 años |
 | Distrito | La Molina |
 | Ocupación | Estudiante universitaria |
 | Timming inicio | |
@@ -178,37 +178,61 @@
 
 <div style="page-break-after: always"></div>
 
+
 | Segmento: Usuario consumidor | Entrevista #2 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
+| Nombres y Apellidos | Mauricio Moquillaza |
+| Edad | 19 años |
+| Distrito | Jesús María |
+| Ocupación | Estudiante|
 | Timming inicio | |
-| Duración | |
+| Duración |11 minutos y 35 segundos |
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Mauricio](../assets/img/chapter-ii/interview-Mauricio.png)|
+| Resumen | El entrevistado es Mauricio Moquillaza, un joven de 19 años, residente en Jesús María, Lima, soltero. Utiliza con frecuencia el celular y la laptop, mostrando un perfil digital activo. Su frecuencia de compra de joyas es baja, aproximadamente una vez al año, priorizando productos duraderos y de larga vida útil. Al momento de comprar, se enfoca principalmente en la apariencia visual, la durabilidad y que el precio sea acorde al producto, restando importancia a la marca. Sin embargo, muestra una alta preocupación por la autenticidad, debido a la existencia de falsificaciones. Aunque posee conocimientos básicos de verificación (como pruebas caseras), su nivel de confianza en las marcas es bajo ya que considera que muchas utilizan el marketing como estrategia más que como garantía real. En cuanto al aspecto ético, considera importante el origen de las joyas, especialmente para evitar contribuir a la minería ilegal o explotación laboral. Afirma que estaría dispuesto a pagar un poco más por productos certificados y que dejaría de comprar una marca si se comprobara que incurre en prácticas poco éticas. Finalmente, destaca el valor de herramientas tecnológicas como aplicaciones o códigos QR para verificar la autenticidad y trazabilidad del producto. Le gustaría acceder a información clara sobre la pureza del material y su procedencia, lo que refleja una necesidad de mayor transparencia y confianza en el mercado de joyería. |
 
 <div style="page-break-after: always"></div>
 
 | Segmento: Usuario consumidor | Entrevista #3 |
 | --- | --- |
-| Nombres y Apellidos | |
-| Edad | |
-| Distrito | |
-| Ocupación | |
+| Nombres y Apellidos | Oliver Galindo |
+| Edad | 20 años |
+| Distrito | Comas |
+| Ocupación | Estudiante |
 | Timming inicio | |
-| duración | |
+| Duración | 09 minutos y 43 segundos|
 | URL | |
-| Screenshot | |
-| Resumen | |
+| Screenshot | ![Screenshot Oliver](../assets/img/chapter-ii/interview-Oliver.png)|
+| Resumen |El entrevistado es Oliver Galindo, un joven de 20 años, residente en Comas, soltero. Utiliza principalmente el celular y la computadora, lo que refleja un perfil digital activo. Su frecuencia de compra de joyas es baja y está orientada principalmente a la adquisición de obsequios solo ocasiones especiales. Al comprar, prioriza la calidad y la durabilidad del producto, seguido de la relación calidad-precio. Aunque inicialmente el diseño puede ser más relevante que la autenticidad técnica, menciona que sí muestra interés en verificar la veracidad del producto consultando al vendedor o revisando sellos de autenticidad, especialmente en materiales como oro o perlas. Respecto al origen ético, considera importante consumir productos legales y responsables, aunque reconoce que es difícil acceder a esta información. Por ello, opta por comprar en lugares formales para reducir riesgos. Además, estaría dispuesto a pagar más por productos con certificación ética y afirma que dejaría de comprar marcas vinculadas a la explotación laboral. Finalmente, percibe un bajo nivel de confianza en las marcas, ya que considera que muchas veces la información es solo marketing. En este contexto, valora positivamente el uso de herramientas tecnológicas como códigos QR o aplicaciones que permitan verificar la autenticidad y procedencia del producto, evidenciando una necesidad de mayor transparencia en el mercado. |
 
 <div style="page-break-after: always"></div>
 
 ### 2.2.3. Análisis de entrevistas
+Analisis por segmento y gráficas y porcentajes:
+
+**Análisis Primer Segmento Empresas Mineras:** En conjunto, el segmento minero evidencia una dualidad operativa: mientras el 67% (2 de 3) presenta un alto nivel de digitalización enfocado en mantenimiento predictivo y monitoreo en tiempo real, el 33% (1 de 3) aún depende de procesos manuales para el control productivo. A pesar de esta diferencia, el 100% considera excelente contar con un sistema que rastree el mineral o los componentes desde su origen. Sin embargo, existe una resistencia total a compartir información con la competencia o distribuidores externos por temor a perder competitividad o exponer debilidades operativas. Esto revela que la oportunidad no está solo en digitalizar, sino en automatizar y asegurar la información, conectando datos técnicos con impacto económico en toda la cadena de valor.
+
+![Chart 1](../assets/img/chapter-ii/chart-1.png)
+
+
+
+En cuanto a la digitalización del registro de fallas, 66% lo hace mediante sistemas integrados o sensores mientras que el 33% lo hace de forma escrita a través de supervisores.
+
+- Hallazgos de Valor:
+1. La "Monetización" de los Datos: Un hallazgo crítico mencionado por Lynn Marín es que los sistemas actuales fallan en conectar la data técnica con el impacto financiero. Un sistema ganador debería traducir automáticamente las horas de mantenimiento o las fallas en pérdida o ganancia de dinero en tiempo real
+2. El Cuello de Botella del Pesaje: Para el área de operaciones, la mayor frustración no es la falta de tecnología inalámbrica, sino la imprecisión física. El error en el tonelaje de los volquetes repercute gravemente en el control del concentrado, sugiriendo que la solución de software debe integrarse con hardware de pesaje más preciso
+3. Resistencia a la Carga Manual: Los técnicos y operarios 
+ven los "checklists" manuales como una pérdida de tiempo. Existe una demanda clara por automatizar la captura de datos mediante sensores para que el personal se enfoque en tareas de mayor valor
+
+5. Desconexión en la Cadena de Suministro: Existe una ruptura de trazabilidad una vez que el mineral se vende a terceros. El seguimiento ético (por ejemplo, para joyería) es difícil porque la relación directa se pierde en el intercambio comercial con refinadoras o compradores externos.
+
+**Análisis Segundo Segmento Joyerías:** Tras las entrevistas a trabajadores pertenecientes al rubro de joyerías
+
+**Análisis Tercer Segmento Consumidor Final :** Tras las entrevistas a personas consumidoras de productos realizados con minerales
+
 
 ## 2.3. Needfinding
+Pequeña introduccion
 
 ### 2.3.1. User Personas
 
