@@ -68,7 +68,22 @@ En esta sección se detallan los requisitos del producto digital GoldMetrics a t
 
 ## 3.2. Impact Mapping
 
+En esta sección se presenta el Impact Mapping elaborado para el modelo de negocio digital de **GoldMetrics**. Este artefacto nos permite alinear visualmente nuestros objetivos estratégicos de negocio con las necesidades de nuestros User Personas y los entregables de software, asegurando que cada funcionalidad construida (User Story) tenga un propósito claro y medible.
 
+![Impact Map](../assets/img/chapter-iii/impact-map.png)
+
+El Impact Mapping elaborado para GoldMetrics ilustra de manera estratégica cómo las funcionalidades de nuestra plataforma tecnológica contribuyen directamente a alcanzar nuestros objetivos comerciales. Para esta fase del proyecto, hemos definido dos objetivos SMART (Business Goals) enfocados tanto en la adopción empresarial (B2B) como en la penetración en el usuario final (B2C).
+
+**Alineación del Business Goal 1 (Adopción B2B):**
+Nuestro primer objetivo busca alcanzar la suscripción de 50 empresas formales en el plazo de 12 meses. Para lograr esta meta, hemos identificado a dos actores clave que nos ayudarán a lograrlo: las **Empresas Mineras** y las **Joyerías**.
+* En el caso de las mineras, el impacto que necesitamos generar es que digitalicen su control operativo, dejando atrás los formatos manuales en papel para reducir sus mermas. Como negocio digital, provocaremos este impacto construyendo un *Módulo de Gestión de Extracción y Monitoreo IoT* (Deliverable), el cual se materializa en historias de usuario enfocadas en la creación de lotes, registro de pesajes automatizados y monitoreo de rutas de transporte (US13, US14, US18).
+* Por el lado de las joyerías, el impacto esperado es que adopten GoldMetrics como su estándar para emitir garantías digitales frente a sus clientes. Para facilitar este comportamiento, implementaremos un *Módulo de Certificación y Generación de QR* (Deliverable), soportado por funcionalidades que permiten validar lotes de proveedores, subdividir material y generar certificados PDF o códigos escaneables (US23, US26, US27).
+
+**Alineación del Business Goal 2 (Alcance B2C):**
+El segundo objetivo tiene como meta alcanzar los 5,000 escaneos de trazabilidad en los primeros 6 meses. El actor fundamental aquí es el **Consumidor Final**.
+* Para lograr esta meta de escaneos, el impacto o cambio de comportamiento requerido es que el cliente adquiera el hábito de verificar activamente la pureza y el origen ético de la joya antes de su compra. El entregable que proporcionaremos para gatillar este comportamiento es la *Interfaz Web Móvil Pública de Trazabilidad*. Esto se traduce en un conjunto de User Stories diseñadas para brindar transparencia, permitiéndoles escanear el QR, visualizar la informació del mineral desde su extracción, y compartir la autenticidad del producto con terceros (US33, US34, US37).
+
+En conclusión, este mapa evidencia que ninguna funcionalidad de GoldMetrics ha sido ideada al azar; cada User Story propuesta es el eslabón final de una cadena diseñada específicamente para generar valor a nuestros clientes y cumplir las metas financieras y operativas de nuestra startup.
 
 ## 3.3. Product Backlog
 
