@@ -13,7 +13,7 @@
 
 ### ***Startup:*** GoldMetrics
 
-### ***Producto:*** ???(actualizar)
+### ***Producto:*** GoldCheck
 
 
 ***Relación de integrantes:***
