@@ -13,6 +13,19 @@ En ese sentido, se establecen los siguientes lineamientos generales:
 - El diseño estará enfocado en reducir la carga cognitiva, mostrando únicamente información relevante según el rol del usuario.
 
 ### 4.1.2. Web Style Guidelines
+Los lineamientos visuales de GoldMetrics están orientados a facilitar la interpretación de datos complejos en entornos operativos, asegurando usabilidad y accesibilidad.
+- Paleta de colores: (RELLENAR)
+- Tipografía:
+  + Se utilizarán fuentes sans-serif (Como Arial o Roboto por su alta legibilidad).
+- Componentes de interfaz:
+  + Dashboards con gráficos (líneas, barras, indicadores) para representar información operativa.
+  + Tarjetas (cards) para mostrar métricas clave como estado de maquinaria y ubicación.
+  + Botones con acciones claras y visibles.
+- Diseño responsive:
+  + El sistema será adaptable a diferentes dispositivos, permitiendo su uso tanto en campo como en oficina.
+- Accesibilidad:
+  + Uso adecuado de contraste de colores.
+  + Indicadores visuales que faciliten la interpretación rápida de la información.
 
 ## 4.2. Information Architecture
 
