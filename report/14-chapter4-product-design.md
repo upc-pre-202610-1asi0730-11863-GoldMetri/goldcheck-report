@@ -7,6 +7,7 @@
 ### 4.1.2. Web Style Guidelines
 
 ## 4.2. Information Architecture
+La arquitectura de la información de GoldMetrics ha sido definida con el objetivo de optimizar el acceso, organización y comprensión de la información, en función de las necesidades identificadas en el proceso de Lean UX.
 
 ### 4.2.1. Organization Systems
 
