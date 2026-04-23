@@ -16,16 +16,22 @@ En ese sentido, se establecen los siguientes lineamientos generales:
 Los lineamientos visuales de GoldMetrics están orientados a facilitar la interpretación de datos complejos en entornos operativos, asegurando usabilidad y accesibilidad.
 - Paleta de colores: (RELLENAR)
 - Tipografía:
-  + Se utilizarán fuentes sans-serif (Como Arial o Roboto por su alta legibilidad).
+  - Se utilizarán fuentes sans-serif (Como Arial o Roboto por su alta legibilidad).
+
+| Arial | Roboto |
+|---|---|
+| <img src="../assets/img/chapter-iv/Arial.jpg" width="300"/> | <img src="../assets/img/chapter-iv/Roboto.png" width="300"/> |
+
+
 - Componentes de interfaz:
-  + Dashboards con gráficos (líneas, barras, indicadores) para representar información operativa.
-  + Tarjetas (cards) para mostrar métricas clave como estado de maquinaria y ubicación.
-  + Botones con acciones claras y visibles.
+  - Dashboards con gráficos (líneas, barras, indicadores) para representar información operativa.
+  - Tarjetas (cards) para mostrar métricas clave como estado de maquinaria y ubicación.
+  - Botones con acciones claras y visibles.
 - Diseño responsive:
-  + El sistema será adaptable a diferentes dispositivos, permitiendo su uso tanto en campo como en oficina.
+  - El sistema será adaptable a diferentes dispositivos, permitiendo su uso tanto en campo como en oficina.
 - Accesibilidad:
-  + Uso adecuado de contraste de colores.
-  + Indicadores visuales que faciliten la interpretación rápida de la información.
+  - Uso adecuado de contraste de colores.
+  - Indicadores visuales que faciliten la interpretación rápida de la información.
 
 ## 4.2. Information Architecture
 
