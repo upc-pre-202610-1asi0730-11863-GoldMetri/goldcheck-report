@@ -250,11 +250,51 @@ Gracias a esta exploración, se identificaron áreas críticas de mejora, como l
 
 ### 2.3.1. User Personas
 
+
+**Segmento Objetivo: Empresas mineras:**
+![User-Persona-i](../assets/img/chapter-ii/UserPersona-1.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo: Joyerías:**
+![User-Persona-ii](../assets/img/chapter-ii/UserPersona-2.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo: Consumidor final:**
+![User-Persona-iii](../assets/img/chapter-ii/UserPersona-3.png)
+
+
 ### 2.3.2. User Task Matrix
 
 ### 2.3.3. User Journey Mapping
 
+**Segmento Objetivo Empresas mineras:**
+![User-JourneyMap-i](../assets/img/chapter-ii/JourneyMap-1.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo Joyerías:**
+![User-JourneyMap-ii](../assets/img/chapter-ii/JourneyMap-2.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo Consumidor final:**
+![User-JourneyMap-iii](../assets/img/chapter-ii/JourneyMap-3.png)
+
 ### 2.3.4. Empathy Mapping
+**Segmento Objetivo Empresas mineras:**
+![EmpathyMap-i](../assets/img/chapter-ii/EmpathyMap-1.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo Joyerías:**
+![EmpathyMap-ii](../assets/img/chapter-ii/EmpathyMap-2.png)
+
+<div style="page-break-after: always"></div>
+
+**Segmento Objetivo Consumidor final:**
+![EmpathyMap-iii](../assets/img/chapter-ii/EmpathyMap-3.png)
 
 ## 2.4. Big Picture EventStorming
 
