@@ -14,8 +14,6 @@ En ese sentido, se establecen los siguientes lineamientos generales:
 
 ### 4.1.2. Web Style Guidelines
 Los lineamientos visuales de GoldMetrics están orientados a facilitar la interpretación de datos complejos en entornos operativos, asegurando usabilidad y accesibilidad.
-- Paleta de colores:
- ### 4.1.2 Web Style Guidelines
 
 - **Paleta de colores:**
 
