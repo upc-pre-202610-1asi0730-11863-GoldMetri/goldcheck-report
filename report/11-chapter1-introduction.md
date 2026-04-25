@@ -15,6 +15,11 @@ Visión: Gold Metrics busca posicionarse como la plataforma líder en trazabilid
 ### 1.1.2. Perfiles de integrantes del equipo
 
 ## 1.1. Solution Profile
+Somos GoldMetrics, una startup integrado por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas. Nuestra startup se centra en la industria minera, con el objetivo de monitorear, examinar y certificar el camino de los minerales desde su extracción hasta el producto final. Esto se logra mediante el desarrollo de una plataforma que permite la trazabilidad de minerales, utilizando tecnología IoT, soluciones web e inteligencia artificial.
+
+**Misión:** Desarrollar tecnologías de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales, asegurando la autenticidad de los productos y promoviendo activamente la responsabilidad social en la industria.
+
+**Visión:** Consolidarnos como la empresa líder en trazabilidad minera en América Latina, conectando a toda la cadena de valor: desde la mina hasta el consumidor; con información confiable, inmutable y verificable.
 
 ### 1.2.1. Antecedentes y problemática
 #### What?
