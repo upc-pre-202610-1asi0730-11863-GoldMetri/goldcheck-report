@@ -132,7 +132,27 @@
 </table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
-- Estrategia 1: 
+- **Estrategia Defensiva: Neutralizar las Fortalezas de los Competidores**
+Enfoque: Si no puedes vencer su hardware, integra su data.
+  - ***Táctica de "Capa Superior" (vs. OEMs/Geotab)***: No intentes competir fabricando hardware más robusto que Caterpillar o Geotab. Posiciona a GoldMetrics como la plataforma agnóstica que consolida los datos de ambas fuentes en un solo dashboard.
+  - ***Táctica de Alianzas Técnicas***: Desarrollar APIs abiertas y conectores pre-configurados para que el cliente sienta que GoldMetrics "desbloquea" el valor de la maquinaria que ya compró, en lugar de ser un sistema que compite con el fabricante.
+
+2. **Estrategia Ofensiva: Explotar las Debilidades de la Competencia**
+Enfoque: Agilidad vs. Burocracia y Flexibilidad vs. Rigidez.
+   - ***Táctica de Flotas Mixtas (vs. OEMs)***: Los OEMs suelen fallar cuando una mina tiene camiones Komatsu y palas Caterpillar. Ataca este punto crítico ofreciendo una visión 360° que los fabricantes no pueden (o no quieren) dar por proteger su ecosistema cerrado.
+   - ***Táctica de "Cero Fricción" (vs. Geotab)***: Mientras Geotab requiere tiempos de instalación física y configuración de hardware, implementa un modelo de ingesta de datos vía API (Cloud-to-Cloud) para que el cliente vea resultados en días, no meses.
+   - ***Táctica de Precios SaaS (vs. Alto Capex de OEMs)***: Elimina la barrera del "pago inicial millonario". Implementa una estructura de costos operativos (OpEx) que permita a minas medianas acceder a tecnología de punta sin comprometer su flujo de caja.
+
+3. **Estrategia de Oportunidad: Liderar en Trazabilidad y ESG**
+Enfoque: Simplificar lo complejo.
+
+   - ***Táctica "ESG-Light":*** Las plataformas como Circulor son extremadamente complejas. Crea un módulo de Reportabilidad Automática de Carbono que tome los datos de consumo de combustible ya existentes en GoldMetrics y los transforme en reportes de cumplimiento para inversionistas con un solo clic.
+   - ***Táctica de Nicho (Minería de Media Escala):*** Mientras los grandes se pelean por las "Tier 1" (BHP, Rio Tinto), enfócate en capturar el mercado de minería mediana que está siendo presionada por regulaciones ambientales pero no tiene el presupuesto para soluciones a medida de millones de dólares.
+
+4. **Estrategia de Mitigación de Amenazas: Construcción de Foso (Moat)**
+Enfoque: Blindar la relación con el cliente.
+  - ***Táctica de Éxito del Cliente (High-Touch):*** Los gigantes ofrecen soporte mediante tickets y call centers. GoldMetrics debe ofrecer Consultoría de Optimización incluida en la suscripción, donde un experto analice los KPIs junto al jefe de mina mensualmente para asegurar el ROI.
+  - ***Táctica de Modularidad:*** Para evitar que un competidor grande te desplace por precio, permite que el cliente compre solo el módulo que necesita (ej. solo "Gestión de Neumáticos" o solo "Consumo de Diésel"). Una vez dentro de su ecosistema, la expansión es mucho más natural.
 
 ## 2.2. Entrevistas
 
@@ -155,3 +175,95 @@
 ## 2.4. Big Picture EventStorming
 
 ## 2.5. Ubiquitous Language
+- **Machinery (Maquinaria)**: Cualquier unidad de equipo físico en la mina, como camiones de acarreo, palas o excavadoras, que genera datos y requiere monitoreo.
+
+- **Haul Truck (Camión de acarreo)**: Vehículo pesado diseñado específicamente para transportar grandes volúmenes de material desde el punto de carga hasta el de descarga.
+
+- **Fleet (Flota)**: Conjunto total de activos móviles que operan dentro de una unidad minera.
+
+- **OEM - Original Equipment Manufacturer (Fabricante de Equipo Original)**: Empresas que fabrican la maquinaria (ej. Caterpillar, Komatsu). Sus sistemas de datos suelen ser cerrados o propietarios.
+
+- **Haulage (Acarreo)**: El proceso de transportar material extraído desde el tajo (pit) hacia su destino (chancadora o botadero).
+
+- **Cycle Time (Tiempo de ciclo)**: Tiempo total que tarda un activo en completar una secuencia completa: carga, transporte de ida, descarga y retorno vacío.
+
+- **Loading Point (Punto de carga):** Ubicación específica en la mina donde el material es depositado en el camión por una pala o cargador.
+
+- **Dumping Point / Dump (Punto de descarga / Botadero):** Destino final del material, ya sea para procesamiento (mineral) o almacenamiento (estéril).
+
+- **Payload (Carga útil):** El peso real del material transportado por un activo en un solo ciclo, excluyendo el peso del vehículo.
+
+- **Idle Time (Tiempo en ralentí):** Periodo en el que el motor del activo está encendido pero el vehículo no está realizando trabajo productivo ni desplazándose.
+
+- **Downtime (Tiempo de inactividad):** Tiempo durante el cual un activo no está disponible para operar, ya sea por fallas mecánicas o mantenimiento programado.
+
+- **Availability (Disponibilidad)**: Porcentaje de tiempo que un activo está en condiciones mecánicas para operar, independientemente de si se está usando o no.
+
+- **Utilization (Utilización):** Proporción del tiempo de disponibilidad en el que el activo realmente está realizando tareas operativas.
+
+- **Production (Producción):** Cantidad total de material (usualmente medido en toneladas) movido durante un periodo determinado.
+
+- **Ore (Mineral):** Roca que contiene sustancias económicamente valiosas (oro, cobre, etc.) y que se envía a la planta de procesamiento.
+
+- **Waste / Overburden (Estéril / Lastre):** Material que debe ser removido para acceder al mineral pero que no tiene valor económico. Se envía a los botaderos.
+
+- **Grade (Ley):** La concentración de metal valioso contenido en el mineral extraído.
+
+- **Telemetry (Telemetría):** Medición y transmisión inalámbrica de datos desde los sensores del activo (motor, GPS, peso) hacia la plataforma.
+
+- **Fuel Consumption (Consumo de combustible):** Cantidad de combustible diesel utilizado por un activo, analizado generalmente por hora o por tonelada movida.
+
+- **Engine Hours (Horas motor):** Tiempo acumulado de funcionamiento del motor de un activo, utilizado como base para los planes de mantenimiento.
+
+- **Event (Evento):** Una ocurrencia específica detectada por los sensores que tiene relevancia operativa (ej. exceso de velocidad, fatiga del operador).
+
+- **ESG - Environmental, Social, and Governance (Criterios ambientales, sociales y de gobernanza):** Marco de evaluación de la sostenibilidad y el impacto ético de la operación minera.
+
+- **Traceability (Trazabilidad):** Capacidad de seguir el historial, la ubicación y la procedencia de un lote de mineral desde la mina hasta su destino final.
+
+- **Engine Ignition (Encendido del motor):** Estado que indica que el motor principal del activo está operativo y consumiendo combustible
+
+- **Communication loss (Pérdida de comunicación):** Falla en el flujo de datos entre los sensores del activo y la plataforma de monitoreo.
+
+- **Exhaust Temperature (Temperatura de escape):** Indicador térmico de los gases de salida del motor, clave para prevenir daños mecánicos catastróficos.
+
+- **Dossification Rail (Riel de dosificación):** Sistema encargado de la distribución precisa de combustible o aditivos en el motor.
+
+- **Oil Pan (Cárter de aceite):** Depósito metálico que contiene el aceite lubricante del motor.
+
+- **GNSS (Sistema Global de Navegación por Satélite):** Tecnología (como el GPS) utilizada para rastrear la ubicación y velocidad del activo en tiempo real.
+
+- **Oil Filter pressure difference (Diferencial de presión del filtro de aceite):** Medida que indica el nivel de obstrucción del filtro; una diferencia alta sugiere la necesidad de cambio inmediato.
+
+- **Fatigue event (Evento de fatiga):** Alerta generada cual el sistema detecta signos de cansancio o falta de atención en el operador.
+
+- **Operator (Operador):** Persona responsable de la conducción y operación directa de una Machinery (Maquinaria) durante un turno. Es el principal generador de eventos como Speed excess o Fatigue events.
+
+- **Supervisor (Supervisor):** Usuario con privilegios de gestión encargado de monitorear el desempeño de la flota, validar reportes y reaccionar ante alertas críticas o Accidents.
+
+- **User (Usuario):** Término genérico para cualquier persona con credenciales de acceso al sistema, cuyo historial de Login y Registration es auditado por la plataforma.
+
+- **Component (Componente):** Parte o sistema específico de un activo (ej. motor, transmisión, bomba hidráulica) que puede ser monitoreado o reemplazado de forma independiente.
+
+- **Component Discharged (Componente dado de baja):** Estado que indica que una pieza ha sido retirada de un activo para su reemplazo o desecho.
+
+- **Refinery (Refinería):** Instalación industrial donde el mineral procesado se purifica para obtener metal precioso (oro/plata) con grado de inversión o joyería.
+
+- **Jeweler (Joyero):** El artesano o empresa final que transforma el metal precioso en piezas de joyería. En GoldMetrics, el joyero es un stakeholder interesado en la procedencia ética del material.
+
+- **Ethical Gold (Oro Ético)**: Oro extraído bajo estándares que garantizan el respeto a los derechos humanos y el cumplimiento de normativas ambientales (ESG), un factor clave en la trazabilidad de la plataforma.
+
+- **Bullion (Lingote / Metal en bruto):** Forma física del metal precioso (usualmente con 99.9% de pureza) antes de ser trabajado por un joyero.
+
+- **Conflict-Free Certification (Certificación Libre de Conflicto):** Validación documental que asegura que el oro no proviene de zonas de guerra o financia actividades ilícitas, vinculada directamente al reporte de Traceability.
+
+- **Dossification Rail Pressure (Presión del Riel de Dosificación):** Presión del sistema de inyección; niveles altos o bajos pueden indicar fallas inminentes.
+
+- **Oil Filter Pressure Difference (Diferencial de Presión del Filtro de Aceite):** Diferencia entre la presión de entrada y salida del filtro, indicando qué tan obstruido está.
+
+- **Durability (Durabilidad):** Capacidad de un Machinery o Component de mantener su función operativa bajo las condiciones extremas de la mina sin fallar.
+
+- **PCR - Planned Component Replacement (Reemplazo Planificado de Componentes:)** Es el tiempo mínimo u óptimo de operación (medido en horas motor) que un componente debe durar antes de ser retirado de servicio para evitar fallas.
+
+- **Preventive Maintenance (Mantenimiento Preventivo):** Tareas de servicio programadas basadas en el tiempo de operación para asegurar la longevidad del equipo.
+
