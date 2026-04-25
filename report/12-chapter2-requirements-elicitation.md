@@ -264,7 +264,6 @@ Gracias a esta exploración, se identificaron áreas críticas de mejora, como l
 **Segmento Objetivo: Consumidor final:**
 ![User-Persona-iii](../assets/img/chapter-ii/UserPersona-3.png)
 
-
 ### 2.3.2. User Task Matrix
 
 ### 2.3.3. User Journey Mapping
