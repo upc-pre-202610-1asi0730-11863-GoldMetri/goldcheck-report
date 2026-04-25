@@ -27,9 +27,18 @@ Este enfoque responde directamente a la segmentación de usuarios definida en el
   - Estado operativo
   - Historial de eventos
 
-Facilitando el análisi y la toma de decisiones
+Facilitando el análisis y la toma de decisiones
 ### 4.2.2. Labeling Systems
+El sistema utiliza etiquetas claras, consistentes y orientadas al usuario:
+- Dashboard
+- Trazabilidad
+- Mantenimiento
+- Reportes
+- Certificados
+- Historial
+- Ubicación en tiempo real
 
+Estas etiquetas han sido definidas para facilitar la comprensión y navegación, evitando terminología técnica innecesaria
 
 
 ### 4.2.3. SEO Tags and Meta Tags
