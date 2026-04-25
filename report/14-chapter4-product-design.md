@@ -77,6 +77,25 @@ El sistema incorpora mecanismos de búsqueda que permiten acceder rápidamente a
 - **Resultados en tiempo real**, facilitando la toma de decisiones operativas.
 
 ### 4.2.5. Navigation Systems
+La navegación del sistema está diseñada para ser clara, eficiente y orientada a las necesidades del usuario:
+
+- **Menú principal:**
+  - Dashboard  
+  - Trazabilidad  
+  - Mantenimiento  
+  - Reportes  
+
+- **Navegación por flujo:**
+  - Seguimiento del mineral a lo largo de su ciclo de vida.  
+
+- **Navegación contextual:**
+  - Acceso a información detallada desde dashboards y gráficos.  
+
+- **Elementos de apoyo:**
+  - Breadcrumbs (ej: Dashboard > Mantenimiento > Unidad)  
+  - Botones de acceso rápido  
+
+Asimismo, el sistema permite visualizar información relacionada al mantenimiento de maquinaria, incluyendo detección de fallas, análisis de patrones y generación de reportes, lo cual refuerza la funcionalidad operativa del sistema.
 
 ## 4.3. Landing Page UI Design
 
