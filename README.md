@@ -1,4 +1,7 @@
-![Logo UPC](assets/img/logoUPC.png)
+<!-- Cover -->
+<div align="center">
+ <img src="assets/img/logoUPC.png">
+</div>
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
 
@@ -11,9 +14,9 @@
 
 ## **"Informe de trabajo: AV1"**
 
-### ***Startup:*** GoldMetrics
+#### *Startup:* GoldMetrics
 
-### ***Producto:*** GoldCheck
+#### *Producto:* GoldCheck
 
 
 ***Relación de integrantes:***
@@ -26,7 +29,12 @@
 | Philco Mota, Katty Yolanda | U202416107 |
 | Tuesta Girón, Kiara Lucia | U |
 
-Abril, 2026
+<!-- Cover -->
+<div align="center">
+ <strong>Abril, 2026</strong>
+
+</div>
+
 
 <div style="page-break-after: always"></div>
 
@@ -34,6 +42,7 @@ Abril, 2026
 
 | Versión | Fecha | Autor | Descripción de modificación |
 | :---: | :---: | :---: | :---: |
+
 
 <div style="page-break-after: always"></div>
 
