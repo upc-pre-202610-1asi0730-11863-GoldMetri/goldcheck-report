@@ -320,6 +320,9 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 <img src="../assets/img/chapter-iv/userflows/unhappy.jpeg" width="300"/>
 
 ## 4.5. Web Applications Prototyping
+Prototipo de la aplicación web GoldMetric en Figma:
+https://www.figma.com/design/7O7yxNUaLKdHpT7T4GyrSh/WIRFRAME-4?node-id=0-1&t=9KcYAtK3HDnZEl7w-1
+
 
 ## 4.6. Domain-Driven Software Architecture
 
