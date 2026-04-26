@@ -147,11 +147,51 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 
 ## 4.4. Web Applications UX/UI Design
 
+
 ### 4.4.1. Web Applications Wireframes
+<img src="../assets/img/chapter-iv/Log in.png" width="300"/>
+<img src="../assets/img/chapter-iv/Sign up.png" width="300"/>
+<img src="../assets/img/chapter-iv/Profile Screen.png" width="300"/>
+<img src="../assets/img/chapter-iv/Payment Method.png" width="300"/>
+<img src="../assets/img/chapter-iv/REGISTER.png" width="300"/>
+<img src="../assets/img/chapter-iv/Frame 1321317457.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur.png" width="300"/>
+<img src="../assets/img/chapter-iv/Dashboard Joyería - Modal Validación.png" width="300"/>
+<img src="../assets/img/chapter-iv/Profile Screen.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-1.png" width="300"/>
+<img src="../assets/img/chapter-iv/Dashboard Minería - Principal.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-2.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-3.png" width="300"/>
+<img src="../assets/img/chapter-iv/Dashboard Minería - Detalle Lote.png" width="300"/>
+<img src="../assets/img/chapter-iv/Dashboard Usuario Final.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-4.png" width="300"/>
+<img src="../assets/img/chapter-iv/Dashboard Minería - Alerta Activa.png" width="300"/>
+<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-5.png" width="300"/>
 
 ### 4.4.2. Web Applications Wireflow Diagrams
+<img src="../assets/img/chapter-iv/wireflow/1 (1).jpeg" width="300"/>
+<img src="../assets/img/chapter-iv/wireflow/1 (2).jpeg" width="300"/>
+<img src="../assets/img/chapter-iv/wireflow/1 (3).jpeg" width="300"/>
+<img src="../assets/img/chapter-iv/wireflow/1 (4).jpeg" width="300"/>
 
 ### 4.4.2. Web Applications Mock-ups
+<img src="../assets/img/chapter-iv/Mockup/Log in.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Sign up.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Profile Screen.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Payment Method.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/SUSCRIPTIONS.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Principal.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Modal Validación.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Modal Validación-1.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Éxito de QR.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Principal.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Nuevo Lote Modal.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Nuevo Lote (Paso 2).png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Detalle Lote.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Alerta Activa.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Modal Incidente.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Dashboard Usuario Final.png" width="300"/>
+<img src="../assets/img/chapter-iv/Mockup/Usuario Final - Vincular Joya.png" width="300"/>
 
 ### 4.4.3. Web Applications User Flow Diagrams
 
