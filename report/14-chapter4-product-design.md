@@ -283,6 +283,42 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 
 <img src="../assets/img/chapter-iv/userflows/happy usuario.jpeg" width="300"/>
 
+
+### Unhappy Path – Desvío de ruta del camión
+
+**Flujo principal:**
+
+1. El sistema monitorea la ubicación del camión  
+2. Detecta una desviación de ruta  
+
+**Decisión:**
+- ¿La ruta coincide con la planificada?  
+  - Sí → Continúa flujo normal  
+  - No → Generar alerta  
+
+3. El usuario (Administrador/Supervisor) accede a “Ver detalles”  
+
+4. El sistema muestra:
+   - Ubicación actual del camión  
+   - Número de lote  
+   - Conductor  
+   - Teléfono  
+   - Mapa de ruta  
+
+**Decisión:**
+- ¿Es una desviación real?  
+  - No → Marcar como “Falsa alarma”  
+  - Sí → Continuar  
+
+5. Opciones disponibles:
+   - Llamar al conductor  
+   - Congelar lote  
+   - Notificar a seguridad  
+
+6. Estado del lote: “Anomalía” 
+
+<img src="../assets/img/chapter-iv/userflows/unhappy.jpeg" width="300"/>
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
