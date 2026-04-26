@@ -236,11 +236,6 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
 
-**URL del Board en herramienta de control:** [`https://als.biplus.com.vn/jira-vs-trello/`](`[URL]`)
-
-*(Inserta aquí el Screenshot de tu Board del Sprint 1 en Trello/Jira)*
-![Sprint 1 Board](../assets/sprints/sprint1-board.png)
-
 | Sprint # | | | | | | | |
 |:--------:|---|---|---|---|---|---|---|
 | **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
@@ -253,6 +248,16 @@ El objetivo principal de este Sprint es contar con un sitio web estático desple
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de BrandRadar mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:-------------------:|:-------------------:|
+| `goldmetrics/landing-page` | `main` | `14ca4e3` | `feat: add hero section` | `Implemented responsive hero section with main CTA` | `2026-04-25` |
+| `goldmetrics/landing-page` | `feature/segments` | ` a1b2c3d` | `feat: add user segments cards` | `Created cards for miners, jewelers and consumers` | `2026-04-25` |
+| `goldmetrics/landing-page` | `main` | `9f8e7d6` | `style: update color palette` | `Applied Goldmetrics brand colors to the layout` | `2026-04-25` |
+
+---
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
