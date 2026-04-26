@@ -578,6 +578,13 @@ Gracias a esta exploración, se identificaron áreas críticas de mejora, como l
 ![EmpathyMap-iii](../assets/img/chapter-ii/EmpathyMap-3.png)
 
 ## 2.4. Big Picture EventStorming
+En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de telemetría en minería y trazabilidad de la cadena de valor para joyería de GoldMetrics. Se identificaron los eventos significativos del ciclo de vida de un activo monitoreado, desde el registro de la maquinaria hasta la respuesta ante incidentes críticos, integrando los sistemas externos que interactúan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
+
+**Primera fase: Eventos**
+![Big picture eevent storming](../assets/img/event-storming-events.png)
+
+**Mapa general:**
+https://canva.link/yc2kttn17z9hf75
 
 ## 2.5. Ubiquitous Language
 - **Machinery (Maquinaria)**: Cualquier unidad de equipo físico en la mina, como camiones de acarreo, palas o excavadoras, que genera datos y requiere monitoreo.
