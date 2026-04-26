@@ -301,4 +301,4 @@ Durante este sprint, la colaboración se gestionó íntegramente a través de Gi
 ![Team Collaboration Sprint 1](../assets/img/chapter-v/collaboration.png)
 
 ## Anexos
-Vídeo Exposición: 
+Vídeo Exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQDMT9TjIRw1RLKM_7j2hos-AfLlqFAwuKrcE9YKUDOwdWI?e=055arn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
