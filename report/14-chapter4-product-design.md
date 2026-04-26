@@ -226,7 +226,35 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 <img src="../assets/img/chapter-iv/userflows/happy joyeria.jpeg" width="300"/>
 
 
+### Happy Path 2 – Minería: Registro de nuevo lote
 
+**Flujo principal:**
+
+1. Operador Minero inicia sesión  
+2. Accede a “Registrar Lote”  
+
+3. Ingresa:
+   - Origen / yacimiento  
+   - Carro de transporte  
+
+4. Hace clic en “Capturar pesaje”  
+5. El sistema registra el peso del lote  
+
+**Decisión:**
+- ¿Pesaje válido?  
+  - No → Retroceder
+  - Sí → Continuar  
+
+6. Confirmar registro del lote  
+7. El sistema genera ID del lote  
+8. Se asocia el lote al camión  
+
+9. El sistema muestra:
+   - Ubicación del camión en tiempo real  
+
+10. Estado del lote: “En Origen” 
+
+<img src="../assets/img/chapter-iv/userflows/happy mineria.jpeg" width="300"/>
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
