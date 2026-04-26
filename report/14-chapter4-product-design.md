@@ -14,22 +14,24 @@ En ese sentido, se establecen los siguientes lineamientos generales:
 
 ### 4.1.2. Web Style Guidelines
 Los lineamientos visuales de GoldMetrics están orientados a facilitar la interpretación de datos complejos en entornos operativos, asegurando usabilidad y accesibilidad.
-- Paleta de colores:
-  - **Gris oscuro (#3A3E40):** representa estabilidad, tecnología y entornos industriales. Se utiliza como color principal en barras de navegación y encabezados.  
 
-  - **Dorado claro (#E1D094):** evoca el valor del mineral (oro) y aporta identidad visual. Puede usarse en elementos destacados.  
+- **Paleta de colores:**
 
-  - **Dorado medio (#B4944E):** refuerza la identidad minera del sistema, ideal para botones principales o indicadores importantes.  
+  - **Gunmetal (#3A3E40):** utilizado como color base del sistema, principalmente en fondos, secciones principales y áreas oscuras como el hero y algunas vistas internas. Permite resaltar los elementos visuales y transmitir un entorno tecnológico e industrial.
 
-  - **Dorado oscuro (#9E8354):** utilizado para variaciones de estado o elementos secundarios dentro de la misma gama cromática.  
+  - **Vanilla Custard (#E1D094):** empleado en secciones destacadas como fondos de cierre (footer) y áreas informativas. Aporta contraste visual y refuerza la identidad asociada al valor del mineral.
 
-  - **Blanco grisáceo (#F2F2F2):** empleado como fondo principal para mantener claridad visual y legibilidad.  
+  - **Camel (#B4944E):** utilizado en botones principales (Login, Sign Up), tarjetas y elementos interactivos. Funciona como color de acción dentro de la interfaz.
 
-  - **Verde (#28A745):** indica estados correctos o funcionamiento adecuado del sistema.  
+  - **Faded Copper (#9E8354):** aplicado en elementos secundarios como bordes, contenedores y variaciones de tarjetas, manteniendo consistencia dentro de la gama cromática.
 
-  - **Rojo (#DC3545):** representa fallas, errores o alertas críticas.  
+  - **White Smoke (#F2F2F2):** utilizado en barras de navegación, formularios y fondos claros, facilitando la legibilidad del contenido y generando contraste con los tonos oscuros.
 
-  - **Amarillo (#FFC107):** indica advertencias o estados intermedios, como mantenimiento próximo.
+<div align="center">
+<img src="../assets/img/chapter-iv/Paleta.jpeg" width="600"/>
+</div>
+
+
 - Tipografía:
   - Se utilizarán fuentes sans-serif (Como Arial o Roboto por su alta legibilidad).
 
