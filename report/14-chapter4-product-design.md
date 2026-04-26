@@ -54,10 +54,23 @@ A continuación se muestran y describen los Bounded Context que forman la soluci
 | **Identity & Access Management** | Autenticación e inicio de sesión. |
 | **Subscriptions & Billing** | Gestión de planes, acceso escalonado a funcionalidades y facturación. |
 ### 4.6.1. Design-Level EventStorming
+Utilizando la técnica de Event Storming a nivel de diseño, hemos logrado identificar los eventos de dominio y los comandos quienes cargan con la lógica de negocio en cada Bounded Context.
+
+A continuación, se muestra la matriz de interdependencias entre los módulos:
+| Origen (Evento) | Destino (Comando) | Descripción |
+| :--- | :--- | :--- |
+| **Fleet Operations:** Charging point reached | **Material Operations:** Dowload material | Descarga del material al llegar al punto de interes. |
+| **Material Operations:** Material downloaded | **Jewelry Inventory & Certification:** Register Material in Inventory | Descarga del material al llegar a la joyeria. |
+| **Jewelry Inventory & Certification:** Certificate Saved | **Consumer Traceability:** View certificate | Permite al usuario ver el certificado emitido por la joyería. |
+| **Consumer Traceability:** Traceability data requested | **Analytics:** View route progress | Permite al usuario ver el progreso de ruta que tuvo el material. |
+| **Incident Management:** Smoke alert commited | **Monitoring & Telemetry:** Monitor exhaust temperature | Emite una alerta de gas que sugiera revisar alguna fuga de gas. |
+| **Monitoring & Telemetry:** Telemetry data proccessed | **Incident Management:** Commit accident | Guarda la información del accidente recibido gracias a la telemetría. |
+| **Incident Management:** Accident commited | **Reporting & Notifications:** Request accident data | Pide la información del accidente para generar un reporte sobre este. |
+
 **EventStorming**
 ![EventStorming](../assets/img/chapter-iv/event-storming-goldmetrics.jpg)
 
-Para visualizar el EventStorming de mejor manera recomendamos ingresar al siguiente link:
+Para visualizar el Event Storming de mejor manera recomendamos ingresar al siguiente link:
 [Visualizar EventStorming en Miro](https://miro.com/app/board/uXjVJeWDqwE=/?share_link_id=757586972674)
 ### 4.6.2. Software Architecture Context Diagram
 
@@ -66,7 +79,7 @@ Para visualizar el EventStorming de mejor manera recomendamos ingresar al siguie
 ### 4.6.4. Software Architecture Components Diagrams
 
 ## 4.7. Software Object-Oriented Design
-
+A continuación se presentaran los diagramas de clases de los respectivos bounded context.
 ### 4.7.1. Class Diagrams
 
 ## 4.8. Database Design
