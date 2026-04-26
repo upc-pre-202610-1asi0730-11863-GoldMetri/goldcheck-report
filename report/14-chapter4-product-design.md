@@ -37,7 +37,22 @@
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
+GoldMetrics utiliza el enfoque de Domain-Driven Design (DDD) con el fin de facilitar la colaboración entre developers y expertos en el sector. Para esto, el sistema utiliza una organización entre 11 Bounded Context independientes de manera que logramos separar claramente las responsabilidades. Con esto también resaltamos las funcionalidades clave para hacer del proyecto altamente escalable de manera que se pueda incrementar la eficiencia de  procesos como el mantenimiento o la escalación. 
 
+A continuación se muestran y describen los Bounded Context que forman la solución:
+| Bounded Context | Descripción |
+| :--- | :--- |
+| **Fleet Operations** | Inicio del ciclo de transporte. |
+| **Material Operations** | Clasificación y descarga de materiales. |
+| **Jewelry Inventory & Certification** | Guardado en inventario de joyería y certificación de materiales. |
+| **Consumer Traceability** | Trazabilidad y soporte para el consumidor. |
+| **Monitoring & Telemetry** | Monitoreo y gestion de anomalias. |
+| **Analytics** | Análisis de ruta, impulsa la trazabilidad. |
+| **Incident Management** | Gestion de incidentes. |
+| **Reporting & Notifications** | Reportes de accidentes y notificaciones. |
+| **Asset & Maintenance Management** | Gestion de mantenimiento de operativo minero. |
+| **Identity & Access Management** | Autenticación e inicio de sesión. |
+| **Subscriptions & Billing** | Gestión de planes, acceso escalonado a funcionalidades y facturación. |
 ### 4.6.1. Design-Level EventStorming
 **EventStorming**
 ![EventStorming](../assets/img/chapter-iv/event-storming-goldmetrics.jpg)
