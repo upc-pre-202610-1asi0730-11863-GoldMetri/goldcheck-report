@@ -255,6 +255,34 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 10. Estado del lote: “En Origen” 
 
 <img src="../assets/img/chapter-iv/userflows/happy mineria.jpeg" width="300"/>
+
+
+### Happy Path 3 – Usuario final: Vincular joya
+
+**Flujo principal:**
+
+1. Usuario accede a la plataforma  
+2. Hace clic en “Vincular joya”  
+3. Ingresa ID de la joya  
+
+**Decisión:**
+- ¿ID válido?  
+  - No → Mostrar error y permitir reintento  
+  - Sí → Continuar  
+
+4. Hace clic en “Validar y vincular”  
+5. El sistema verifica la autenticidad  
+
+6. El sistema:
+   - Vincula la joya al usuario  
+   - La guarda en su perfil  
+
+7. El usuario visualiza:
+   - Certificado digital  
+   - Trazabilidad de la joya
+
+<img src="../assets/img/chapter-iv/userflows/happy usuario.jpeg" width="300"/>
+
 ## 4.5. Web Applications Prototyping
 
 ## 4.6. Domain-Driven Software Architecture
