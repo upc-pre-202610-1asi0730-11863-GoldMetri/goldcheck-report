@@ -194,6 +194,38 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 <img src="../assets/img/chapter-iv/Mockup/Usuario Final - Vincular Joya.png" width="300"/>
 
 ### 4.4.3. Web Applications User Flow Diagrams
+### Happy Path 1 – Joyería: Validación de lote y registro de joya
+
+**Flujo principal:**
+
+1. Joyero ingresa al sistema  
+2. Accede a “Validar Lote”  
+3. Ingresa ID del lote  
+
+4. El sistema muestra:
+   - Peso registrado  
+   - Origen   
+
+5. El joyero realiza el pesaje físico del material  
+
+**Decisión:**
+- ¿El peso coincide (dentro de tolerancia)?  
+  - No → Cancelar
+  - Sí → Continuar  
+
+6. Confirmar recepción  
+7. El sistema registra el evento en blockchain  
+
+8. El joyero registra nueva joya:
+   - Nombre
+   - Descripción  
+
+9. Publicar certificado digital  
+10. Generar código QR de la joya
+
+<img src="../assets/img/chapter-iv/userflows/happy joyeria.jpeg" width="300"/>
+
+
 
 ## 4.5. Web Applications Prototyping
 
