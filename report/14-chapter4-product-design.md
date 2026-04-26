@@ -75,9 +75,15 @@ Para visualizar el Event Storming de mejor manera recomendamos ingresar al sigui
 ### 4.6.2. Software Architecture Context Diagram
 El diagrama de contexto establece los límites de la plataforma GoldCheck y su interacción con los diferentes perfiles de usuario y sistemas externos críticos para el negocio.
 
-![Diagrama de contexto](../assets/img/chapter-iv/container-diagram-frontend.png)
+![Diagrama de contexto](../assets/img/chapter-iv/context-diagram.png)
 ### 4.6.3. Software Architecture Container Diagrams
+En el segundo nivel de abstracción, se ha diseñado una arquitectura altamente desacoplada orientada a la escalabilidad y la resiliencia operativa tanto en frontend como en backend.
 
+**Frontend:**
+![Diagrama de contenedores frontend](../assets/img/chapter-iv/container-diagram-frontend.png)
+
+**Backend:**
+![Diagrama de contenedores backend](../assets/img/chapter-iv/container-diagram-backend.png)
 ### 4.6.4. Software Architecture Components Diagrams
 
 ## 4.7. Software Object-Oriented Design
