@@ -200,26 +200,104 @@ Ejemplo en código:
 
 #### 5.2.1.1. Sprint Planning 1
 
+El Sprint 1 está dedicado exclusivamente a establecer la presencia digital de la startup mediante el diseño, desarrollo y despliegue de la primera versión del Landing Page de GoldCheck.
+
+| Campo | Detalle |
+|:------|:--------|
+| **Sprint #** | Sprint 1 |
+| **Date** | `2026-04-15` |
+| **Time** | `6:00 pm` |
+| **Location** | Reunión virtual por Discord |
+| **Prepared By** | `[Nombre del Team Leader del grupo]` |
+| **Attendees** | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
+| **Sprint 0 Review Summary** | Se definieron los perfiles de la startup, la problemática del sector minero y los segmentos objetivos (Empresas mineras, joyerías y consumidores finales). Se establecieron los repositorios y la organización en GitHub. |
+| **Sprint 0 Retrospective Summary** | El equipo coincide en la necesidad de mejorar la comunicación asíncrona y respetar los tiempos de revisión de Pull Requests. |
+| **Sprint 1 Goal** | **Our focus is on** delivering the first functional version of the Goldmetrics Landing Page. **We believe it delivers** a clear presentation of our value proposition regarding mineral traceability **to** our target segments (miners, jewelers, consumers). **This will be confirmed when** visitors can access the live website and understand the problem we solve and the features we offer. |
+| **Sprint 1 Velocity** | 20 Story Points |
+| **Sum of Story Points** | `16` |
+
+
 #### 5.2.1.2. Aspect Leaders and Collaborators
+
+Para este primer Sprint enfocado en el Landing Page y la configuración inicial de los proyectos, la distribución de liderazgo (L) y colaboración (C) es la siguiente:
+
+| Team Member (Last Name, First Name) | GitHub Username | UI/UX Design (Figma) | Landing Page Layout (HTML/CSS) | Landing Page Interactivity (JS) | DevOps & Deployment |
+|:-----------------------------------:|:---------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| Armestar Felipa, Adrian Andres | `Adrian5102` | C | L | C | C |
+| García Paredes, Victor Manuel | `vicmacode` | C | L | L | C |
+| Navarro Aldoradin, Carolina Celeste | `genixmvp` | L | L | L | C |
+| Philco Mota, Katty Yolanda | `kattyph` | C | C | C | L |
+| Tuesta Girón, Kiara Lucia | `kitu05g` | L | C | L | C |
+
+> **L** = Leader &nbsp;|&nbsp; **C** = Collaborator
+
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
+
+| Sprint # | | | | | | | |
+|:--------:|---|---|---|---|---|---|---|
+| **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
+| | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
+| | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
+| | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
+| | US02 | Visualizar los segmentos | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
+| | US03 | Contactar al equipo | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
+| | *Task* | Configurar Repositorios | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Vercel al Landing Page. | 2 | Philco, Katty | Done |
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de BrandRadar mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:-------------------:|:-------------------:|
+| `goldmetrics/website` | `main` | `14ca4e3` | `feat: add hero section` | `Implemented responsive hero section with main CTA` | `2026-04-25` |
+| `goldmetrics/website` | `develop` | ` a1b2c3d` | `feat: add user segments cards` | `Created cards for miners, jewelers and consumers` | `2026-04-25` |
+| `goldmetrics/website` | `main` | `9f8e7d6` | `style: update color palette` | `Applied Goldmetrics brand colors to the layout` | `2026-04-25` |
+
+---
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
+En este primer Sprint se ha logrado el diseño y codificación del Landing Page estático, el cual incluye las secciones de "Hero", "Beneficios/Características" y "Público Objetivo" (empresas mineras, joyerías y consumidores). La interfaz es 100% responsiva (adaptable a dispositivos móviles y escritorio).
+
+![Landing Page Desktop 1](../assets/img/home-page.png)
+![Landing Page Desktop 2](../assets/img/home-page.png)
+![Landing Page Desktop 3](../assets/img/about-us.png)
+![Landing Page Desktop 4](../assets/img/hows-work.png)
+![Landing Page Desktop 5](../assets/img/faqs-page.png)
+![Landing Page Desktop 6](../assets/img/contact-page.png)
+![Landing Page Desktop 7](../assets/img/footer.png)
+
+
+**URL del Landing Page Desplegado:** [https://vocal-sunburst-4c90ad.netlify.app/](`[URL]`)
+
+
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+> *Para el Sprint 1, enfocado estrictamente en la implementación y despliegue del Landing Page, esta sección no aplica. La documentación de los Web Services mediante OpenAPI / Swagger se implementará en los sprints posteriores.*
+
+
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
+Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma Netifly.
+1. Se creó una cuenta en la plataforma utilizando el correo del equipo.
+2. Se vinculó la cuenta con la organización de GitHub de Goldmetrics.
+3. Se importó el repositorio `goldmetrics-website`.
+4. Se configuró el autodespliegue asociado a la rama `main`.
+
+
+![Deployment Evidence 1](../assets/img/despliegue.png)
+
+
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
-## 5.3. Validation Interviews
+Durante este sprint, la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests (PRs) para integrar el trabajo de la rama `develop` a `main`.
 
-### 5.3.1. Diseño de Entrevistas
+*(Ve a la pestaña "Insights" > "Contributors" de tu repositorio de GitHub y toma una captura donde se vean los commits de todos los miembros del equipo)*
+![Team Collaboration Sprint 1](../assets/sprints/sprint1-collaboration.png)
 
-### 5.3.2. Registro de Entrevistas
-
-### 5.3.3. Evaluaciones según heurísticas
-
-## 5.4. Video About-the-Product
