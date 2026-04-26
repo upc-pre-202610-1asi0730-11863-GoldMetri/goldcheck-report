@@ -309,3 +309,25 @@ A continuación se presentaran los diagramas de clases de los respectivos bounde
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
+**Identity & Access Management**
+![Diagrama de clase 1](../assets/img/chapter-iv/identity-db.png)
+**Fleet Operations**
+![Diagrama de clase 2](../assets/img/chapter-iv/fleet.png)
+**Assist & Maintenance Management**
+![Diagrama de clase 3](../assets/img/chapter-iv/assist.png)
+**Material Operations**
+![Diagrama de clase 4](../assets/img/chapter-iv/material.png)
+**Jewelry Inventory & Certification**
+![Diagrama de clase 5](../assets/img/chapter-iv/jewelry.png)
+**Consumer Traceability**
+![Diagrama de clase 6](../assets/img/chapter-iv/consumer.png)
+**Analytics**
+![Diagrama de clase 7](../assets/img/chapter-iv/analytics.png)
+**Monitoring & Telemetry**
+![Diagrama de clase 8](../assets/img/chapter-iv/monitoring.png)
+**Incident Management**
+![Diagrama de clase 9](../assets/img/chapter-iv/incident.png)
+**Reporting & Notificacions**
+![Diagrama de clase 10](../assets/img/chapter-iv/reporting.png)
+**Subscripcions & Billing**
+![Diagrama de clase 11](../assets/img/chapter-iv/subscriptions.png)
