@@ -21,8 +21,59 @@
 ## 4.3. Landing Page UI Design
 
 ### 4.3.1. Landing Page Wireframe
+**Landing Wireframe 1**
+
+![Landing Wireframe 1](../assets/img/landing-wireframe-1.png)
+
+**Landing Wireframe 2**
+
+![Landing Wireframe 2](../assets/img/landing-wireframe-2.png)
+
+**Landing Wireframe 3**
+
+![Landing Wireframe 3](../assets/img/landing-wireframe-3.png)
+
+**Landing Wireframe 4**
+
+![Landing Wireframe 4](../assets/img/landing-wireframe-4.png)
+
+**Landing Wireframe 5**
+
+![Landing Wireframe 5](../assets/img/landing-wireframe-5.png)
+
+**Landing Wireframe 6**
+
+![Landing Wireframe 6](../assets/img/landing-wireframe-6.png)
+
+**Link de figma**: https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMetrics?node-id=0-1&t=cne9ZmeVzc0o0Y0J-1
 
 ### 4.3.2. Landing Page Mock-up
+**Landing Mockup 1**
+
+![Landing Mockup 1](../assets/img/landing-mockup-1.png)
+
+**Landing Mockup 2**
+
+![Landing Mockup 2](../assets/img/landing-mockup-2.png)
+
+**Landing Mockup 3**
+
+![Landing Mockup 3](../assets/img/landing-mockup-3.png)
+
+**Landing Mockup 4**
+
+![Landing Mockup 4](../assets/img/landing-mockup-4.png)
+
+**Landing Mockup 5**
+
+![Landing Mockup 5](../assets/img/landing-mockup-5.png)
+
+**Landing Mockup 6**
+
+![Landing Mockup 6](../assets/img/landing-mockup-6.png)
+
+**Link de figma:**
+https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMetrics?node-id=0-1&t=cne9ZmeVzc0o0Y0J-1
 
 ## 4.4. Web Applications UX/UI Design
 
