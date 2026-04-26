@@ -234,6 +234,24 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 #### 5.2.1.3. Sprint Backlog 1
 
+El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
+
+**URL del Board en herramienta de control:** [`https://als.biplus.com.vn/jira-vs-trello/`](`[URL]`)
+
+*(Inserta aquí el Screenshot de tu Board del Sprint 1 en Trello/Jira)*
+![Sprint 1 Board](../assets/sprints/sprint1-board.png)
+
+| Sprint # | | | | | | | |
+|:--------:|---|---|---|---|---|---|---|
+| **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
+| | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
+| | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
+| | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
+| | US02 | Visualizar los segmentos | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
+| | US03 | Contactar al equipo | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
+| | *Task* | Configurar Repositorios | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Vercel al Landing Page. | 2 | Philco, Katty | Done |
+
+
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
