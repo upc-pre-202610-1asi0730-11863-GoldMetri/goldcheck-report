@@ -274,13 +274,13 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 
 **URL del Landing Page Desplegado:** [https://vocal-sunburst-4c90ad.netlify.app/](`[URL]`)
 
----
+
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 > *Para el Sprint 1, enfocado estrictamente en la implementación y despliegue del Landing Page, esta sección no aplica. La documentación de los Web Services mediante OpenAPI / Swagger se implementará en los sprints posteriores.*
 
----
+
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
