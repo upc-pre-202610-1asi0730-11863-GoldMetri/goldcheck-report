@@ -200,49 +200,53 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 
 
 ### 4.4.1. Web Applications Wireframes
-<img src="../assets/img/chapter-iv/Log in.png" width="300"/>
-<img src="../assets/img/chapter-iv/Sign up.png" width="300"/>
-<img src="../assets/img/chapter-iv/Profile Screen.png" width="300"/>
-<img src="../assets/img/chapter-iv/Payment Method.png" width="300"/>
-<img src="../assets/img/chapter-iv/REGISTER.png" width="300"/>
-<img src="../assets/img/chapter-iv/Frame 1321317457.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur.png" width="300"/>
-<img src="../assets/img/chapter-iv/Dashboard Joyería - Modal Validación.png" width="300"/>
-<img src="../assets/img/chapter-iv/Profile Screen.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-1.png" width="300"/>
-<img src="../assets/img/chapter-iv/Dashboard Minería - Principal.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-2.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-3.png" width="300"/>
-<img src="../assets/img/chapter-iv/Dashboard Minería - Detalle Lote.png" width="300"/>
-<img src="../assets/img/chapter-iv/Dashboard Usuario Final.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-4.png" width="300"/>
-<img src="../assets/img/chapter-iv/Dashboard Minería - Alerta Activa.png" width="300"/>
-<img src="../assets/img/chapter-iv/Overlay+OverlayBlur-5.png" width="300"/>
-
+![Log in](../assets/img/chapter-iv/Log%20in.png)  
+![Sign up](../assets/img/chapter-iv/Sign%20up.png)  
+![Profile Screen](../assets/img/chapter-iv/Profile%20Screen.png)  
+![Payment Method](../assets/img/chapter-iv/Payment%20Method.png)  
+![REGISTER](../assets/img/chapter-iv/REGISTER.png)  
+![Frame](../assets/img/chapter-iv/Frame%201321317457.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur.png)  
+![Modal Validación](../assets/img/chapter-iv/Dashboard%20Joyería%20-%20Modal%20Validación.png)  
+![Profile Screen](../assets/img/chapter-iv/Profile%20Screen.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-1.png)  
+![Dashboard Minería](../assets/img/chapter-iv/Dashboard%20Minería%20-%20Principal.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-2.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-3.png)  
+![Detalle Lote](../assets/img/chapter-iv/Dashboard%20Minería%20-%20Detalle%20Lote.png)  
+![Dashboard Usuario](../assets/img/chapter-iv/Dashboard%20Usuario%20Final.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-4.png)  
+![Alerta Activa](../assets/img/chapter-iv/Dashboard%20Minería%20-%20Alerta%20Activa.png)  
+![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-5.png)  
+---
 ### 4.4.2. Web Applications Wireflow Diagrams
-<img src="../assets/img/chapter-iv/wireflow/1 (1).jpeg" width="300"/>
-<img src="../assets/img/chapter-iv/wireflow/1 (2).jpeg" width="300"/>
-<img src="../assets/img/chapter-iv/wireflow/1 (3).jpeg" width="300"/>
-<img src="../assets/img/chapter-iv/wireflow/1 (4).jpeg" width="300"/>
+
+![Wireflow 1](../assets/img/chapter-iv/wireflow/1%20(1).jpeg)  
+![Wireflow 2](../assets/img/chapter-iv/wireflow/1%20(2).jpeg)  
+![Wireflow 3](../assets/img/chapter-iv/wireflow/1%20(3).jpeg)  
+![Wireflow 4](../assets/img/chapter-iv/wireflow/1%20(4).jpeg)  
+
+---
 
 ### 4.4.2. Web Applications Mock-ups
-<img src="../assets/img/chapter-iv/Mockup/Log in.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Sign up.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Profile Screen.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Payment Method.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/SUSCRIPTIONS.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Principal.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Modal Validación.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Modal Validación-1.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Joyería - Éxito de QR.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Principal.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Nuevo Lote Modal.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Nuevo Lote (Paso 2).png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Detalle Lote.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Alerta Activa.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Minería - Modal Incidente.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Dashboard Usuario Final.png" width="300"/>
-<img src="../assets/img/chapter-iv/Mockup/Usuario Final - Vincular Joya.png" width="300"/>
+![Log in](../assets/img/chapter-iv/Mockup/Log%20in.png)  
+![Sign up](../assets/img/chapter-iv/Mockup/Sign%20up.png)  
+![Profile](../assets/img/chapter-iv/Mockup/Profile%20Screen.png)  
+![Payment](../assets/img/chapter-iv/Mockup/Payment%20Method.png)  
+![Subscriptions](../assets/img/chapter-iv/Mockup/SUSCRIPTIONS.png)  
+![Dashboard Joyería](../assets/img/chapter-iv/Mockup/Dashboard%20Joyería%20-%20Principal.png)  
+![Modal Validación](../assets/img/chapter-iv/Mockup/Dashboard%20Joyería%20-%20Modal%20Validación.png)  
+![Modal Validación 2](../assets/img/chapter-iv/Mockup/Dashboard%20Joyería%20-%20Modal%20Validación-1.png)  
+![QR Éxito](../assets/img/chapter-iv/Mockup/Dashboard%20Joyería%20-%20Éxito%20de%20QR.png)  
+![Dashboard Minería](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Principal.png)  
+![Nuevo Lote](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Nuevo%20Lote%20Modal.png)  
+![Nuevo Lote Paso 2](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Nuevo%20Lote%20(Paso%202).png)  
+![Detalle Lote](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Detalle%20Lote.png)  
+![Alerta](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Alerta%20Activa.png)  
+![Incidente](../assets/img/chapter-iv/Mockup/Dashboard%20Minería%20-%20Modal%20Incidente.png)  
+![Usuario Final](../assets/img/chapter-iv/Mockup/Dashboard%20Usuario%20Final.png)  
+![Vincular Joya](../assets/img/chapter-iv/Mockup/Usuario%20Final%20-%20Vincular%20Joya.png)  
+
 
 ### 4.4.3. Web Applications User Flow Diagrams
 ### Happy Path 1 – Joyería: Validación de lote y registro de joya
@@ -274,7 +278,8 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 9. Publicar certificado digital  
 10. Generar código QR de la joya
 
-<img src="../assets/img/chapter-iv/userflows/happy joyeria.jpeg" width="300"/>
+![Happy Joyería](../assets/img/chapter-iv/userflows/happy%20joyeria.jpeg)
+---
 
 
 ### Happy Path 2 – Minería: Registro de nuevo lote
@@ -305,8 +310,9 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 
 10. Estado del lote: “En Origen” 
 
-<img src="../assets/img/chapter-iv/userflows/happy mineria.jpeg" width="300"/>
+![Happy Minería](../assets/img/chapter-iv/userflows/happy%20mineria.jpeg)
 
+---
 
 ### Happy Path 3 – Usuario final: Vincular joya
 
@@ -332,8 +338,9 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
    - Certificado digital  
    - Trazabilidad de la joya
 
-<img src="../assets/img/chapter-iv/userflows/happy usuario.jpeg" width="300"/>
+![Happy Usuario](../assets/img/chapter-iv/userflows/happy%20usuario.jpeg)
 
+---
 
 ### Unhappy Path – Desvío de ruta del camión
 
@@ -368,16 +375,19 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 
 6. Estado del lote: “Anomalía” 
 
-<img src="../assets/img/chapter-iv/userflows/unhappy.jpeg" width="300"/>
+![Unhappy](../assets/img/chapter-iv/userflows/unhappy.jpeg)
 
 ## 4.5. Web Applications Prototyping
+
 Prototipo de la aplicación web GoldMetric en Figma:
 https://www.figma.com/design/7O7yxNUaLKdHpT7T4GyrSh/WIRFRAME-4?node-id=0-1&t=9KcYAtK3HDnZEl7w-1
 
 ## 4.6. Domain-Driven Software Architecture
+
 GoldMetrics utiliza el enfoque de Domain-Driven Design (DDD) con el fin de facilitar la colaboración entre developers y expertos en el sector. Para esto, el sistema utiliza una organización entre 11 Bounded Context independientes de manera que logramos separar claramente las responsabilidades. Con esto también resaltamos las funcionalidades clave para hacer del proyecto altamente escalable de manera que se pueda incrementar la eficiencia de  procesos como el mantenimiento o la escalación. 
 
 A continuación se muestran y describen los Bounded Context que forman la solución:
+
 | Bounded Context | Descripción |
 | :--- | :--- |
 | **Fleet Operations** | Inicio del ciclo de transporte. |
@@ -391,6 +401,7 @@ A continuación se muestran y describen los Bounded Context que forman la soluci
 | **Asset & Maintenance Management** | Gestion de mantenimiento de operativo minero. |
 | **Identity & Access Management** | Autenticación e inicio de sesión. |
 | **Subscriptions & Billing** | Gestión de planes, acceso escalonado a funcionalidades y facturación. |
+
 ### 4.6.1. Design-Level EventStorming
 Utilizando la técnica de Event Storming a nivel de diseño, hemos logrado identificar los eventos de dominio y los comandos quienes cargan con la lógica de negocio en cada Bounded Context.
 
@@ -406,26 +417,35 @@ A continuación, se muestra la matriz de interdependencias entre los módulos:
 | **Incident Management:** Accident commited | **Reporting & Notifications:** Request accident data | Pide la información del accidente para generar un reporte sobre este. |
 
 **EventStorming**
+
 ![EventStorming](../assets/img/chapter-iv/event-storming-goldmetrics.jpg)
 
 Para visualizar el Event Storming de mejor manera recomendamos ingresar al siguiente link:
 [Visualizar EventStorming en Miro](https://miro.com/app/board/uXjVJeWDqwE=/?share_link_id=757586972674)
+
 ### 4.6.2. Software Architecture Context Diagram
 El diagrama de contexto establece los límites de la plataforma GoldCheck y su interacción con los diferentes perfiles de usuario y sistemas externos críticos para el negocio.
 
 ![Diagrama de contexto](../assets/img/chapter-iv/context-diagram.png)
+
 ### 4.6.3. Software Architecture Container Diagrams
 En el segundo nivel de abstracción, se ha diseñado una arquitectura altamente desacoplada orientada a la escalabilidad y la resiliencia operativa tanto en frontend como en backend.
 
 **Frontend:**
+
 ![Diagrama de contenedores frontend](../assets/img/chapter-iv/container-diagram-frontend.png)
 
 **Backend:**
+
 ![Diagrama de contenedores backend](../assets/img/chapter-iv/container-diagram-backend.png)
+
 ### 4.6.4. Software Architecture Components Diagrams
+
 **Identity & Access Management**
+
 ![Diagrama de contexto 1](../assets/img/chapter-iv/context-diagram-1.png)
 **Fleet Operations**
+
 ![Diagrama de contexto 2](../assets/img/chapter-iv/context-diagram-2.png)
 
 **Assist & Maintenance Management**
@@ -461,50 +481,92 @@ En el segundo nivel de abstracción, se ha diseñado una arquitectura altamente 
 A continuación se presentaran los diagramas de clases de los respectivos bounded context.
 
 **Identity & Access Management**
+
 ![Diagrama de clase 1](../assets/img/chapter-iv/class-diagram-identity.png)
+
 **Fleet Operations**
+
 ![Diagrama de clase 2](../assets/img/chapter-iv/class-diagram-fleet.png)
+
 **Assist & Maintenance Management**
+
 ![Diagrama de clase 3](../assets/img/chapter-iv/class-diagram-asset.png)
+
 **Material Operations**
+
 ![Diagrama de clase 4](../assets/img/chapter-iv/class-diagram-material.png)
+
 **Jewelry Inventory & Certification**
+
 ![Diagrama de clase 5](../assets/img/chapter-iv/class-diagram-jewelry.png)
+
 **Consumer Traceability**
+
 ![Diagrama de clase 6](../assets/img/chapter-iv/class-diagram-consumer.png)
+
 **Analytics**
+
 ![Diagrama de clase 7](../assets/img/chapter-iv/class-diagram-analytics.png)
+
 **Monitoring & Telemetry**
+
 ![Diagrama de clase 8](../assets/img/chapter-iv/class-diagram-monitoring.png)
+
 **Incident Management**
+
 ![Diagrama de clase 9](../assets/img/chapter-iv/class-diagram-incident.png)
+
 **Reporting & Notificacions**
+
 ![Diagrama de clase 10](../assets/img/chapter-iv/class-diagram-reporting.png)
+
 **Subscripcions & Billing**
+
 ![Diagrama de clase 11](../assets/img/chapter-iv/class-diagram-subscriptions.png)
 
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
 **Identity & Access Management**
+
 ![Diagrama de clase 1](../assets/img/chapter-iv/identity-db.png)
+
 **Fleet Operations**
+
 ![Diagrama de clase 2](../assets/img/chapter-iv/fleet.png)
+
 **Assist & Maintenance Management**
+
 ![Diagrama de clase 3](../assets/img/chapter-iv/assist.png)
+
 **Material Operations**
+
 ![Diagrama de clase 4](../assets/img/chapter-iv/material.png)
+
 **Jewelry Inventory & Certification**
+
 ![Diagrama de clase 5](../assets/img/chapter-iv/jewelry.png)
+
 **Consumer Traceability**
+
 ![Diagrama de clase 6](../assets/img/chapter-iv/consumer.png)
+
 **Analytics**
+
 ![Diagrama de clase 7](../assets/img/chapter-iv/analytics.png)
+
 **Monitoring & Telemetry**
+
 ![Diagrama de clase 8](../assets/img/chapter-iv/monitoring.png)
+
 **Incident Management**
+
 ![Diagrama de clase 9](../assets/img/chapter-iv/incident.png)
+
 **Reporting & Notificacions**
+
 ![Diagrama de clase 10](../assets/img/chapter-iv/reporting.png)
+
 **Subscripcions & Billing**
+
 ![Diagrama de clase 11](../assets/img/chapter-iv/subscriptions.png)
