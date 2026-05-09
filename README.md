@@ -23,11 +23,7 @@
 
 | INTEGRANTES | CÓDIGO |
 | :---: | :---: |
-<<<<<<< HEAD
 | Armestar Felipa, Adrian Andres | U202410084 |
-=======
-| Armestar Felipa, Adiran Andres | U202410084 |
->>>>>>> cb66ab435faa1d5e0617dc17860327cd788a8ad9
 | García Paredes, Victor Manuel | U202012001 |
 | Navarro Aldoradin, Carolina Celeste  | U20241B962 |
 | Philco Mota, Katty Yolanda | U202416107 |

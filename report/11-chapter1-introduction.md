@@ -57,23 +57,35 @@ Esta problemática tiene impactos en varios sectores, especialmente el económic
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
-Nuestra solución busca mejorar la trazabilidad de los minerales mediante el uso de una plataforma que use tecnología IoT, Web e IA.
+**Problem Statement 1 (Empresas Mineras)**
 
-Hemos observado que las empresas, sobre todo relacionadas a la minería, sufren ineficiencias operativas al tener dificultades para monitorear en tiempo real el traslado de los minerales.
+El estado actual del sector minero peruano depende en gran medida de procesos manuales y reportes empíricos, lo que genera una falta de trazabilidad confiable desde la zona de extracción hasta la comercialización. 
 
-**¿Cómo puede nuestro producto apoyar en el rastreo de minerales para reducir pérdidas?**
+Hemos observado que las empresas mineras sufren ineficiencias operativas y pérdidas económicas equivalentes a millones de soles anuales debido a la dificultad para monitorear en tiempo real el traslado y procesamiento de los minerales en sus rutas logísticas. 
 
-Nuestra solución busca verificar la autenticidad de los minerales que son usados en productos.
+Nuestra solución abordará esta oportunidad desarrollando una plataforma Web que automatice el registro de pesajes y geolocalización. 
 
-Hemos observado que las tiendas no cuentan con mecanismos para validar el origen de los minerales lo cual afecta la credibilidad de los distribuidores.
+Las restricciones bajo las cuales operamos incluyen la baja conectividad a internet en zonas de extracción profunda y la alta confidencialidad que exigen las mineras sobre sus datos de producción.
 
-**¿Cómo puede nuestro producto garantizar la autenticidad de los minerales para reforzar la confianza entre los clientes?**
 
-Nuestra solución busca ofrecer acceso transparente a la información relacionada al origen de los productos minerales que terminan en objetos que se compran en el día a día.
+**Problem Statement 2 (Joyerías)**
+El estado actual del mercado de joyería en el Perú carece de mecanismos formales, accesibles e inmutables para certificar el origen de los minerales con los que se fabrican sus piezas.
 
-Hemos observado que el consumidor no tiene una forma de verificar si el producto proviene de fuentes responsables.
+Hemos observado que las tiendas y distribuidores de joyas enfrentan dificultades para garantizar el origen ético y la autenticidad de sus productos, lo que frena sus ventas frente a consumidores cada vez más exigentes e informados.
 
-**¿Cómo puede nuestro producto fomentar la venta de productos hechos en base a minerales con origen ético?**
+Nuestra solución abordará esta oportunidad mediante un sistema que permita a las joyerías emitir certificados digitales (vía códigos QR) respaldados por datos trazables desde la mina.
+
+Las restricciones bajo las cuales operamos son la resistencia al cambio tecnológico por parte de joyeros tradicionales y la dependencia de la data inicial ingresada correctamente por las mineras.
+
+
+**Problem Statement 3 (Consumidores Finales)**
+El estado actual del mercado de consumo muestra a compradores cada vez más preocupados por el impacto ambiental y social de los productos que adquieren.
+
+Hemos observado que el consumidor final no tiene una forma confiable ni rápida de verificar si las joyas que compra provienen de fuentes responsables, lo que genera dudas al momento de realizar compras de alto valor.
+
+Nuestra solución abordará esta oportunidad ofreciendo acceso transparente a la "hoja de vida" del producto escaneando un código QR generado por nuestra plataforma.
+
+Las restricciones bajo las cuales operamos incluyen la necesidad de que el usuario tenga un smartphone con conexión a internet y la voluntad de interactuar con el código QR antes o después de su compra.
 
 #### 1.2.2.2. Lean UX Assumptions
 **Business Assumptions:**
@@ -104,17 +116,24 @@ Se utiliza durante todo el proceso del ámbito minero, llendo desde la extracci�
 Debe ser intuitiva mediante el uso de dashboards, de esta manera brindara una navegación sencilla a los usuarios mientras brinda información confiable y lo suficientemente rápida como para estar a tiempo real.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
-**Creemos** que una plataforma que permita monitorear en tiempo real los minerales ayudara a reducir las perdidas de minerales.
-**Sabremos que** hemos tenido éxito
-**Cuando** en los reportes de las empresas mineras disminuya la cantidad de perdidas.
 
-**Creemos** que una plataforma que pueda certificar la autenticidad de los minerales ayudara a mejorar la confianza entre tiendas y consumidores.
-**Sabremos que** hemos tenido éxito
-**Cuando** los productos con certificación sean más vendidos respecto a los productos regulares.
+**Hipótesis 1:**
 
-**Creemos que** una plataforma que permita al usuario observar información de los productos en venta logrará fomentar decisiones de compra responsables.
-**Sabremos que** hemos tenido éxito
-**Cuando** calculemos el tiempo de visualización de información como una estadística.
+**Creemos** que una plataforma que permita monitorear en tiempo real los minerales ayudará a reducir las pérdidas de las empresas.
+**Sabremos que** hemos tenido éxito 
+**Cuando** los reportes de las empresas mineras piloto muestren una reducción de mermas de al menos un 15% durante los primeros 3 meses de uso, y logremos suscribir a 5 empresas mineras a nuestro plan B2B.
+
+**Hipótesis 2:**
+
+**Creemos** que una plataforma que pueda certificar la autenticidad de los minerales ayudará a mejorar la confianza entre tiendas y consumidores.
+**Sabremos que** hemos tenido éxito 
+**Cuando** las joyerías afiliadas reporten un incremento del 20% en las ventas de joyas certificadas respecto a su inventario regular, y logremos emitir 500 certificados QR en el primer semestre.
+
+**Hipótesis 3:**
+
+**Creemos que** una plataforma que permita al usuario observar la hoja de vida de los productos en venta logrará fomentar decisiones de compra responsables.
+**Sabremos que** hemos tenido éxito 
+**Cuando** alcancemos más de 2,000 escaneos de códigos QR por mes en los productos afiliados y el tiempo promedio de sesión en la vista de trazabilidad sea superior a 1 minuto y 30 segundos.
 
 #### 1.2.2.4. Lean UX Canvas
 ![Lean UX Canvas Goldmetrics](../assets/img/chapter-i/LeanUXCanvas.png)
