@@ -208,7 +208,7 @@ El Sprint 1 está dedicado exclusivamente a establecer la presencia digital de l
 | **Date** | `2026-04-15` |
 | **Time** | `6:00 pm` |
 | **Location** | Reunión virtual por Discord |
-| **Prepared By** | `[Nombre del Team Leader del grupo]` |
+| **Prepared By** | `Philco Mota, Katty` |
 | **Attendees** | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
 | **Sprint 0 Review Summary** | Se definieron los perfiles de la startup, la problemática del sector minero y los segmentos objetivos (Empresas mineras, joyerías y consumidores finales). Se establecieron los repositorios y la organización en GitHub. |
 | **Sprint 0 Retrospective Summary** | El equipo coincide en la necesidad de mejorar la comunicación asíncrona y respetar los tiempos de revisión de Pull Requests. |
@@ -298,6 +298,7 @@ Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizand
 
 Durante este sprint, la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests (PRs) para integrar el trabajo de la rama `develop` a `main`.
 
+<<<<<<< HEAD
 ![Team Collaboration Sprint 1](../assets/img/chapter-v/collaboration.png)
 
 ## 5.3. Validation Interviews
@@ -313,3 +314,12 @@ Durante este sprint, la colaboración se gestionó íntegramente a través de Gi
 
 ## Anexos
 Vídeo Exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQDMT9TjIRw1RLKM_7j2hos-AfLlqFAwuKrcE9YKUDOwdWI?e=055arn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+=======
+>LANDING PAGE: 
+
+![Team Collaboration Sprint 1](../assets/img/landingpage-contributors.png)
+
+>REPORT:
+
+![Team Collaboration Sprint 2](../assets/img/chapter-v/report-contributors.png)
+>>>>>>> cb66ab435faa1d5e0617dc17860327cd788a8ad9
