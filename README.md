@@ -40,22 +40,6 @@
 
 ## REGISTRO DE VERSIONES DEL INFORME
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :---: | :---: | :---: | :---: |
-
-
-<div style="page-break-after: always"></div>
-
-## PROJECT REPORT COLLABORATION INSIGHTS
-
-<div style="page-break-after: always"></div>
-
-
-## CONTENIDO
-
-[REGISTRO DE VERSIONES DEL INFORME](#registro-de-versiones-del-informe)
-
-
 | Versión |   Fecha    | Autor | Descripción de modificación |
 | :---: |:----------:| :--- | :--- |
 | 0.1.0 | 25/04/2026 | Armestar Felipa, Adrian Andres | AV1 — Commit inicial del informe; estructura base del repositorio y organización de carpetas. Incorporación del Capítulo I: Startup Profile, Lean UX Process (1.2.2.1–1.2.2.4) y Segmentos Objetivo (1.3). Adición de Domain-Driven Software Architecture (4.6), Design-Level EventStorming (4.6.1) y diagramas C4: Context (4.6.2), Container (4.6.3) y Components (4.6.4). *(develop · feature/chapter-i-content · feature/chapter-i-student-profile · feature/domain-driven-software-architecture)* |
@@ -71,6 +55,18 @@
 | 1.5.0 | 13/12/2026 | Philco Mota, Katty Yolanda<br>Tuesta Girón, Kiara Lucia | TB1 — Implementación del Frontend Web Application: desarrollo de vistas principales con Vue Framework y PrimeVue integradas con MockAPI. Corrección de diagramas de clases (4.7.1) y diagramas de base de datos (4.8.1) para refinamiento del modelo orientado al dominio. Corrección de wireframes y user flows observados en el AV1 (4.4.1–4.4.4). *(feature/cap-iv-web-applications-ux-ui-design · feature/chapteriv-class-diagrams · feature/chapter-iv-database · develop)* |
 | 1.6.0 | 13/14/2026 | Navarro Aldoradin, Carolina Celeste | TB1 — Despliegue de la primera versión de Frontend Web Applications. Documentación del Sprint 2: Sprint Planning 2 (5.2.2.1), Aspect Leaders and Collaborators (5.2.2.2), Sprint Backlog 2 (5.2.2.3), Development Evidence (5.2.2.4), Execution Evidence (5.2.2.5), Services Documentation Evidence (5.2.2.6), Software Deployment Evidence (5.2.2.7) y Team Collaboration Insights (5.2.2.8). *(feature/cap-iv-web-applications-ux-ui-design · develop)* |
 | 2.0.0 | 13/14/2026 | Armestar Felipa, Adrian Andres<br>García Paredes, Victor Manuel<br>Navarro Aldoradin, Carolina Celeste<br>Philco Mota, Katty Yolanda<br>Tuesta Girón, Kiara Lucia | TB1 — Consolidación y entrega del TB1. Integración de Sprint 2 completo, Frontend Web Applications desplegado, correcciones de artefactos del AV1 y versión final de todos los capítulos. Actualización del Student Outcome, Project Report Collaboration Insights y Registro de Versiones. Versión exportada a PDF para entrega formal. *(develop → pre-main · release)* |
+
+<div style="page-break-after: always"></div>
+
+## PROJECT REPORT COLLABORATION INSIGHTS
+
+<div style="page-break-after: always"></div>
+
+
+## CONTENIDO
+
+[REGISTRO DE VERSIONES DEL INFORME](#registro-de-versiones-del-informe)
+
 
 [PROJECT REPORT COLLABORATION INSIGHTS](#project-report-collaboration-insights)
 
