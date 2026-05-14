@@ -210,8 +210,8 @@ El Sprint 1 está dedicado exclusivamente a establecer la presencia digital de l
 | **Location** | Reunión virtual por Discord |
 | **Prepared By** | `Philco Mota, Katty` |
 | **Attendees** | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
-| **Sprint 0 Review Summary** | Se definieron los perfiles de la startup, la problemática del sector minero y los segmentos objetivos (Empresas mineras, joyerías y consumidores finales). Se establecieron los repositorios y la organización en GitHub. |
-| **Sprint 0 Retrospective Summary** | El equipo coincide en la necesidad de mejorar la comunicación asíncrona y respetar los tiempos de revisión de Pull Requests. |
+| **Sprint n - 1 Review Summary** | No aplica. Este es el primer sprint del proyecto |
+| **Sprint n - 1 Retrospective Summary** | No aplica. Este es el primer sprint del proyecto  |
 | **Sprint 1 Goal** | **Our focus is on** delivering the first functional version of the Goldmetrics Landing Page. **We believe it delivers** a clear presentation of our value proposition regarding mineral traceability **to** our target segments (miners, jewelers, consumers). **This will be confirmed when** visitors can access the live website and understand the problem we solve and the features we offer. |
 | **Sprint 1 Velocity** | 20 Story Points |
 | **Sum of Story Points** | `16` |
@@ -236,20 +236,20 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
 
-| Sprint # | | | | | | | |
-|:--------:|---|---|---|---|---|---|---|
-| **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
-| | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
-| | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
-| | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
-| | US02 | Visualizar los segmentos | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
-| | US03 | Contactar al equipo | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
-| | *Task* | Configurar Repositorios | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Vercel al Landing Page. | 2 | Philco, Katty | Done |
+| Sprint # | User Story ID | Work-Item / Task ID | Título | Descripción | Estimación (h) | Asignado a | Status |
+|---|---|---|---|---|---|---|---|
+| Sprint 1 | US01 | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
+| Sprint 1 | US01 | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
+| Sprint 1 | US02 | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
+| Sprint 1 | US03 | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
+| Sprint 1 | US03 | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Netlify al Landing Page. | 2 | Philco, Katty | Done |
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de BrandRadar mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de **GoldCheck** mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |:----------:|:------:|:---------:|:--------------:|:-------------------:|:-------------------:|
