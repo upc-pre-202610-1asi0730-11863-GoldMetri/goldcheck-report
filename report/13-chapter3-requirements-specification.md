@@ -60,11 +60,16 @@ En esta sección se detallan los requisitos del producto digital GoldMetrics a t
 | US39 | Dashboard Joyería - Volumen Validado | Como dueño de joyería, deseo ver la cantidad total de oro validado en el mes, para llevar control de mis compras a proveedores formales. | **Scenario 1:** Cómputo total <br> **Given** el dashboard de joyería <br> **When** carga inicialmente <br> **Then** el sistema suma y muestra el total de gramos ingresados legalmente.<br><br>**Scenario 2:** Filtro por proveedor <br> **Given** el mismo dashboard <br> **When** se selecciona un proveedor específico en el filtro <br> **Then** el sistema recalcula la métrica para reflejar solo compras a esa entidad. | EP08 |
 | US40 | Exportación de Data Histórica | Como ingeniero de operaciones, deseo descargar en Excel el historial de lotes, para realizar análisis estadísticos externos. | **Scenario 1:** Descarga síncrona <br> **Given** una tabla filtrada con 500 lotes <br> **When** se solicita exportación <br> **Then** el sistema entrega un archivo CSV de descarga inmediata.<br><br>**Scenario 2:** Exportación masiva <br> **Given** una tabla con más de 10,000 registros <br> **When** se solicita exportación <br> **Then** el sistema notifica que el archivo pesado se procesará en segundo plano y será enviado por correo. | EP08 |
 | **EP09** | **GoldMetrics API (Technical Stories)** | Endpoints técnicos para la integración del backend (ASP.NET Core) con Frontend y hardware IoT. | — | — |
-| TS01 | Endpoint de Creación de Lotes | Como Developer, deseo un endpoint POST para registrar nuevos lotes, para permitir la comunicación asíncrona desde sistemas externos. | **Scenario 1:** Solicitud correcta <br> **Given** un payload JSON válido con Token <br> **When** se llama a POST `/api/v1/batches` <br> **Then** el servidor retorna HTTP 201 Created.<br><br>**Scenario 2:** Solicitud no autorizada <br> **Given** un payload válido pero sin Token en el header <br> **When** se llama al endpoint <br> **Then** el servidor bloquea el acceso con HTTP 401 Unauthorized. | EP09 |
-| TS02 | Endpoint de Recepción IoT (GPS) | Como Developer, deseo un endpoint POST para recibir coordenadas GPS de los camiones, para actualizar el monitoreo de ruta. | **Scenario 1:** Coordenada guardada <br> **Given** un dispositivo IoT enviando su lat/lng <br> **When** se llama a POST `/api/v1/tracking/location` <br> **Then** el servidor almacena el punto y retorna HTTP 200 OK.<br><br>**Scenario 2:** Formato inválido <br> **Given** un payload con strings en lugar de numéricos para lat/lng <br> **When** se llama al endpoint <br> **Then** el servidor rechaza la petición con HTTP 400 Bad Request. | EP09 |
-| TS03 | Endpoint de Consulta de Trazabilidad | Como Developer, deseo un endpoint GET público para obtener la hoja de vida de un QR, para que la web app consulte los datos del consumidor. | **Scenario 1:** Consulta exitosa <br> **Given** un ID de joya existente <br> **When** se llama a GET `/api/v1/traceability/{id}` <br> **Then** el servidor retorna HTTP 200 OK y el JSON con el árbol del lote.<br><br>**Scenario 2:** Recurso inexistente <br> **Given** un ID que no figura en la base de datos <br> **When** se llama al endpoint <br> **Then** el servidor retorna HTTP 404 Not Found. | EP09 |
-| TS04 | Endpoint de Recepción IoT (Balanza) | Como Developer, deseo un endpoint POST para automatizar la recepción de pesos desde balanzas digitales, para reducir errores de ingreso manual. | **Scenario 1:** Peso acoplado <br> **Given** una balanza enviando un dato en kg/toneladas <br> **When** se llama a POST `/api/v1/iot/weight` <br> **Then** el servidor vincula el peso al ID y retorna HTTP 200 OK.<br><br>**Scenario 2:** Lote inactivo <br> **Given** la petición a un ID de lote ya cerrado o procesado <br> **When** se llama al endpoint <br> **Then** el servidor rechaza la escritura con HTTP 409 Conflict. | EP09 |
-| TS05 | Endpoint de Reporte de Mermas | Como Developer, deseo un endpoint GET protegido para consultar agregados de mermas, para alimentar los gráficos del dashboard analítico. | **Scenario 1:** Agrupación válida <br> **Given** parámetros `startDate` y `endDate` válidos <br> **When** se llama a GET `/api/v1/analytics/shrinkage` <br> **Then** el servidor retorna HTTP 200 OK con la data agrupada.<br><br>**Scenario 2:** Fechas invertidas <br> **Given** un parámetro `startDate` mayor al `endDate` <br> **When** se llama al endpoint <br> **Then** el servidor indica el error lógico con HTTP 400 Bad Request. | EP09 |
+| **TS01** | Endpoint de Login y Autenticación | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/auth/login` con JWT,<br>**Para** asegurar el acceso a la plataforma. | **Scenario 1:** Login exitoso.<br>**Given** que se envían credenciales válidas,<br>**When** se hace la petición POST a `/api/auth/login`,<br>**Then** retorna HTTP 200 y el token JWT.<br><br>**Scenario 2:** Login fallido.<br>**Given** una contraseña incorrecta,<br>**When** se hace la petición POST,<br>**Then** retorna HTTP 401 Unauthorized. |
+| **TS02** | Endpoint de Registro de Usuarios | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/auth/register`,<br>**Para** permitir que nuevos actores (Mineras, Joyerías, Consumidores) creen sus cuentas. | **Scenario 1:** Registro exitoso.<br>**Given** un payload válido con email y rol,<br>**When** se envía el POST a `/api/auth/register`,<br>**Then** el usuario se guarda en BD y retorna HTTP 201 Created. |
+| **TS03** | Endpoint de Perfil de Usuario | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `GET /api/users/profile`,<br>**Para** que el Frontend pueda mostrar los datos del usuario logueado. | **Scenario 1:** Obtener perfil.<br>**Given** un token JWT válido en el header,<br>**When** se solicita el GET,<br>**Then** retorna HTTP 200 con la información JSON del usuario. |
+| **TS04** | Endpoint de Registro de Lotes (Minería) | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/mining/batches`,<br>**Para** almacenar los nuevos registros de minerales extraídos en la BD. | **Scenario 1:** Lote creado.<br>**Given** los datos completos (peso, tipo, origen),<br>**When** se hace el POST,<br>**Then** genera un ID único y retorna HTTP 201.<br><br>**Scenario 2:** Datos faltantes.<br>**Given** un payload sin peso,<br>**When** se hace el POST,<br>**Then** retorna HTTP 400 Bad Request. |
+| **TS05** | Endpoint de Actualización de Lotes | **Como** desarrollador backend,<br>**Quiero** exponer el endpoint `PUT /api/mining/batches/{id}/status`,<br>**Para** actualizar el estado del mineral durante su transporte. | **Scenario 1:** Cambio de estado.<br>**Given** un ID de lote existente,<br>**When** se envía el PUT con estado "En tránsito",<br>**Then** actualiza la BD y retorna HTTP 200 OK. |
+| **TS06** | Endpoint Ingesta de Telemetría (IoT) | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/telemetry/data`,<br>**Para** recibir coordenadas y estado de maquinaria en tiempo real. | **Scenario 1:** Guardado rápido.<br>**Given** un payload JSON del camión minero,<br>**When** llega la petición POST,<br>**Then** se guarda en la tabla de métricas y responde HTTP 200 en menos de 500ms. |
+| **TS07** | Endpoint de Generación de Certificados (Joyería) | **Como** desarrollador backend,<br>**Quiero** exponer el endpoint `POST /api/jewelry/certificates`,<br>**Para** enlazar la materia prima a una joya y generar la metadata del código QR. | **Scenario 1:** Emisión de certificado.<br>**Given** el ID de un lote validado,<br>**When** se solicita la creación,<br>**Then** el sistema emite un Hash criptográfico y retorna HTTP 201. |
+| **TS08** | Endpoint de Estadísticas (Dashboard) | **Como** desarrollador backend,<br>**Quiero** habilitar el endpoint `GET /api/jewelry/dashboard/stats`,<br>**Para** proveer al Frontend de las métricas clave (ventas, mermas). | **Scenario 1:** Cálculo correcto.<br>**Given** un token de administrador/joyero,<br>**When** se ejecuta el GET,<br>**Then** el servidor calcula los totales del mes y retorna HTTP 200 con el resumen numérico. |
+| **TS09** | Endpoint Público de Trazabilidad | **Como** desarrollador backend,<br>**Quiero** crear el endpoint público `GET /api/public/traceability/{hash}`,<br>**Para** que el consumidor final pueda ver la hoja de vida escaneando el QR. | **Scenario 1:** QR Válido.<br>**Given** un Hash válido,<br>**When** se ejecuta el GET,<br>**Then** retorna HTTP 200 con todo el historial del mineral.<br><br>**Scenario 2:** QR Falso.<br>**Given** un Hash inexistente,<br>**When** se ejecuta el GET,<br>**Then** retorna HTTP 404 Not Found. |
+| **TS10** | Endpoint de Reporte de Incidentes | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/mining/incidents`,<br>**Para** registrar fallas de maquinaria y alertar a los supervisores. | **Scenario 1:** Falla reportada.<br>**Given** una descripción de falla y el ID del vehículo,<br>**When** se envía el POST,<br>**Then** registra el incidente en BD y retorna HTTP 201. |
 
 ## 3.2. Impact Mapping
 
@@ -91,53 +96,57 @@ En esta sección se presenta el Product Backlog del proyecto GoldMetrics, el cua
 
 El orden de los elementos ha sido estrictamente determinado por el **valor para el negocio**, asegurando que los entregables con mayor impacto (como la captación de clientes y la funcionalidad *core* de trazabilidad) se desarrollen primero. Por este motivo, las historias de usuario relacionadas con el sitio web (Landing Page) encabezan el backlog para ser abordadas desde el primer sprint, mientras que las funcionalidades de soporte (como la autenticación y perfiles) han sido priorizadas posteriormente.
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
-|:-------:|:-------------:|:------:|:------------|:------------:|
-| 1 | US01 | Visualización de Hero Section | Como visitante, deseo visualizar la propuesta de valor principal, para entender rápidamente qué ofrece GoldMetrics. | 2 |
-| 2 | US02 | Visualización de Planes | Como visitante, deseo ver los planes de suscripción, para evaluar el costo-beneficio del servicio. | 3 |
-| 3 | US03 | Formulario de Contacto B2B | Como visitante de empresa, deseo enviar mis datos de contacto, para solicitar una demostración del sistema. | 3 |
-| 4 | US04 | Visualización de Casos de Éxito | Como visitante, deseo leer testimonios de joyerías y mineras, para confiar en la efectividad de la plataforma. | 2 |
-| 5 | US05 | Redirección a Web App | Como visitante registrado, deseo acceder al portal de la aplicación, para iniciar sesión en mi cuenta. | 1 |
-| 6 | US13 | Creación de Lote (Batch) | Como supervisor de extracción, deseo generar un código de lote, para identificar un conjunto de mineral extraído. | 3 |
-| 7 | TS01 | Endpoint de Creación de Lotes | Como Developer, deseo un endpoint POST para registrar nuevos lotes, para permitir la comunicación asíncrona desde sistemas externos. | 3 |
-| 8 | US14 | Registro de Pesaje Inicial | Como operador de balanza, deseo registrar el peso del volquete cargado, para establecer el tonelaje inicial del lote. | 5 |
-| 9 | TS04 | Endpoint de Recepción IoT (Balanza) | Como Developer, deseo un endpoint POST para automatizar la recepción de pesos desde balanzas digitales, para reducir errores de ingreso manual. | 5 |
-| 10 | US23 | Verificación de Lote Comprado | Como dueño de joyería, deseo ingresar el código del proveedor, para asegurar que el oro proviene de una mina legal. | 5 |
-| 11 | US26 | Generación de Código QR | Como dueño de joyería, deseo generar un código QR por joya, para adjuntarlo a la etiqueta del producto. | 3 |
-| 12 | US33 | Escaneo de QR | Como consumidor final, deseo escanear el QR con mi celular, para verificar la autenticidad de la joya antes de comprarla. | 3 |
-| 13 | US34 | Visualización de Hoja de Vida | Como consumidor final, deseo ver la mina de origen, tipo de mineral y pureza, para asegurarme de que no proviene de minería ilegal. | 5 |
-| 14 | TS03 | Endpoint de Consulta de Trazabilidad | Como Developer, deseo un endpoint GET público para obtener la hoja de vida de un QR, para que la web app consulte los datos del consumidor. | 5 |
-| 15 | US06 | Registro de Empresa Minera | Como administrador minero, deseo registrar mi empresa, para obtener acceso al sistema de trazabilidad. | 5 |
-| 16 | US07 | Registro de Joyería | Como dueño de joyería, deseo registrar mi negocio, para poder certificar mis joyas. | 5 |
-| 17 | US08 | Inicio de Sesión | Como usuario registrado, deseo autenticarme, para acceder a mi panel de control. | 3 |
-| 18 | US11 | Registro de Yacimiento | Como ingeniero de mina, deseo registrar la ubicación de un yacimiento, para establecer el punto de origen del mineral. | 2 |
-| 19 | US12 | Registro de Volquetes | Como supervisor logístico, deseo registrar los vehículos de carga, para asociarlos a los traslados de mineral. | 3 |
-| 20 | US15 | Asignación de Responsables | Como supervisor de mina, deseo asignar un conductor a un lote, para mantener un registro de custodia. | 2 |
-| 21 | US16 | Tipificación de Mineral | Como ingeniero metalurgista, deseo clasificar el tipo de mineral del lote, para mantener el control de calidad. | 2 |
-| 22 | US17 | Inicio de Ruta | Como conductor, deseo marcar el inicio del traslado, para activar el monitoreo del lote. | 3 |
-| 23 | US18 | Registro de Checkpoints | Como supervisor logístico, deseo que el sistema registre puntos de control, para verificar que el camión sigue la ruta. | 5 |
-| 24 | TS02 | Endpoint de Recepción IoT (GPS) | Como Developer, deseo un endpoint POST para recibir coordenadas GPS de los camiones, para actualizar el monitoreo de ruta. | 5 |
-| 25 | US19 | Alerta de Retraso o Desvío | Como ingeniero de operaciones, deseo recibir alertas automáticas, para tomar acción si un volquete se detiene irregularmente. | 8 |
-| 26 | US20 | Confirmación de Llegada | Como operador de planta, deseo marcar la recepción del vehículo, para finalizar la etapa de transporte. | 3 |
-| 27 | US21 | Pesaje Final (Recepción) | Como operador de balanza en planta, deseo registrar el peso de llegada, para calcular discrepancias. | 3 |
-| 28 | US22 | Cálculo Automático de Merma | Como ingeniero metalurgista, deseo que el sistema calcule la pérdida de material, para identificar ineficiencias o robos. | 5 |
-| 29 | US24 | Registro de Prueba de Pureza | Como orfebre, deseo registrar el resultado de mis pruebas físicas, para consolidar la calidad del material. | 3 |
-| 30 | US25 | Subdivisión de Lote | Como orfebre, deseo dividir un lote de oro en varias piezas individuales, para asignar trazabilidad a cada joya creada. | 8 |
-| 31 | US27 | Exportación de Certificado PDF | Como secretaria de joyería, deseo exportar el certificado de autenticidad en PDF, para imprimirlo y entregarlo al cliente. | 5 |
-| 32 | US28 | Marcado de Joya Vendida | Como secretaria de joyería, deseo marcar una joya como "Vendida", para retirar el stock del sistema activo. | 2 |
-| 33 | US35 | Validación del Vendedor | Como consumidor final, deseo ver el nombre y credenciales de la joyería, para confirmar que estoy comprando en un comercio autorizado. | 2 |
-| 34 | US37 | Compartir Trazabilidad | Como consumidor final, deseo compartir el enlace de trazabilidad de mi joya, para demostrar su autenticidad a terceros. | 2 |
-| 35 | US29 | Ingreso de Material de Cliente | Como dueño de joyería, deseo registrar el oro traído por un cliente, para mantenerlo separado del oro de proveedores. | 3 |
-| 36 | US30 | Registro de Merma por Refinamiento | Como orfebre, deseo registrar la pérdida de peso tras purificar el oro del cliente, para justificar la reducción de gramos. | 3 |
-| 37 | US31 | Emisión de Reporte de Refinamiento | Como dueña de joyería, deseo generar un reporte detallado del refinamiento, para explicarle al cliente de forma transparente por qué su oro disminuyó en peso. | 5 |
-| 38 | US32 | Asignación de QR a Oro Reciclado | Como orfebre, deseo emitir un QR que indique "Oro Reciclado", para diferenciarlo del oro de mina directa. | 3 |
-| 39 | US36 | Reporte de Irregularidad | Como consumidor final, deseo reportar un código QR sospechoso, para alertar sobre posibles falsificaciones. | 3 |
-| 40 | US09 | Recuperación de Contraseña | Como usuario registrado, deseo recuperar mi contraseña, para recuperar el acceso si la olvido. | 3 |
-| 41 | US10 | Gestión de Perfil Corporativo | Como administrador de empresa, deseo actualizar la información de mi negocio, para mantener los datos de contacto al día. | 3 |
-| 42 | US38 | Dashboard Minero - Merma Global | Como administrador minero, deseo visualizar un gráfico de mermas mensuales, para identificar si existen problemas sistémicos de robo o ineficiencia. | 5 |
-| 43 | US39 | Dashboard Joyería - Volumen Validado | Como dueño de joyería, deseo ver la cantidad total de oro validado en el mes, para llevar control de mis compras a proveedores formales. | 5 |
-| 44 | TS05 | Endpoint de Reporte de Mermas | Como Developer, deseo un endpoint GET protegido para consultar agregados de mermas, para alimentar los gráficos del dashboard analítico. | 5 |
-| 45 | US40 | Exportación de Data Histórica | Como ingeniero de operaciones, deseo descargar en Excel el historial de lotes, para realizar análisis estadísticos externos. | 8 |
-
+| # Orden | User Story ID | Título | Story Points | Sprint Asignado | Status |
+|:---:|:---:|:---|:---:|:---:|:---:|
+| 1 | US01 | Visualización de Hero Section | 2 | Sprint 1 | Done |
+| 2 | US02 | Visualización de Planes | 3 | Sprint 1 | Done |
+| 3 | US03 | Formulario de Contacto B2B | 3 | Sprint 1 | Done |
+| 4 | US04 | Visualización de Casos de Éxito | 2 | Sprint 1 | Done |
+| 5 | US05 | Redirección a Web App | 1 | Sprint 1 | Done |
+| 6 | TS01 | Endpoint de Login y Autenticación | 3 | Sprint 1 | In Progress |
+| 7 | TS02 | Endpoint de Registro de Usuarios | 3 | Sprint 1 | In Progress |
+| 8 | US08 | Inicio de Sesión | 3 | Sprint 1 | In Progress |
+| 9 | US06 | Registro de Empresa Minera | 5 | Sprint 2 | To Do |
+| 10 | US07 | Registro de Joyería | 5 | Sprint 2 | To Do |
+| 11 | US13 | Creación de Lote (Batch) | 3 | Sprint 2 | To Do |
+| 12 | TS04 | Endpoint de Registro de Lotes (Minería) | 3 | Sprint 2 | To Do |
+| 13 | US14 | Registro de Pesaje Inicial | 5 | Sprint 2 | To Do |
+| 14 | US11 | Registro de Yacimiento | 2 | Sprint 3 | To Do |
+| 15 | US12 | Registro de Volquetes | 3 | Sprint 3 | To Do |
+| 16 | US15 | Asignación de Responsables | 2 | Sprint 3 | To Do |
+| 17 | US16 | Tipificación de Mineral | 2 | Sprint 3 | To Do |
+| 18 | TS05 | Endpoint de Actualización de Lotes | 3 | Sprint 3 | To Do |
+| 19 | US17 | Inicio de Ruta | 3 | Sprint 4 | To Do |
+| 20 | US18 | Registro de Checkpoints | 5 | Sprint 4 | To Do |
+| 21 | TS06 | Endpoint Ingesta de Telemetría (IoT) | 5 | Sprint 4 | To Do |
+| 22 | US19 | Alerta de Retraso o Desvío | 8 | Sprint 4 | To Do |
+| 23 | TS10 | Endpoint de Reporte de Incidentes | 3 | Sprint 4 | To Do |
+| 24 | US20 | Confirmación de Llegada | 3 | Sprint 4 | To Do |
+| 25 | US21 | Pesaje Final (Recepción) | 3 | Sprint 5 | To Do |
+| 26 | US22 | Cálculo Automático de Merma | 5 | Sprint 5 | To Do |
+| 27 | US23 | Verificación de Lote Comprado | 5 | Sprint 5 | To Do |
+| 28 | TS07 | Endpoint de Generación de Certificados (Joyería) | 3 | Sprint 5 | To Do |
+| 29 | US26 | Generación de Código QR | 3 | Sprint 5 | To Do |
+| 30 | US33 | Escaneo de QR | 3 | Sprint 5 | To Do |
+| 31 | US34 | Visualización de Hoja de Vida | 5 | Sprint 6 | To Do |
+| 32 | TS09 | Endpoint Público de Trazabilidad | 5 | Sprint 6 | To Do |
+| 33 | US35 | Validación del Vendedor | 2 | Sprint 6 | To Do |
+| 34 | US37 | Compartir Trazabilidad | 2 | Sprint 6 | To Do |
+| 35 | TS03 | Endpoint de Perfil de Usuario | 2 | Sprint 6 | To Do |
+| 36 | US24 | Registro de Prueba de Pureza | 3 | Sprint 7 | To Do |
+| 37 | US25 | Subdivisión de Lote | 8 | Sprint 7 | To Do |
+| 38 | US27 | Exportación de Certificado PDF | 5 | Sprint 7 | To Do |
+| 39 | US28 | Marcado de Joya Vendida | 2 | Sprint 7 | To Do |
+| 40 | US29 | Ingreso de Material de Cliente | 3 | Sprint 8 | To Do |
+| 41 | US30 | Registro de Merma por Refinamiento | 3 | Sprint 8 | To Do |
+| 42 | US31 | Emisión de Reporte de Refinamiento | 5 | Sprint 8 | To Do |
+| 43 | US32 | Asignación de QR a Oro Reciclado | 3 | Sprint 8 | To Do |
+| 44 | US36 | Reporte de Irregularidad | 3 | Sprint 9 | To Do |
+| 45 | US09 | Recuperación de Contraseña | 3 | Sprint 9 | To Do |
+| 46 | US10 | Gestión de Perfil Corporativo | 3 | Sprint 9 | To Do |
+| 47 | US38 | Dashboard Minero - Merma Global | 5 | Sprint 10 | To Do |
+| 48 | US39 | Dashboard Joyería - Volumen Validado | 5 | Sprint 10 | To Do |
+| 49 | TS08 | Endpoint de Estadísticas (Dashboard) | 5 | Sprint 10 | To Do |
+| 50 | US40 | Exportación de Data Histórica | 8 | Sprint 10 | To Do |
 ---
 
