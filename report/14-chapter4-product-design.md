@@ -681,56 +681,319 @@ Para visualizar el Event Storming de mejor manera recomendamos ingresar al sigui
 [Visualizar EventStorming en Miro](https://miro.com/app/board/uXjVJeWDqwE=/?share_link_id=757586972674)
 
 ### 4.6.2. Software Architecture Context Diagram
-El diagrama de contexto establece los límites de la plataforma GoldCheck y su interacción con los diferentes perfiles de usuario y sistemas externos críticos para el negocio.
-
-![Diagrama de contexto](../assets/img/chapter-iv/context-diagram.png)
-
+ 
+El diagrama de contexto del sistema GoldCheck muestra al sistema como elemento central, rodeado por los cinco tipos de usuarios que interactúan con él —Mining Operator, Logistics Manager, Plant Operator, Jeweler y End Consumer— así como por los sistemas externos con los que se integra: la API Application (mock REST), el IoT Gateway que recibe telemetría de sensores en camiones y básculas, la plataforma de despliegue Netlify y la librería Html5Qrcode utilizada para el escaneo de códigos QR desde el navegador. Este diagrama de nivel L1 permite comprender de un vistazo las fronteras del sistema y sus principales dependencias externas.
+ 
+![Diagrama de contexto del sistema GoldCheck](../assets/img/chapter-iv/structurizr-102990-L1_SystemContext.png)
+ 
+---
+ 
 ### 4.6.3. Software Architecture Container Diagrams
-En el segundo nivel de abstracción, se ha diseñado una arquitectura altamente desacoplada orientada a la escalabilidad y la resiliencia operativa tanto en frontend como en backend.
-
-**Frontend:**
-
-![Diagrama de contenedores frontend](../assets/img/chapter-iv/container-diagram-frontend.png)
-
-**Backend:**
-
-![Diagrama de contenedores backend](../assets/img/chapter-iv/container-diagram-backend.png)
-
+ 
+El diagrama de contenedores (L2) descompone GoldCheck en sus bloques de alto nivel: la **Landing Page** (HTML5/CSS3/JS) que dirige a los usuarios hacia la aplicación; el **Web Application** (Nginx) que sirve los archivos estáticos; y el **Single Page Application** (Vue 3 + PrimeVue) que provee todas las funcionalidades de trazabilidad y certificación directamente en el navegador. El SPA se comunica con la API Application mediante llamadas REST, y depende de Netlify para su hospedaje y de Html5Qrcode para el acceso a la cámara del dispositivo.
+ 
+![Diagrama de contenedores GoldCheck](../assets/img/chapter-iv/structurizr-102990-L2_Containers.png)
+ 
+---
+ 
 ### 4.6.4. Software Architecture Components Diagrams
+ 
+#### Mapa de Bounded Contexts (L3 — BC Map)
+ 
+El mapa de bounded contexts ofrece una vista panorámica de los once contextos delimitados que conforman el SPA, siguiendo los principios de Domain-Driven Design: IAM, Fleet Operations, Material Operations, Jewelry Inventory & Certification, Consumer Traceability, Monitoring & Telemetry, Analytics, Incident Management, Reporting & Notifications, Asset Maintenance y Subscriptions & Billing.
+ 
+![Mapa de Bounded Contexts del SPA](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC_Map.png)
+ 
+---
+ 
+#### L3 — Visión General del SPA (todos los BCs con capas)
+ 
+Esta vista muestra la totalidad de los once bounded contexts junto con sus cuatro capas internas (Presentation, Application, Domain e Infrastructure) y las dependencias cruzadas entre contextos, como la consulta de datos de Fleet e Inventory por parte de Analytics, o la integración de Consumer con Jewelry para la verificación de certificados.
+ 
+![Vista general del SPA con todos los Bounded Contexts](../assets/img/chapter-iv/structurizr-102990-L3_FE_Overview.png)
+ 
+---
+ 
+#### BC1 — IAM Bounded Context
+ 
+Gestiona la identidad y el acceso. La capa de presentación (Vue Components) expone las vistas de Login, Register y Profile; el servicio de aplicación orquesta la autenticación y la lógica de perfil en el cliente; el dominio define los modelos User y Credentials; y la infraestructura (Axios) se comunica con los endpoints de identidad de la API.
+ 
+![Componentes IAM BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC1_IAM.png)
+ 
+---
+ 
+#### BC2 — Fleet Operations Bounded Context
+ 
+Cubre el registro de lotes de mineral, el pesaje inicial y el monitoreo de flota. La presentación incluye el Dashboard, Operations, Fleet y Reports; la aplicación orquesta la creación de lotes y el seguimiento de alertas; el dominio expone los modelos MineralBatch y AnomalyAlert; y la infraestructura realiza las llamadas REST a los endpoints de Fleet Operations.
+ 
+![Componentes Fleet Operations BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC2_Fleet.png)
+ 
+---
+ 
+#### BC3 — Material Operations Bounded Context
+ 
+Gestiona la recepción de lotes en planta, el pesaje final y el cálculo de merma (shrinkage). La capa de presentación concentra estas funciones en un único Dashboard; la aplicación y la infraestructura se integran con los endpoints de Material Operations de la API.
+ 
+![Componentes Material Operations BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC3_Material.png)
+ 
+---
+ 
+#### BC4 — Jewelry Inventory & Certification Bounded Context
+ 
+Permite al joyero registrar piezas, validar lotes, emitir certificados digitales y consultar el origen mineral. La presentación agrupa Dashboard, Inventory, Register Jewelry, Certifications, Reports y Mineral Origin; el dominio define JewelryItem y JewelryCertificate; y la infraestructura se conecta a los endpoints de Jewelry de la API.
+ 
+![Componentes Jewelry Inventory Certification BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC4_Jewelry.png)
+ 
+---
+ 
+#### BC5 — Consumer Traceability Bounded Context
+ 
+Habilita al consumidor final para verificar la autenticidad de sus joyas mediante código QR o entrada manual, vincular piezas a su colección y consultar certificados. La infraestructura de este contexto consume también los endpoints de Jewelry para obtener información de trazabilidad.
+ 
+![Componentes Consumer Traceability BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC5_Consumer.png)
+ 
+---
+ 
+#### BC6 — Monitoring & Telemetry Bounded Context
+ 
+Centraliza la gestión de alertas de anomalía y el monitoreo de lotes en tránsito. La presentación expone un Dashboard con KPIs de alertas activas, alertas críticas y lotes en tránsito; el dominio define el modelo AnomalyAlert; y la infraestructura se integra con los endpoints de Monitoring de la API.
+ 
+![Componentes Monitoring Telemetry BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC6_Monitoring.png)
+ 
+---
+ 
+#### BC7 — Analytics Bounded Context
+ 
+Agrega KPIs transversales de múltiples contextos (Fleet, Jewelry, Maintenance) para ofrecer métricas de merma, producción y certificación. La infraestructura de Analytics reutiliza los clientes HTTP de Fleet, Maintenance y Jewelry para consolidar la información.
+ 
+![Componentes Analytics BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC7_Analytics.png)
+ 
+---
+ 
+#### BC8 — Incident Management Bounded Context
+ 
+Permite reportar, clasificar y cerrar incidentes operativos. El Dashboard muestra KPIs de incidentes abiertos y críticos, y expone una tabla con insignias de severidad. El dominio define el modelo Incident y la infraestructura se conecta a los endpoints de Incident Management de la API.
+ 
+![Componentes Incident Management BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC8_Incident.png)
+ 
+---
+ 
+#### BC9 — Reporting & Notifications Bounded Context
+ 
+Consolida reportes de lotes, joyas y alertas. La presentación muestra KPIs agregados y un placeholder de exportación a PDF; la infraestructura consume endpoints de Fleet, Jewelry y Monitoring para construir los reportes. El dominio expone el modelo Notification.
+ 
+![Componentes Reporting Notifications BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC9_Reporting.png)
+ 
+---
+ 
+#### BC10 — Asset Maintenance Bounded Context
+ 
+Gestiona el ciclo de vida de los vehículos de la flota, permitiendo enviarlos a mantenimiento o reactivarlos. El Dashboard muestra KPIs de vehículos activos y en mantenimiento; el dominio define MaintenanceRecord; y la infraestructura se comunica con los endpoints de Maintenance de la API.
+ 
+![Componentes Asset Maintenance BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC10_Maintenance.png)
+ 
+---
+ 
+#### BC11 — Subscriptions & Billing Bounded Context
+ 
+Expone los planes de suscripción (Bronze, Gold, Platinum) y el flujo de pago. La aplicación integra lógica de IAM para asociar el plan al usuario autenticado. El dominio define SubscriptionPlan y la infraestructura gestiona las llamadas a los endpoints de Subscriptions de la API.
+ 
+![Componentes Subscriptions Billing BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC11_Subscriptions.png)
+ 
+---
+ 
+#### L4 — Vistas de Presentación por Bounded Context
+ 
+Las vistas L4 detallan los componentes Vue individuales dentro de la capa de presentación de cada bounded context, sus relaciones internas (Contains, Opens, Uses) y sus tecnologías (PrimeVue, useVuelidate, Html5Qrcode, etc.).
+ 
+##### BC1 — IAM: Login, Register, Profile
+ 
+Tres componentes Vue: **Login** (formulario con FloatLabel, InputText, Password, Checkbox y Button; validación con useVuelidate; redirige por segmento tras autenticación), **Register** (formulario con SelectButton para selección de segmento) y **Profile** (layout de pestañas con secciones de perfil, notificaciones y ajustes).
+ 
+![Vista de presentación IAM](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC1_IAM.png)
+ 
+---
+ 
+##### BC2 — Fleet Operations: Dashboard, Modals, Operations, Fleet, Reports
+ 
+Seis componentes Vue: **Fleet Dashboard** (4 StatCards KPI, DataTable con Tag, panel de actividad IoT, abre New Batch Modal), **New Batch Modal** (PvDialog de 2 pasos: selección de depósito/vehículo y visualización de peso simulado a 38,50 t), **Operations** (3 KPIs, tabla de lotes, modal de peso final), **Fleet** (4 KPIs, tabla de vehículos), **Fleet Reports** (4 KPIs, historial de lotes) y el **Stat Card** compartido (label, value, trend, icon, alertActive).
+ 
+![Vista de presentación Fleet Operations](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC2_Fleet.png)
+ 
+---
+ 
+##### BC3 — Material Operations: Material Dashboard
+ 
+Un único componente **Material Dashboard** con 3 KPI stat cards, tabla de recepciones con porcentaje de merma coloreado en rojo cuando supera el 5 %, botón de confirmación de llegada y modal de peso final.
+ 
+![Vista de presentación Material Operations](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC3_Material.png)
+ 
+---
+ 
+##### BC4 — Jewelry: Dashboard, Modals, Inventory, Register, Certifications, Origin, Reports
+ 
+Siete componentes Vue: **Jewelry Dashboard** (4 StatCards, tabla de inventario con filtro de estado, abre Validate Lot Modal), **Validate Lot Modal** (checklist con 4 verificaciones de calidad, botón deshabilitado hasta completar todos), **Inventory** (4 KPIs, filtro de estado, acciones de validar/certificar/ver certificado), **Register Jewelry** (InputText, Select e InputNumber para los atributos de la pieza), **Certifications** (tabla de certificados con id, SKU, emisor, pureza, peso, fecha y estado), **Mineral Origin** (búsqueda por código de lote, línea de tiempo de trazabilidad: extracción → transporte → GPS → recibido) y **Jewelry Reports** (4 KPIs, tabla de piezas con columna de estado QR).
+ 
+![Vista de presentación Jewelry](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC4_Jewelry.png)
+ 
+---
+ 
+##### BC5 — Consumer Traceability: My Collection, Vincular Joya, Verify, Certificates
+ 
+Cuatro componentes Vue: **My Collection** (grid de tarjetas de joya con imagen, SKU, metadata y badge de estado; abre Vincular Joya Modal), **Vincular Joya Modal** (PvDialog con campo de código de trazabilidad, nombre y tipo de joya), **Verify** (modo manual con campo de búsqueda oscuro + modo cámara con escáner Html5Qrcode, overlay de esquinas y línea de escaneo animada; resultado con línea de tiempo mineral) y **Consumer Certificates** (grid de tarjetas de certificado con ícono de escudo, pureza, peso, fechas y visualización de QR).
+ 
+![Vista de presentación Consumer Traceability](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC5_Consumer.png)
+ 
+---
+ 
+##### BC6 — Monitoring: Monitoring Dashboard
+ 
+Un único componente **Monitoring Dashboard** con 3 KPI stat cards (alertas activas, alertas críticas, lotes en tránsito), tabla de alertas con badges de severidad y botón de resolución de alerta.
+ 
+![Vista de presentación Monitoring Telemetry](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC6_Monitoring.png)
+ 
+---
+ 
+##### BC7 — Analytics: Analytics Dashboard
+ 
+Un único componente **Analytics Dashboard** con 5 KPI stat cards (lotes totales, lotes activos, merma promedio, total de joyas, joyas certificadas) y tabla de merma con porcentajes codificados por color.
+ 
+![Vista de presentación Analytics](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC7_Analytics.png)
+ 
+---
+ 
+##### BC8 — Incident Management: Incident Dashboard
+ 
+Un único componente **Incident Dashboard** con 2 KPI stat cards (incidentes abiertos e incidentes críticos), tabla de incidentes con badges de severidad y modal overlay para registrar nuevos incidentes.
+ 
+![Vista de presentación Incident Management](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC8_Incident.png)
+ 
+---
+ 
+##### BC9 — Reporting: Reporting Dashboard
+ 
+Un único componente **Reporting Dashboard** con 4 KPI stat cards (lotes totales, lotes procesados, alertas totales, ítems certificados) y un placeholder de exportación a PDF (próximamente).
+ 
+![Vista de presentación Reporting Notifications](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC9_Reporting.png)
+ 
+---
+ 
+##### BC10 — Asset Maintenance: Maintenance Dashboard
+ 
+Un único componente **Maintenance Dashboard** con 2 KPI stat cards (vehículos activos y en mantenimiento) y tabla de vehículos con botones de acción para enviar a mantenimiento o activar el vehículo.
+ 
+![Vista de presentación Asset Maintenance](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC10_Maintenance.png)
+ 
+---
+ 
+##### BC11 — Subscriptions: Plans
+ 
+Un único componente **Plans** con 3 tarjetas de plan (Bronze, Gold y Platinum) con badges de "current" y "popular", lista de características por plan, tabla comparativa y modal de pago con visualización de tarjeta bancaria e inputs para número, titular, vencimiento y CVV.
+ 
+![Vista de presentación Subscriptions Billing](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC11_Subscriptions.png)
 
-**Identity & Access Management**
+#### Mapa de Bounded Contexts — Backend (L3 — BE BC Map)
 
-![Diagrama de contexto 1](../assets/img/chapter-iv/context-diagram-1.png)
-**Fleet Operations**
+El mapa de bounded contexts del backend muestra los once contextos delimitados que componen la API Application (json-server + Express): IAM, Fleet Operations, Material Operations, Jewelry Inventory & Certification, Consumer Traceability, Monitoring & Telemetry, Analytics, Incident Management, Reporting & Notifications, Asset Maintenance y Subscriptions & Billing. Cada contexto encapsula sus propios endpoints REST sobre colecciones independientes del archivo `db.json`, siguiendo los principios de Domain-Driven Design.
 
-![Diagrama de contexto 2](../assets/img/chapter-iv/context-diagram-2.png)
+![Mapa de Bounded Contexts del Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC_Map.png)
 
-**Assist & Maintenance Management**
-![Diagrama de contexto 3](../assets/img/chapter-iv/context-diagram-3.png)
+---
 
-**Material Operations**
-![Diagrama de contexto 4](../assets/img/chapter-iv/context-diagram-4.png)
+#### L3 — Visión General del API Application (todos los BCs con capas)
 
-**Jewelry Inventory & Certification**
-![Diagrama de contexto 5](../assets/img/chapter-iv/context-diagram-5.png)
+Esta vista despliega la totalidad de los once bounded contexts del backend junto con sus cuatro capas internas: Interfaces (colecciones json-server), Application (middleware), Domain (JSON Schema) e Infrastructure (db.json), además de las relaciones de lectura/escritura compartidas hacia la base de datos central. Permite identificar de un vistazo las dependencias cruzadas entre contextos y la colección de `db.json` que cada uno utiliza.
 
-**Consumer Traceability**
-![Diagrama de contexto 6](../assets/img/chapter-iv/context-diagram-6.png)
+![Vista general del API Application con todos los Bounded Contexts](../assets/img/chapter-iv/structurizr-103798-L3_BE_Overview.png)
 
-**Analytics**
-![Diagrama de contexto 7](../assets/img/chapter-iv/context-diagram-7.png)
+---
 
-**Monitoring & Telemetry**
-![Diagrama de contexto 8](../assets/img/chapter-iv/context-diagram-8.png)
+#### BC1 — IAM Bounded Context (Backend)
 
-**Incident Management**
-![Diagrama de contexto 9](../assets/img/chapter-iv/context-diagram-9.png)
+Gestiona la autenticación y actualización de perfil de usuario. La capa de Interfaces expone endpoints REST sobre `/users` (GET por email para login, POST para registro, PATCH para actualización de perfil); la Application procesa esas peticiones mediante middleware de json-server; el Domain define el recurso User con campos `id`, `email`, `username`, `segment`, `plan`, `location` y `phoneNumber`; y la Infrastructure persiste los registros en la colección `users` de `db.json`.
 
-**Reporting & Notificacions**
-![Diagrama de contexto 10](../assets/img/chapter-iv/context-diagram-10.png)
+![Componentes IAM BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC1_IAM.png)
 
-**Subscripcions & Billing**
-![Diagrama de contexto 11](../assets/img/chapter-iv/context-diagram-11.png)
+---
+
+#### BC2 — Fleet Operations Bounded Context (Backend)
+
+Cubre el ciclo de vida de lotes de mineral, vehículos, depósitos y alertas de anomalía. Las Interfaces exponen endpoints sobre `/mineralBatches`, `/deposits`, `/vehicles` y `/anomalyAlerts`; la Application procesa la creación de lotes y el registro de peso inicial; el Domain define `MineralBatch` (batchCode, depositId, vehicleId, initialWeight, mineralType, status) y `AnomalyAlert` (batchId, alertType, severity); y la Infrastructure persiste todos estos registros en `db.json`. El IoT Gateway envía telemetría directamente a las Fleet Interfaces.
+
+![Componentes Fleet Operations BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC2_Fleet.png)
+
+---
+
+#### BC3 — Material Operations Bounded Context (Backend)
+
+Gestiona la recepción de lotes en planta, el pesaje final y el cálculo de merma. Las Interfaces exponen endpoints PATCH sobre `/mineralBatches` para registrar `finalWeight` y transiciones de estado; la Application orquesta la confirmación de llegada y el marcado de investigación de merma; el Domain proyecta `MineralBatch` como `MaterialReception` (receivedWeight, initialWeight, shrinkagePercent, status); y la Infrastructure persiste esos datos en la misma colección `mineralBatches` de `db.json`.
+
+![Componentes Material Operations BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC3_Material.png)
+
+---
+
+#### BC4 — Jewelry Inventory & Certification Bounded Context (Backend)
+
+Permite registrar piezas de joyería y emitir certificados digitales. Las Interfaces exponen GET, POST y PATCH sobre `/jewelryItems` y `/jewelryCertificates`; la Application procesa el registro de ítems, la validación de estado y la emisión de certificados; el Domain define `JewelryItem` (sku, name, type, purity, weight, batchRef, status, certificationId) y `JewelryCertificate` (itemId, qrCode, issuerName); y la Infrastructure persiste ambos recursos en `db.json`.
+
+![Componentes Jewelry Inventory Certification BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC4_Jewelry.png)
+
+---
+
+#### BC5 — Consumer Traceability Bounded Context (Backend)
+
+Habilita la vinculación de piezas al consumidor y la verificación por código QR. Las Interfaces exponen endpoints sobre `/consumerPieces` (GET por `ownerId` o `traceabilityCode`, POST para vincular una pieza); la Application cruza datos entre `consumerPieces` y `jewelryItems` para resolver la trazabilidad; el Domain define `ConsumerPiece` (ownerId, sku, traceabilityCode, purity, weight, certificationId, status); y la Infrastructure persiste los registros de piezas del consumidor en `db.json`.
+
+![Componentes Consumer Traceability BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC5_Consumer.png)
+
+---
+
+#### BC6 — Monitoring & Telemetry Bounded Context (Backend)
+
+Centraliza la gestión de alertas de anomalía en tránsito. Las Interfaces exponen GET, POST y PATCH sobre `/anomalyAlerts` para creación y resolución de alertas; la Application filtra alertas activas por estado y coordina su resolución; el Domain define `AnomalyAlert` (batchId, batchCode, vehicleId, alertType, severity, coordinates, status, detectedAt); y la Infrastructure persiste los registros en la colección `anomalyAlerts` de `db.json`.
+
+![Componentes Monitoring Telemetry BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC6_Monitoring.png)
+
+---
+
+#### BC7 — Analytics Bounded Context (Backend)
+
+Agrega KPIs transversales para métricas de merma y certificación. Las Interfaces proveen acceso de solo lectura a `/mineralBatches`, `/vehicles` y `/jewelryItems`; la Application procesa solicitudes de lectura cruzada entre colecciones; el Domain expone proyecciones agregadas sobre los recursos `MineralBatch` y `JewelryItem`; y la Infrastructure lee directamente de las tres colecciones correspondientes en `db.json` sin escribir datos propios.
+
+![Componentes Analytics BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC7_Analytics.png)
+
+---
+
+#### BC8 — Incident Management Bounded Context (Backend)
+
+Gestiona el reporte y cierre de incidentes operativos, reutilizando la colección `anomalyAlerts`. Las Interfaces exponen GET, POST y PATCH sobre esa colección con semántica de incidente; la Application procesa el reporte y el cambio de estado a cerrado; el Domain proyecta `AnomalyAlert` como `Incident` (title, incidentType, severity, batchId, vehicleId, status); y la Infrastructure persiste los registros de incidente en `anomalyAlerts` dentro de `db.json`.
+
+![Componentes Incident Management BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC8_Incident.png)
+
+---
+
+#### BC9 — Reporting & Notifications Bounded Context (Backend)
+
+Consolida datos de lotes, joyas y alertas para la generación de reportes. Las Interfaces proveen acceso de lectura a `/mineralBatches`, `/jewelryItems` y `/anomalyAlerts`; la Application procesa solicitudes de lectura en paralelo sobre las tres colecciones; el Domain define proyecciones de reporte sobre esos recursos; y la Infrastructure lee desde las tres colecciones de `db.json` sin persistir datos adicionales.
+
+![Componentes Reporting Notifications BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC9_Reporting.png)
+
+---
+
+#### BC10 — Asset Maintenance Bounded Context (Backend)
+
+Gestiona el ciclo de vida y las transiciones de estado de los vehículos de flota. Las Interfaces exponen GET (todos los vehículos) y PATCH (transición de estado) sobre `/vehicles`; la Application procesa las actualizaciones entre los estados `Activo` y `Mantenimiento`; el Domain define el recurso `Vehicle` (id, name, plate, type, capacity, status); y la Infrastructure persiste los registros en la colección `vehicles` de `db.json`.
+
+![Componentes Asset Maintenance BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC10_Maintenance.png)
+
+---
+
+#### BC11 — Subscriptions & Billing Bounded Context (Backend)
+
+Gestiona la actualización del plan de suscripción del usuario. Las Interfaces exponen PATCH sobre `/users` para modificar el campo `plan`; la Application procesa la solicitud de upgrade del plan; el Domain define los valores posibles del campo plan: `BRONZE`, `GOLD` y `PLATINUM`; y la Infrastructure persiste la actualización en la colección `users` de `db.json`, integrándose así con el contexto IAM a nivel de datos.
+
+![Componentes Subscriptions Billing BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC11_Subscriptions.png)
+
 
 ## 4.7. Software Object-Oriented Design
 
