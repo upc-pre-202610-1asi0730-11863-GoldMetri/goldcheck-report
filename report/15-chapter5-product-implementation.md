@@ -170,7 +170,7 @@ Ejemplo en código:
 
 ### 5.1.4. Software Deployment Configuration
 - Creación de la Website (Landing Page):
-1. Se crea un repositorio (goldcheck-website) desde GoldMetri-organization
+1. Se crea un repositorio (goldcheck-website) desde upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment1-screenshoot](../assets/img/chapter-v/deployment-1.png)
 
 2. Agregar a los miembros del equipo
@@ -181,15 +181,22 @@ Ejemplo en código:
 
 
 - Creación de WebApp
-1. Creación del repositorio (goldcheck-webapp) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-webapp) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-4.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
 
 - Creación de Platform
-1. Creación del repositorio (goldcheck-platform) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-platform) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-6.png)
+
+2. Agregar a los miembros del equipo
+![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
+
+- Creación de Mockapi
+1. Creación del repositorio (goldcheck-mockapi) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
+![deployment6-screenshoot](../assets/img/chapter-v/deployment-7.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
@@ -236,13 +243,14 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
 
-| Sprint # | User Story ID | Work-Item / Task ID | Título | Descripción | Estimación (h) | Asignado a | Status |
-|---|---|---|---|---|---|---|---|
-| Sprint 1 | US01 | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
-| Sprint 1 | US01 | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
-| Sprint 1 | US02 | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
-| Sprint 1 | US03 | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
-| Sprint 1 | US03 | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Netlify al Landing Page. | 2 | Philco, Katty | Done |
+| **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
+|:--------:|---|---|---|---|---|---|---|
+| | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
+| | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
+| | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
+| | US02 | Visualizar los segmentos | T03 | Programar vistas interactivas | Agregar dinamismo a las tarjetas de segmentos con JavaScript. | 3 | Tuesta, Kiara | Done |
+| | US03 | Contactar al equipo | T04 | Maquetar Footer y Contacto | Implementar la sección de contacto y redes sociales. | 3 | García, Victor | Done |
+| | *Task* | Configurar Repositorios | T05 | Setup GitHub y Despliegue | Inicializar los repos en GitHub y conectar Vercel al Landing Page. | 2 | Philco, Katty | Done |
 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
@@ -272,9 +280,6 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 ![Landing Page Desktop 7](../assets/img/footer.png)
 
 
-**URL del Landing Page Desplegado:** [lucky-rolypoly-aaac25.netlify.app](`[URL]`)
-
-
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -284,42 +289,177 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma Netifly.
-1. Se creó una cuenta en la plataforma utilizando el correo del equipo.
-2. Se vinculó la cuenta con la organización de GitHub de Goldmetrics.
-3. Se importó el repositorio `goldmetrics-website`.
-4. Se configuró el autodespliegue asociado a la rama `main`.
+Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma GitHub Pages.
+1. Se creó un repositorio en GitHub para alojar la landing page del proyecto.  
+2. Se subió el código fuente de la landing al repositorio mediante Git y GitHub.  
+3. Se instaló y configuró la dependencia `gh-pages` para realizar el despliegue automático.  
+4. Se configuró el archivo `vite.config.js` con la propiedad `base` correspondiente al nombre del repositorio.  
+5. Se añadieron los scripts `build` y `deploy` en el archivo `package.json`.  
+6. Se generó la versión de producción de la landing mediante el comando `npm run build`.  
+7. Se publicó la aplicación en GitHub Pages utilizando el comando `npm run deploy`.  
+8. Se habilitó GitHub Pages desde la sección `Settings > Pages` del repositorio.  
+9. Se configuró la rama `gh-pages` como fuente oficial de despliegue.  
+10. Se verificó el correcto funcionamiento de la landing accediendo a la URL pública generada por GitHub Pages.
 
-
-![Deployment Evidence 1](../assets/img/despliegue.png)
+![Deployment Evidence 1](../assets/img/chapter-v/despliegue.png)
+![Deployment Evidence 2](../assets/img/chapter-v/despliegue-2.png)
 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Durante este sprint, la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests (PRs) para integrar el trabajo de la rama `develop` a `main`.
 
-<<<<<<< HEAD
-![Team Collaboration Sprint 1](../assets/img/chapter-v/collaboration.png)
+![Team Collaboration Sprint 1](../assets/img/chapter-v/sprint-collaboration.png)
 
-## 5.3. Validation Interviews
+### 5.2.2. Sprint 2
 
-### 5.3.1. Diseño de Entrevistas
+#### 5.2.2.1. Sprint Planning 2
 
-### 5.3.2. Registro de Entrevistas
+El Sprint 2 está dedicado al desarrollo y despliegue de la primera versión del Frontend Web Application de GoldMetrics, integrada con una fake API que simula los endpoints de los bounded contexts principales.
 
-### 5.3.3. Evaluaciones según heurísticas
+| Campo | Detalle |
+| :--- | :--- |
+| Sprint # | Sprint 2 |
+| Date | 2026-05-07 |
+| Time | 8:00 pm |
+| Location | Reunión virtual por Discord |
+| Prepared By | Tuesta Girón, Kiara Lucia |
+| Attendees | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
+| Sprint 1 Review Summary | Se logró desplegar la primera versión del Landing Page de GoldMetrics con las secciones principales dirigidas a los tres segmentos objetivo. Se completó la documentación de los capítulos I al V incluyendo artefactos de UX/UI, diagramas de arquitectura C4, diagramas de clases y base de datos. Se recibieron observaciones del docente sobre la estructura orientada a objetos, los Hypothesis Statements y las Technical Stories. |
+| Sprint 1 Retrospective Summary | El equipo identificó la necesidad de mejorar la coordinación en los tiempos de revisión de Pull Requests y establecer checkpoints más frecuentes. Se acordó realizar seguimiento diario por Discord para mayor visibilidad del avance individual. Se priorizó también resolver los problemas de formato del informe en PDF antes de la entrega del TB1. |
+| Sprint 2 Goal | Our focus is on deploying a functional first version of the GoldMetrics Frontend Web Application integrated with a fake API. We believe it delivers a navigable and interactive experience to the three target segments (mining companies, jewelry stores, and final consumers), allowing them to explore traceability, verification and monitoring features. This will be confirmed when users can access and navigate the main views of the web application from a public URL without errors. |
+| Sprint 2 Velocity | 30 Story Points |
+| Sum of Story Points | 28 |
 
-## 5.4. Video About-the-Product
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para este Sprint 2 enfocado en el desarrollo del Frontend Web Application y la integración con MockAPI, la distribución de liderazgo (L) y colaboración (C) es la siguiente:
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend Web App (Vue) | MockAPI / Fake API | Corrección Diagramas (Clases & BD) | Corrección Wireframes & User Flows | Sprint Documentation |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Armestar Felipa, Adrian Andres | Adrian5102 | C | C | C | C | C |
+| García Paredes, Victor Manuel | vicmacode | C | L | C | C | C |
+| Navarro Aldoradin, Carolina Celeste | genixmvp | L | C | C | C | L |
+| Philco Mota, Katty Yolanda | kattyph | L | C | L | C | C |
+| Tuesta Girón, Kiara Lucia | kitu05g | C | C | L | L | C |
+
+L = Leader  |  C = Collaborator
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El objetivo principal de este Sprint es contar con una Web Application desplegada que permita a los tres segmentos objetivo explorar las funcionalidades principales de GoldMetrics integradas con datos de prueba.
+
+| **Sprint 2** | **User Story** | | **Work-Item / Task** | | | | |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Status** |
+| US01 | Visualizar dashboard de trazabilidad | T01 | Implementar vista Dashboard | Desarrollar la vista principal del dashboard con KPIs de activos, alertas y mapa en tiempo real usando Vue y PrimeVue | 5 | Philco, Katty | Done |
+| US01 | Visualizar dashboard de trazabilidad | T02 | Conectar dashboard con MockAPI | Integrar los endpoints de MockAPI para cargar datos de activos y alertas en el dashboard | 3 | García, Victor | Done |
+| US02 | Monitorear traslado de mineral | T03 | Implementar vista de trazabilidad | Desarrollar la vista de trazabilidad con timeline de recorrido del mineral y estado de la carga | 5 | Philco, Katty | Done |
+| US03 | Verificar autenticidad de mineral | T04 | Implementar vista de verificación QR | Desarrollar la vista de búsqueda por ID de lote con resultado de autenticidad para el segmento joyería | 4 | Tuesta, Kiara | Done |
+| US04 | Consultar origen ético de producto | T05 | Implementar vista de producto para consumidor | Desarrollar la vista de detalle de producto con certificado de origen y timeline para consumidor final | 4 | Tuesta, Kiara | Done |
+| US05 | Gestionar suscripción | T06 | Implementar vistas de suscripción | Desarrollar las vistas de selección de plan, método de pago y confirmación de suscripción | 4 | Navarro, Carolina | Done |
+| US06 | Consultar historial de pagos | T07 | Implementar vista de historial de pagos | Desarrollar la vista de historial con tabla filtrable y opción de descarga de factura | 3 | Navarro, Carolina | Done |
+| TS01 | Endpoints fake API | T08 | Configurar recursos en MockAPI | Crear y configurar los recursos de trazabilidad, activos y suscripciones en MockAPI con datos de prueba | 3 | García, Victor | Done |
+| US07 | Actualizar perfil de usuario | T09 | Implementar vista de perfil | Desarrollar la vista de perfil de usuario con formulario de edición de datos | 2 | Navarro, Carolina | Done |
+| - | Correcciones AV1 | T10 | Corregir diagramas de clases y BD | Actualizar diagramas de clases (4.7.1) y base de datos (4.8.1) según observaciones del docente | 3 | Philco, Katty / Tuesta, Kiara | Done |
+| - | Despliegue Frontend | T11 | Desplegar Frontend Web Application | Configurar y ejecutar el despliegue de la aplicación Vue en Netlify | 2 | Navarro, Carolina | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 el equipo se enfocó en el desarrollo del Frontend Web Application utilizando Vue Framework con PrimeVue como biblioteca de componentes UI, siguiendo el Design System definido en el Capítulo IV. Se implementó la integración con MockAPI para simular los endpoints del RESTful API. Cada integrante trabajó en su rama correspondiente y realizó Pull Requests a `develop` al completar cada vista.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| goldcheck-webapp | develop | 5dce6217bcbaf98cc0cb6a2402798c5910a8243e | feat: upload frontend app | Initial upload of the frontend application structure with Vue and PrimeVue setup | 2026-05-14 |
+| goldcheck-webapp | develop | f7d3a2c357b3de18dd45a5a00840d3f674b4c58e | update src with bounded contexts | Restructures source folders following bounded contexts: traceability, subscriptions, IAM and asset management | 2026-05-14 |
+| goldcheck-webapp | develop | f7d3a2c357b3de18dd45a5a00840d3f674b4c58e | modified colors and add subscriptions views | Updates color palette to match GoldMetrics brand guidelines and adds subscription plan selection and confirmation views | 2026-05-14 |
+| goldcheck-webapp | develop | cce9917f21383b2f108b9bffccc9a8331a80cc49 | modify entities | Updates entity models to align with domain-driven design definitions and bounded context structure | 2026-05-14 |
+| goldcheck-mockapi | main | cce9917f21383b2f108b9bffccc9a8331a80cc49 | upload mockapi goldcheck | Uploads MockAPI configuration with resources for traceability, assets, subscriptions and payment history endpoints | 2026-05-13 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+En el Sprint 2 se logró desarrollar y desplegar la primera versión funcional del Frontend Web Application de GoldMetrics. La aplicación cuenta con vistas diferenciadas para cada segmento objetivo: el dashboard de trazabilidad y monitoreo de flota para empresas mineras, el panel de verificación de autenticidad y origen para joyerías, y la vista de consulta de origen ético del producto para consumidores finales. Todas las vistas son responsivas y están integradas con la capa mock configurada en MockAPI.
+
+A continuación se presentan las principales vistas implementadas durante este Sprint:
+
+![Minero 1](../assets/img/chapter-v/minero-1.png)
+
+![Minero 2](../assets/img/chapter-v/minero-2.png)
+
+![Minero 3](../assets/img/chapter-v/minero-3.png)
+
+![Minero 4](../assets/img/chapter-v/minero-4.png)
+
+![Minero 5](../assets/img/chapter-v/minero-5.png)
+
+![Minero 6](../assets/img/chapter-v/minero-6.png)
+
+![Minero 7](../assets/img/chapter-v/minero-7.png)
+
+![Minero 8](../assets/img/chapter-v/minero-8.png)
+
+![Minero 9](../assets/img/chapter-v/minero-9.png)
+
+![Minero 10](../assets/img/chapter-v/minero-10.png)
+
+![Minero 11](../assets/img/chapter-v/minero-11.png)
+
+![Joyero 2](../assets/img/chapter-v/joyero-2.png)
+
+![Joyero 3](../assets/img/chapter-v/joyero-3.png)
+
+![Joyero 5](../assets/img/chapter-v/joyero-5.png)
+
+![Joyero 6](../assets/img/chapter-v/joyero-6.png)
+
+![Joyero 7](../assets/img/chapter-v/joyero-7.png)
+
+![Joyero 8](../assets/img/chapter-v/joyero-8.png)
+
+![Consumidor 1](../assets/img/chapter-v/consumidor-1.png)
+
+![Consumidor 2](../assets/img/chapter-v/consumidor-2.png)
 
 
-## Anexos
-Vídeo Exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQDMT9TjIRw1RLKM_7j2hos-AfLlqFAwuKrcE9YKUDOwdWI?e=055arn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
-=======
->LANDING PAGE: 
+![Consumidor 4](../assets/img/chapter-v/consumidor-4.png)
 
-![Team Collaboration Sprint 1](../assets/img/landingpage-contributors.png)
+![Consumidor 5](../assets/img/chapter-v/consumidor-5.png)
 
->REPORT:
+URL del Frontend Web Application desplegado: 
+https://luxury-beignet-b30759.netlify.app/ 
 
-![Team Collaboration Sprint 2](../assets/img/chapter-v/report-contributors.png)
->>>>>>> cb66ab435faa1d5e0617dc17860327cd788a8ad9
+URL del video de navegación (Microsoft Stream):
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQCM0Lx_OtVUQJrTSpTY9SswAQF1q1ZwS6fIq6fIxeQgPnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SXCbMZ
+
+---
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+El Sprint 2 tuvo como alcance exclusivo la construcción del Frontend Web Application de GoldMetrics. Todos los datos son servidos mediante una capa mock con MockAPI a partir de recursos configurados con datos de prueba, sin conexión a endpoints reales de backend. Por esta razón, no se generó documentación OpenAPI ni se desplegaron Web Services durante esta iteración.
+
+La especificación completa de los endpoints RESTful que el frontend consumirá en producción se encuentra documentada en las Technical Stories del Product Backlog del Capítulo III. Su implementación está planificada para el Sprint 3 dentro del repositorio goldcheck-backend, cubriendo los siguientes bounded contexts: Identity & Access Management con autenticación JWT, Subscriptions & Billing con gestión de planes y facturación, Asset & Maintenance Management con registro y monitoreo de maquinaria, Traceability con seguimiento del recorrido del mineral desde extracción hasta comercialización, y Consumer Experience con verificación pública de autenticidad mediante código QR.
+
+---
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se realizó el despliegue exitoso del Frontend Web Application de GoldMetrics. A continuación:
+1. Se creó una cuenta en Netlify.
+2. Se vinculó la cuenta de Netlify con la organización/repositorio de GitHub del proyecto.  
+3. Se importó el repositorio de la landing page desde GitHub hacia Netlify.  
+4. Se configuró el comando de build (`npm run build`) y la carpeta de publicación (`dist`).  
+5. Se seleccionó la rama principal (`main`) como fuente de despliegue automático.  
+6. Se ejecutó el primer despliegue de la aplicación desde la plataforma Netlify.  
+7. Se habilitó el autodespliegue para actualizar automáticamente la landing en cada push realizado al repositorio.  
+8. Se verificó el correcto funcionamiento de la landing mediante la URL pública generada por Netlify.
+
+URL del Frontend Web Application desplegado: https://luxury-beignet-b30759.netlify.app/
+URL del Landing Page: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante este Sprint la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests para integrar el trabajo de las ramas de feature a `develop` y posteriormente a `main`. La coordinación diaria se realizó por Discord.
+
+![Team Collaboration Sprint 2](../assets/img/chapter-v/sprint-collaboration.png)
+
+
