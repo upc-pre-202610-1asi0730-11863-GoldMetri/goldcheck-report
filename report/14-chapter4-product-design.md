@@ -998,95 +998,138 @@ Gestiona la actualización del plan de suscripción del usuario. Las Interfaces 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
-A continuación se presentaran los diagramas de clases de los respectivos bounded context.
 
-**Identity & Access Management**
+A continuación, se presentan los diagramas de clases back-end correspondientes a los distintos bounded contexts identificados en la arquitectura del sistema GoldCheck. Estos diagramas permiten visualizar la estructura interna de cada contexto delimitado, mostrando las principales entidades, relaciones, atributos y responsabilidades involucradas en la lógica de negocio.
 
-![Diagrama de clase 1](../assets/img/chapter-iv/class-diagram-identity.png)
+Cada diagrama fue diseñado siguiendo principios de Domain-Driven Design (DDD), separación de responsabilidades y modularidad, permitiendo representar de manera clara la interacción entre entidades del dominio, servicios de aplicación, repositorios y componentes de soporte. Asimismo, estos diagramas sirven como apoyo para comprender la organización interna del sistema y facilitar futuras tareas de mantenimiento, escalabilidad y evolución de la plataforma.
 
-**Fleet Operations**
+## DIAGRAMAS BACKEND:
 
-![Diagrama de clase 2](../assets/img/chapter-iv/class-diagram-fleet.png)
+#### BC1 - Identity Access Management
 
-**Assist & Maintenance Management**
+![BC1 - Identity Access Management](../assets/img/chapter-iv/BC1_Identity_Access_Management_Full.png)
 
-![Diagrama de clase 3](../assets/img/chapter-iv/class-diagram-asset.png)
+#### BC2 - Fleet Operations
 
-**Material Operations**
+![BC2 - Fleet Operations](../assets/img/chapter-iv/BC2_Fleet_Operations_Full.png)
 
-![Diagrama de clase 4](../assets/img/chapter-iv/class-diagram-material.png)
+#### BC3 - Material Operations
 
-**Jewelry Inventory & Certification**
+![BC3 - Material Operations](../assets/img/chapter-iv/BC3_Material_Operations_Full.png)
 
-![Diagrama de clase 5](../assets/img/chapter-iv/class-diagram-jewelry.png)
+#### BC4 - Jewelry Inventory
 
-**Consumer Traceability**
+![BC4 - Jewelry Inventory](../assets/img/chapter-iv/BC4_Jewelry_Inventory_Full.png)
 
-![Diagrama de clase 6](../assets/img/chapter-iv/class-diagram-consumer.png)
+#### BC5 - Consumer Traceability
 
-**Analytics**
+![BC5 - Consumer Traceability](../assets/img/chapter-iv/BC5_Consumer_Traceability_Full.png)
 
-![Diagrama de clase 7](../assets/img/chapter-iv/class-diagram-analytics.png)
+#### BC6 - Monitoring Telemetry
 
-**Monitoring & Telemetry**
+![BC6 - Monitoring Telemetry](../assets/img/chapter-iv/BC6_Monitoring_Telemetry_Full.png)
 
-![Diagrama de clase 8](../assets/img/chapter-iv/class-diagram-monitoring.png)
+#### BC7 - Analytics
 
-**Incident Management**
+![BC7 - Analytics](../assets/img/chapter-iv/BC7_Analytics_Full.png)
 
-![Diagrama de clase 9](../assets/img/chapter-iv/class-diagram-incident.png)
+#### BC8 - Incident Management
 
-**Reporting & Notificacions**
+![BC8 - Incident Management](../assets/img/chapter-iv/BC8_Incident_Management_Full.png)
 
-![Diagrama de clase 10](../assets/img/chapter-iv/class-diagram-reporting.png)
+#### BC9 - Reporting Notifications
 
-**Subscripcions & Billing**
+![BC9 - Reporting Notifications](../assets/img/chapter-iv/BC9_Reporting_Notifications_Full.png)
 
-![Diagrama de clase 11](../assets/img/chapter-iv/class-diagram-subscriptions.png)
+#### BC10 - Asset Maintenance
+
+![BC10 - Asset Maintenance](../assets/img/chapter-iv/BC10_Asset_Maintenance_Full.png)
+
+#### BC11 - Subscriptions Billing
+
+![BC11 - Subscriptions Billing](../assets/img/chapter-iv/BC11_Subscriptions_Billing_Full.png)
 
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
-**Identity & Access Management**
+El diseño de base de datos de OpalTrace sigue una arquitectura relacional implementada en **Microsoft SQL Server** y **Verbatelo**, organizada en torno a los Bounded Contexts definidos en la arquitectura DDD. Cada Bounded Context posee sus propias tablas con un prefijo identificador (`iam_`, `mineral_`, `custody_`, `refinery_`, `jewelry_`, `consumer_`, `admin_`, `analytics_`, `billing_`), garantizando separación lógica de responsabilidades y bajo acoplamiento entre contextos.
+ 
+Las principales características del diseño son las siguientes. Primero, los Value Objects del dominio se persisten como columnas embebidas dentro de la tabla de su Aggregate Root — por ejemplo, `GPSLocation` se almacena como `location_latitude` y `location_longitude` en `mineral_batches`, evitando joins innecesarios para datos que son parte intrínseca del aggregate. Segundo, los Enums del dominio se implementan como columnas con constraints `CHECK`, garantizando integridad referencial sin tablas adicionales de catálogo. Tercero, las relaciones entre Bounded Contexts se establecen únicamente a través de Foreign Keys hacia las tablas raíz (`iam_organizations`, `iam_user_accounts`, `mineral_batches`), respetando el principio DDD de que los BCs se referencian por identidad y no por objeto. Cuarto, la tabla `traceability_tracking_events` centraliza el historial completo de eventos de trazabilidad de cada Batch a lo largo de toda la cadena de suministro, permitiendo construir el `TraceabilityRecord` sin duplicar información entre contextos. Finalmente, todos los identificadores primarios son de tipo `UNIQUEIDENTIFIER` (UUID), eliminando dependencias de secuencias y facilitando la distribución futura del sistema.
+ 
+A continuación se presentan los diagramas de base de datos para cada Bounded Context, mostrando tablas, columnas, constraints y relaciones.
+ 
+---
+ 
+#### BC: Identity & Access Management
+ 
+El contexto de identidad gestiona las tablas `iam_organizations`, `iam_user_accounts` e `iam_role_assignments`. La tabla `iam_organizations` almacena los datos de cada empresa registrada en la plataforma, incluyendo su tipo (`MINERA`, `TRANSPORTISTA`, `REFINERIA`, `JOYERIA`), su estado de aprobación y el `plan_tier` contratado. La tabla `iam_user_accounts` centraliza las credenciales y el rol de cada usuario, almacenando el `hashed_password` y los claims `role`, `segment` y `plan_tier` que conforman el JWT emitido por este contexto. La tabla `iam_role_assignments` registra el historial de asignaciones de roles por cuenta.
+ 
+![Database BC1 IAM](../assets/img/chapter-iv/DB_BC1_IAM.png)
+ 
+ 
+---
+ 
+#### BC: Mineral Extraction & Offline Ops
+ 
+El contexto de extracción gestiona cuatro tablas. `mineral_batches` es la tabla central del sistema — almacena el Aggregate Root `MineralBatch` con el `traceability_code` único, el `qr_code`, el tipo de mineral, el peso, las coordenadas GPS embebidas (`location_latitude`, `location_longitude`) y el `status` del Batch a lo largo de su ciclo de vida. `mineral_anomaly_reports` registra cada anomalía detectada con su `alert_type` y estado de resolución. `mineral_extraction_records` persiste los registros de extracción con timestamp sellado e inmutable. `mineral_sync_queue_items` gestiona la cola de operaciones offline pendientes de sincronización. Adicionalmente, la tabla `traceability_tracking_events` inicia su historial en este BC con el evento `MINERAL_EXTRACTED`.
+ 
+![Database BC2 Mineral Extraction](../assets/img/chapter-iv/DB_BC2_Mineral%20Extraction%20%26%20Offline%20Ops.png)
+ 
+ 
+---
+ 
+#### BC: Custody Chain & Logistics
+ 
+El contexto de cadena de custodia gestiona cinco tablas. `custody_batches` referencia al `mineral_batches` padre y mantiene el estado de transporte (`EN_ORIGEN`, `EN_TRANSITO`, `ENTREGADO`, `BLOQUEADO`) junto con la última `Location` conocida embebida. `custody_qr_codes` almacena el hash de firma digital del QR Code generado para cada Batch. `custody_transport_operations` registra cada operación de transporte con la ruta, kilómetros estimados y tiempo máximo permitido. `custody_location_updates` persiste cada actualización GPS durante el transporte, asociada a la operación correspondiente. `custody_transfers` registra cada transferencia formal de custodia entre Organizations, constituyendo el `Domain Event` más crítico de la cadena.
+ 
+![Database BC3 Custody Chain](../assets/img/chapter-iv/DB_BC3_Custody%20Chain%20%26%20Logistics.png)
+ 
+---
+ 
+#### BC: Refinery Processing
+ 
+El contexto de refinería gestiona cuatro tablas. `refinery_batches` referencia al `mineral_batches` padre y almacena la invariante de conservación de masa mediante `mass_balance_tolerance_pct` y `mass_balance_is_valid`. El campo `inherited_traceability_code` garantiza que cada Batch en refinería conserve la trazabilidad de su origen. `refinery_child_batches` registra cada sublote generado en la división, con su peso y organización de destino. `refinery_processing_operations` persiste cada operación de procesamiento (`SMELTING`, `REFINING`, `ASSAYING`, `CASTING`). `refinery_shrinkage_records` almacena la merma en cada etapa, con `input_weight`, `output_weight` y `loss_pct`, datos consumidos por el BC8 para los reportes ESG.
+ 
+![Database BC4 Refinery](../assets/img/chapter-iv/DB_BC4_Refinery.png)
+ 
+ 
+---
+ 
+#### BC5: Jewelry Inventory & Certification
+ 
+El contexto de joyería gestiona cinco tablas correspondientes a los dos Aggregate Roots del dominio. Para `JewelryProduct`: `jewelry_products` almacena la columna `stock_category` con constraint `CHECK ('CERTIFIED_OPALTRACE', 'EXTERNAL')` que implementa la invariante de segregación ética; `jewelry_inventory_items` gestiona el stock con `StorageLocation` embebida; `jewelry_fabrication_orders` registra las órdenes de fabricación con estado `BLOCKED` cuando se detecta mezcla de stocks; `jewelry_fabrication_order_components` persiste los componentes de cada orden. Para `JewelryCertificate`: `jewelry_certificates` almacena el estado de la Certification de Autenticidad, el `rejection_code` en caso de rechazo, y la URL del PDF almacenado en AWS S3.
+ 
+![Database BC5 Jewelry](../assets/img/chapter-iv/DB_BC5_Jewelry.png)
+ 
+---
+ 
+#### BC: Consumer Experience
+ 
+El contexto de experiencia del consumidor gestiona dos tablas de solo lectura que implementan el patrón CQRS. `consumer_certificates` es una proyección optimizada del estado de certificación de cada Product, indexada por `qr_code_hash` para consultas públicas de alta frecuencia sin autenticación. Almacena el `journey_map_json` con el recorrido geográfico completo del Mineral en formato JSON. `consumer_verification_events` registra cada intento de verificación vía QR Code con su resultado (`SUCCESS`, `FAILED`, `NOT_FOUND`) y el `failure_code` correspondiente si la verificación falló.
+ 
+![Database BC6 Consumer Experience](../assets/img/chapter-iv/DB_BC6_Consumer_Experience.png)
+ 
+---
+ 
+#### BC: Administration & Audit
+ 
+El contexto de administración gestiona la tabla `admin_audit_records`, que implementa el Entity `AuditRecord` con carácter inmutable por diseño — ningún registro de auditoría puede ser modificado una vez creado. Almacena el `event_type` (`ACCOUNT_APPROVED`, `ACCOUNT_REJECTED`, `ORGANIZATION_SUSPENDED`, etc.), el `actor_id` responsable de la acción, la `ip_address` desde donde se ejecutó, y el payload en formato JSON con el estado anterior y posterior del objeto afectado (`payload_before`, `payload_after`). Este contexto referencia a `iam_organizations` e `iam_user_accounts` del BC1 para mantener la trazabilidad administrativa completa.
+ 
+![Database BC7 Administration](../assets/img/chapter-iv/DB_BC7_Administration%20%26%20Audit.png)
+ 
+---
+ 
+#### BC: Reporting & Analytics
+ 
+El contexto de reportes gestiona cuatro tablas de solo lectura orientadas al análisis de datos. `analytics_reports` centraliza cada reporte generado con su tipo y período. `analytics_merma_indicators` persiste el Value Object `MermaIndicator` con `stage_origin`, `stage_destination`, `input_weight`, `output_weight` y `loss_pct` por etapa de procesamiento. `analytics_sustainability_records` almacena el Value Object `SustainabilityRecord` con los tres scores ESG: `environmental_score`, `social_score` y `ethical_score`. `analytics_dashboard_snapshots` captura el estado operativo del sistema en un momento dado, incluyendo `active_batches`, `pending_anomalies`, `certifications_granted` y `certification_rate` para el Dashboard de monitoreo en tiempo real.
+ 
+![Database BC8 Reporting](../assets/img/chapter-iv/DB_BC8_Reporting.png)
 
-![Diagrama de clase 1](../assets/img/chapter-iv/identity-db.png)
-
-**Fleet Operations**
-
-![Diagrama de clase 2](../assets/img/chapter-iv/fleet.png)
-
-**Assist & Maintenance Management**
-
-![Diagrama de clase 3](../assets/img/chapter-iv/assist.png)
-
-**Material Operations**
-
-![Diagrama de clase 4](../assets/img/chapter-iv/material.png)
-
-**Jewelry Inventory & Certification**
-
-![Diagrama de clase 5](../assets/img/chapter-iv/jewelry.png)
-
-**Consumer Traceability**
-
-![Diagrama de clase 6](../assets/img/chapter-iv/consumer.png)
-
-**Analytics**
-
-![Diagrama de clase 7](../assets/img/chapter-iv/analytics.png)
-
-**Monitoring & Telemetry**
-
-![Diagrama de clase 8](../assets/img/chapter-iv/monitoring.png)
-
-**Incident Management**
-
-![Diagrama de clase 9](../assets/img/chapter-iv/incident.png)
-
-**Reporting & Notificacions**
-
-![Diagrama de clase 10](../assets/img/chapter-iv/reporting.png)
-
-**Subscripcions & Billing**
-
-![Diagrama de clase 11](../assets/img/chapter-iv/subscriptions.png)
+---
+ 
+#### BC: Subscriptions & Billing
+ 
+El contexto de suscripciones gestiona tres tablas. `billing_subscriptions` almacena el Aggregate Root `Subscription` con el `plan_tier` contratado, el `billing_cycle` (`MONTHLY`, `ANNUAL`) y el Value Object `FeatureSet` embebido como columnas booleanas (`has_offline_mode`, `has_esg_reporting`, `has_advanced_analytics`, `has_api_access`) y límites numéricos (`max_batches_per_month`, `max_users`). También almacena el `stripe_customer_id` para la integración con Stripe API. `billing_records` persiste cada factura con su monto, moneda, estado (`PENDING`, `PAID`, `OVERDUE`, `CANCELLED`) y el `stripe_invoice_id` de referencia. `billing_plan_change_records` registra el historial de cambios de plan con el tier anterior y nuevo, implementando el Value Object `PlanChangeRecord` de forma inmutable.
+ 
+![Database BC9 Subscriptions Billing](../assets/img/chapter-iv/DB_BC9_Subscriptions%26Billing.png)
+ 
