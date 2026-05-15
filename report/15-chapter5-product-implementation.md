@@ -382,6 +382,12 @@ En el Sprint 2 se logró desarrollar y desplegar la primera versión funcional d
 
 A continuación se presentan las principales vistas implementadas durante este Sprint:
 
+**GOLDCHECK Mockapi:**
+
+![Mockapi Web](../assets/img/chapter-v/mockapi-goldcheck.png)
+
+**GOLDCHECK Frontend Web App :**
+
 ![Minero 1](../assets/img/chapter-v/minero-1.png)
 
 ![Minero 2](../assets/img/chapter-v/minero-2.png)
@@ -425,8 +431,7 @@ A continuación se presentan las principales vistas implementadas durante este S
 
 ![Consumidor 5](../assets/img/chapter-v/consumidor-5.png)
 
-URL del Frontend Web Application desplegado: 
-https://luxury-beignet-b30759.netlify.app/ 
+
 
 URL del video de navegación (Microsoft Stream):
 https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQCM0Lx_OtVUQJrTSpTY9SswAQF1q1ZwS6fIq6fIxeQgPnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SXCbMZ
@@ -453,8 +458,13 @@ Durante el Sprint 2 se realizó el despliegue exitoso del Frontend Web Applicati
 7. Se habilitó el autodespliegue para actualizar automáticamente la landing en cada push realizado al repositorio.  
 8. Se verificó el correcto funcionamiento de la landing mediante la URL pública generada por Netlify.
 
+URL de la Mockapi desplegado: https://goldcheck-mockapi-production.up.railway.app
+
 URL del Frontend Web Application desplegado: https://luxury-beignet-b30759.netlify.app/
-URL del Landing Page: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
+
+URL del Landing Page integrado con nuestro Frontend: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
+
+
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
