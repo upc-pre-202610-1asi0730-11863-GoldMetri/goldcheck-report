@@ -40,13 +40,77 @@
 
 ## REGISTRO DE VERSIONES DEL INFORME
 
-| Versión | Fecha | Autor | Descripción de modificación |
-| :---: | :---: | :---: | :---: |
-
+| Versión |   Fecha    | Autor | Descripción de modificación |
+| :---: |:----------:| :--- | :--- |
+| 0.1.0 | 25/04/2026 | Armestar Felipa, Adrian Andres | AV1 — Commit inicial del informe; estructura base del repositorio y organización de carpetas. Incorporación del Capítulo I: Startup Profile, Lean UX Process (1.2.2.1–1.2.2.4) y Segmentos Objetivo (1.3). Adición de Domain-Driven Software Architecture (4.6), Design-Level EventStorming (4.6.1) y diagramas C4: Context (4.6.2), Container (4.6.3) y Components (4.6.4). *(develop · feature/chapter-i-content · feature/chapter-i-student-profile · feature/domain-driven-software-architecture)* |
+| 0.2.0 | 26/04/2026 | García Paredes, Victor Manuel | AV1 — Incorporación del Capítulo III: User Stories con Acceptance Criteria (3.1), Impact Mapping (3.2) y Product Backlog con estimación y priorización (3.3). Sprint 1 completo: Sprint Planning (5.2.1.1), Aspect Leaders and Collaborators (5.2.1.2), Sprint Backlog (5.2.1.3), Development Evidence (5.2.1.4), Execution Evidence (5.2.1.5), Services Documentation Evidence (5.2.1.6), Software Deployment Evidence (5.2.1.7) y Team Collaboration Insights (5.2.1.8). *(feature/chapter3-content · feature/chapter-v-software-configuration)* |
+| 0.3.0 | 24/04/2026 | Navarro Aldoradin, Carolina Celeste | AV1 — Incorporación del análisis competitivo (2.1.1) con Competitive Analysis Landscape y SWOT, estrategias y tácticas frente a competidores (2.1.2), Big Picture EventStorming (2.4) y Ubiquitous Language (2.5). Landing Page Wireframe (4.3.1), Landing Page Mock-up (4.3.2), Web Applications Prototyping (4.5) y Class Diagrams (4.7.1). *(feature/chapter2-content · feature/chapter-iv-evenstorming · feature/chapteriv-class-diagrams)* |
+| 0.4.0 | 18/04/2026 | Philco Mota, Katty Yolanda | AV1 — Incorporación de análisis de entrevistas por segmento (2.2.3), User Personas (2.3.1), User Task Matrix (2.3.2), User Journey Mapping (2.3.3) y Empathy Mapping (2.3.4). Database Diagrams (4.8.1), Software Development Environment Configuration (5.1.1), Source Code Management (5.1.2), Source Code Style Guide y Conventions (5.1.3) y Software Deployment Configuration (5.1.4). *(feature/chapter-ii-interviews · feature/chapter-iv-database · feature/student-outcome)* |
+| 0.5.0 | 24/04/2026 | Tuesta Girón, Kiara Lucia | AV1 — Incorporación de Style Guidelines general y web (4.1–4.1.2), Information Architecture: Organization Systems (4.2.1), Labeling Systems (4.2.2), SEO Tags y Meta Tags (4.2.3), Searching Systems (4.2.4) y Navigation Systems (4.2.5). Web Applications Wireframes (4.4.1), Wireflow Diagrams (4.4.2), Mock-ups (4.4.3) y User Flow Diagrams (4.4.4). *(feature/chapter-iv-style-guidelines · feature/chapter-iv-information-architecture · feature/cap-iv-web-applications-ux-ui-design)* |
+| 1.0.0 | 25/23/2026 | Armestar Felipa, Adrian Andres<br>García Paredes, Victor Manuel<br>Navarro Aldoradin, Carolina Celeste<br>Philco Mota, Katty Yolanda<br>Tuesta Girón, Kiara Lucia | AV1 — Consolidación y entrega del AV1. Integración de todos los capítulos (I al V, Sprint 1) en rama develop. Primera versión del Landing Page desplegada. Student Outcome y Project Report Collaboration Insights completados. Versión exportada a PDF para entrega formal. *(develop → pre-main · release)* |
+| 1.1.0 | 13/28/2026 | Armestar Felipa, Adrian Andres | Corrección AV1 — Corrección de la estructura orientada a objetos en Class Diagrams. Actualización del contenido de la Landing Page para reflejar correctamente el modelo de negocio de GoldMetrics y despliegue de la versión corregida. *(feature/chapteriv-class-diagrams · feature/domain-driven-software-architecture · develop)* |
+| 1.2.0 | 13/28/2026 | García Paredes, Victor Manuel | Corrección AV1 — Actualización del Lean UX Hypothesis Statements con valores concretos y medibles (1.2.2.3). Adición de Technical Stories en User Stories (3.1) con criterios de aceptación en formato Gherkin para los endpoints del RESTful API. *(feature/chapter3-content · feature/chapter-i-content)* |
+| 1.3.0 | 13/28/2026 | Philco Mota, Katty Yolanda | Corrección AV1 — Correcciones generales de formato en el informe. Ajuste del PDF exportado para correcta visualización de User Task Matrix y diagramas Wireflow. Revisión de convenciones en Source Code Style Guide (5.1.3). *(feature/chapter-iv-database · develop)* |
+| 1.4.0 | 13/10/2026 | García Paredes, Victor Manuel | TB1 — Implementación de fake API con MockAPI para soporte del Frontend Web Application en el Sprint 2. Configuración de endpoints simulados para los bounded contexts de trazabilidad y gestión de activos. *(feature/chapter-v-software-configuration · develop)* |
+| 1.5.0 | 13/12/2026 | Philco Mota, Katty Yolanda<br>Tuesta Girón, Kiara Lucia | TB1 — Implementación del Frontend Web Application: desarrollo de vistas principales con Vue Framework y PrimeVue integradas con MockAPI. Corrección de diagramas de clases (4.7.1) y diagramas de base de datos (4.8.1) para refinamiento del modelo orientado al dominio. Corrección de wireframes y user flows observados en el AV1 (4.4.1–4.4.4). *(feature/cap-iv-web-applications-ux-ui-design · feature/chapteriv-class-diagrams · feature/chapter-iv-database · develop)* |
+| 1.6.0 | 13/14/2026 | Navarro Aldoradin, Carolina Celeste | TB1 — Despliegue de la primera versión de Frontend Web Applications. Documentación del Sprint 2: Sprint Planning 2 (5.2.2.1), Aspect Leaders and Collaborators (5.2.2.2), Sprint Backlog 2 (5.2.2.3), Development Evidence (5.2.2.4), Execution Evidence (5.2.2.5), Services Documentation Evidence (5.2.2.6), Software Deployment Evidence (5.2.2.7) y Team Collaboration Insights (5.2.2.8). *(feature/cap-iv-web-applications-ux-ui-design · develop)* |
+| 2.0.0 | 13/14/2026 | Armestar Felipa, Adrian Andres<br>García Paredes, Victor Manuel<br>Navarro Aldoradin, Carolina Celeste<br>Philco Mota, Katty Yolanda<br>Tuesta Girón, Kiara Lucia | TB1 — Consolidación y entrega del TB1. Integración de Sprint 2 completo, Frontend Web Applications desplegado, correcciones de artefactos del AV1 y versión final de todos los capítulos. Actualización del Student Outcome, Project Report Collaboration Insights y Registro de Versiones. Versión exportada a PDF para entrega formal. *(develop → pre-main · release)* |
 
 <div style="page-break-after: always"></div>
 
-## PROJECT REPORT COLLABORATION INSIGHTS
+## Project Report Collaboration Insights
+
+El repositorio del informe del proyecto se encuentra en la organización de GitHub del equipo,
+en el siguiente enlace:
+
+**Report:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-report
+
+---
+
+### AV1
+
+Durante el desarrollo del AV1, el equipo utilizó GitHub como plataforma principal para
+la gestión y colaboración del informe. Cada integrante trabajó sobre ramas individuales
+siguiendo la convención `feature/chapter-#-description`, integrando sus avances mediante
+Pull Requests hacia la rama `develop`. Las contribuciones abarcan la redacción de los
+cinco capítulos del informe, incluyendo el perfil del startup, el análisis de requisitos,
+la especificación de requerimientos, el diseño del producto y la implementación del
+Sprint 1.
+
+A continuación se presentan las evidencias de colaboración en el repositorio del informe
+para esta entrega:
+
+![Team Collaboration Sprint 1](../assets/img/chapter-v/sprint-collaboration.png)
+
+---
+
+### TB1
+
+Durante el TB1, la colaboración del equipo se extendió a cinco repositorios de la
+organización GitHub: el repositorio del informe (`goldcheck-report`), el sitio web
+estático (`goldcheck-website`), la aplicación web frontend (`goldcheck-webapp`),
+el mock API backend (`goldcheck-mockapi`) y el repositorio de plataforma
+(`goldcheck-platform`). Cada integrante participó en las correcciones del AV1,
+el desarrollo de la Landing Page y la implementación del frontend organizado por
+Bounded Contexts, siguiendo el flujo GitFlow con ramas `feature/`, `develop` y `main`.
+
+Los repositorios involucrados en esta entrega son:
+
+- **Report:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-report
+- **Website:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-website
+- **Web App:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-webapp
+- **Mock API:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-mockapi
+- **Platform:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-platform
+
+A continuación se presentan las evidencias de colaboración por repositorio:
+
+![Team Collaboration Sprint 2](../assets/img/chapter-v/sprint-collaboration.png)
+
+![Team Collaboration Sprint 2-1](../assets/img/chapter-v/collaboration-1.png)
+
+![Team Collaboration Sprint 2-2](../assets/img/chapter-v/collaboration-2.png)
+
+![Team Collaboration Sprint 2-3](../assets/img/chapter-v/collaboration-3.png)
 
 <div style="page-break-after: always"></div>
 
@@ -54,6 +118,7 @@
 ## CONTENIDO
 
 [REGISTRO DE VERSIONES DEL INFORME](#registro-de-versiones-del-informe)
+
 
 [PROJECT REPORT COLLABORATION INSIGHTS](#project-report-collaboration-insights)
 
@@ -172,14 +237,16 @@
 
 - [5.4. Video About-the-Product](#54-video-about-the-product)
 
-- [Anexos](#55-anexos)
+- [Anexos Importantes](#55-anexos-importantes)
+- [Conclusiones](#55-Conclusiones)
+- [Bibliografia](#55-Bibliografia)
 
 # STUDENT OUTCOME
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta. | Navarro Aldoradin Carolina Celeste<br>AV1<br>Lideró el diseño de la Landing Page (Wireframe y Mock-up), guiando las decisiones visuales del equipo para estos componentes.<br><br>Philco Mota Katty Yolanda <br>AV1<br>Lideró la sección de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), orientando al equipo en la comprensión del problema y las necesidades de los usuarios.<br><br>Armestar Felipa, Adrián Andres<br>AV1<br>Lideró la elaboración de la arquitectura de software orientada al dominio (Domain-Driven Software Architecture: Design-Level EventStorming, diagramas de Contexto, Contenedores y Componentes) y el Software Object-Oriented Design, guiando las decisiones técnicas del equipo.<br><br>García Paredes Victor Manuel<br>AV1<br>Lideró la elaboración de los Requirements Specification (User Stories, Impact Mapping y Product Backlog) coordinando la definición de requisitos y el diseño de datos del proyecto.<br><br>Tuesta Girón, Kiara Lucia<br>AV1<br>Lideró el diseño UX/UI de las Web Applications (Wireframes, Wireflow Diagrams, Mock-ups y User Flow Diagrams), guiando las decisiones visuales del equipo para estos componentes. | El equipo demostró liderazgo distribuido durante el AV1, asignando responsables claros para cada área del proyecto. Cada integrante asumió su rol de liderazgo, facilitando la toma de decisiones y el avance estructurado del trabajo. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | Tuesta Girón, Kiara Lucia<br>AV1<br>Colaboró en el diseño, registro y análisis de entrevistas junto al equipo, y cumplió con la entrega de los artefactos de diseño UI/UX dentro del plazo establecido para el Sprint 1.<br><br>Philco Mota, Katty Yolanda<br>AV1<br>Participó activamente en las sesiones de entrevistas y en la elaboración de los artefactos de Needfinding, contribuyendo a la construcción de una visión compartida de los usuarios.<br><br>Navarro Aldoradin, Carolina Celeste<br>AV1<br>Colaboró en la configuración del entorno de desarrollo y en el Source Code Management, cumpliendo con la entrega de los diagramas de arquitectura planificados para el Sprint 1.<br><br>García Paredes, Victor Manuel<br>AV1<br>Participó en la planificación del Sprint 1 y en la construcción del Product Backlog, estableciendo metas claras mediante User Stories priorizadas y cumpliendo con los entregables asignados.<br><br>Armestar Felipa, Adrián Andres<br>AV1<br>Colaboró en la definición del problema y la propuesta de solución junto al equipo, estableciendo objetivos iniciales y cumpliendo con la redacción del Capítulo I dentro del plazo establecido. | Durante el AV1, el equipo trabajó de manera colaborativa e inclusiva, participando activamente en las actividades de investigación y planificación. Se establecieron objetivos claros, se distribuyeron las tareas según las fortalezas de cada integrante y se cumplieron los entregables dentro del plazo definido. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta. | **Navarro Aldoradin, Carolina Celeste**<br>**AV1:** Lideró el diseño de la Landing Page (Wireframe y Mock-up), guiando las decisiones visuales del equipo para estos componentes.<br>**TB1:** Lideró las correcciones del AV1 relacionadas a la arquitectura visual del proyecto, coordinando mejoras en los diagramas de contenedores y componentes del frontend, y guiando al equipo en el desarrollo de la Landing Page desplegada.<br><br>**Philco Mota, Katty Yolanda**<br>**AV1:** Lideró la sección de Needfinding (User Personas, User Task Matrix, User Journey Mapping y Empathy Mapping), orientando al equipo en la comprensión del problema y las necesidades de los usuarios.<br>**TB1:** Lideró la revisión y corrección de los artefactos de Needfinding del AV1, asegurando la coherencia entre los perfiles de usuario y las funcionalidades implementadas en el frontend durante el TB1.<br><br>**Armestar Felipa, Adrián Andres**<br>**AV1:** Lideró la elaboración de la arquitectura de software orientada al dominio (Domain-Driven Software Architecture: Design-Level EventStorming, diagramas de Contexto, Contenedores y Componentes) y el Software Object-Oriented Design, guiando las decisiones técnicas del equipo.<br>**TB1:** Lideró las correcciones de la arquitectura C4 del AV1 y guió al equipo en las decisiones técnicas del desarrollo del frontend, asegurando que la implementación respetara los bounded contexts definidos en el diseño.<br><br>**García Paredes, Victor Manuel**<br>**AV1:** Lideró la elaboración de los Requirements Specification (User Stories, Impact Mapping y Product Backlog) coordinando la definición de requisitos y el diseño de datos del proyecto.<br>**TB1:** Lideró la actualización del Product Backlog y la priorización de las correcciones del AV1, coordinando qué funcionalidades del frontend debían completarse dentro del Sprint del TB1.<br><br>**Tuesta Girón, Kiara Lucia**<br>**AV1:** Lideró el diseño UX/UI de las Web Applications (Wireframes, Wireflow Diagrams, Mock-ups y User Flow Diagrams), guiando las decisiones visuales del equipo para estos componentes.<br>**TB1:** Lideró la implementación de las vistas del frontend, guiando al equipo en la traducción de los Mock-ups del AV1 a componentes Vue funcionales y asegurando la consistencia visual del producto. | **AV1:** El equipo demostró liderazgo distribuido durante el AV1, asignando responsables claros para cada área del proyecto. Cada integrante asumió su rol de liderazgo, facilitando la toma de decisiones y el avance estructurado del trabajo.<br><br>**TB1:** En el TB1, cada integrante extendió su rol de liderazgo hacia la corrección del AV1 y el desarrollo concreto de la Landing Page y el frontend, consolidando un avance técnico estructurado y alineado con los objetivos del producto. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Tuesta Girón, Kiara Lucia**<br>**AV1:** Colaboró en el diseño, registro y análisis de entrevistas junto al equipo, y cumplió con la entrega de los artefactos de diseño UI/UX dentro del plazo establecido para el Sprint 1.<br>**TB1:** Participó activamente en las correcciones del AV1 y colaboró en el desarrollo de las vistas del frontend, cumpliendo con la implementación de los componentes UI asignados dentro del plazo del TB1.<br><br>**Philco Mota, Katty Yolanda**<br>**AV1:** Participó activamente en las sesiones de entrevistas y en la elaboración de los artefactos de Needfinding, contribuyendo a la construcción de una visión compartida de los usuarios.<br>**TB1:** Colaboró en la revisión de los artefactos del AV1 y participó en el desarrollo del frontend, contribuyendo a mantener la coherencia entre el análisis de usuarios y las funcionalidades implementadas.<br><br>**Navarro Aldoradin, Carolina Celeste**<br>**AV1:** Colaboró en la configuración del entorno de desarrollo y en el Source Code Management, cumpliendo con la entrega de los diagramas de arquitectura planificados para el Sprint 1.<br>**TB1:** Participó en las correcciones del AV1 y colaboró en el desarrollo y despliegue de la Landing Page, asegurando el correcto funcionamiento del entorno de desarrollo compartido durante el TB1.<br><br>**García Paredes, Victor Manuel**<br>**AV1:** Participó en la planificación del Sprint 1 y en la construcción del Product Backlog, estableciendo metas claras mediante User Stories priorizadas y cumpliendo con los entregables asignados.<br>**TB1:** Colaboró en la corrección de los requisitos del AV1 y participó en la planificación del Sprint del TB1, estableciendo metas claras para el desarrollo del frontend y cumpliendo con los entregables definidos en el backlog.<br><br>**Armestar Felipa, Adrián Andres**<br>**AV1:** Colaboró en la definición del problema y la propuesta de solución junto al equipo, estableciendo objetivos iniciales y cumpliendo con la redacción del Capítulo I dentro del plazo establecido.<br>**TB1:** Colaboró en las correcciones técnicas del AV1 y participó activamente en el desarrollo del frontend, cumpliendo con la implementación de los módulos asignados y contribuyendo al cumplimiento de los objetivos del TB1 dentro del plazo establecido. | **AV1:** El equipo trabajó de manera colaborativa e inclusiva, participando activamente en las actividades de investigación y planificación. Se establecieron objetivos claros, se distribuyeron las tareas según las fortalezas de cada integrante y se cumplieron los entregables dentro del plazo definido.<br><br>**TB1:** En el TB1 se integraron las correcciones del AV1 con el desarrollo de la Landing Page y el frontend, manteniendo una distribución equitativa de tareas, comunicación constante y cumplimiento de los entregables dentro de los plazos definidos. |
 
 # CAPÍTULO I: INTRODUCCIÓN {#capitulo-i-introduccion}
 
@@ -252,24 +319,35 @@ Esta problemática tiene impactos en varios sectores, especialmente el económic
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
+**Problem Statement 1 (Empresas Mineras)**
 
-Nuestra solución busca mejorar la trazabilidad de los minerales mediante el uso de una plataforma que use tecnología IoT, Web e IA.
+El estado actual del sector minero peruano depende en gran medida de procesos manuales y reportes empíricos, lo que genera una falta de trazabilidad confiable desde la zona de extracción hasta la comercialización. 
 
-Hemos observado que las empresas, sobre todo relacionadas a la minería, sufren ineficiencias operativas al tener dificultades para monitorear en tiempo real el traslado de los minerales.
+Hemos observado que las empresas mineras sufren ineficiencias operativas y pérdidas económicas equivalentes a millones de soles anuales debido a la dificultad para monitorear en tiempo real el traslado y procesamiento de los minerales en sus rutas logísticas. 
 
-**¿Cómo puede nuestro producto apoyar en el rastreo de minerales para reducir pérdidas?**
+Nuestra solución abordará esta oportunidad desarrollando una plataforma Web que automatice el registro de pesajes y geolocalización. 
 
-Nuestra solución busca verificar la autenticidad de los minerales que son usados en productos.
+Las restricciones bajo las cuales operamos incluyen la baja conectividad a internet en zonas de extracción profunda y la alta confidencialidad que exigen las mineras sobre sus datos de producción.
 
-Hemos observado que las tiendas no cuentan con mecanismos para validar el origen de los minerales lo cual afecta la credibilidad de los distribuidores.
 
-**¿Cómo puede nuestro producto garantizar la autenticidad de los minerales para reforzar la confianza entre los clientes?**
+**Problem Statement 2 (Joyerías)**
+El estado actual del mercado de joyería en el Perú carece de mecanismos formales, accesibles e inmutables para certificar el origen de los minerales con los que se fabrican sus piezas.
 
-Nuestra solución busca ofrecer acceso transparente a la información relacionada al origen de los productos minerales que terminan en objetos que se compran en el día a día.
+Hemos observado que las tiendas y distribuidores de joyas enfrentan dificultades para garantizar el origen ético y la autenticidad de sus productos, lo que frena sus ventas frente a consumidores cada vez más exigentes e informados.
 
-Hemos observado que el consumidor no tiene una forma de verificar si el producto proviene de fuentes responsables.
+Nuestra solución abordará esta oportunidad mediante un sistema que permita a las joyerías emitir certificados digitales (vía códigos QR) respaldados por datos trazables desde la mina.
 
-**¿Cómo puede nuestro producto fomentar la venta de productos hechos en base a minerales con origen ético?**
+Las restricciones bajo las cuales operamos son la resistencia al cambio tecnológico por parte de joyeros tradicionales y la dependencia de la data inicial ingresada correctamente por las mineras.
+
+
+**Problem Statement 3 (Consumidores Finales)**
+El estado actual del mercado de consumo muestra a compradores cada vez más preocupados por el impacto ambiental y social de los productos que adquieren.
+
+Hemos observado que el consumidor final no tiene una forma confiable ni rápida de verificar si las joyas que compra provienen de fuentes responsables, lo que genera dudas al momento de realizar compras de alto valor.
+
+Nuestra solución abordará esta oportunidad ofreciendo acceso transparente a la "hoja de vida" del producto escaneando un código QR generado por nuestra plataforma.
+
+Las restricciones bajo las cuales operamos incluyen la necesidad de que el usuario tenga un smartphone con conexión a internet y la voluntad de interactuar con el código QR antes o después de su compra.
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -302,17 +380,23 @@ Debe ser intuitiva mediante el uso de dashboards, de esta manera brindara una na
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Creemos** que una plataforma que permita monitorear en tiempo real los minerales ayudara a reducir las perdidas de minerales.
-**Sabremos que** hemos tenido éxito
-**Cuando** en los reportes de las empresas mineras disminuya la cantidad de perdidas.
+**Hipótesis 1:**
 
-**Creemos** que una plataforma que pueda certificar la autenticidad de los minerales ayudara a mejorar la confianza entre tiendas y consumidores.
-**Sabremos que** hemos tenido éxito
-**Cuando** los productos con certificación sean más vendidos respecto a los productos regulares.
+**Creemos** que una plataforma que permita monitorear en tiempo real los minerales ayudará a reducir las pérdidas de las empresas.
+**Sabremos que** hemos tenido éxito 
+**Cuando** los reportes de las empresas mineras piloto muestren una reducción de mermas de al menos un 15% durante los primeros 3 meses de uso, y logremos suscribir a 5 empresas mineras a nuestro plan B2B.
 
-**Creemos que** una plataforma que permita al usuario observar información de los productos en venta logrará fomentar decisiones de compra responsables.
-**Sabremos que** hemos tenido éxito
-**Cuando** calculemos el tiempo de visualización de información como una estadística.
+**Hipótesis 2:**
+
+**Creemos** que una plataforma que pueda certificar la autenticidad de los minerales ayudará a mejorar la confianza entre tiendas y consumidores.
+**Sabremos que** hemos tenido éxito 
+**Cuando** las joyerías afiliadas reporten un incremento del 20% en las ventas de joyas certificadas respecto a su inventario regular, y logremos emitir 500 certificados QR en el primer semestre.
+
+**Hipótesis 3:**
+
+**Creemos que** una plataforma que permita al usuario observar la hoja de vida de los productos en venta logrará fomentar decisiones de compra responsables.
+**Sabremos que** hemos tenido éxito 
+**Cuando** alcancemos más de 2,000 escaneos de códigos QR por mes en los productos afiliados y el tiempo promedio de sesión en la vista de trazabilidad sea superior a 1 minuto y 30 segundos.
 
 #### 1.2.2.4. Lean UX Canvas
 
@@ -943,13 +1027,6 @@ Gracias a esta exploración, se identificaron áreas críticas de mejora, como l
 ![EmpathyMap-iii](../assets/img/chapter-ii/EmpathyMap-3.png)
 
 ## 2.4. Big Picture EventStorming
-En la sesión de Big Picture Event Storming, el equipo exploró de forma visual el panorama general del dominio de telemetría en minería y trazabilidad de la cadena de valor para joyería de GoldMetrics. Se identificaron los eventos significativos del ciclo de vida de un activo monitoreado, desde el registro de la maquinaria hasta la respuesta ante incidentes críticos, integrando los sistemas externos que interactúan con la plataforma y exponiendo los problemas, dudas y oportunidades de mejora detectados durante la sesión. Esta primera aproximación permitió alinear el entendimiento del equipo y sentar las bases para el diseño detallado de la solución.
-
-**Primera fase: Eventos**
-![Big picture eevent storming](../assets/img/event-storming-events.png)
-
-**Mapa general:**
-https://canva.link/yc2kttn17z9hf75
 
 ## 2.5. Ubiquitous Language
 - **Machinery (Maquinaria)**: Cualquier unidad de equipo físico en la mina, como camiones de acarreo, palas o excavadoras, que genera datos y requiere monitoreo.
@@ -1106,11 +1183,16 @@ En esta sección se detallan los requisitos del producto digital GoldMetrics a t
 | US39 | Dashboard Joyería - Volumen Validado | Como dueño de joyería, deseo ver la cantidad total de oro validado en el mes, para llevar control de mis compras a proveedores formales. | **Scenario 1:** Cómputo total <br> **Given** el dashboard de joyería <br> **When** carga inicialmente <br> **Then** el sistema suma y muestra el total de gramos ingresados legalmente.<br><br>**Scenario 2:** Filtro por proveedor <br> **Given** el mismo dashboard <br> **When** se selecciona un proveedor específico en el filtro <br> **Then** el sistema recalcula la métrica para reflejar solo compras a esa entidad. | EP08 |
 | US40 | Exportación de Data Histórica | Como ingeniero de operaciones, deseo descargar en Excel el historial de lotes, para realizar análisis estadísticos externos. | **Scenario 1:** Descarga síncrona <br> **Given** una tabla filtrada con 500 lotes <br> **When** se solicita exportación <br> **Then** el sistema entrega un archivo CSV de descarga inmediata.<br><br>**Scenario 2:** Exportación masiva <br> **Given** una tabla con más de 10,000 registros <br> **When** se solicita exportación <br> **Then** el sistema notifica que el archivo pesado se procesará en segundo plano y será enviado por correo. | EP08 |
 | **EP09** | **GoldMetrics API (Technical Stories)** | Endpoints técnicos para la integración del backend (ASP.NET Core) con Frontend y hardware IoT. | — | — |
-| TS01 | Endpoint de Creación de Lotes | Como Developer, deseo un endpoint POST para registrar nuevos lotes, para permitir la comunicación asíncrona desde sistemas externos. | **Scenario 1:** Solicitud correcta <br> **Given** un payload JSON válido con Token <br> **When** se llama a POST `/api/v1/batches` <br> **Then** el servidor retorna HTTP 201 Created.<br><br>**Scenario 2:** Solicitud no autorizada <br> **Given** un payload válido pero sin Token en el header <br> **When** se llama al endpoint <br> **Then** el servidor bloquea el acceso con HTTP 401 Unauthorized. | EP09 |
-| TS02 | Endpoint de Recepción IoT (GPS) | Como Developer, deseo un endpoint POST para recibir coordenadas GPS de los camiones, para actualizar el monitoreo de ruta. | **Scenario 1:** Coordenada guardada <br> **Given** un dispositivo IoT enviando su lat/lng <br> **When** se llama a POST `/api/v1/tracking/location` <br> **Then** el servidor almacena el punto y retorna HTTP 200 OK.<br><br>**Scenario 2:** Formato inválido <br> **Given** un payload con strings en lugar de numéricos para lat/lng <br> **When** se llama al endpoint <br> **Then** el servidor rechaza la petición con HTTP 400 Bad Request. | EP09 |
-| TS03 | Endpoint de Consulta de Trazabilidad | Como Developer, deseo un endpoint GET público para obtener la hoja de vida de un QR, para que la web app consulte los datos del consumidor. | **Scenario 1:** Consulta exitosa <br> **Given** un ID de joya existente <br> **When** se llama a GET `/api/v1/traceability/{id}` <br> **Then** el servidor retorna HTTP 200 OK y el JSON con el árbol del lote.<br><br>**Scenario 2:** Recurso inexistente <br> **Given** un ID que no figura en la base de datos <br> **When** se llama al endpoint <br> **Then** el servidor retorna HTTP 404 Not Found. | EP09 |
-| TS04 | Endpoint de Recepción IoT (Balanza) | Como Developer, deseo un endpoint POST para automatizar la recepción de pesos desde balanzas digitales, para reducir errores de ingreso manual. | **Scenario 1:** Peso acoplado <br> **Given** una balanza enviando un dato en kg/toneladas <br> **When** se llama a POST `/api/v1/iot/weight` <br> **Then** el servidor vincula el peso al ID y retorna HTTP 200 OK.<br><br>**Scenario 2:** Lote inactivo <br> **Given** la petición a un ID de lote ya cerrado o procesado <br> **When** se llama al endpoint <br> **Then** el servidor rechaza la escritura con HTTP 409 Conflict. | EP09 |
-| TS05 | Endpoint de Reporte de Mermas | Como Developer, deseo un endpoint GET protegido para consultar agregados de mermas, para alimentar los gráficos del dashboard analítico. | **Scenario 1:** Agrupación válida <br> **Given** parámetros `startDate` y `endDate` válidos <br> **When** se llama a GET `/api/v1/analytics/shrinkage` <br> **Then** el servidor retorna HTTP 200 OK con la data agrupada.<br><br>**Scenario 2:** Fechas invertidas <br> **Given** un parámetro `startDate` mayor al `endDate` <br> **When** se llama al endpoint <br> **Then** el servidor indica el error lógico con HTTP 400 Bad Request. | EP09 |
+| **TS01** | Endpoint de Login y Autenticación | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/auth/login` con JWT,<br>**Para** asegurar el acceso a la plataforma. | **Scenario 1:** Login exitoso.<br>**Given** que se envían credenciales válidas,<br>**When** se hace la petición POST a `/api/auth/login`,<br>**Then** retorna HTTP 200 y el token JWT.<br><br>**Scenario 2:** Login fallido.<br>**Given** una contraseña incorrecta,<br>**When** se hace la petición POST,<br>**Then** retorna HTTP 401 Unauthorized. |
+| **TS02** | Endpoint de Registro de Usuarios | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/auth/register`,<br>**Para** permitir que nuevos actores (Mineras, Joyerías, Consumidores) creen sus cuentas. | **Scenario 1:** Registro exitoso.<br>**Given** un payload válido con email y rol,<br>**When** se envía el POST a `/api/auth/register`,<br>**Then** el usuario se guarda en BD y retorna HTTP 201 Created. |
+| **TS03** | Endpoint de Perfil de Usuario | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `GET /api/users/profile`,<br>**Para** que el Frontend pueda mostrar los datos del usuario logueado. | **Scenario 1:** Obtener perfil.<br>**Given** un token JWT válido en el header,<br>**When** se solicita el GET,<br>**Then** retorna HTTP 200 con la información JSON del usuario. |
+| **TS04** | Endpoint de Registro de Lotes (Minería) | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/mining/batches`,<br>**Para** almacenar los nuevos registros de minerales extraídos en la BD. | **Scenario 1:** Lote creado.<br>**Given** los datos completos (peso, tipo, origen),<br>**When** se hace el POST,<br>**Then** genera un ID único y retorna HTTP 201.<br><br>**Scenario 2:** Datos faltantes.<br>**Given** un payload sin peso,<br>**When** se hace el POST,<br>**Then** retorna HTTP 400 Bad Request. |
+| **TS05** | Endpoint de Actualización de Lotes | **Como** desarrollador backend,<br>**Quiero** exponer el endpoint `PUT /api/mining/batches/{id}/status`,<br>**Para** actualizar el estado del mineral durante su transporte. | **Scenario 1:** Cambio de estado.<br>**Given** un ID de lote existente,<br>**When** se envía el PUT con estado "En tránsito",<br>**Then** actualiza la BD y retorna HTTP 200 OK. |
+| **TS06** | Endpoint Ingesta de Telemetría (IoT) | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/telemetry/data`,<br>**Para** recibir coordenadas y estado de maquinaria en tiempo real. | **Scenario 1:** Guardado rápido.<br>**Given** un payload JSON del camión minero,<br>**When** llega la petición POST,<br>**Then** se guarda en la tabla de métricas y responde HTTP 200 en menos de 500ms. |
+| **TS07** | Endpoint de Generación de Certificados (Joyería) | **Como** desarrollador backend,<br>**Quiero** exponer el endpoint `POST /api/jewelry/certificates`,<br>**Para** enlazar la materia prima a una joya y generar la metadata del código QR. | **Scenario 1:** Emisión de certificado.<br>**Given** el ID de un lote validado,<br>**When** se solicita la creación,<br>**Then** el sistema emite un Hash criptográfico y retorna HTTP 201. |
+| **TS08** | Endpoint de Estadísticas (Dashboard) | **Como** desarrollador backend,<br>**Quiero** habilitar el endpoint `GET /api/jewelry/dashboard/stats`,<br>**Para** proveer al Frontend de las métricas clave (ventas, mermas). | **Scenario 1:** Cálculo correcto.<br>**Given** un token de administrador/joyero,<br>**When** se ejecuta el GET,<br>**Then** el servidor calcula los totales del mes y retorna HTTP 200 con el resumen numérico. |
+| **TS09** | Endpoint Público de Trazabilidad | **Como** desarrollador backend,<br>**Quiero** crear el endpoint público `GET /api/public/traceability/{hash}`,<br>**Para** que el consumidor final pueda ver la hoja de vida escaneando el QR. | **Scenario 1:** QR Válido.<br>**Given** un Hash válido,<br>**When** se ejecuta el GET,<br>**Then** retorna HTTP 200 con todo el historial del mineral.<br><br>**Scenario 2:** QR Falso.<br>**Given** un Hash inexistente,<br>**When** se ejecuta el GET,<br>**Then** retorna HTTP 404 Not Found. |
+| **TS10** | Endpoint de Reporte de Incidentes | **Como** desarrollador backend,<br>**Quiero** implementar el endpoint `POST /api/mining/incidents`,<br>**Para** registrar fallas de maquinaria y alertar a los supervisores. | **Scenario 1:** Falla reportada.<br>**Given** una descripción de falla y el ID del vehículo,<br>**When** se envía el POST,<br>**Then** registra el incidente en BD y retorna HTTP 201. |
 
 ## 3.2. Impact Mapping
 
@@ -1137,54 +1219,58 @@ En esta sección se presenta el Product Backlog del proyecto GoldMetrics, el cua
 
 El orden de los elementos ha sido estrictamente determinado por el **valor para el negocio**, asegurando que los entregables con mayor impacto (como la captación de clientes y la funcionalidad *core* de trazabilidad) se desarrollen primero. Por este motivo, las historias de usuario relacionadas con el sitio web (Landing Page) encabezan el backlog para ser abordadas desde el primer sprint, mientras que las funcionalidades de soporte (como la autenticación y perfiles) han sido priorizadas posteriormente.
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
-|:-------:|:-------------:|:------:|:------------|:------------:|
-| 1 | US01 | Visualización de Hero Section | Como visitante, deseo visualizar la propuesta de valor principal, para entender rápidamente qué ofrece GoldMetrics. | 2 |
-| 2 | US02 | Visualización de Planes | Como visitante, deseo ver los planes de suscripción, para evaluar el costo-beneficio del servicio. | 3 |
-| 3 | US03 | Formulario de Contacto B2B | Como visitante de empresa, deseo enviar mis datos de contacto, para solicitar una demostración del sistema. | 3 |
-| 4 | US04 | Visualización de Casos de Éxito | Como visitante, deseo leer testimonios de joyerías y mineras, para confiar en la efectividad de la plataforma. | 2 |
-| 5 | US05 | Redirección a Web App | Como visitante registrado, deseo acceder al portal de la aplicación, para iniciar sesión en mi cuenta. | 1 |
-| 6 | US13 | Creación de Lote (Batch) | Como supervisor de extracción, deseo generar un código de lote, para identificar un conjunto de mineral extraído. | 3 |
-| 7 | TS01 | Endpoint de Creación de Lotes | Como Developer, deseo un endpoint POST para registrar nuevos lotes, para permitir la comunicación asíncrona desde sistemas externos. | 3 |
-| 8 | US14 | Registro de Pesaje Inicial | Como operador de balanza, deseo registrar el peso del volquete cargado, para establecer el tonelaje inicial del lote. | 5 |
-| 9 | TS04 | Endpoint de Recepción IoT (Balanza) | Como Developer, deseo un endpoint POST para automatizar la recepción de pesos desde balanzas digitales, para reducir errores de ingreso manual. | 5 |
-| 10 | US23 | Verificación de Lote Comprado | Como dueño de joyería, deseo ingresar el código del proveedor, para asegurar que el oro proviene de una mina legal. | 5 |
-| 11 | US26 | Generación de Código QR | Como dueño de joyería, deseo generar un código QR por joya, para adjuntarlo a la etiqueta del producto. | 3 |
-| 12 | US33 | Escaneo de QR | Como consumidor final, deseo escanear el QR con mi celular, para verificar la autenticidad de la joya antes de comprarla. | 3 |
-| 13 | US34 | Visualización de Hoja de Vida | Como consumidor final, deseo ver la mina de origen, tipo de mineral y pureza, para asegurarme de que no proviene de minería ilegal. | 5 |
-| 14 | TS03 | Endpoint de Consulta de Trazabilidad | Como Developer, deseo un endpoint GET público para obtener la hoja de vida de un QR, para que la web app consulte los datos del consumidor. | 5 |
-| 15 | US06 | Registro de Empresa Minera | Como administrador minero, deseo registrar mi empresa, para obtener acceso al sistema de trazabilidad. | 5 |
-| 16 | US07 | Registro de Joyería | Como dueño de joyería, deseo registrar mi negocio, para poder certificar mis joyas. | 5 |
-| 17 | US08 | Inicio de Sesión | Como usuario registrado, deseo autenticarme, para acceder a mi panel de control. | 3 |
-| 18 | US11 | Registro de Yacimiento | Como ingeniero de mina, deseo registrar la ubicación de un yacimiento, para establecer el punto de origen del mineral. | 2 |
-| 19 | US12 | Registro de Volquetes | Como supervisor logístico, deseo registrar los vehículos de carga, para asociarlos a los traslados de mineral. | 3 |
-| 20 | US15 | Asignación de Responsables | Como supervisor de mina, deseo asignar un conductor a un lote, para mantener un registro de custodia. | 2 |
-| 21 | US16 | Tipificación de Mineral | Como ingeniero metalurgista, deseo clasificar el tipo de mineral del lote, para mantener el control de calidad. | 2 |
-| 22 | US17 | Inicio de Ruta | Como conductor, deseo marcar el inicio del traslado, para activar el monitoreo del lote. | 3 |
-| 23 | US18 | Registro de Checkpoints | Como supervisor logístico, deseo que el sistema registre puntos de control, para verificar que el camión sigue la ruta. | 5 |
-| 24 | TS02 | Endpoint de Recepción IoT (GPS) | Como Developer, deseo un endpoint POST para recibir coordenadas GPS de los camiones, para actualizar el monitoreo de ruta. | 5 |
-| 25 | US19 | Alerta de Retraso o Desvío | Como ingeniero de operaciones, deseo recibir alertas automáticas, para tomar acción si un volquete se detiene irregularmente. | 8 |
-| 26 | US20 | Confirmación de Llegada | Como operador de planta, deseo marcar la recepción del vehículo, para finalizar la etapa de transporte. | 3 |
-| 27 | US21 | Pesaje Final (Recepción) | Como operador de balanza en planta, deseo registrar el peso de llegada, para calcular discrepancias. | 3 |
-| 28 | US22 | Cálculo Automático de Merma | Como ingeniero metalurgista, deseo que el sistema calcule la pérdida de material, para identificar ineficiencias o robos. | 5 |
-| 29 | US24 | Registro de Prueba de Pureza | Como orfebre, deseo registrar el resultado de mis pruebas físicas, para consolidar la calidad del material. | 3 |
-| 30 | US25 | Subdivisión de Lote | Como orfebre, deseo dividir un lote de oro en varias piezas individuales, para asignar trazabilidad a cada joya creada. | 8 |
-| 31 | US27 | Exportación de Certificado PDF | Como secretaria de joyería, deseo exportar el certificado de autenticidad en PDF, para imprimirlo y entregarlo al cliente. | 5 |
-| 32 | US28 | Marcado de Joya Vendida | Como secretaria de joyería, deseo marcar una joya como "Vendida", para retirar el stock del sistema activo. | 2 |
-| 33 | US35 | Validación del Vendedor | Como consumidor final, deseo ver el nombre y credenciales de la joyería, para confirmar que estoy comprando en un comercio autorizado. | 2 |
-| 34 | US37 | Compartir Trazabilidad | Como consumidor final, deseo compartir el enlace de trazabilidad de mi joya, para demostrar su autenticidad a terceros. | 2 |
-| 35 | US29 | Ingreso de Material de Cliente | Como dueño de joyería, deseo registrar el oro traído por un cliente, para mantenerlo separado del oro de proveedores. | 3 |
-| 36 | US30 | Registro de Merma por Refinamiento | Como orfebre, deseo registrar la pérdida de peso tras purificar el oro del cliente, para justificar la reducción de gramos. | 3 |
-| 37 | US31 | Emisión de Reporte de Refinamiento | Como dueña de joyería, deseo generar un reporte detallado del refinamiento, para explicarle al cliente de forma transparente por qué su oro disminuyó en peso. | 5 |
-| 38 | US32 | Asignación de QR a Oro Reciclado | Como orfebre, deseo emitir un QR que indique "Oro Reciclado", para diferenciarlo del oro de mina directa. | 3 |
-| 39 | US36 | Reporte de Irregularidad | Como consumidor final, deseo reportar un código QR sospechoso, para alertar sobre posibles falsificaciones. | 3 |
-| 40 | US09 | Recuperación de Contraseña | Como usuario registrado, deseo recuperar mi contraseña, para recuperar el acceso si la olvido. | 3 |
-| 41 | US10 | Gestión de Perfil Corporativo | Como administrador de empresa, deseo actualizar la información de mi negocio, para mantener los datos de contacto al día. | 3 |
-| 42 | US38 | Dashboard Minero - Merma Global | Como administrador minero, deseo visualizar un gráfico de mermas mensuales, para identificar si existen problemas sistémicos de robo o ineficiencia. | 5 |
-| 43 | US39 | Dashboard Joyería - Volumen Validado | Como dueño de joyería, deseo ver la cantidad total de oro validado en el mes, para llevar control de mis compras a proveedores formales. | 5 |
-| 44 | TS05 | Endpoint de Reporte de Mermas | Como Developer, deseo un endpoint GET protegido para consultar agregados de mermas, para alimentar los gráficos del dashboard analítico. | 5 |
-| 45 | US40 | Exportación de Data Histórica | Como ingeniero de operaciones, deseo descargar en Excel el historial de lotes, para realizar análisis estadísticos externos. | 8 |
-
+| # Orden | User Story ID | Título | Story Points | Sprint Asignado | Status |
+|:---:|:---:|:---|:---:|:---:|:---:|
+| 1 | US01 | Visualización de Hero Section | 2 | Sprint 1 | Done |
+| 2 | US02 | Visualización de Planes | 3 | Sprint 1 | Done |
+| 3 | US03 | Formulario de Contacto B2B | 3 | Sprint 1 | Done |
+| 4 | US04 | Visualización de Casos de Éxito | 2 | Sprint 1 | Done |
+| 5 | US05 | Redirección a Web App | 1 | Sprint 1 | Done |
+| 6 | TS01 | Endpoint de Login y Autenticación | 3 | Sprint 1 | In Progress |
+| 7 | TS02 | Endpoint de Registro de Usuarios | 3 | Sprint 1 | In Progress |
+| 8 | US08 | Inicio de Sesión | 3 | Sprint 1 | In Progress |
+| 9 | US06 | Registro de Empresa Minera | 5 | Sprint 2 | To Do |
+| 10 | US07 | Registro de Joyería | 5 | Sprint 2 | To Do |
+| 11 | US13 | Creación de Lote (Batch) | 3 | Sprint 2 | To Do |
+| 12 | TS04 | Endpoint de Registro de Lotes (Minería) | 3 | Sprint 2 | To Do |
+| 13 | US14 | Registro de Pesaje Inicial | 5 | Sprint 2 | To Do |
+| 14 | US11 | Registro de Yacimiento | 2 | Sprint 3 | To Do |
+| 15 | US12 | Registro de Volquetes | 3 | Sprint 3 | To Do |
+| 16 | US15 | Asignación de Responsables | 2 | Sprint 3 | To Do |
+| 17 | US16 | Tipificación de Mineral | 2 | Sprint 3 | To Do |
+| 18 | TS05 | Endpoint de Actualización de Lotes | 3 | Sprint 3 | To Do |
+| 19 | US17 | Inicio de Ruta | 3 | Sprint 4 | To Do |
+| 20 | US18 | Registro de Checkpoints | 5 | Sprint 4 | To Do |
+| 21 | TS06 | Endpoint Ingesta de Telemetría (IoT) | 5 | Sprint 4 | To Do |
+| 22 | US19 | Alerta de Retraso o Desvío | 8 | Sprint 4 | To Do |
+| 23 | TS10 | Endpoint de Reporte de Incidentes | 3 | Sprint 4 | To Do |
+| 24 | US20 | Confirmación de Llegada | 3 | Sprint 4 | To Do |
+| 25 | US21 | Pesaje Final (Recepción) | 3 | Sprint 5 | To Do |
+| 26 | US22 | Cálculo Automático de Merma | 5 | Sprint 5 | To Do |
+| 27 | US23 | Verificación de Lote Comprado | 5 | Sprint 5 | To Do |
+| 28 | TS07 | Endpoint de Generación de Certificados (Joyería) | 3 | Sprint 5 | To Do |
+| 29 | US26 | Generación de Código QR | 3 | Sprint 5 | To Do |
+| 30 | US33 | Escaneo de QR | 3 | Sprint 5 | To Do |
+| 31 | US34 | Visualización de Hoja de Vida | 5 | Sprint 6 | To Do |
+| 32 | TS09 | Endpoint Público de Trazabilidad | 5 | Sprint 6 | To Do |
+| 33 | US35 | Validación del Vendedor | 2 | Sprint 6 | To Do |
+| 34 | US37 | Compartir Trazabilidad | 2 | Sprint 6 | To Do |
+| 35 | TS03 | Endpoint de Perfil de Usuario | 2 | Sprint 6 | To Do |
+| 36 | US24 | Registro de Prueba de Pureza | 3 | Sprint 7 | To Do |
+| 37 | US25 | Subdivisión de Lote | 8 | Sprint 7 | To Do |
+| 38 | US27 | Exportación de Certificado PDF | 5 | Sprint 7 | To Do |
+| 39 | US28 | Marcado de Joya Vendida | 2 | Sprint 7 | To Do |
+| 40 | US29 | Ingreso de Material de Cliente | 3 | Sprint 8 | To Do |
+| 41 | US30 | Registro de Merma por Refinamiento | 3 | Sprint 8 | To Do |
+| 42 | US31 | Emisión de Reporte de Refinamiento | 5 | Sprint 8 | To Do |
+| 43 | US32 | Asignación de QR a Oro Reciclado | 3 | Sprint 8 | To Do |
+| 44 | US36 | Reporte de Irregularidad | 3 | Sprint 9 | To Do |
+| 45 | US09 | Recuperación de Contraseña | 3 | Sprint 9 | To Do |
+| 46 | US10 | Gestión de Perfil Corporativo | 3 | Sprint 9 | To Do |
+| 47 | US38 | Dashboard Minero - Merma Global | 5 | Sprint 10 | To Do |
+| 48 | US39 | Dashboard Joyería - Volumen Validado | 5 | Sprint 10 | To Do |
+| 49 | TS08 | Endpoint de Estadísticas (Dashboard) | 5 | Sprint 10 | To Do |
+| 50 | US40 | Exportación de Data Histórica | 8 | Sprint 10 | To Do |
 ---
 
 # CAPÍTULO IV: PRODUCT DESIGN
@@ -1203,22 +1289,24 @@ En ese sentido, se establecen los siguientes lineamientos generales:
 
 ### 4.1.2. Web Style Guidelines
 Los lineamientos visuales de GoldMetrics están orientados a facilitar la interpretación de datos complejos en entornos operativos, asegurando usabilidad y accesibilidad.
-- Paleta de colores:
-  - **Gris oscuro (#3A3E40):** representa estabilidad, tecnología y entornos industriales. Se utiliza como color principal en barras de navegación y encabezados.  
 
-  - **Dorado claro (#E1D094):** evoca el valor del mineral (oro) y aporta identidad visual. Puede usarse en elementos destacados.  
+- **Paleta de colores:**
 
-  - **Dorado medio (#B4944E):** refuerza la identidad minera del sistema, ideal para botones principales o indicadores importantes.  
+  - **Gunmetal (#3A3E40):** utilizado como color base del sistema, principalmente en fondos, secciones principales y áreas oscuras como el hero y algunas vistas internas. Permite resaltar los elementos visuales y transmitir un entorno tecnológico e industrial.
 
-  - **Dorado oscuro (#9E8354):** utilizado para variaciones de estado o elementos secundarios dentro de la misma gama cromática.  
+  - **Vanilla Custard (#E1D094):** empleado en secciones destacadas como fondos de cierre (footer) y áreas informativas. Aporta contraste visual y refuerza la identidad asociada al valor del mineral.
 
-  - **Blanco grisáceo (#F2F2F2):** empleado como fondo principal para mantener claridad visual y legibilidad.  
+  - **Camel (#B4944E):** utilizado en botones principales (Login, Sign Up), tarjetas y elementos interactivos. Funciona como color de acción dentro de la interfaz.
 
-  - **Verde (#28A745):** indica estados correctos o funcionamiento adecuado del sistema.  
+  - **Faded Copper (#9E8354):** aplicado en elementos secundarios como bordes, contenedores y variaciones de tarjetas, manteniendo consistencia dentro de la gama cromática.
 
-  - **Rojo (#DC3545):** representa fallas, errores o alertas críticas.  
+  - **White Smoke (#F2F2F2):** utilizado en barras de navegación, formularios y fondos claros, facilitando la legibilidad del contenido y generando contraste con los tonos oscuros.
 
-  - **Amarillo (#FFC107):** indica advertencias o estados intermedios, como mantenimiento próximo.
+<div align="center">
+<img src="../assets/img/chapter-iv/Paleta.jpeg" width="600"/>
+</div>
+
+
 - Tipografía:
   - Se utilizarán fuentes sans-serif (Como Arial o Roboto por su alta legibilidad).
 
@@ -1357,6 +1445,68 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 
 **Link de figma**: https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMetrics?node-id=0-1&t=cne9ZmeVzc0o0Y0J-1
 
+# GoldMetrics — Justificación de Diseño (Wireframes)
+ 
+Análisis basado en los 6 frames de wireframes de la landing page de GoldMetrics, evaluando elementos de diseño, heurísticas de usabilidad de Nielsen, principios de Arquitectura de Información (AI) y principios de Diseño Inclusivo.
+ 
+---
+ 
+## Elementos del Diseño
+ 
+| Elemento | Justificación |
+|---|---|
+| **Colour** | Aunque se trata de wireframes de baja-media fidelidad, ya se evidencia una paleta intencional: el negro/gris oscuro (#2b2b2b aprox.) domina como fondo de secciones principales (Frames 1, 2, 3, 4, 5), el dorado/ámbar se usa selectivamente en los títulos destacados ("TRACK | CHECK | TRUST", "Mission", "Vision", "How does it work?", "Frequently asked questions") y como fondo de las tarjetas de segmento (Frame 3). El beige/arena aparece como color de fondo del footer (Frame 6). Esta asignación cromática no es arbitraria: el dorado señala jerarquía y relevancia, orientando la atención del usuario hacia los contenidos más importantes incluso en la etapa de wireframe. |
+| **Shape** | Los placeholders de imagen usan rectángulos con líneas diagonales cruzadas, convención estándar de wireframing para indicar áreas de imagen. Las tarjetas del Frame 3 (Mining companies, Jewelry stores, Final consumer) usan bordes redondeados generosos, anticipando un lenguaje visual amigable y moderno en el producto final. Los campos del formulario (Frame 4) son rectángulos de esquinas redondeadas, coherentes con patrones de UI actuales. Los ítems del acordeón (Frame 5) también tienen bordes redondeados, reforzando la coherencia de formas a lo largo del sitio. El botón "Get Started" (Frame 1) es de tipo pill (cápsula), comunicando acción primaria de forma inmediata. |
+| **Direction** | El layout del Frame 2 (About Us) alterna la posición de imagen y texto en un patrón de zigzag: imagen a la izquierda con texto de "Mission" a la derecha, y luego texto de "Vision" a la izquierda con imagen a la derecha. Este ritmo diagonal guía la lectura de arriba hacia abajo de forma dinámica, evitando la monotonía de un layout en columna única. El Frame 3 sigue una dirección horizontal izquierda-derecha para los tres segmentos, representando visualmente el flujo de la cadena de valor (productor → intermediario → consumidor final). |
+| **Size** | Existe una jerarquía de tamaños clara y consistente en todos los frames. El tagline "TRACK | CHECK | TRUST" aparece en tamaño pequeño, el título principal del hero ("The real chain of the jewelry and mining with GoldMetrics") en tamaño grande y prominente, y el CTA "Get Started" en tamaño mediano. Los títulos de sección ("Mission", "Vision", "How does it work?", "Frequently asked questions") son visualmente más grandes que el texto de cuerpo, facilitando el escaneo rápido del contenido. Los números de ítem (1, 2, 3, 4) en el acordeón del Frame 5 tienen menor tamaño que el texto de la pregunta, subordinando la numeración al contenido. |
+| **Space** | Todos los frames respetan márgenes generosos entre el navbar y el contenido, entre secciones, y entre tarjetas. En el Frame 3, el espacio entre las tres tarjetas de segmento es equilibrado, creando separación visual sin fragmentar el grupo. El Frame 4 (Contact) usa espaciado vertical uniforme entre campos del formulario, facilitando su llenado secuencial. El Frame 5 usa espacio entre ítems del acordeón para distinguirlos claramente como entidades separadas. El footer (Frame 6) centra el contenido con espacio simétrico, transmitiendo equilibrio y cierre de la página. |
+| **Line** | Las líneas decorativas doradas horizontales que flanquean los títulos de sección ("How does it work?", "Frequently asked questions") funcionan como separadores visuales que enmarcan el título y lo elevan sobre el fondo. Las líneas diagonales dentro de los placeholders de imagen son una convención de wireframing que comunica claramente "aquí irá una imagen" sin necesitar texto aclaratorio. En el navbar, la línea implícita que separa la barra superior del contenido establece un límite visual consistente en todos los frames. |
+| **Texture** | En esta etapa de wireframe, la textura visual se comunica a través de los placeholders de imagen con líneas diagonales (que representan la futura riqueza fotográfica del sitio) y los fondos de distinto tono (gris oscuro para secciones de contenido, beige para footer, dorado para tarjetas). Aunque no hay texturas reales aplicadas, el contraste entre estas superficies crea profundidad visual y separa claramente las zonas de contenido. |
+ 
+---
+ 
+## Heurísticas de Usabilidad (Nielsen)
+ 
+| Heurística | Justificación |
+|---|---|
+| **H1 – Visibilidad del estado del sistema** | La barra de navegación (presente en los 5 primeros frames) muestra los botones "Login" y "Sign Up" siempre visibles, informando al usuario en todo momento sobre su estado de sesión. El ícono/placeholder de logo en el navbar (marcado como "LOGO" en Frames 2-5, con un placeholder rectangular visible) indica que el sistema está cargado y el usuario se encuentra en la landing de GoldMetrics. El ítem del acordeón expandido en Frame 5 (ítem 1, con flecha hacia arriba) comunica visualmente cuál pregunta está activa, diferenciándola de las colapsadas. |
+| **H2 – Relación entre el sistema y el mundo real** | Las etiquetas del formulario de contacto (Frame 4) usan lenguaje cotidiano y directo: "Name - Last Name", "Phone", "Email", "User type", "Message". Los tres segmentos de "User type" usan nombres reconocibles: "Segment 1", "Segment 2", "Segment 3" en el wireframe (que el mockup final traduce a "Final consumer", "Jewelry Store", "Mining Company"), términos familiares para los usuarios objetivo. La sección "How does it work?" (Frame 3) usa nombres de segmento que el usuario del sector reconoce inmediatamente: Mining companies, Jewelry stores, Final consumer. |
+| **H3 – Libertad y control por parte del usuario** | La navegación persistente en todos los frames permite al usuario moverse libremente entre secciones (Home, About Us, How does it work?, FAQs, Contact) sin quedar atrapado en ninguna vista. El acordeón de FAQs (Frame 5) permite expandir y colapsar cada ítem individualmente, dando control total sobre qué información se consume. El formulario de contacto (Frame 4) no fuerza un flujo secuencial obligatorio; el usuario puede completar campos en el orden que prefiera. |
+| **H4 – Consistencia y estándares** | El navbar se mantiene idéntico en estructura y posición en los 5 frames con navegación (Frames 1-5): logo a la izquierda, menú al centro, botones Login/Sign Up a la derecha. Los ítems de menú son siempre los mismos y en el mismo orden. Los botones de acción primaria ("Get Started", "Login", "Sign Up") mantienen el mismo estilo visual en todos los frames. El patrón de tarjeta (imagen placeholder + título + texto) se repite consistentemente en el Frame 3 para los tres segmentos. Los ítems del acordeón (Frame 5) siguen el mismo patrón: número + texto de pregunta + flecha indicadora. |
+| **H5 – Prevención de errores** | El formulario de contacto (Frame 4) estructura los campos de forma clara y separada, reduciendo la probabilidad de que el usuario omita información o la introduzca en el campo incorrecto. El campo "User type" con radio buttons mutuamente excluyentes (Segment 1, 2, 3) previene que el usuario seleccione múltiples categorías simultáneamente, lo cual podría generar ambigüedad en la respuesta del equipo. La separación visual entre campos (espaciado uniforme) reduce errores de entrada al hacer obvio dónde comienza y termina cada campo. |
+| **H6 – Reconocer antes que recordar** | Todas las secciones están etiquetadas con títulos visibles y descriptivos. El usuario no necesita recordar en qué parte del sitio se encuentra: la sección de Mission/Vision (Frame 2) lo indica explícitamente, "How does it work?" (Frame 3) enuncia su propósito, "Frequently asked questions" (Frame 5) es autoexplicativo. Los ítems del FAQ están numerados (1-4), permitiendo al usuario reconocer el índice de preguntas de un vistazo. Las tres tarjetas de segmento (Frame 3) muestran imagen + título + descripción, haciendo reconocible cada categoría sin requerir memorización previa. |
+| **H8 – Diseño estético y minimalista** | Cada frame contiene únicamente los elementos necesarios para su propósito. El hero (Frame 1) tiene solo: fondo con imagen placeholder, tagline, título y un CTA. No hay elementos decorativos superfluos. El About Us (Frame 2) presenta Mission y Vision por separado, una a la vez, sin acumular más contenido en la misma vista. El footer (Frame 6) es extremadamente limpio: nombre de marca, tres íconos de redes sociales y copyright. Esta economía de elementos refleja una intención deliberada de no saturar al usuario con información competidora. |
+ 
+---
+ 
+## Principios de Arquitectura de Información (AI)
+ 
+| Principio | Justificación |
+|---|---|
+| **Choices** | El Frame 3 implementa directamente este principio al presentar tres alternativas significativas y bien diferenciadas para el usuario: Mining companies, Jewelry stores y Final consumer. Cada tarjeta tiene su propio placeholder de imagen, título en dorado y descripción específica, permitiendo al usuario identificarse con su segmento de forma inmediata. El formulario de contacto (Frame 4) refuerza este principio con el campo "User type" y sus tres opciones de radio button, ofreciendo al usuario la posibilidad de autoidentificarse antes de enviar su consulta. |
+| **Disclosure** | El hero (Frame 1) aplica disclosure al nivel más alto: solo muestra el tagline ("TRACK - CHECK - TRUST"), el título de valor y un CTA. A medida que el usuario hace scroll, cada frame va revelando mayor profundidad: Mission/Vision (Frame 2), cómo funciona para cada segmento (Frame 3), formulario de contacto (Frame 4) y preguntas frecuentes (Frame 5). El acordeón de FAQs es la implementación más explícita de disclosure: muestra solo las preguntas como títulos y revela la respuesta únicamente cuando el usuario decide expandir un ítem. |
+| **Exemplars** | Las imágenes placeholder en el Frame 3 (una por tarjeta de segmento: Mining companies, Jewelry stores, Final consumer) anticipan la estrategia de usar imágenes ejemplares específicas para cada categoría. El wireframe deja reservado el espacio para mostrar ejemplos visuales concretos de cada industria, haciendo tangible la propuesta de valor para cada tipo de usuario antes de que lean el texto descriptivo. En el Frame 2, los placeholders de imagen junto a Mission y Vision cumplen la misma función: ejemplificar visualmente el contenido conceptual. |
+| **Front Doors** | La estructura del wireframe asegura que cada sección sea navegable directamente desde el menú (Home, About Us, How does it work?, FAQs, Contact), contemplando que un usuario pueda llegar a cualquier página sin pasar por el hero. El navbar replicado en todos los frames garantiza que desde cualquier "puerta de entrada" el usuario tenga acceso inmediato a toda la navegación y a los botones de acción (Login, Sign Up). El Frame 5 (FAQs) y el Frame 4 (Contact) son especialmente preparados para recibir tráfico directo, ya que contienen suficiente contexto de marca en su navbar. |
+| **Multiple Classification** | El contenido puede encontrarse por múltiples rutas: a través del menú de navegación (acceso directo a cada sección), haciendo scroll desde el hero (flujo lineal narrativo), o mediante el CTA "Get Started" del hero que actúa como atajo hacia la acción principal. El Frame 4 (Contact) clasifica al usuario por segmento (Segment 1/2/3) antes de recibir su mensaje, permitiendo al sistema enrutar la consulta según la categoría del remitente. El acordeón (Frame 5) permite buscar información por pregunta específica o recorrer la lista secuencialmente. |
+| **Focused Navigation** | El menú del navbar contiene exactamente las cinco secciones de contenido relevantes para el usuario de GoldMetrics: Home, About Us, How does it work?, FAQs, Contact. No hay ítems de navegación genéricos, ambiguos ni redundantes. Los botones "Login" y "Sign Up" están separados del menú informativo, distinguiendo claramente entre navegación de contenido y acciones de cuenta. Esta separación refleja el principio: la navegación se define por lo que contiene (información sobre el producto vs. acceso a la plataforma), no por su posición en la pantalla. |
+| **Growth** | La arquitectura del wireframe está diseñada para escalar sin reestructuración. El acordeón de FAQs (Frame 5) puede acomodar nuevas preguntas simplemente añadiendo más ítems al mismo patrón. Las tarjetas de segmento (Frame 3) pueden incorporar nuevas categorías de usuario siguiendo el mismo layout de grid. El formulario de contacto (Frame 4) puede añadir más campos o más opciones de "User type" sin alterar la estructura general. El navbar puede incorporar nuevas secciones en el futuro. El footer (Frame 6) puede añadir más redes sociales manteniendo el mismo patrón centrado. |
+ 
+---
+ 
+## Principios de Diseño Inclusivo
+ 
+| Principio | Justificación |
+|---|---|
+| **P1 – Proporciona experiencias comparables** | El toggle de idioma EN/ES presente en los mockups finales (y anticipado en la estructura del navbar del wireframe) asegura que usuarios hispanohablantes e ingleses accedan a la misma calidad de contenido. El formulario de contacto (Frame 4) ofrece los mismos campos y opciones para todos los tipos de usuario, sin degradar la experiencia según el segmento seleccionado. Las tres tarjetas de segmento (Frame 3) tienen la misma estructura visual (imagen + título + descripción), ofreciendo una experiencia comparable a usuarios de distintas industrias. |
+| **P2 – Considera la situación del usuario** | El uso de alto contraste entre texto y fondo (texto claro sobre fondo oscuro en Frames 1-5, texto oscuro sobre fondo beige en Frame 6) garantiza legibilidad en diferentes condiciones de iluminación, incluyendo entornos industriales como minas o talleres de joyería donde las pantallas pueden estar expuestas a luz directa o ambientes con polvo. El diseño responsive implícito en la estructura de wireframe (con breakpoints anticipados) asegura usabilidad en dispositivos móviles que los trabajadores del sector podrían usar en campo. |
+| **P3 – Sé consistente** | El navbar se repite con la misma estructura y elementos en todos los frames, generando un patrón predecible que el usuario reconoce inmediatamente en cualquier punto del sitio. Los botones de acción primaria mantienen siempre el mismo estilo visual. El patrón de tarjeta (imagen + título + texto) se repite de forma idéntica en el Frame 3 para los tres segmentos. Los ítems del acordeón (Frame 5) siguen exactamente el mismo esquema visual: número + pregunta + flecha. Esta consistencia reduce la carga cognitiva y hace que el comportamiento de la interfaz sea predecible. |
+| **P4 – Deja al usuario mandar** | El acordeón de FAQs (Frame 5) permite al usuario decidir qué preguntas expandir y cuándo, sin imponer ningún orden de lectura. La navegación no fuerza ningún flujo lineal; el usuario puede saltar a cualquier sección desde el navbar en cualquier momento. El formulario de contacto (Frame 4) no obliga a completar campos en un orden específico. La coexistencia del CTA "Get Started" en el hero y los botones "Login"/"Sign Up" en el navbar ofrece al usuario diferentes puntos de entrada según su estado y preferencia. |
+| **P5 – Ofrece opciones** | El sitio ofrece múltiples maneras de involucrarse: hacer clic en "Get Started" desde el hero, navegar directamente a "Contact" desde el menú, o hacer clic en "Sign Up" desde el navbar. El formulario de contacto ofrece tres opciones de segmento de usuario (Segment 1/2/3), permitiendo que cada tipo de cliente se identifique correctamente antes de enviar su consulta. La sección de FAQs (Frame 5) ofrece al usuario la opción de resolver sus dudas de forma autónoma sin necesidad de contactar, siendo una alternativa de autoservicio para quienes prefieren no interactuar directamente. |
+| **P6 – Prioriza el contenido** | En el hero (Frame 1), el título principal ocupa el espacio más prominente en tamaño y contraste, subordinando el tagline y el CTA a una jerarquía clara. En el Frame 2, los títulos "Mission" y "Vision" en dorado se destacan visualmente sobre el texto descriptivo. En el Frame 3, los nombres de segmento en dorado son el elemento más visible de cada tarjeta. En el Frame 5, el texto de las preguntas del FAQ es el elemento dominante de cada ítem, con la numeración y la flecha en posición secundaria. Esta jerarquía constante guía al usuario hacia el contenido más relevante en cada sección. |
+| **P7 – Agrega valor** | El campo "User type" en el formulario de contacto (Frame 4) agrega valor tanto para el usuario (su consulta será tratada según su contexto específico) como para el negocio (permite segmentar y priorizar respuestas). El acordeón de FAQs (Frame 5) agrega valor al reducir la fricción para resolver dudas frecuentes sin necesidad de contactar al equipo. La estructura de tres segmentos en el Frame 3 (Mining, Jewelry, Consumer) agrega valor al hacer inmediatamente relevante el contenido para cada tipo de visitante, sin obligarlos a leer información que no les concierne. El footer con redes sociales (Frame 6) agrega valor como punto de contacto adicional y canal de comunidad de marca. |
+ 
+---
+
 ### 4.3.2. Landing Page Mock-up
 **Landing Mockup 1**
 
@@ -1385,6 +1535,68 @@ Asimismo, el sistema permite visualizar información relacionada al mantenimient
 **Link de figma:**
 https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMetrics?node-id=0-1&t=cne9ZmeVzc0o0Y0J-1
 
+# GoldMetrics — Justificación de Diseño (Mockups)
+ 
+Análisis basado en los 6 frames de mockups de alta fidelidad de la landing page de GoldMetrics (Frames 7–12), evaluando elementos de diseño, heurísticas de usabilidad de Nielsen, principios de Arquitectura de Información (AI) y principios de Diseño Inclusivo.
+ 
+---
+ 
+## Elementos del Diseño
+ 
+| Elemento | Justificación |
+|---|---|
+| **Colour** | La paleta definitiva del producto combina negro profundo como fondo base (#2b2b2b aprox.) con dorado/ámbar (#c9a84c) como color de acento principal, y beige/arena para el footer (Frame 12). Esta elección es semánticamente coherente con el nombre de marca GoldMetrics y el sector de minería y joyería al que sirve. El dorado evoca valor, lujo y confianza —atributos clave en industrias donde los activos son materiales preciosos. Los botones "Login" (fondo dorado sólido) y "Sign Up" (contorno dorado) se diferencian cromáticamente para jerarquizar la acción primaria de la secundaria. El texto blanco sobre fondo oscuro asegura contraste alto en todas las secciones de contenido. |
+| **Shape** | El logo de GoldMetrics (Frame 8) incorpora una forma circular con líneas de gráfica métricas entretejidas, unificando la identidad de "métricas" y "oro" en un símbolo memorable. Los botones "Login", "Sign Up" y "Get Started" adoptan forma de píldora (pill-shape), comunicando modernidad y acción de forma intuitiva. Las tarjetas de segmento (Frame 7) utilizan bordes muy redondeados, aportando calidez y distinguiéndose visualmente del fondo rectangular oscuro. Los ítems del acordeón de FAQ (Frame 11) también presentan bordes redondeados consistentes con el sistema de formas del sitio. La imagen de collage en el formulario de contacto (Frame 10) tiene esquinas redondeadas, integrándose armónicamente con el lenguaje visual de las tarjetas. |
+| **Direction** | El Frame 9 (About Us) implementa un layout en zigzag: imagen a la izquierda + texto "Mission" a la derecha en la fila superior, y texto "Vision" a la izquierda + imagen a la derecha en la fila inferior. Este ritmo alternado crea un flujo de lectura dinámico que guía la vista de arriba hacia abajo de forma no lineal, evitando la monotonía. El Frame 7 (How does it work?) sigue una dirección horizontal izquierda-derecha para los tres segmentos, representando visualmente el flujo de la cadena de valor: productor minero → intermediario joyero → consumidor final. El hero (Frame 8) centra el texto, generando una dirección de lectura radial desde el centro hacia afuera. |
+| **Size** | La jerarquía tipográfica está claramente implementada en todos los frames. En el hero (Frame 8), el título principal ("The real chain for real trust in the Jewelry and Mining industries with GoldMetrics") domina en tamaño grande y color dorado, subordinando el tagline ("TRACK | CHECK | TRUST") en tamaño menor. Los títulos de sección ("Mission", "Vision", "How does it work?", "Frequently asked questions") son notablemente más grandes que el cuerpo de texto. En el FAQ (Frame 11), el texto de la pregunta expandida es más grande que el de la respuesta, reforzando la jerarquía pregunta → respuesta. El logo en el navbar es proporcionalmente compacto para no competir con el contenido principal. |
+| **Space** | Todos los frames aplican espaciado negativo generoso. El hero (Frame 8) deja respirar el texto sobre la imagen de fondo sin saturarlo con otros elementos. El Frame 9 mantiene márgenes amplios entre las parejas imagen-texto de Mission y Vision. El Frame 7 separa las tres tarjetas de segmento con gaps equilibrados que las distinguen como unidades independientes sin fragmentar el grupo visual. El formulario de contacto (Frame 10) usa espaciado vertical uniforme entre campos, facilitando el llenado secuencial. El footer (Frame 12) centra el logo, íconos y copyright con espacio simétrico, transmitiendo cierre y equilibrio. |
+| **Line** | Las líneas decorativas doradas horizontales que flanquean los títulos de sección ("How does it work?" en Frame 7, "Frequently asked questions" en Frame 11) son uno de los elementos de identidad visual más reconocibles del sitio. Actúan como marcos que elevan el título sobre el fondo y refuerzan el tono elegante y premium. El logo mismo integra líneas que forman una gráfica de tendencia (coherente con "metrics"), convirtiendo el símbolo en un comunicador de la propuesta de valor. En el navbar, la línea implícita que separa la barra blanca del contenido oscuro es un delimitador visual consistente en todos los frames. |
+| **Texture** | Las fotografías de alta calidad utilizadas en el hero (Frame 8) —combinación de joyería, minería y maquinaria pesada— aportan riqueza textural y profundidad visual que un fondo liso no podría lograr. La superposición oscura semitransparente (overlay) sobre estas imágenes garantiza legibilidad del texto sin sacrificar la textura contextual. En el Frame 9, las fotografías de pepitas de oro en balanza y de una mina al atardecer funcionan como texturas narrativas que refuerzan el contenido de Mission y Vision. En el Frame 10, el collage de imágenes (joyería + minería) aporta textura visual al lado derecho del formulario, equilibrando la austeridad del formulario con riqueza fotográfica. |
+ 
+---
+ 
+## Heurísticas de Usabilidad (Nielsen)
+ 
+| Heurística | Justificación |
+|---|---|
+| **H1 – Visibilidad del estado del sistema** | Los botones "Login" (fondo dorado sólido) y "Sign Up" (contorno dorado) en el navbar de todos los frames comunican pasivamente el estado de autenticación del usuario: si ninguno está resaltado como "activo", el usuario sabe que no ha iniciado sesión. El ítem expandido en el acordeón de FAQ (Frame 11) usa una flecha hacia arriba (▲) mientras los colapsados usan flecha hacia abajo (▼), informando visualmente cuál pregunta está activa. El toggle EN/ES en el navbar señala el idioma activo de la interfaz. El CTA "Get Started" en el hero orienta al usuario sobre el siguiente paso esperado dentro del flujo del sistema. |
+| **H2 – Relación entre el sistema y el mundo real** | Los textos del sitio usan lenguaje accesible y sectorial apropiado para sus tres segmentos objetivo. En el FAQ (Frame 11), las preguntas están redactadas en primera persona desde la perspectiva del usuario ("Why choose...", "How complex is migrating my current data...", "Is the platform scalable if my team or data volume grows rapidly?"), replicando el lenguaje real de sus dudas. Los nombres de segmento en el Frame 7 (Mining companies, Jewelry stores, Final consumer) y en el formulario (Frame 10) —Final consumer, Jewelry Store, Mining Company— son términos del mundo real de sus industrias objetivo. El tagline "TRACK | CHECK | TRUST" usa verbos de acción reconocibles en contextos de trazabilidad y auditoría. |
+| **H3 – Libertad y control por parte del usuario** | La barra de navegación persistente en los Frames 8–11 permite al usuario desplazarse libremente entre secciones sin quedar atrapado en ningún flujo. El acordeón de FAQs (Frame 11) permite expandir y colapsar cada pregunta de forma independiente, sin obligar al usuario a leer todas las respuestas. El formulario de contacto (Frame 10) no impone un orden de llenado de campos: el usuario puede rellenarlos según su conveniencia. La coexistencia del CTA "Get Started" y los botones "Login"/"Sign Up" ofrece al usuario distintos caminos de acción según su estado y preferencia. |
+| **H4 – Consistencia y estándares** | El navbar mantiene exactamente la misma estructura en todos los frames: logo a la izquierda, menú de navegación al centro, botones Login/Sign Up a la derecha. Los ítems del menú son siempre los mismos y en el mismo orden (Home, About Us, How does it work?, FAQs, Contact). Los botones de acción primaria ("Login" dorado sólido, "Sign Up" con contorno dorado) mantienen su diferenciación visual en todos los frames. El patrón de tarjeta (imagen real + título en dorado + descripción en blanco) se replica consistentemente en el Frame 7 para los tres segmentos. Los títulos de sección siempre siguen el mismo patrón: líneas doradas horizontales + texto dorado centrado. |
+| **H5 – Prevención de errores** | El formulario de contacto (Frame 10) estructura los campos de entrada de forma clara y separada: Full name, Phone, Email (campos de texto), User type (radio buttons mutuamente excluyentes: Final consumer, Jewelry Store, Mining Company) y Message (textarea). Los radio buttons previenen que el usuario seleccione múltiples categorías simultáneamente, evitando ambigüedad en la clasificación de la consulta. La etiqueta visible encima de cada campo ("Full name", "Phone", "Email", "User type", "Message") reduce el riesgo de que el usuario introduzca datos en el campo incorrecto. La separación visual clara entre campos minimiza errores por confusión de contexto. |
+| **H6 – Reconocer antes que recordar** | Todas las secciones tienen títulos visibles y descriptivos que permiten al usuario reconocer en qué parte del sitio se encuentra sin necesidad de recordar el flujo previo. Las preguntas del FAQ (Frame 11) son completamente visibles como ítems de lista antes de expandirlas, permitiendo reconocer de un vistazo qué temas cubre la sección. Las imágenes reales de cada segmento en el Frame 7 (mina aérea para Mining companies, joyería en mesa para Jewelry stores, mujer con collar para Final consumer) hacen reconocibles las categorías de forma inmediata, antes de leer el texto. El logo en el navbar actúa como ancla de reconocimiento de marca en todo momento. |
+| **H8 – Diseño estético y minimalista** | Cada sección del sitio presenta un único mensaje principal sin información competidora innecesaria. El hero (Frame 8) contiene exclusivamente: imagen de fondo contextual, tagline, título y un CTA. El About Us (Frame 9) presenta Mission y Vision de forma separada y limpia, sin acumular más contenido en el mismo espacio visual. El footer (Frame 12) es extremadamente austero: logo de marca, tres íconos de redes sociales y copyright. Los textos descriptivos en las tarjetas del Frame 7 son concisos. Esta economía deliberada de elementos evita que la información secundaria compita con los mensajes principales, manteniendo la atención del usuario donde corresponde. |
+ 
+---
+ 
+## Principios de Arquitectura de Información (AI)
+ 
+| Principio | Justificación |
+|---|---|
+| **Choices** | El Frame 7 implementa este principio de forma directa al presentar tres alternativas visuales significativas y bien diferenciadas: Mining companies (fotografía aérea de mina), Jewelry stores (joyería sobre mesa) y Final consumer (mujer con joya). Cada tarjeta usa una imagen real específica para su segmento, un título en dorado y una descripción propia, permitiendo al usuario identificarse con su categoría de forma inmediata sin leer todo el contenido. El formulario (Frame 10) también aplica Choices al ofrecer tres opciones de "User type" mediante radio buttons, facilitando la autoidentificación del visitante antes de enviar su consulta. |
+| **Disclosure** | El hero (Frame 8) es el nivel más alto de disclosure: solo comunica la propuesta de valor esencial ("The real chain for real trust in the Jewelry and Mining industries with GoldMetrics") y un único CTA. Conforme el usuario hace scroll, cada sección va revelando mayor profundidad: Mission y Vision (Frame 9), cómo funciona por segmento (Frame 7), formulario de contacto (Frame 10) y preguntas frecuentes detalladas (Frame 11). El acordeón del FAQ es la implementación más explícita: muestra las preguntas como resumen y revela la respuesta solo cuando el usuario elige expandirla, como ocurre con la primera pregunta en el Frame 11 que ya aparece expandida con su respuesta visible. |
+| **Exemplars** | Las fotografías reales utilizadas en cada sección actúan como exemplars visuales concretos. En el Frame 7, cada tarjeta de segmento usa una imagen representativa real de la industria correspondiente: maquinaria de minería a cielo abierto, instrumentos y piezas de joyería, y consumidora final usando una joya. En el Frame 9, la imagen de pepitas de oro en una balanza ejemplifica físicamente el concepto de "valor y métricas" de la Mission, y la fotografía de una mina al atardecer ejemplifica la Vision de escala global. En el Frame 10, el collage de imágenes (joyería + minería) ejemplifica visualmente los segmentos a los que sirve GoldMetrics antes de que el usuario complete el formulario. |
+| **Front Doors** | La barra de navegación replicada en todos los frames (8–11) garantiza que desde cualquier punto de entrada —ya sea un enlace directo a FAQs, a Contact o a About Us— el usuario disponga inmediatamente de acceso a toda la navegación y a los botones de acción (Login, Sign Up). Cada sección mantiene suficiente contexto de marca (logo, paleta, tipografía) para funcionar como unidad autónoma de comunicación. El FAQ (Frame 11) y el Contact (Frame 10) están especialmente preparados para recibir tráfico directo desde búsquedas o enlaces compartidos, ya que contienen información de contexto suficiente sin depender del hero. |
+| **Multiple Classification** | El contenido puede encontrarse por múltiples rutas: a través del menú de navegación (acceso directo a cada sección), mediante scroll progresivo desde el hero, o a través del CTA "Get Started" como atajo hacia la acción principal. El formulario (Frame 10) clasifica al usuario por segmento (Final consumer, Jewelry Store, Mining Company), permitiendo al sistema enrutar la consulta según la categoría. El FAQ (Frame 11) permite tanto una lectura secuencial por número de pregunta como una búsqueda directa por título de pregunta visible, ofreciendo dos métodos distintos para encontrar la información. |
+| **Focused Navigation** | El menú del navbar contiene exactamente cinco secciones de contenido: Home, About Us, How does it work?, FAQs y Contact. No hay ítems genéricos, ambiguos ni redundantes. Los botones "Login" y "Sign Up" están visualmente separados del menú informativo, distinguiendo con claridad entre navegación de contenido (conocer el producto) y acciones de cuenta (acceder a la plataforma). Esta arquitectura refleja el principio de que la navegación debe definirse por lo que contiene, no por convención de posición: cada ítem del menú representa una intención informativa distinta del usuario. |
+| **Growth** | La arquitectura del mockup está diseñada para escalar sin reestructuración mayor. El acordeón de FAQs (Frame 11) puede incorporar nuevas preguntas añadiendo ítems al mismo patrón visual sin alterar el layout. Las tarjetas de segmento (Frame 7) pueden expandirse para incluir nuevas categorías de usuario siguiendo el mismo grid de tarjetas. El formulario de contacto (Frame 10) puede añadir más opciones de "User type" o nuevos campos sin romper la estructura actual. El toggle de idioma EN/ES anticipa expansión a más mercados geográficos. El footer puede incorporar más redes sociales manteniendo el patrón centrado. |
+ 
+---
+ 
+## Principios de Diseño Inclusivo
+ 
+| Principio | Justificación |
+|---|---|
+| **P1 – Proporciona experiencias comparables** | El toggle de idioma EN/ES en el navbar (visible en los Frames 8–11) garantiza que usuarios hispanohablantes e ingleses accedan a la misma calidad y cantidad de contenido, sin degradar la experiencia para ninguno de los dos grupos lingüísticos. El formulario de contacto (Frame 10) ofrece exactamente los mismos campos y opciones para los tres tipos de usuario (Final consumer, Jewelry Store, Mining Company), sin simplificar ni enriquecer la experiencia según el segmento elegido. Las tres tarjetas de segmento (Frame 7) tienen la misma estructura visual (imagen real + título dorado + descripción), ofreciendo una experiencia de calidad comparable para usuarios de distintas industrias. |
+| **P2 – Considera la situación del usuario** | El alto contraste entre texto claro y fondo oscuro (Frames 8–11) y entre texto oscuro y fondo beige (Frame 12) garantiza legibilidad en condiciones de baja luminosidad o pantallas con calibración deficiente, frecuentes en entornos industriales como minas o talleres de joyería donde los profesionales objetivo podrían consultar el sitio. El overlay oscuro semitransparente sobre las imágenes del hero (Frame 8) asegura legibilidad del texto independientemente de la imagen de fondo subyacente. Los campos del formulario (Frame 10) con etiquetas sobre el campo (no como placeholder dentro del campo) mantienen la legibilidad de la etiqueta incluso cuando el campo está siendo rellenado. |
+| **P3 – Sé consistente** | El navbar mantiene exactamente la misma estructura, elementos y proporciones en todos los frames (8–11): logo a la izquierda, menú al centro, botones de cuenta a la derecha. Los botones "Login" y "Sign Up" mantienen su diferenciación visual (dorado sólido vs. contorno dorado) en cada frame. El patrón de tarjeta (imagen real + título dorado + texto blanco sobre fondo dorado oscuro) se replica de forma idéntica en los tres segmentos del Frame 7. Los títulos de sección siempre siguen el mismo sistema: líneas decorativas doradas + texto dorado centrado. Esta consistencia genera confianza y reduce la curva de aprendizaje del usuario al navegar entre secciones. |
+| **P4 – Deja al usuario mandar** | El acordeón de FAQs (Frame 11) permite al usuario decidir qué preguntas expandir y cuáles omitir, controlando la cantidad y el orden de la información que consume. La navegación no impone ningún flujo lineal obligatorio; el usuario puede acceder a cualquier sección desde el navbar en cualquier momento. El formulario de contacto (Frame 10) no obliga a completar los campos en un orden predefinido. La coexistencia del CTA "Get Started" en el hero y los botones "Login"/"Sign Up" en el navbar ofrece al usuario múltiples puntos de control sobre su siguiente acción según su estado y preferencia de uso. |
+| **P5 – Ofrece opciones** | El sitio ofrece múltiples caminos para que el usuario se involucre: hacer clic en "Get Started" desde el hero, navegar directamente a "Contact" desde el menú, o hacer clic en "Sign Up" para acceder a la plataforma. El formulario de contacto (Frame 10) ofrece tres opciones claras de segmento mediante radio buttons, permitiendo que cada tipo de cliente se identifique correctamente. La sección de FAQs (Frame 11) brinda al usuario la opción de resolver sus dudas de forma autónoma sin necesidad de contactar al equipo, siendo una alternativa de autoservicio para quienes prefieren no interactuar directamente con el soporte comercial. |
+| **P6 – Prioriza el contenido** | En el hero (Frame 8), el título principal ocupa el espacio más prominente en tamaño, color (dorado/blanco) y posición central, subordinando el tagline y el CTA a una jerarquía visual clara. En el Frame 9, los títulos "Mission" y "Vision" en dorado se destacan notoriamente sobre el texto descriptivo en blanco. En el Frame 7, los nombres de segmento en dorado son el elemento visual dominante de cada tarjeta. En el Frame 11, el texto de las preguntas del FAQ es el elemento más destacado de cada ítem, con la numeración y la flecha en posición visual secundaria. Esta jerarquía constante orienta al usuario hacia el contenido más importante en cada sección sin que necesite interpretarlo. |
+| **P7 – Agrega valor** | El campo "User type" en el formulario de contacto (Frame 10) agrega valor bidireccional: para el usuario, garantiza que su consulta será tratada con contexto específico de su industria; para GoldMetrics, permite segmentar y priorizar respuestas comerciales. El uso de fotografías reales de alta calidad en lugar de ilustraciones genéricas (Frames 7, 8, 9, 10) agrega valor comunicativo al hacer inmediatamente tangible la propuesta de valor para cada segmento. La sección de FAQs con respuestas detalladas (Frame 11) agrega valor al anticipar y resolver objeciones comerciales frecuentes ("fragmentation tax", escalabilidad, migración de datos, seguridad), reduciendo la fricción en el proceso de decisión del usuario. El footer con íconos de redes sociales (Frame 12) agrega valor como punto de contacto adicional y canal de comunidad de marca. |
+ 
+---
+
 ## 4.4. Web Applications UX/UI Design
 
 
@@ -1408,6 +1620,73 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 ![Alerta Activa](../assets/img/chapter-iv/Dashboard%20Minería%20-%20Alerta%20Activa.png)  
 ![Overlay](../assets/img/chapter-iv/Overlay+OverlayBlur-5.png)  
 ---
+
+# GoldMetrics — Justificación de Diseño (Web Applications Wireframes)
+ 
+Análisis basado en las 17 pantallas de la aplicación web de GoldMetrics: dashboards de minería y joyería, overlays/modales, pantallas de autenticación, perfil, pago y usuario final. Se evalúan elementos de diseño, heurísticas de usabilidad de Nielsen, principios de Arquitectura de Información (AI) y principios de Diseño Inclusivo.
+ 
+---
+ 
+## Elementos del Diseño
+ 
+| Elemento | Justificación |
+|---|---|
+| **Colour** | La aplicación adopta una paleta predominantemente acromática (blanco, gris claro, gris oscuro, negro) para los dashboards y pantallas funcionales, reservando el negro sólido para botones de acción primaria críticos ("Publicar Certificado y Generar QR", "Confirmar Recepción y Sellar en Blockchain", "LOG IN", "SIGN UP", "DONE"). Este uso restringido del color negro como acento de acción contrasta con el fondo gris claro y comunica inmediatamente cuál es la acción principal en cada pantalla. Los badges de estado en el Dashboard Minería (Alerta: Desvío Detectado, Pesaje, Procesado, En camino, Carga) usan variaciones de gris para estados neutros y un contorno más prominente para el estado de alerta, diferenciando visualmente situaciones normales de situaciones críticas. La pantalla de Registro usa fondo blanco limpio con tarjetas con borde sutil, transmitiendo neutralidad antes de que el usuario elija su segmento. |
+| **Shape** | Existe un lenguaje de formas altamente consistente en toda la aplicación. Los botones de acción primaria críticos usan rectángulos de esquinas completamente redondeadas (pill-shape) en negro: "Publicar Certificado y Generar QR", "Confirmar Recepción y Sellar en Blockchain", "LOG IN", "SIGN UP", "DONE". Los modales/overlays (Recepción de Material, Detalle de Incidente, Crear Nuevo Lote, Lectura de Balanza, Vincular Joya, Confirmación) usan bordes muy redondeados, diferenciándose visualmente del fondo oscuro y comunicando que son capas flotantes temporales. Las tarjetas de métricas en los dashboards usan bordes ligeramente redondeados (más sutiles que los modales), estableciendo una jerarquía de redondez que va de contenedores principales (sutil) a modales (notable) a botones CTA (máxima). El área de carga de imagen en "Registrar Nueva Joya" usa borde punteado, convención estándar de zonas de drag-and-drop. |
+| **Direction** | El layout general de todos los dashboards sigue una dirección izquierda-derecha: sidebar de navegación fijo a la izquierda, contenido principal a la derecha. Dentro del contenido principal, el flujo de lectura va de arriba hacia abajo: header con métricas resumidas → tabla de datos o contenido detallado → actividad o acciones secundarias. El Dashboard Minería (Alerta Activa) organiza las tarjetas de métricas horizontalmente (izquierda-derecha) en la parte superior, y luego divide el contenido principal en una columna principal (Seguimiento de Lotes) y una columna lateral (Actividad IoT en vivo). El "Detalle del Lote" divide el espacio horizontalmente: mapa GPS a la izquierda (zona más ancha) y telemetría a la derecha (zona más angosta), direccionando la atención primero al dato espacial y luego al dato técnico. |
+| **Size** | La jerarquía de tamaños es deliberada y consistente. En los dashboards, los valores de las tarjetas de métricas ("##", "###T", "#") usan tipografía de display muy grande para que sean legibles de un vistazo, incluso en condiciones de trabajo operativo. En "Lectura de Balanza en Tiempo Real", el valor "38.50 TONELADAS" ocupa el mayor tamaño tipográfico de la pantalla, reforzando que es el dato más crítico de ese paso. En el modal "Recepción de Material", el peso certificado "38.50 T" se muestra en grande sobre un fondo oscuro, diferenciándolo del campo editable de peso recibido. Los títulos de página ("Resumen de Operaciones", "Registrar Nueva Joya", "Mi Colección Certificada") son notablemente más grandes que los subtítulos descriptivos debajo, estableciendo jerarquía clara. |
+| **Space** | La aplicación usa espaciado generoso y coherente entre todos sus componentes. Los dashboards mantienen padding interno amplio en las tarjetas de métricas, evitando la sensación de saturación a pesar de la densidad de datos. Los modales/overlays tienen padding interno que separa claramente el encabezado, el contenido y los botones de acción, creando zonas de interacción bien delimitadas. El sidebar de navegación usa espaciado vertical uniforme entre ítems, facilitando el escaneo rápido. La pantalla de "Mi Colección Certificada" usa gaps equilibrados entre las tarjetas de piezas registradas, comunicando que son unidades independientes dentro de un grupo. El formulario de Login y Sign Up usa espaciado vertical generoso entre campos, reduciendo la densidad visual y la probabilidad de errores de entrada. |
+| **Line** | Las líneas horizontales actúan como separadores estructurales críticos en múltiples pantallas. En el modal "Recepción de Material", la línea divisoria separa el encabezado del cuerpo del modal y el cuerpo de los botones de acción, creando zonas funcionales distintas. En los dashboards, la línea sutil que separa el header (navbar + búsqueda) del contenido principal establece un límite visual consistente. En el "Detalle del Lote", la ruta GPS se representa como una línea curva negra sobre el mapa, siendo el elemento visual más importante de esa sección. En el formulario de Login y Sign Up, los campos de texto usan línea inferior (border-bottom) en lugar de bordes completos, siguiendo convenciones de formularios minimalistas. En Profile Screen, los separadores entre campos (Email, Username, Password, Phone, Location) son líneas sutiles que delimitan cada área editable. |
+| **Texture** | La textura visual en la aplicación se construye a través de la densidad de datos y los componentes de UI más que a través de imágenes o patrones. En el Dashboard Minería, la tabla de "Seguimiento de Lotes" con filas alternadas de contenido crea una textura de datos reconocible. El feed de "Actividad IoT en vivo" con su lista de eventos cronológicos aporta textura informacional dinámica. En "Detalle del Lote", el mapa GPS con sus vías tenues sobre fondo gris constituye la textura visual más explícita de la aplicación, comunicando contexto geográfico. La previsualización de etiqueta en "Registrar Nueva Joya" introduce una textura de tarjeta física dentro de la interfaz digital, estableciendo una metáfora tangible del certificado que se va a generar. |
+ 
+---
+ 
+## Heurísticas de Usabilidad (Nielsen)
+ 
+| Heurística | Justificación |
+|---|---|
+| **H1 – Visibilidad del estado del sistema** | Esta es la heurística más desarrollada en toda la aplicación. El Dashboard Minería (Alerta Activa) muestra el estado de cada lote con badges específicos: "Alerta: Desvío Detectado", "Pesaje", "Procesado", "En camino", "Carga", permitiendo conocer el estado de toda la flota de un vistazo. El feed de "Actividad IoT en vivo" con el indicador "● En vivo" y eventos con marcas horarias mantiene al operador informado del estado del sistema en tiempo real. En "Detalle del Lote", el badge "En Tránsito" junto con "Última actualización: Hace 2 minutos" y el indicador "Señal Estable" comunican el estado de conectividad del dispositivo IoT. En "Lectura de Balanza en Tiempo Real", el badge "BALANZA EN LÍNEA" indica activamente que la conexión con el sensor está establecida. En "Registrar Nueva Joya", la previsualización de etiqueta actualiza en tiempo real a medida que el usuario completa el formulario. El modal de confirmación de certificado muestra el ícono de check ✓ para comunicar que la operación fue exitosa. |
+| **H2 – Relación entre el sistema y el mundo real** | Toda la terminología de la aplicación está calibrada para su sector industrial. En el Dashboard Minería se usan términos del vocabulario minero real: "Lotes en Tránsito", "Toneladas Extraídas", "Eficiencia de Flota", "Zona de Balanza", "Tajo Abierto B", "Volquete", "Planta Procesadora". En el módulo de joyería se usa vocabulario del sector: "Peso en Gramos", "Pureza / Quilataje", "Certificaciones QR", "Trazabilidad". El modal de incidente usa la misma terminología que usaría un operador real: "Geocerca", "Desvío Detectado", "Congelar Lote y Notificar Seguridad". La pantalla de "Mi Colección Certificada" usa el lenguaje del consumidor final: "¿Compraste una nueva joya?", "Vincular Joya", "Ver Trazabilidad". El modal de "Recepción de Material" usa "Margen de merma por transporte" y "Dentro del límite aceptable (±0.5%)", términos que un encargado de recepción en una joyería reconocería inmediatamente. |
+| **H3 – Libertad y control por parte del usuario** | Los modales con flujo de múltiples pasos implementan este principio explícitamente. En "Crear Nuevo Lote de Extracción" (Paso 1 de 2), el botón "Cancelar" permite salir del flujo en cualquier momento. En "Lectura de Balanza" (Paso 2 de 2), el botón "← Atrás" permite retroceder al paso anterior sin perder el progreso. Todos los modales tienen un botón de cierre (×) en la esquina superior derecha. El modal de "Detalle de Incidente" ofrece tres opciones de respuesta: "Falsa Alarma" (cancelar la alerta), "Llamar a Conductor" (acción intermedia) y "Congelar Lote y Notificar Seguridad" (acción máxima), dando al operador control sobre el nivel de respuesta. La pantalla "← Volver al Dashboard" en el formulario de joyería y en el modal de confirmación permite al usuario retroceder en cualquier momento. |
+| **H4 – Consistencia y estándares** | El sidebar de navegación mantiene la misma estructura en todos los dashboards: logo GoldMetrics en la esquina superior izquierda, ítems de menú con íconos a la izquierda del texto, y "Cerrar Sesión" al pie. El navbar superior es consistente en todos los dashboards: barra de búsqueda a la izquierda, ícono de notificaciones + avatar de usuario a la derecha. Los botones de acción primaria crítica siempre usan negro sólido con texto blanco. Los botones de acción secundaria siempre usan contorno/borde sin relleno. Los modales siguen siempre el mismo esquema: encabezado con ícono + título + subtítulo, separador horizontal, cuerpo del contenido, separador horizontal, pie con botones de acción. Los badges de estado en tablas siguen el mismo patrón visual (borde redondeado, texto compacto) en todos los dashboards. |
+| **H5 – Prevención de errores** | El modal "Recepción de Material" implementa prevención de errores avanzada: muestra el peso certificado por blockchain (38.50 T) junto al campo de peso real recibido (38.45 T) para que el operador pueda comparar ambos valores antes de confirmar. El sistema calcula automáticamente el margen de merma (-0.13%) y lo etiqueta como "Dentro del límite aceptable (±0.5%)", evitando que el operador cometa el error de rechazar una recepción válida. En "Crear Nuevo Lote", los selectores dropdown con ejemplos en el placeholder ("Ej: Yacimiento Las Bambas - Sector Sur", "Ej: Camión CAT 01 (Placa: ABC-123)") orientan al usuario sobre el formato de dato esperado, reduciendo errores de entrada. En "Lectura de Balanza", el mensaje "Datos capturados directamente de la balanza B-04. No manipulable" previene intentos de alteración manual del dato de peso. La pantalla de Registro con segmentación (Empresa Minera, Joyería, Individual) previene que el usuario acceda a un tipo de cuenta que no corresponde a su perfil. |
+| **H6 – Reconocer antes que recordar** | Los dashboards hacen visibles los datos críticos sin requerir memorización: las métricas de resumen (Lotes en Tránsito, Toneladas, Alertas, Eficiencia) están siempre en la parte superior de la pantalla. Los estados de cada lote son visibles en la tabla sin necesidad de hacer clic en ningún ítem. En "Registrar Nueva Joya", la previsualización de etiqueta en tiempo real permite al usuario ver exactamente cómo quedará el certificado final antes de publicarlo, sin necesidad de imaginar el resultado. El breadcrumb "Paso 1 de 2" y "Paso 2 de 2" en los flujos de múltiples pasos indica al usuario dónde está dentro del proceso sin que tenga que recordar cuántos pasos quedan. Los íconos junto a cada ítem del sidebar de navegación permiten reconocer la sección de un vistazo. El ejemplo en el campo de ID ("Ej: GM-J-9942") en el modal de "Vincular Joya" evita que el usuario tenga que recordar el formato del código. |
+| **H7 – Flexibilidad y eficiencia en el uso** | El campo de búsqueda global ("Buscar piezas, lotes..." / "Buscar operaciones, lotes...") en el navbar de todos los dashboards actúa como acelerador para usuarios expertos, permitiéndoles acceder directamente a un lote o pieza sin navegar por el menú. En el Dashboard Minería, el botón "+ Nuevo Registro" en el navbar superior y el botón "+ Nuevo Lote" dentro de la tabla ofrecen dos puntos de acceso rápido a la misma función. En "Registrar Nueva Joya", el área de drag-and-drop para subir fotos ofrece dos métodos de carga: clic para abrir el explorador de archivos o arrastrar directamente, atendiendo tanto a usuarios básicos como avanzados. El modal de "Vincular Joya" incluye un ícono de escáner QR junto al campo de texto, ofreciendo al usuario la opción de escanear en lugar de escribir el código manualmente. |
+| **H8 – Diseño estético y minimalista** | Los dashboards aplican este principio con notable disciplina. La pantalla de Login contiene únicamente: campos de Email y Password, opción "Forgot Password?" / "Remember me" y el botón "LOG IN". No hay elementos decorativos superfluos. La pantalla de "Create Account" (Sign Up) añade lo mínimo necesario para el registro. El modal de confirmación de certificado (Overlay_OverlayBlur-1) muestra solo el ícono de check, el mensaje de confirmación, la previsualización del QR y dos acciones posibles: "Descargar en PDF" e "Imprimir Etiqueta". La pantalla de "Mi Colección Certificada" organiza información compleja (colección, impacto comunitario, seguridad blockchain) de forma limpia sin acumular todos los elementos en una misma zona de la pantalla. El "Detalle del Lote" divide el espacio entre el mapa y la telemetría sin saturar ninguno de los dos paneles. |
+| **H9 – Reconocer, diagnosticar y recuperarse de errores** | El modal "Detalle de Incidente – Lote GM-004" es el ejemplo más desarrollado de esta heurística. El encabezado usa un ícono de advertencia (△) junto al título para comunicar visualmente la naturaleza del error. La descripción del incidente es concisa y específica: "El volquete V-08 se ha desviado 2km de la geocerca permitida en Ruta Sur." El mapa muestra visualmente la ubicación del desvío. Los tres botones de respuesta ofrecen opciones graduadas de recuperación: desde "Falsa Alarma" (descartar el error) hasta "Congelar Lote y Notificar Seguridad" (respuesta máxima). El estado "Pérdida de señal hace 1m" en el panel de conductor informa sobre el problema de conectividad de forma precisa y con timestamp. En el modal de "Recepción de Material", el sistema detecta y comunica el margen de merma automáticamente, orientando al operador sobre si el desvío es aceptable o requiere acción. |
+ 
+---
+ 
+## Principios de Arquitectura de Información (AI)
+ 
+| Principio | Justificación |
+|---|---|
+| **Objects** | La aplicación trata los lotes de extracción como objetos vivos con ciclo de vida, atributos y comportamientos propios. Cada lote tiene: un ID único (GM-1001, LT-8402, GM-004), un vehículo asignado, una ubicación actual actualizada en tiempo real, un estado que cambia a lo largo de su ciclo (En camino → Carga → Pesaje → Procesado), y un destino. Las joyas también son tratadas como objetos con atributos (Nombre Comercial, Descripción, Peso, Pureza, Origen, Fecha) y con comportamientos (publicar certificado, generar QR, vincular a cuenta, ver trazabilidad). Los certificados blockchain son objetos con hash inmutable, fecha de sellado y ID único (GM-J-9942). Esta concepción de los datos como objetos vivos sustenta toda la arquitectura de la aplicación. |
+| **Choices** | La pantalla de Registro implementa este principio de forma explícita: la pregunta "¿Cómo deseas registrarte?" presenta tres tarjetas con elecciones significativas y bien diferenciadas: Empresa Minera (Corporativo), Joyería (Arte y Diseño) e Individual (Personal). Cada opción tiene su propia descripción, categoría y ícono representativo. El modal de "Detalle de Incidente" ofrece tres opciones de respuesta ante una alerta (Falsa Alarma, Llamar a Conductor, Congelar Lote y Notificar Seguridad), cada una con consecuencias distintas y claramente diferenciadas. El Dashboard Minería muestra el botón "Filtrar lotes..." para que el usuario pueda elegir qué subconjunto de datos ver. |
+| **Disclosure** | La aplicación implementa revelación progresiva en múltiples niveles. Los dashboards muestran primero las métricas de alto nivel (Lotes en Tránsito: ##, Toneladas: ###T, Alertas: #) y luego permiten acceder al detalle mediante "Ver Detalle" por fila. El "Detalle del Lote" revela la ruta GPS, los datos de telemetría (temperatura, vibración) y el hash blockchain de forma progresiva en su propio panel. Los modales de flujo en pasos (Crear Lote Paso 1 → Paso 2) revelan información en etapas, evitando abrumar al usuario con todos los campos a la vez. La actividad IoT muestra los últimos 5 eventos con la opción "Ver todo el registro", revelando más solo cuando el usuario lo solicita. El modal "Vincular Nueva Joya" muestra primero el campo de código y luego revela el beneficio: "Al vincularla, podrás acceder a la garantía de por vida y el historial de origen ético de la pieza." |
+| **Exemplars** | Los ejemplos en los campos de entrada actúan como exemplars textuales. En el modal "Vincular Joya", el placeholder "Ej: GM-J-9942" muestra el formato exacto del ID esperado. En "Crear Nuevo Lote", los placeholders "Ej: Yacimiento Las Bambas - Sector Sur" y "Ej: Camión CAT 01 (Placa: ABC-123)" muestran ejemplos reales del tipo de dato que el sistema espera. En el formulario de "Registrar Nueva Joya", el campo de pureza muestra "##k" como placeholder indicando el formato de quilataje. La previsualización de etiqueta en "Registrar Nueva Joya" es el exemplar más completo: muestra en tiempo real cómo lucirá el certificado final, incluyendo la estructura de datos (Peso, Pureza, Origen, Fecha, ID de lote). |
+| **Front Doors** | La aplicación contempla múltiples puntos de entrada al sistema. El modal de "Detalle de Incidente" puede activarse directamente desde una notificación push o desde el badge de alerta en el dashboard, sin requerir que el usuario navegue desde el inicio. El "Detalle del Lote" es accesible tanto desde el botón "Ver Detalle" en la tabla del dashboard como desde la búsqueda global. La pantalla de "Mi Colección Certificada" del usuario final puede recibir tráfico directo desde un enlace de QR escaneado en una joya, llevando al usuario directamente al detalle de trazabilidad de una pieza específica. La barra de búsqueda global presente en todos los dashboards actúa como puerta de entrada directa a cualquier objeto del sistema. |
+| **Multiple Classification** | Los lotes de extracción pueden encontrarse y clasificarse por múltiples criterios: por ID (GM-1001, LT-8402), por vehículo asignado (Camión CAT, Volquete Volvo), por estado (En Tránsito, Pesaje, Procesado, Carga, Desvío Detectado) o por destino (Planta Principal, Yacimiento Sur, Planta Norte). El botón "Filtrar lotes..." en el Dashboard Minería permite al usuario elegir por cuál criterio clasificar la vista. Las joyas en el inventario de joyería pueden clasificarse por nombre, peso neto, pureza o estado de QR (Generado/Pendiente). Este principio refleja que distintos usuarios (supervisor de operaciones, encargado de logística, gestor de inventario) pueden buscar la misma información por rutas distintas. |
+| **Focused Navigation** | El sidebar de cada dashboard contiene únicamente los ítems relevantes para el rol del usuario en sesión. El Dashboard Minería muestra: Dashboard, Operaciones, Trazabilidad, Inventario, Reportes, Configuración. El dashboard de Joyería muestra: Dashboard, Inventario, Certificaciones QR, Reportes. El dashboard de usuario final muestra: Mi Colección, Verificar joya, Certificados, Mi Perfil, Configuración. Esta especialización por rol refleja el principio de navegación enfocada: el menú se define por lo que necesita ese usuario específico, no por una estructura genérica. No hay ítems de navegación que no correspondan al flujo de trabajo del segmento en sesión. |
+| **Growth** | La arquitectura de la aplicación está diseñada para escalar. La tabla de lotes en el Dashboard Minería puede acomodar más filas con el mismo patrón (paginación o scroll). El inventario de joyería puede crecer indefinidamente con el mismo layout de tabla. La colección del usuario final puede añadir más piezas con el mismo grid de tarjetas. El feed de "Actividad IoT" con su botón "Ver todo el registro" anticipa un historial que crecerá con el tiempo. El sistema de IDs estructurados (GM-001, LT-8402, GLD-8492-XX) está diseñado para escalar a miles de registros. El modal de "Registrar Nueva Joya" puede incorporar nuevos campos de atributo sin reestructurar la pantalla completa. |
+ 
+---
+ 
+## Principios de Diseño Inclusivo
+ 
+| Principio | Justificación |
+|---|---|
+| **P1 – Proporciona experiencias comparables** | La aplicación ofrece dashboards completamente diferenciados y adaptados para cada segmento de usuario: el Dashboard Minería tiene métricas de flota y telemetría IoT; el Dashboard Joyería tiene gestión de inventario y certificaciones QR; el Dashboard Usuario Final tiene colección personal y trazabilidad ética. Cada uno proporciona una experiencia completa y de calidad para su tipo de usuario, sin que ningún segmento reciba una versión reducida o simplificada. Todos los dashboards mantienen las mismas funcionalidades base (búsqueda, notificaciones, perfil de usuario, cerrar sesión) garantizando paridad en la experiencia de plataforma. |
+| **P2 – Considera la situación del usuario** | El Dashboard Minería está diseñado considerando que los operadores trabajan en entornos de alta presión y toman decisiones rápidas. Las métricas de resumen en la parte superior usan tipografía de display muy grande para ser legibles de un vistazo, incluso en condiciones de baja luminosidad o desde cierta distancia. El modal "Detalle de Incidente" coloca los tres botones de respuesta en la parte inferior de la pantalla, accesibles con el pulgar en dispositivos táctiles. El indicador "● En vivo" con timestamp en la actividad IoT informa al operador sobre la actualidad de los datos sin que necesite buscar esa información. La pantalla de Login y Sign Up usa campos con etiquetas como placeholder dentro del campo, lo que funciona bien en pantallas pequeñas. El campo de escaneo QR en los modales de vincular/recibir material contempla que el usuario puede estar usando su teléfono en campo. |
+| **P3 – Sé consistente** | El patrón de sidebar + navbar + área de contenido se mantiene idéntico en todos los dashboards de la aplicación. Los íconos de navegación en el sidebar siguen el mismo estilo en todos los roles. Los modales siempre usan la misma estructura: encabezado + línea separadora + cuerpo + línea separadora + botones. Los botones de acción primaria siempre son negro sólido con texto blanco. Los botones de acción secundaria/cancelación siempre usan contorno sin relleno. Los badges de estado de lote/pieza siempre tienen el mismo tamaño y estilo tipográfico. Esta consistencia permite que un usuario que conoce el módulo de minería pueda orientarse inmediatamente en el módulo de joyería o en el portal de usuario final, reduciendo la curva de aprendizaje cross-segmento. |
+| **P4 – Deja al usuario mandar** | Los flujos de múltiples pasos son cancelables en cualquier punto. El operador que activó el modal de "Crear Nuevo Lote" puede abandonarlo en el Paso 1 o el Paso 2 sin consecuencias. El operador que ve un incidente puede clasificarlo como "Falsa Alarma" y descartarlo, o escalar a "Congelar Lote y Notificar Seguridad" según su criterio. El usuario de joyería puede editar y previsualizar su etiqueta antes de publicarla definitivamente. El usuario final puede vincular o desvincular joyas de su colección. La opción "Securely save my information for one-click checkout" en Payment Method es un checkbox (no preseleccionado) que el usuario elige activar o no, respetando su control sobre la persistencia de sus datos financieros. |
+| **P5 – Ofrece opciones** | El modal de "Vincular Joya" ofrece dos métodos para ingresar el código de la pieza: escribirlo manualmente en el campo de texto o escanearlo con la cámara (ícono de escáner QR). El modal "Recepción de Material" también ofrece escaneo de código de barras como alternativa al ingreso manual del ID de lote. La pantalla de "Create Account" (Sign Up) ofrece dos caminos de registro: "Continue with Google" (OAuth) o formulario manual con Email, Username, Password y Phone. El Dashboard Minería ofrece acceso al detalle de un lote tanto desde el botón "Ver Detalle" en la tabla como desde el feed de Actividad IoT al hacer clic en un evento. La confirmación de certificado de joya ofrece dos opciones de salida: "Descargar en PDF" o "Imprimir Etiqueta", y también "← Volver al Dashboard". |
+| **P6 – Prioriza el contenido** | En el Dashboard Minería (Alerta Activa), el lote "GM-004" con estado "Alerta: Desvío Detectado" aparece como la primera fila de la tabla, priorizando visualmente el ítem que requiere atención inmediata sobre los demás. Las tarjetas de métricas en la parte superior de los dashboards priorizan los números más relevantes para cada rol: para minería son Lotes en Tránsito, Toneladas y Alertas; para joyería son Oro Validado, Joyas Certificadas y Mermas. En "Lectura de Balanza", el valor "38.50 TONELADAS" es el elemento de mayor tamaño en la pantalla, priorizando el dato más crítico de ese paso. En el modal de confirmación de certificado, el ícono de check ✓ es el primer elemento que el usuario ve, comunicando el éxito de la operación antes que cualquier otro contenido. |
+| **P7 – Agrega valor** | La previsualización de etiqueta en tiempo real en "Registrar Nueva Joya" agrega valor al eliminar la incertidumbre del usuario sobre el resultado final del certificado, reduciendo errores y retrabajo. El cálculo automático del margen de merma en "Recepción de Material" (con indicador de si está dentro del límite aceptable) agrega valor operativo real, sustituyendo un cálculo manual propenso a errores. El panel de impacto comunitario en "Mi Colección Certificada" ("Con tus compras has apoyado a 2 comunidades mineras responsables") agrega valor emocional y ético para el consumidor final, diferenciando la experiencia GoldMetrics de plataformas puramente transaccionales. El sellado en blockchain con hash visible ("Sellado en Blockchain: Hash: 0x9A4F...") agrega valor de confianza e inmutabilidad, siendo un diferenciador clave frente a sistemas de trazabilidad tradicionales. La funcionalidad "Exportar Hoja de Ruta" en el Detalle del Lote agrega valor operativo al permitir generar documentación de tránsito directamente desde la plataforma. |
+ 
+---
+ 
+
 ### 4.4.2. Web Applications Wireflow Diagrams
 
 ![Wireflow 1](../assets/img/chapter-iv/wireflow/1%20(1).jpeg)  
@@ -1436,6 +1715,70 @@ https://www.figma.com/design/QbycMaaRmv7o2nCa9J8dPs/Wireframes-y-Mockups-GoldMet
 ![Usuario Final](../assets/img/chapter-iv/Mockup/Dashboard%20Usuario%20Final.png)  
 ![Vincular Joya](../assets/img/chapter-iv/Mockup/Usuario%20Final%20-%20Vincular%20Joya.png)  
 
+# GoldMetrics — Justificación de Diseño (web Applications Mock-ups)
+ 
+Análisis basado en las 17 pantallas de alta fidelidad de la aplicación GoldMetrics: dashboards de minería y joyería, modales, pantallas de autenticación, perfil, pago, suscripciones y usuario final.
+ 
+---
+ 
+## Elementos del Diseño
+ 
+| Elemento | Justificación |
+|---|---|
+| **Colour** | La aplicación consolida una paleta de dos modos claramente diferenciados. Los dashboards operativos (minería y joyería) usan fondo negro profundo (#1a1a1a aprox.) con el dorado/ámbar (#c9a84c) como único acento cromático aplicado a: el ítem activo del sidebar, los botones de acción primaria ("Siguiente: Capturar Pesaje", "Sellar y Confirmar Lote", "Validar y Vincular", "Vincular Joya", "Publicar Certificado y Generar QR"), los badges de pureza (18K, 24K, 14K) en la tabla de inventario, y los valores de métricas en el Detalle del Lote (38.50 T en dorado sobre fondo negro). Las pantallas de autenticación (Login, Sign Up) y perfil usan fondo blanco/gris claro, estableciendo un espacio visual neutro previo al acceso. El rojo se reserva exclusivamente para estados críticos: la tarjeta "Alertas de Ruta" se tiñe de rojo cuando hay 1 alerta activa, el badge "Desvío Detectado" en la tabla de lotes es rojo, el encabezado del modal de incidente tiene fondo rojo oscuro, el botón "Congelar Lote y Notificar Seguridad" es rojo sólido, y "Pérdida de señal hace 1m" aparece en texto rojo. El verde se usa únicamente para confirmaciones exitosas: el ícono de check en "¡Certificado QR Generado con Éxito!", el badge "Verificado IoT" en el modal de recepción, el badge "Señal Estable" en el Detalle del Lote, el badge "BALANZA EN LÍNEA" en la lectura de pesaje, y el estado "Generado" en la tabla de inventario. Esta economía de color —dorado para acciones, rojo para alertas, verde para éxito— crea un sistema semántico robusto donde el color comunica significado de forma consistente en toda la aplicación. |
+| **Shape** | El sistema de formas de la aplicación establece una jerarquía visual clara a través del nivel de redondez. Los botones de acción primaria usan la forma de píldora (border-radius máximo): "Siguiente: Capturar Pesaje", "Sellar y Confirmar Lote", "Validar y Vincular", "Vincular Joya", todos en dorado; y "Congelar Lote y Notificar Seguridad" en rojo. Las tarjetas de métricas en los dashboards usan bordes ligeramente redondeados (border-radius moderado), diferenciándose de los fondos rectangulares del layout general. Los modales/overlays usan bordes muy redondeados en sus contenedores, comunicando que son capas flotantes temporales por encima del contenido principal. Las tarjetas de inventario de joyas en el Dashboard Usuario Final usan bordes redondeados con fotografías de la pieza a sangre, creando un objeto de colección visual compacto. Los selectores dropdown en "Crear Nuevo Lote" usan forma de píldora con borde sutil, distinguiéndolos de los campos de texto clásicos. El código QR generado en el modal de éxito tiene bordes redondeados en su contenedor blanco, integrándose con el lenguaje visual del resto de la aplicación. |
+| **Direction** | La dirección compositiva sigue un patrón consistente en todos los dashboards: sidebar de navegación vertical fijo a la izquierda (dirección top-down), y el área de contenido a la derecha organizada en filas horizontales de métricas en la parte superior seguidas por el contenido tabular o detallado más abajo. El Dashboard Minería (Alerta Activa) divide el área de contenido en dos columnas: la principal (Seguimiento de Lotes, 70% del ancho) y una lateral derecha (Actividad IoT en vivo, 30% del ancho), creando una dirección de lectura izquierda-derecha del dato operativo al dato contextual. El "Detalle del Lote" sigue la misma dirección bicolumnar: mapa GPS a la izquierda (contexto espacial) y panel de telemetría a la derecha (datos técnicos), orientando la atención primero al dónde y luego al qué. En el modal de incidente, el mapa ocupa la parte izquierda (evidencia visual) y la información del operador la derecha (datos de respuesta), siguiendo el mismo patrón. La página de Suscripciones organiza los tres planes en dirección horizontal izquierda-derecha (Básico → Joyería Pro → Extracción Corporativa), representando una escala de valor creciente de izquierda a derecha. |
+| **Size** | La jerarquía de tamaños es deliberada y diferenciada por contexto. En los dashboards, los valores de métricas ("12", "450T", "1", "91%") usan tipografía de display muy grande para legibilidad inmediata desde cierta distancia. En el modal "Lectura de Balanza en Tiempo Real", el valor "38.50 TONELADAS" es el elemento tipográfico más grande de toda la pantalla, comunicando que es el dato más crítico de ese paso del flujo. En el "Detalle del Lote", el peso registrado "38.50 T" en la tarjeta de telemetría usa tipografía grande en dorado, priorizando el dato de trazabilidad sobre los demás. En la página de Suscripciones, los precios ("$10", "$49/mes", "$199/mes") se muestran en tamaño de display prominente para facilitar la comparación entre planes. El título del modal de alerta ("Detalle de Incidente – Lote GM-004") usa tamaño mayor que el subtítulo descriptivo, estableciendo jerarquía inmediata. En el modal de éxito del QR, el ícono de check verde en su círculo ocupa el tamaño protagonista antes que el texto, priorizando la señal visual de confirmación. |
+| **Space** | El uso del espacio negativo es uno de los rasgos más consistentes de la aplicación. En los dashboards, las tarjetas de métricas tienen padding interno generoso que evita la densidad visual a pesar de la cantidad de datos. La tabla de inventario y seguimiento de lotes mantiene altura de fila uniforme con espacio vertical suficiente para leer el contenido sin esfuerzo. En los modales, el espacio entre el encabezado, el cuerpo y los botones de acción es deliberado y jerarquizado, creando zonas de interacción claramente delimitadas. En la pantalla de Login y Sign Up, el espaciado vertical entre campos (Email, Password, Username, Phone) es generoso y uniforme, reduciendo la ansiedad de llenado secuencial. En el Dashboard Usuario Final, el grid de tres tarjetas de piezas ("Anillo de Gala", "Collar Aura", "Pulsera Eterna") mantiene gaps equilibrados que comunican independencia entre items sin fragmentar el grupo visual. En la página de Suscripciones, el espacio entre las tres tarjetas de plan las diferencia como alternativas comparables sin que ninguna se sienta desconectada. |
+| **Line** | Las líneas cumplen funciones estructurales y narrativas en toda la aplicación. En el "Detalle del Lote", la línea dorada curva sobre el mapa negro representa la ruta GPS del lote desde "Mina Las Bambas" (origen) hasta "Joyería Central" (destino), siendo el elemento visual más comunicativo de esa pantalla. En el modal de incidente, la línea roja curva sobre el mapa negro representa el desvío real del vehículo, diferenciada de la línea gris punteada que indica la ruta planeada, creando una leyenda visual inmediata ("Ruta Planeada" vs "Desvío Detectado"). Los separadores horizontales en los modales (entre encabezado y cuerpo, entre cuerpo y botones) usan líneas sutiles para delimitar zonas funcionales sin añadir peso visual. En las pantallas de Login y Sign Up, los campos de texto usan exclusivamente línea inferior (border-bottom) en lugar de borde completo, siguiendo una convención minimalista que reduce el ruido visual del formulario. En la página de Suscripciones, la línea de separación punteada entre el precio y la lista de features de cada plan actúa como delimitador sutil entre el valor económico y las funcionalidades incluidas. |
+| **Texture** | En los dashboards de fondo oscuro, la textura se construye a través de la densidad y variedad de los componentes de UI. La tabla de "Seguimiento de Lotes" con sus filas alternadas (badges de estado de distintos colores, íconos de vehículo, datos de ubicación) crea una textura informacional densa pero legible. En el "Detalle del Lote", el mapa GPS con sus vías tenues sobre fondo negro aporta la textura visual más explícita de la aplicación, comunicando contexto geográfico real sin usar imágenes fotográficas. En el Dashboard Usuario Final, las fotografías de alta calidad de las joyas ("Anillo de Gala", "Collar Aura", "Pulsera Eterna") sobre fondos de terciopelo oscuro introducen una textura fotográfica lujosa que refuerza el posicionamiento premium del producto. En el modal "Registrar Nueva Joya" (Dashboard Joyería), la previsualización de etiqueta con el QR generado en tiempo real aporta textura de documento físico digitalizado, haciendo tangible el certificado que se está creando. |
+ 
+---
+ 
+## Heurísticas de Usabilidad (Nielsen)
+ 
+| Heurística | Justificación |
+|---|---|
+| **H1 – Visibilidad del estado del sistema** | Esta heurística está implementada con notable rigor en toda la aplicación. En el Dashboard Minería (Alerta Activa), la tarjeta "Alertas de Ruta" cambia su color de fondo a rojo cuando hay alertas activas, y el ícono de campana en el navbar muestra un badge rojo con el número de alertas pendientes. En el feed de "Actividad IoT", el indicador "● En vivo" (con punto rojo pulsante) comunica que la conexión de datos está activa en tiempo real. En "Detalle del Lote", el badge "En Tránsito" en el título, el indicador "Señal Estable" en verde y el texto "Última actualización: Hace 2 minutos" informan simultáneamente sobre el estado del lote, la conectividad del dispositivo y la frescura del dato. En "Lectura de Balanza", el badge "BALANZA EN LÍNEA" en verde confirma que la conexión con el sensor físico está establecida y los datos son en tiempo real. El modal "Recepción de Material" muestra el badge "Verificado IoT" en verde junto al lote cargado, confirmando que el origen fue validado por el sistema blockchain. El modal de éxito del QR muestra el ícono de check verde como primer elemento, comunicando el resultado exitoso antes que cualquier otro contenido. La previsualización de etiqueta en "Registrar Nueva Joya" se actualiza en tiempo real conforme el usuario completa los campos, mostrando el estado progresivo del certificado. |
+| **H2 – Relación entre el sistema y el mundo real** | Toda la terminología de la aplicación está calibrada para el vocabulario de sus industrias objetivo. En el módulo de minería, los términos son reconocibles por cualquier profesional del sector: "Lotes en Tránsito", "Toneladas Extraídas", "Eficiencia de Flota", "Zona de Balanza", "Tajo Abierto B", "Planta Procesadora", "Geocerca", "Yacimiento de Origen", "Camión CAT", "Volquete Volvo". En el módulo de joyería, el vocabulario también es específico y preciso: "Quilataje", "Peso en Gramos", "Mermas Promedio", "Certificaciones QR", "Trazabilidad verificada desde la mina", "Sellado en Blockchain". El modal de incidente describe el problema con lenguaje operativo directo: "El volquete V-08 se ha desviado 2km de la geocerca permitida en Ruta Sur." El modal de recepción de material usa "Margen de merma por transporte detectado: -0.13% — Dentro del límite aceptable (±0.5%)", términos que un encargado de recepción industrial reconocería. El Dashboard Usuario Final usa el lenguaje del consumidor: "¿Compraste una nueva joya?", "Vincular Joya", "Ver Trazabilidad", "Impacto Ético", "Cooperativa Andes — Perú". |
+| **H3 – Libertad y control por parte del usuario** | Los flujos de múltiples pasos son completamente reversibles. En "Crear Nuevo Lote de Extracción" (Paso 1 de 2), el botón "Cancelar" permite abandonar el proceso en cualquier momento. En "Lectura de Balanza" (Paso 2 de 2), el botón "← Atrás" permite retroceder al paso anterior sin perder la selección de yacimiento y vehículo. Todos los modales tienen botón de cierre (×) en la esquina superior derecha. En el modal de "Detalle de Incidente", el operador tiene tres opciones de respuesta con consecuencias completamente diferentes: "Falsa Alarma" (descartar sin acción), "Llamar a Conductor" (acción de investigación) y "Congelar Lote y Notificar Seguridad" (acción máxima), dando control total sobre la escalada de respuesta. El link "← Volver al Dashboard" en el formulario "Registrar Nueva Joya" y en el modal de confirmación de QR permite al usuario retroceder en cualquier momento del flujo de certificación. La página de Suscripciones ofrece el plan "Básico" con "Empezar Gratis" como opción de entrada sin compromiso, respetando la libertad del usuario de explorar antes de comprometerse. |
+| **H4 – Consistencia y estándares** | La estructura del layout es idéntica en todos los dashboards: sidebar de navegación fijo a la izquierda con el logo GoldMetrics en la esquina superior izquierda, barra superior con campo de búsqueda a la izquierda y área de usuario (ícono de notificaciones + avatar + nombre de usuario) a la derecha, y "Cerrar Sesión" al pie del sidebar. Los íconos del sidebar siguen el mismo estilo outline en todos los roles (minería, joyería, usuario final). Los botones de acción primaria dorada ("Siguiente: Capturar Pesaje", "Sellar y Confirmar Lote", "Validar y Vincular", "Vincular Joya") mantienen exactamente el mismo estilo visual. Los modales siguen siempre el patrón: encabezado con ícono + título + subtítulo contextual, línea separadora, cuerpo del contenido, línea separadora, pie con botones de acción. Las tarjetas de estado de lote (En Tránsito, Cargando, Pesaje, Procesado, Desvío Detectado) mantienen el mismo tamaño y estilo de badge en todos los dashboards donde aparecen. Las pantallas de Login y Sign Up siguen el mismo layout de split-screen: formulario a la izquierda, logo/marca a la derecha. |
+| **H5 – Prevención de errores** | El modal "Recepción de Material" es el ejemplo más sofisticado de prevención de errores en la aplicación: muestra el "Peso en Balanza de Salida (Certificado): 38.50 T" en un bloque de datos bloqueado e inamovible, junto al campo editable "Peso real recibido: 38.45 T", permitiendo que el operador compare ambos valores antes de confirmar. El sistema calcula automáticamente el margen de merma ("-0.13%") y lo evalúa como "Dentro del límite aceptable (±0.5%)" en verde, evitando que el operador rechace incorrectamente una recepción válida. En "Lectura de Balanza", el mensaje "Datos capturados directamente de la balanza B-04. No manipulable" previene explícitamente intentos de alteración manual del dato de peso certificado. En "Crear Nuevo Lote", los placeholders con ejemplos reales ("Ej: Yacimiento Las Bambas - Sector Sur", "Ej: Camión CAT 01 (Placa: ABC-123)") orientan al usuario sobre el formato de dato esperado, reduciendo errores de selección. La segmentación obligatoria en el Sign Up (Consumidor, Joyerías, Minerías) previene que un usuario acceda a un tipo de dashboard que no corresponde a su rol. El toggle "Facturación Mensual / Facturación Anual" en Suscripciones con el indicador "Flexibilidad mes a mes" previene que el usuario se comprometa con un plan anual sin entender la diferencia. |
+| **H6 – Reconocer antes que recordar** | Los dashboards exponen los datos críticos sin requerir memorización: las métricas de resumen siempre visibles en la parte superior, los estados de cada lote o pieza visibles en la tabla sin necesidad de hacer clic. El breadcrumb "Dashboard > Lote GM-001" en el "Detalle del Lote" indica la posición del usuario dentro de la jerarquía de navegación sin que tenga que recordar cómo llegó ahí. El indicador "Paso 1 de 2" y "Paso 2 de 2" en los modales de flujo informan al usuario sobre su progreso sin requerir memorización. Los íconos representativos junto a cada ítem del sidebar (gráfica para Dashboard, cadena para Trazabilidad, caja para Inventario) permiten reconocer la sección de un vistazo. El placeholder "Ej: GM-J-9942" en el modal "Vincular Joya" y "Ej: GLD-8492-XX" en el Dashboard Usuario Final muestran el formato exacto del código esperado, eliminando la necesidad de recordarlo. La previsualización de etiqueta en tiempo real en "Registrar Nueva Joya" permite al usuario reconocer el estado actual del certificado sin tener que imaginar el resultado final. |
+| **H7 – Flexibilidad y eficiencia en el uso** | El campo de búsqueda global en el navbar de todos los dashboards ("Buscar piezas, lotes...", "Buscar operaciones, lotes...", "Buscar lotes, vehículos...") actúa como acelerador de acceso directo para usuarios expertos. En el Dashboard Minería (Alerta Activa), el botón "+ Nuevo Registro" en el navbar y el botón "+ Nuevo Lote" dentro de la tabla ofrecen dos puntos de acceso rápido a la misma función. En el modal "Recepción de Material" y "Vincular Joya", el ícono de escáner QR/código de barras junto al campo de texto ofrece la opción de escanear en lugar de escribir manualmente el ID, atendiendo tanto a usuarios básicos (teclado) como a usuarios expertos en campo (escáner). La opción "Continue with Google" en Sign Up ofrece un atajo de registro para usuarios que prefieren no crear credenciales nuevas. El checkbox "Securely save my information for one-click checkout" en Payment Method ofrece un acelerador de pago futuro para usuarios recurrentes. |
+| **H8 – Diseño estético y minimalista** | Cada pantalla contiene únicamente los elementos necesarios para su propósito. El Login tiene solo Email, Password, "Forgot Password?", "Remember me" y el botón "LOG IN". El modal "Crear Nuevo Lote" tiene solo dos campos (Yacimiento de Origen, Vehículo/Volquete) en el Paso 1, sin acumular toda la información del lote en una sola pantalla. El modal "Vincular Joya" tiene un único campo de entrada, un botón de acción y un mensaje informativo, sin elementos decorativos superfluos. El Dashboard Minería Principal organiza las tres métricas (Lotes Activos, Toneladas Hoy, Alertas de Ruta) y la tabla "Lotes en curso" sin añadir gráficas o visualizaciones adicionales que compitan con el dato operativo. La pantalla "Profile Screen" (Hello, Diego) muestra solo los cinco campos de perfil (Email, Username, Password, Phone, Location) con su respectivo ícono identificador, sin elementos decorativos. La página de Suscripciones evita la saturación presentando solo tres planes con sus precios, listas de features y un único CTA por plan. |
+| **H9 – Reconocer, diagnosticar y recuperarse de errores** | El modal "Detalle de Incidente – Lote GM-004" implementa esta heurística de forma completa. El encabezado usa fondo rojo oscuro con ícono de advertencia triangular (△) en rojo y el título en rojo, comunicando la naturaleza del error de forma visual inmediata antes de leer el texto. La descripción es específica y accionable: "El volquete V-08 se ha desviado 2km de la geocerca permitida en Ruta Sur." El mapa muestra visualmente la diferencia entre la ruta planeada (línea gris punteada) y el desvío real (línea roja), haciendo diagnosticable el problema espacialmente. El panel de información del operador muestra los datos de respuesta inmediata (Conductor: Juan Pérez, Teléfono: 987-654-321) y el estado de conexión ("Pérdida de señal hace 1m" en rojo). Los tres botones de recuperación están ordenados por nivel de escalada: "Falsa Alarma" (recuperación mínima), "Llamar a Conductor" (recuperación intermedia) y "Congelar Lote y Notificar Seguridad" (recuperación máxima). En el modal "Recepción de Material", el sistema detecta automáticamente el margen de merma y lo evalúa, orientando al operador sobre si el desvío requiere acción o es aceptable. |
+ 
+---
+ 
+## Principios de Arquitectura de Información (AI)
+ 
+| Principio | Justificación |
+|---|---|
+| **Objects** | La aplicación trata los lotes de extracción y las piezas de joyería como objetos vivos con ciclo de vida, atributos y comportamientos propios. Los lotes tienen: ID único (GM-001, LT-8402), vehículo asignado, ubicación GPS actualizada en tiempo real, estado que cambia a lo largo de su ciclo (En camino → Pesaje → Procesado), datos de telemetría (temperatura, vibración), y un hash blockchain inmutable que sella su peso de salida. Las joyas también son objetos con atributos completos (Nombre Comercial, Descripción, Foto, Peso en Gramos, Pureza/Quilataje, Origen de Lote, Fecha de Certificación, ID único "JY-1047-X") y comportamientos (registrar, certificar, generar QR, vincular a cuenta de usuario, ver trazabilidad). Los certificados blockchain son objetos de segunda generación derivados de los objetos primarios (lotes y joyas), con hash verificable y estado de sellado inmutable. Esta concepción de los datos como objetos vivos sustenta toda la arquitectura de información de la aplicación. |
+| **Choices** | La pantalla de Registro (REGISTER) implementa este principio de forma explícita al presentar la pregunta "¿Cómo deseas registrarte?" con tres tarjetas de elección significativa y bien diferenciada: Empresa Minera (Corporativo), Joyería (Arte y Diseño) e Individual (Personal). La página de Suscripciones implementa Choices con tres planes que representan alternativas de valor real: Básico ($10, para explorar), Joyería Pro ($49/mes, para certificar), Extracción Corporativa ($199/mes, para trazabilidad completa IoT). El toggle "Facturación Mensual / Facturación Anual (-20%)" ofrece una elección de modalidad de pago con consecuencia económica visible. El modal "Detalle de Incidente" presenta tres opciones de respuesta ante una alerta crítica, cada una con consecuencias distintas. |
+| **Disclosure** | La aplicación implementa revelación progresiva en múltiples niveles. Los dashboards muestran primero métricas de alto nivel y permiten acceder al detalle mediante "Ver Detalle" por fila. El "Detalle del Lote" revela datos más profundos (ruta GPS, telemetría de temperatura, vibración, hash blockchain) que no son visibles en la tabla del dashboard. El flujo "Crear Nuevo Lote" implementa disclosure explícito en dos pasos: Paso 1 (seleccionar yacimiento y vehículo) → Paso 2 (capturar pesaje de la balanza), revelando la información en el orden lógico del proceso físico. El feed de "Actividad IoT" muestra los últimos 5 eventos con "Ver todo el registro" para acceder al historial completo. En el Dashboard Usuario Final, el panel lateral de "Impacto Ético" muestra dos comunidades con "Conoce sus historias" como puerta a mayor profundidad. El modal "Vincular Joya" muestra primero el campo de acción y luego revela el beneficio: "Al vincularla, podrás acceder a la garantía de por vida y el historial de origen ético de la pieza." |
+| **Exemplars** | Los ejemplos en campos de entrada funcionan como exemplars textuales que orientan al usuario sobre el formato y tipo de dato esperado. En el modal "Crear Nuevo Lote", los placeholders "Ej: Yacimiento Las Bambas - Sector Sur" y "Ej: Camión CAT 01 (Placa: ABC-123)" usan nombres de lugares y vehículos reales del sector minero peruano, maximizando la credibilidad. En el modal "Vincular Joya", "Ej: GM-J-9942" muestra el formato exacto del ID de pieza. En el Dashboard Usuario Final, "Ej: GLD-8492-XX" cumple la misma función. La previsualización de etiqueta en "Registrar Nueva Joya" es el exemplar más completo de la aplicación: muestra en tiempo real cómo lucirá el certificado final, incluyendo el QR generado, el nombre "Anillo de Compromiso Clásico", peso "4.5 Gramos", pureza "18K", origen "Lote GM-004", fecha "24 Oct 2023" y el sello "Certificado Digitalmente". Las joyas en el Dashboard Usuario Final (fotografías reales de alta calidad de cada pieza) son exemplars visuales que reemplazan a los placeholders del wireframe, haciendo tangible el objeto físico que representa cada entrada de la colección. |
+| **Front Doors** | La aplicación contempla que diferentes usuarios lleguen a distintas secciones sin pasar por un flujo lineal. El breadcrumb "Dashboard > Lote GM-001" en el "Detalle del Lote" indica que esa pantalla puede recibirse directamente desde una notificación de alerta o desde un enlace compartido, sin requerir que el usuario haya navegado desde el dashboard principal. El modal "Detalle de Incidente" puede abrirse directamente desde una notificación push del sistema IoT, sin que el operador haya iniciado desde el dashboard. La barra de búsqueda global actúa como puerta de entrada directa a cualquier objeto del sistema por ID. El Dashboard Usuario Final puede recibir tráfico directo desde el escaneo de un QR físico en una joya adquirida, llevando al consumidor directamente a la pantalla de trazabilidad de esa pieza específica. La pantalla de Suscripciones puede recibirse directamente desde un enlace de campaña de marketing, sin requerir que el usuario haya pasado por la landing page. |
+| **Multiple Classification** | Los lotes pueden encontrarse y clasificarse por múltiples criterios: por ID (GM-1001, LT-8402), por vehículo asignado (Camión CAT, Volquete Volvo), por estado (En Tránsito, Pesaje, Procesado, Carga, Desvío Detectado) o por destino (Planta Principal, Yacimiento Sur). El botón "Filtrar lotes..." en el Dashboard Minería (Alerta Activa) permite al usuario elegir el criterio de clasificación. Las joyas en el Dashboard Joyería pueden clasificarse por nombre, peso neto, pureza (14K, 18K, 24K) o estado de QR (Generado, Pendiente). En el Dashboard Usuario Final, las piezas pueden encontrarse por fecha de compra (más reciente primero) o navegando al "Ver historial completo". La página de Suscripciones presenta los planes por segmento de usuario (Básico para explorar, Joyería Pro para joyeros, Extracción Corporativa para mineras), pero también por precio y por número de features incluidas, ofreciendo múltiples criterios de evaluación simultáneamente. |
+| **Focused Navigation** | El sidebar de cada dashboard contiene únicamente los ítems relevantes para el rol del usuario en sesión. El Dashboard Minería muestra: Dashboard, Operaciones, Trazabilidad, Inventario, Reportes, Configuración — todos relativos a gestión de flota y extracción. El Dashboard Joyería muestra: Dashboard, Inventario, Certificaciones QR, Reportes — todos relativos a gestión de inventario y certificación. El Dashboard Usuario Final muestra: Mi Colección, Verificar joya, Certificados, Mi Perfil, Configuración — todos relativos a la experiencia del consumidor. Esta especialización por rol garantiza que ningún usuario vea ítems de navegación que no correspondan a su flujo de trabajo. En el navbar superior, la búsqueda, notificaciones y perfil de usuario están siempre visibles independientemente del rol, siendo los únicos elementos de navegación universal. |
+| **Growth** | La arquitectura de la aplicación está diseñada para escalar sin reestructuración mayor. La tabla de lotes en los dashboards puede acomodar más filas con scroll o paginación manteniendo el mismo patrón de columnas. La tabla de inventario de joyería puede crecer indefinidamente con el mismo layout de cuatro columnas (Nombre, Peso Neto, Pureza, Estado QR). El grid de tres joyas en el Dashboard Usuario Final puede expandirse a más piezas con "Ver historial completo" como mecanismo de overflow. El feed de "Actividad IoT" con "Ver todo el registro" gestiona el crecimiento del historial sin saturar el dashboard. El sistema de IDs estructurados (GM-001, LT-8402, GLD-8492-XX, JY-1047-X) está diseñado para escalar a miles de registros con un patrón legible. La página de Suscripciones puede incorporar nuevos planes sin reestructurar la página, simplemente añadiendo una tarjeta más al grid. |
+ 
+---
+ 
+## Principios de Diseño Inclusivo
+ 
+| Principio | Justificación |
+|---|---|
+| **P1 – Proporciona experiencias comparables** | La aplicación ofrece dashboards completamente especializados y de igual calidad para cada segmento: minería (control de flota y extracción en tiempo real), joyería (gestión de inventario y certificaciones QR) y usuario final (colección personal certificada con trazabilidad ética). Ningún segmento recibe una versión reducida o simplificada; cada uno tiene su propio conjunto completo de funcionalidades adaptadas a su rol. Las pantallas de Login y Sign Up son exactamente iguales en estructura y calidad para todos los tipos de usuario. La pantalla de Suscripciones presenta los tres planes con el mismo nivel de detalle y claridad (precio, lista de features, CTA), sin favorecer visualmente ninguno de los planes de menor valor. |
+| **P2 – Considera la situación del usuario** | El Dashboard Minería está diseñado para operadores que toman decisiones en tiempo real bajo presión. Los valores de métricas en tipografía de display grande son legibles de un vistazo desde cierta distancia o en pantallas industriales. El modal de incidente coloca los botones de respuesta en la parte inferior de la pantalla, zona más accesible en dispositivos táctiles. El campo de escaneo QR en los modales contempla que el operador puede estar usando su teléfono en campo, sin buena iluminación o con guantes. El Dashboard Joyería tiene un fondo negro que reduce la fatiga visual para usuarios que trabajan largas jornadas frente a la pantalla. La previsualización de etiqueta en "Registrar Nueva Joya" reduce la necesidad de que el joyero reingrese datos si el resultado no es el esperado, economizando tiempo de trabajo. La pantalla de Profile (Hello, Diego) usa tipografía de gran tamaño en el saludo, generando una experiencia de bienvenida acogedora que contextualiza emocionalmente al usuario antes de mostrar sus datos de perfil. |
+| **P3 – Sé consistente** | El layout de sidebar + navbar + área de contenido se mantiene idéntico en todos los dashboards. Los íconos del sidebar siguen el mismo estilo outline y el mismo tamaño en todos los roles. Los botones de acción primaria dorada tienen siempre la misma forma de píldora y el mismo nivel de prominencia visual. Los modales siguen siempre el mismo patrón estructural. Las pantallas de Login y Sign Up siguen el mismo split-screen de formulario blanco a la izquierda y logo de marca a la derecha, creando un patrón de autenticación reconocible. Los badges de estado de lote o pieza (En Tránsito, Pendiente, Generado) mantienen el mismo tamaño y estilo tipográfico en todos los contextos donde aparecen. Los íconos representativos de cada campo de perfil (sobre para email, candado para contraseña, teléfono para número, pin para ubicación) siguen el mismo estilo y posición en Profile Screen y en Sign Up. |
+| **P4 – Deja al usuario mandar** | Los flujos de múltiples pasos son completamente cancelables en cualquier punto. El operador que inició "Crear Nuevo Lote" puede cancelarlo en Paso 1 o retroceder desde Paso 2 sin consecuencias. El operador ante un incidente tiene control sobre el nivel de escalada de respuesta (Falsa Alarma / Llamar / Congelar). El usuario de joyería puede editar y previsualizar su etiqueta en tiempo real antes de publicarla definitivamente. El consumidor final puede vincular joyas a su cuenta de forma voluntaria y en el momento que elija. El checkbox "Securely save my information for one-click checkout" en Payment Method no está preseleccionado, respetando el control del usuario sobre la persistencia de sus datos financieros. El toggle "Facturación Mensual / Facturación Anual" en Suscripciones permite al usuario cambiar de modalidad de pago antes de comprometerse, manteniendo el control sobre la frecuencia de facturación. |
+| **P5 – Ofrece opciones** | El Sign Up ofrece dos métodos de registro: "Continue with Google" (OAuth) o formulario manual con Email, Username, Password y Phone. El modal "Vincular Joya" y "Recepción de Material" ofrecen dos métodos de ingreso de código: escritura manual o escaneo QR/código de barras con la cámara. En el Dashboard Minería, hay dos puntos de acceso para crear un nuevo lote: el botón "+ Nuevo Registro" en el navbar y el botón "+ Nuevo Lote" dentro de la tabla. El Dashboard Usuario Final permite acceder a la trazabilidad de una joya tanto desde el botón "Ver Trazabilidad" en la tarjeta de la pieza como desde la sección "Verificar joya" en el sidebar, o ingresando el código directamente en el campo "¿Compraste una nueva joya?". La página de Suscripciones ofrece una opción de entrada sin costo ("Empezar Gratis") para usuarios que prefieren explorar antes de comprometerse con un plan de pago. |
+| **P6 – Prioriza el contenido** | En el Dashboard Minería (Alerta Activa), la fila del lote "GM-004" con "Alerta: Desvío Detectado" aparece en la primera posición de la tabla, priorizando visualmente el ítem que requiere atención inmediata. La tarjeta "Alertas de Ruta" cambia su fondo a rojo cuando hay alertas, priorizando visualmente esa métrica sobre las demás. En el "Detalle del Lote", el valor "38.50 T" en dorado es el elemento tipográfico más prominente del panel de telemetría. En "Lectura de Balanza", el valor "38.50 TONELADAS" es el elemento de mayor tamaño en toda la pantalla. En el modal de confirmación del QR ("¡Certificado QR Generado con Éxito!"), el ícono de check verde y el título son los primeros elementos que el usuario ve, priorizando la comunicación del resultado exitoso. En la página de Suscripciones, el plan "Joyería Pro" está marcado como "Más Popular" y tiene fondo dorado que lo diferencia visualmente de los otros dos, dirigiendo la atención del usuario hacia la opción de mayor valor comercial. |
+| **P7 – Agrega valor** | La previsualización de etiqueta en tiempo real en "Registrar Nueva Joya" agrega valor al eliminar la incertidumbre sobre el resultado del certificado, reduciendo errores y retrabajo. El cálculo automático del margen de merma en "Recepción de Material" agrega valor operativo real, sustituyendo un cálculo manual propenso a errores y agilizando el proceso de recepción. El panel de "Impacto Ético" en el Dashboard Usuario Final ("Con tus compras has apoyado a 2 comunidades mineras responsables — Cooperativa Andes, Perú / Minas de la Esperanza, Colombia") agrega valor emocional y ético que diferencia la experiencia GoldMetrics de plataformas puramente transaccionales, convirtiendo una compra de joyería en una decisión de consumo consciente. El sellado en blockchain con hash verificable ("Sellado en Blockchain: Hash: 0x9A4F...") agrega valor de confianza e inmutabilidad, siendo un diferenciador técnico clave. La funcionalidad "Exportar Hoja de Ruta" en el Detalle del Lote agrega valor operativo al permitir generar documentación de tránsito auditada directamente desde la plataforma, sin necesidad de sistemas externos. La página de Suscripciones agrega valor de transparencia al mostrar exactamente qué incluye cada plan antes de que el usuario decida, sin requerir contacto comercial previo para conocer los precios. |
+ 
+---
 
 ### 4.4.3. Web Applications User Flow Diagrams
 ### Happy Path 1 – Joyería: Validación de lote y registro de joya
@@ -1613,152 +1956,532 @@ Para visualizar el Event Storming de mejor manera recomendamos ingresar al sigui
 [Visualizar EventStorming en Miro](https://miro.com/app/board/uXjVJeWDqwE=/?share_link_id=757586972674)
 
 ### 4.6.2. Software Architecture Context Diagram
-El diagrama de contexto establece los límites de la plataforma GoldCheck y su interacción con los diferentes perfiles de usuario y sistemas externos críticos para el negocio.
-
-![Diagrama de contexto](../assets/img/chapter-iv/context-diagram.png)
-
+ 
+El diagrama de contexto del sistema GoldCheck muestra al sistema como elemento central, rodeado por los cinco tipos de usuarios que interactúan con él —Mining Operator, Logistics Manager, Plant Operator, Jeweler y End Consumer— así como por los sistemas externos con los que se integra: la API Application (mock REST), el IoT Gateway que recibe telemetría de sensores en camiones y básculas, la plataforma de despliegue Netlify y la librería Html5Qrcode utilizada para el escaneo de códigos QR desde el navegador. Este diagrama de nivel L1 permite comprender de un vistazo las fronteras del sistema y sus principales dependencias externas.
+ 
+![Diagrama de contexto del sistema GoldCheck](../assets/img/chapter-iv/structurizr-102990-L1_SystemContext.png)
+ 
+---
+ 
 ### 4.6.3. Software Architecture Container Diagrams
-En el segundo nivel de abstracción, se ha diseñado una arquitectura altamente desacoplada orientada a la escalabilidad y la resiliencia operativa tanto en frontend como en backend.
-
-**Frontend:**
-
-![Diagrama de contenedores frontend](../assets/img/chapter-iv/container-diagram-frontend.png)
-
-**Backend:**
-
-![Diagrama de contenedores backend](../assets/img/chapter-iv/container-diagram-backend.png)
-
+ 
+El diagrama de contenedores (L2) descompone GoldCheck en sus bloques de alto nivel: la **Landing Page** (HTML5/CSS3/JS) que dirige a los usuarios hacia la aplicación; el **Web Application** (Nginx) que sirve los archivos estáticos; y el **Single Page Application** (Vue 3 + PrimeVue) que provee todas las funcionalidades de trazabilidad y certificación directamente en el navegador. El SPA se comunica con la API Application mediante llamadas REST, y depende de Netlify para su hospedaje y de Html5Qrcode para el acceso a la cámara del dispositivo.
+ 
+![Diagrama de contenedores GoldCheck](../assets/img/chapter-iv/structurizr-102990-L2_Containers.png)
+ 
+---
+ 
 ### 4.6.4. Software Architecture Components Diagrams
+ 
+#### Mapa de Bounded Contexts (L3 — BC Map)
+ 
+El mapa de bounded contexts ofrece una vista panorámica de los once contextos delimitados que conforman el SPA, siguiendo los principios de Domain-Driven Design: IAM, Fleet Operations, Material Operations, Jewelry Inventory & Certification, Consumer Traceability, Monitoring & Telemetry, Analytics, Incident Management, Reporting & Notifications, Asset Maintenance y Subscriptions & Billing.
+ 
+![Mapa de Bounded Contexts del SPA](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC_Map.png)
+ 
+---
+ 
+#### L3 — Visión General del SPA (todos los BCs con capas)
+ 
+Esta vista muestra la totalidad de los once bounded contexts junto con sus cuatro capas internas (Presentation, Application, Domain e Infrastructure) y las dependencias cruzadas entre contextos, como la consulta de datos de Fleet e Inventory por parte de Analytics, o la integración de Consumer con Jewelry para la verificación de certificados.
+ 
+![Vista general del SPA con todos los Bounded Contexts](../assets/img/chapter-iv/structurizr-102990-L3_FE_Overview.png)
+ 
+---
+ 
+#### BC1 — IAM Bounded Context
+ 
+Gestiona la identidad y el acceso. La capa de presentación (Vue Components) expone las vistas de Login, Register y Profile; el servicio de aplicación orquesta la autenticación y la lógica de perfil en el cliente; el dominio define los modelos User y Credentials; y la infraestructura (Axios) se comunica con los endpoints de identidad de la API.
+ 
+![Componentes IAM BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC1_IAM.png)
+ 
+---
+ 
+#### BC2 — Fleet Operations Bounded Context
+ 
+Cubre el registro de lotes de mineral, el pesaje inicial y el monitoreo de flota. La presentación incluye el Dashboard, Operations, Fleet y Reports; la aplicación orquesta la creación de lotes y el seguimiento de alertas; el dominio expone los modelos MineralBatch y AnomalyAlert; y la infraestructura realiza las llamadas REST a los endpoints de Fleet Operations.
+ 
+![Componentes Fleet Operations BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC2_Fleet.png)
+ 
+---
+ 
+#### BC3 — Material Operations Bounded Context
+ 
+Gestiona la recepción de lotes en planta, el pesaje final y el cálculo de merma (shrinkage). La capa de presentación concentra estas funciones en un único Dashboard; la aplicación y la infraestructura se integran con los endpoints de Material Operations de la API.
+ 
+![Componentes Material Operations BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC3_Material.png)
+ 
+---
+ 
+#### BC4 — Jewelry Inventory & Certification Bounded Context
+ 
+Permite al joyero registrar piezas, validar lotes, emitir certificados digitales y consultar el origen mineral. La presentación agrupa Dashboard, Inventory, Register Jewelry, Certifications, Reports y Mineral Origin; el dominio define JewelryItem y JewelryCertificate; y la infraestructura se conecta a los endpoints de Jewelry de la API.
+ 
+![Componentes Jewelry Inventory Certification BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC4_Jewelry.png)
+ 
+---
+ 
+#### BC5 — Consumer Traceability Bounded Context
+ 
+Habilita al consumidor final para verificar la autenticidad de sus joyas mediante código QR o entrada manual, vincular piezas a su colección y consultar certificados. La infraestructura de este contexto consume también los endpoints de Jewelry para obtener información de trazabilidad.
+ 
+![Componentes Consumer Traceability BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC5_Consumer.png)
+ 
+---
+ 
+#### BC6 — Monitoring & Telemetry Bounded Context
+ 
+Centraliza la gestión de alertas de anomalía y el monitoreo de lotes en tránsito. La presentación expone un Dashboard con KPIs de alertas activas, alertas críticas y lotes en tránsito; el dominio define el modelo AnomalyAlert; y la infraestructura se integra con los endpoints de Monitoring de la API.
+ 
+![Componentes Monitoring Telemetry BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC6_Monitoring.png)
+ 
+---
+ 
+#### BC7 — Analytics Bounded Context
+ 
+Agrega KPIs transversales de múltiples contextos (Fleet, Jewelry, Maintenance) para ofrecer métricas de merma, producción y certificación. La infraestructura de Analytics reutiliza los clientes HTTP de Fleet, Maintenance y Jewelry para consolidar la información.
+ 
+![Componentes Analytics BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC7_Analytics.png)
+ 
+---
+ 
+#### BC8 — Incident Management Bounded Context
+ 
+Permite reportar, clasificar y cerrar incidentes operativos. El Dashboard muestra KPIs de incidentes abiertos y críticos, y expone una tabla con insignias de severidad. El dominio define el modelo Incident y la infraestructura se conecta a los endpoints de Incident Management de la API.
+ 
+![Componentes Incident Management BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC8_Incident.png)
+ 
+---
+ 
+#### BC9 — Reporting & Notifications Bounded Context
+ 
+Consolida reportes de lotes, joyas y alertas. La presentación muestra KPIs agregados y un placeholder de exportación a PDF; la infraestructura consume endpoints de Fleet, Jewelry y Monitoring para construir los reportes. El dominio expone el modelo Notification.
+ 
+![Componentes Reporting Notifications BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC9_Reporting.png)
+ 
+---
+ 
+#### BC10 — Asset Maintenance Bounded Context
+ 
+Gestiona el ciclo de vida de los vehículos de la flota, permitiendo enviarlos a mantenimiento o reactivarlos. El Dashboard muestra KPIs de vehículos activos y en mantenimiento; el dominio define MaintenanceRecord; y la infraestructura se comunica con los endpoints de Maintenance de la API.
+ 
+![Componentes Asset Maintenance BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC10_Maintenance.png)
+ 
+---
+ 
+#### BC11 — Subscriptions & Billing Bounded Context
+ 
+Expone los planes de suscripción (Bronze, Gold, Platinum) y el flujo de pago. La aplicación integra lógica de IAM para asociar el plan al usuario autenticado. El dominio define SubscriptionPlan y la infraestructura gestiona las llamadas a los endpoints de Subscriptions de la API.
+ 
+![Componentes Subscriptions Billing BC](../assets/img/chapter-iv/structurizr-102990-L3_FE_BC11_Subscriptions.png)
+ 
+---
+ 
+#### L4 — Vistas de Presentación por Bounded Context
+ 
+Las vistas L4 detallan los componentes Vue individuales dentro de la capa de presentación de cada bounded context, sus relaciones internas (Contains, Opens, Uses) y sus tecnologías (PrimeVue, useVuelidate, Html5Qrcode, etc.).
+ 
+##### BC1 — IAM: Login, Register, Profile
+ 
+Tres componentes Vue: **Login** (formulario con FloatLabel, InputText, Password, Checkbox y Button; validación con useVuelidate; redirige por segmento tras autenticación), **Register** (formulario con SelectButton para selección de segmento) y **Profile** (layout de pestañas con secciones de perfil, notificaciones y ajustes).
+ 
+![Vista de presentación IAM](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC1_IAM.png)
+ 
+---
+ 
+##### BC2 — Fleet Operations: Dashboard, Modals, Operations, Fleet, Reports
+ 
+Seis componentes Vue: **Fleet Dashboard** (4 StatCards KPI, DataTable con Tag, panel de actividad IoT, abre New Batch Modal), **New Batch Modal** (PvDialog de 2 pasos: selección de depósito/vehículo y visualización de peso simulado a 38,50 t), **Operations** (3 KPIs, tabla de lotes, modal de peso final), **Fleet** (4 KPIs, tabla de vehículos), **Fleet Reports** (4 KPIs, historial de lotes) y el **Stat Card** compartido (label, value, trend, icon, alertActive).
+ 
+![Vista de presentación Fleet Operations](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC2_Fleet.png)
+ 
+---
+ 
+##### BC3 — Material Operations: Material Dashboard
+ 
+Un único componente **Material Dashboard** con 3 KPI stat cards, tabla de recepciones con porcentaje de merma coloreado en rojo cuando supera el 5 %, botón de confirmación de llegada y modal de peso final.
+ 
+![Vista de presentación Material Operations](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC3_Material.png)
+ 
+---
+ 
+##### BC4 — Jewelry: Dashboard, Modals, Inventory, Register, Certifications, Origin, Reports
+ 
+Siete componentes Vue: **Jewelry Dashboard** (4 StatCards, tabla de inventario con filtro de estado, abre Validate Lot Modal), **Validate Lot Modal** (checklist con 4 verificaciones de calidad, botón deshabilitado hasta completar todos), **Inventory** (4 KPIs, filtro de estado, acciones de validar/certificar/ver certificado), **Register Jewelry** (InputText, Select e InputNumber para los atributos de la pieza), **Certifications** (tabla de certificados con id, SKU, emisor, pureza, peso, fecha y estado), **Mineral Origin** (búsqueda por código de lote, línea de tiempo de trazabilidad: extracción → transporte → GPS → recibido) y **Jewelry Reports** (4 KPIs, tabla de piezas con columna de estado QR).
+ 
+![Vista de presentación Jewelry](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC4_Jewelry.png)
+ 
+---
+ 
+##### BC5 — Consumer Traceability: My Collection, Vincular Joya, Verify, Certificates
+ 
+Cuatro componentes Vue: **My Collection** (grid de tarjetas de joya con imagen, SKU, metadata y badge de estado; abre Vincular Joya Modal), **Vincular Joya Modal** (PvDialog con campo de código de trazabilidad, nombre y tipo de joya), **Verify** (modo manual con campo de búsqueda oscuro + modo cámara con escáner Html5Qrcode, overlay de esquinas y línea de escaneo animada; resultado con línea de tiempo mineral) y **Consumer Certificates** (grid de tarjetas de certificado con ícono de escudo, pureza, peso, fechas y visualización de QR).
+ 
+![Vista de presentación Consumer Traceability](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC5_Consumer.png)
+ 
+---
+ 
+##### BC6 — Monitoring: Monitoring Dashboard
+ 
+Un único componente **Monitoring Dashboard** con 3 KPI stat cards (alertas activas, alertas críticas, lotes en tránsito), tabla de alertas con badges de severidad y botón de resolución de alerta.
+ 
+![Vista de presentación Monitoring Telemetry](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC6_Monitoring.png)
+ 
+---
+ 
+##### BC7 — Analytics: Analytics Dashboard
+ 
+Un único componente **Analytics Dashboard** con 5 KPI stat cards (lotes totales, lotes activos, merma promedio, total de joyas, joyas certificadas) y tabla de merma con porcentajes codificados por color.
+ 
+![Vista de presentación Analytics](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC7_Analytics.png)
+ 
+---
+ 
+##### BC8 — Incident Management: Incident Dashboard
+ 
+Un único componente **Incident Dashboard** con 2 KPI stat cards (incidentes abiertos e incidentes críticos), tabla de incidentes con badges de severidad y modal overlay para registrar nuevos incidentes.
+ 
+![Vista de presentación Incident Management](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC8_Incident.png)
+ 
+---
+ 
+##### BC9 — Reporting: Reporting Dashboard
+ 
+Un único componente **Reporting Dashboard** con 4 KPI stat cards (lotes totales, lotes procesados, alertas totales, ítems certificados) y un placeholder de exportación a PDF (próximamente).
+ 
+![Vista de presentación Reporting Notifications](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC9_Reporting.png)
+ 
+---
+ 
+##### BC10 — Asset Maintenance: Maintenance Dashboard
+ 
+Un único componente **Maintenance Dashboard** con 2 KPI stat cards (vehículos activos y en mantenimiento) y tabla de vehículos con botones de acción para enviar a mantenimiento o activar el vehículo.
+ 
+![Vista de presentación Asset Maintenance](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC10_Maintenance.png)
+ 
+---
+ 
+##### BC11 — Subscriptions: Plans
+ 
+Un único componente **Plans** con 3 tarjetas de plan (Bronze, Gold y Platinum) con badges de "current" y "popular", lista de características por plan, tabla comparativa y modal de pago con visualización de tarjeta bancaria e inputs para número, titular, vencimiento y CVV.
+ 
+![Vista de presentación Subscriptions Billing](../assets/img/chapter-iv/structurizr-102990-L4_Pres_BC11_Subscriptions.png)
 
-**Identity & Access Management**
+#### Mapa de Bounded Contexts — Backend (L3 — BE BC Map)
 
-![Diagrama de contexto 1](../assets/img/chapter-iv/context-diagram-1.png)
-**Fleet Operations**
+El mapa de bounded contexts del backend muestra los once contextos delimitados que componen la API Application (json-server + Express): IAM, Fleet Operations, Material Operations, Jewelry Inventory & Certification, Consumer Traceability, Monitoring & Telemetry, Analytics, Incident Management, Reporting & Notifications, Asset Maintenance y Subscriptions & Billing. Cada contexto encapsula sus propios endpoints REST sobre colecciones independientes del archivo `db.json`, siguiendo los principios de Domain-Driven Design.
 
-![Diagrama de contexto 2](../assets/img/chapter-iv/context-diagram-2.png)
+![Mapa de Bounded Contexts del Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC_Map.png)
 
-**Assist & Maintenance Management**
-![Diagrama de contexto 3](../assets/img/chapter-iv/context-diagram-3.png)
+---
 
-**Material Operations**
-![Diagrama de contexto 4](../assets/img/chapter-iv/context-diagram-4.png)
+#### L3 — Visión General del API Application (todos los BCs con capas)
 
-**Jewelry Inventory & Certification**
-![Diagrama de contexto 5](../assets/img/chapter-iv/context-diagram-5.png)
+Esta vista despliega la totalidad de los once bounded contexts del backend junto con sus cuatro capas internas: Interfaces (colecciones json-server), Application (middleware), Domain (JSON Schema) e Infrastructure (db.json), además de las relaciones de lectura/escritura compartidas hacia la base de datos central. Permite identificar de un vistazo las dependencias cruzadas entre contextos y la colección de `db.json` que cada uno utiliza.
 
-**Consumer Traceability**
-![Diagrama de contexto 6](../assets/img/chapter-iv/context-diagram-6.png)
+![Vista general del API Application con todos los Bounded Contexts](../assets/img/chapter-iv/structurizr-103798-L3_BE_Overview.png)
 
-**Analytics**
-![Diagrama de contexto 7](../assets/img/chapter-iv/context-diagram-7.png)
+---
 
-**Monitoring & Telemetry**
-![Diagrama de contexto 8](../assets/img/chapter-iv/context-diagram-8.png)
+#### BC1 — IAM Bounded Context (Backend)
 
-**Incident Management**
-![Diagrama de contexto 9](../assets/img/chapter-iv/context-diagram-9.png)
+Gestiona la autenticación y actualización de perfil de usuario. La capa de Interfaces expone endpoints REST sobre `/users` (GET por email para login, POST para registro, PATCH para actualización de perfil); la Application procesa esas peticiones mediante middleware de json-server; el Domain define el recurso User con campos `id`, `email`, `username`, `segment`, `plan`, `location` y `phoneNumber`; y la Infrastructure persiste los registros en la colección `users` de `db.json`.
 
-**Reporting & Notificacions**
-![Diagrama de contexto 10](../assets/img/chapter-iv/context-diagram-10.png)
+![Componentes IAM BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC1_IAM.png)
 
-**Subscripcions & Billing**
-![Diagrama de contexto 11](../assets/img/chapter-iv/context-diagram-11.png)
+---
+
+#### BC2 — Fleet Operations Bounded Context (Backend)
+
+Cubre el ciclo de vida de lotes de mineral, vehículos, depósitos y alertas de anomalía. Las Interfaces exponen endpoints sobre `/mineralBatches`, `/deposits`, `/vehicles` y `/anomalyAlerts`; la Application procesa la creación de lotes y el registro de peso inicial; el Domain define `MineralBatch` (batchCode, depositId, vehicleId, initialWeight, mineralType, status) y `AnomalyAlert` (batchId, alertType, severity); y la Infrastructure persiste todos estos registros en `db.json`. El IoT Gateway envía telemetría directamente a las Fleet Interfaces.
+
+![Componentes Fleet Operations BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC2_Fleet.png)
+
+---
+
+#### BC3 — Material Operations Bounded Context (Backend)
+
+Gestiona la recepción de lotes en planta, el pesaje final y el cálculo de merma. Las Interfaces exponen endpoints PATCH sobre `/mineralBatches` para registrar `finalWeight` y transiciones de estado; la Application orquesta la confirmación de llegada y el marcado de investigación de merma; el Domain proyecta `MineralBatch` como `MaterialReception` (receivedWeight, initialWeight, shrinkagePercent, status); y la Infrastructure persiste esos datos en la misma colección `mineralBatches` de `db.json`.
+
+![Componentes Material Operations BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC3_Material.png)
+
+---
+
+#### BC4 — Jewelry Inventory & Certification Bounded Context (Backend)
+
+Permite registrar piezas de joyería y emitir certificados digitales. Las Interfaces exponen GET, POST y PATCH sobre `/jewelryItems` y `/jewelryCertificates`; la Application procesa el registro de ítems, la validación de estado y la emisión de certificados; el Domain define `JewelryItem` (sku, name, type, purity, weight, batchRef, status, certificationId) y `JewelryCertificate` (itemId, qrCode, issuerName); y la Infrastructure persiste ambos recursos en `db.json`.
+
+![Componentes Jewelry Inventory Certification BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC4_Jewelry.png)
+
+---
+
+#### BC5 — Consumer Traceability Bounded Context (Backend)
+
+Habilita la vinculación de piezas al consumidor y la verificación por código QR. Las Interfaces exponen endpoints sobre `/consumerPieces` (GET por `ownerId` o `traceabilityCode`, POST para vincular una pieza); la Application cruza datos entre `consumerPieces` y `jewelryItems` para resolver la trazabilidad; el Domain define `ConsumerPiece` (ownerId, sku, traceabilityCode, purity, weight, certificationId, status); y la Infrastructure persiste los registros de piezas del consumidor en `db.json`.
+
+![Componentes Consumer Traceability BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC5_Consumer.png)
+
+---
+
+#### BC6 — Monitoring & Telemetry Bounded Context (Backend)
+
+Centraliza la gestión de alertas de anomalía en tránsito. Las Interfaces exponen GET, POST y PATCH sobre `/anomalyAlerts` para creación y resolución de alertas; la Application filtra alertas activas por estado y coordina su resolución; el Domain define `AnomalyAlert` (batchId, batchCode, vehicleId, alertType, severity, coordinates, status, detectedAt); y la Infrastructure persiste los registros en la colección `anomalyAlerts` de `db.json`.
+
+![Componentes Monitoring Telemetry BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC6_Monitoring.png)
+
+---
+
+#### BC7 — Analytics Bounded Context (Backend)
+
+Agrega KPIs transversales para métricas de merma y certificación. Las Interfaces proveen acceso de solo lectura a `/mineralBatches`, `/vehicles` y `/jewelryItems`; la Application procesa solicitudes de lectura cruzada entre colecciones; el Domain expone proyecciones agregadas sobre los recursos `MineralBatch` y `JewelryItem`; y la Infrastructure lee directamente de las tres colecciones correspondientes en `db.json` sin escribir datos propios.
+
+![Componentes Analytics BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC7_Analytics.png)
+
+---
+
+#### BC8 — Incident Management Bounded Context (Backend)
+
+Gestiona el reporte y cierre de incidentes operativos, reutilizando la colección `anomalyAlerts`. Las Interfaces exponen GET, POST y PATCH sobre esa colección con semántica de incidente; la Application procesa el reporte y el cambio de estado a cerrado; el Domain proyecta `AnomalyAlert` como `Incident` (title, incidentType, severity, batchId, vehicleId, status); y la Infrastructure persiste los registros de incidente en `anomalyAlerts` dentro de `db.json`.
+
+![Componentes Incident Management BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC8_Incident.png)
+
+---
+
+#### BC9 — Reporting & Notifications Bounded Context (Backend)
+
+Consolida datos de lotes, joyas y alertas para la generación de reportes. Las Interfaces proveen acceso de lectura a `/mineralBatches`, `/jewelryItems` y `/anomalyAlerts`; la Application procesa solicitudes de lectura en paralelo sobre las tres colecciones; el Domain define proyecciones de reporte sobre esos recursos; y la Infrastructure lee desde las tres colecciones de `db.json` sin persistir datos adicionales.
+
+![Componentes Reporting Notifications BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC9_Reporting.png)
+
+---
+
+#### BC10 — Asset Maintenance Bounded Context (Backend)
+
+Gestiona el ciclo de vida y las transiciones de estado de los vehículos de flota. Las Interfaces exponen GET (todos los vehículos) y PATCH (transición de estado) sobre `/vehicles`; la Application procesa las actualizaciones entre los estados `Activo` y `Mantenimiento`; el Domain define el recurso `Vehicle` (id, name, plate, type, capacity, status); y la Infrastructure persiste los registros en la colección `vehicles` de `db.json`.
+
+![Componentes Asset Maintenance BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC10_Maintenance.png)
+
+---
+
+#### BC11 — Subscriptions & Billing Bounded Context (Backend)
+
+Gestiona la actualización del plan de suscripción del usuario. Las Interfaces exponen PATCH sobre `/users` para modificar el campo `plan`; la Application procesa la solicitud de upgrade del plan; el Domain define los valores posibles del campo plan: `BRONZE`, `GOLD` y `PLATINUM`; y la Infrastructure persiste la actualización en la colección `users` de `db.json`, integrándose así con el contexto IAM a nivel de datos.
+
+![Componentes Subscriptions Billing BC — Backend](../assets/img/chapter-iv/structurizr-103798-L3_BE_BC11_Subscriptions.png)
+
 
 ## 4.7. Software Object-Oriented Design
 
 ### 4.7.1. Class Diagrams
+
+A continuación, se presentan los diagramas de clases back-end correspondientes a los distintos bounded contexts identificados en la arquitectura del sistema GoldCheck. Estos diagramas permiten visualizar la estructura interna de cada contexto delimitado, mostrando las principales entidades, relaciones, atributos y responsabilidades involucradas en la lógica de negocio.
+
+Cada diagrama fue diseñado siguiendo principios de Domain-Driven Design (DDD), separación de responsabilidades y modularidad, permitiendo representar de manera clara la interacción entre entidades del dominio, servicios de aplicación, repositorios y componentes de soporte. Asimismo, estos diagramas sirven como apoyo para comprender la organización interna del sistema y facilitar futuras tareas de mantenimiento, escalabilidad y evolución de la plataforma.
+
+## DIAGRAMAS FRONTEND
+
+![Diagrama de clase FrontEnd](../assets/img/chapter-iv/cdf-frontend-general.png)
 A continuación se presentaran los diagramas de clases de los respectivos bounded context.
-
-**Identity & Access Management**
-
-![Diagrama de clase 1](../assets/img/chapter-iv/class-diagram-identity.png)
-
-**Fleet Operations**
-
-![Diagrama de clase 2](../assets/img/chapter-iv/class-diagram-fleet.png)
-
-**Assist & Maintenance Management**
-
-![Diagrama de clase 3](../assets/img/chapter-iv/class-diagram-asset.png)
-
-**Material Operations**
-
-![Diagrama de clase 4](../assets/img/chapter-iv/class-diagram-material.png)
-
-**Jewelry Inventory & Certification**
-
-![Diagrama de clase 5](../assets/img/chapter-iv/class-diagram-jewelry.png)
-
-**Consumer Traceability**
-
-![Diagrama de clase 6](../assets/img/chapter-iv/class-diagram-consumer.png)
 
 **Analytics**
 
-![Diagrama de clase 7](../assets/img/chapter-iv/class-diagram-analytics.png)
+![Diagrama de clase 1](../assets/img/chapter-iv/cdf-analytics.png)
 
-**Monitoring & Telemetry**
+**Asset Maintenance**
 
-![Diagrama de clase 8](../assets/img/chapter-iv/class-diagram-monitoring.png)
+![Diagrama de clase 2](../assets/img/chapter-iv/cdf-asset-maintenance.png)
+
+**Consumer Experience**
+
+![Diagrama de clase 3](../assets/img/chapter-iv/cdf-consumer-experience.png)
+
+**Custody Chain**
+
+![Diagrama de clase 4](../assets/img/chapter-iv/cdf-custody-chain.png)
+
+**Fleet Operations**
+
+![Diagrama de clase 5](../assets/img/chapter-iv/cdf-fleet-operations.png)
+
+**Identity & Management**
+
+![Diagrama de clase 6](../assets/img/chapter-iv/cdf-iam.png)
 
 **Incident Management**
 
-![Diagrama de clase 9](../assets/img/chapter-iv/class-diagram-incident.png)
+![Diagrama de clase 7](../assets/img/chapter-iv/cdf-incident-management.png)
 
-**Reporting & Notificacions**
+**Mineral Extraction**
 
-![Diagrama de clase 10](../assets/img/chapter-iv/class-diagram-reporting.png)
+![Diagrama de clase 8](../assets/img/chapter-iv/cdf-mineral-extraction.png)
 
-**Subscripcions & Billing**
+**Monitoring Telemetry**
 
-![Diagrama de clase 11](../assets/img/chapter-iv/class-diagram-subscriptions.png)
+![Diagrama de clase 9](../assets/img/chapter-iv/cdf-monitoring-telemetry.png)
+
+**Refinery Processing**
+
+![Diagrama de clase 10](../assets/img/chapter-iv/cdf-refinery-processing.png)
+
+**Subscriptions**
+
+![Diagrama de clase 11](../assets/img/chapter-iv/cdf-subscriptions.png)
+
+
+## DIAGRAMAS BACKEND:
+
+#### BC1 - Identity Access Management
+
+![BC1 - Identity Access Management](../assets/img/chapter-iv/BC1_Identity_Access_Management_Full.png)
+
+#### BC2 - Fleet Operations
+
+![BC2 - Fleet Operations](../assets/img/chapter-iv/BC2_Fleet_Operations_Full.png)
+
+#### BC3 - Material Operations
+
+![BC3 - Material Operations](../assets/img/chapter-iv/BC3_Material_Operations_Full.png)
+
+#### BC4 - Jewelry Inventory
+
+![BC4 - Jewelry Inventory](../assets/img/chapter-iv/BC4_Jewelry_Inventory_Full.png)
+
+#### BC5 - Consumer Traceability
+
+![BC5 - Consumer Traceability](../assets/img/chapter-iv/BC5_Consumer_Traceability_Full.png)
+
+#### BC6 - Monitoring Telemetry
+
+![BC6 - Monitoring Telemetry](../assets/img/chapter-iv/BC6_Monitoring_Telemetry_Full.png)
+
+#### BC7 - Analytics
+
+![BC7 - Analytics](../assets/img/chapter-iv/BC7_Analytics_Full.png)
+
+#### BC8 - Incident Management
+
+![BC8 - Incident Management](../assets/img/chapter-iv/BC8_Incident_Management_Full.png)
+
+#### BC9 - Reporting Notifications
+
+![BC9 - Reporting Notifications](../assets/img/chapter-iv/BC9_Reporting_Notifications_Full.png)
+
+#### BC10 - Asset Maintenance
+
+![BC10 - Asset Maintenance](../assets/img/chapter-iv/BC10_Asset_Maintenance_Full.png)
+
+#### BC11 - Subscriptions Billing
+
+![BC11 - Subscriptions Billing](../assets/img/chapter-iv/BC11_Subscriptions_Billing_Full.png)
+
+## Diagramas de Clases por Aggregate
+
+A continuación se presentan los diagramas de clases de los aggregates más relevantes del sistema GoldCheck, seleccionados por su centralidad en el dominio del negocio y la complejidad de su lógica interna.
+
+---
+
+### MineralBatch — Fleet Operations Bounded Context
+
+El aggregate MineralBatch representa el núcleo del sistema de trazabilidad mineral. Es el artefacto central alrededor del cual gira todo el ciclo de vida del mineral, desde su extracción en la mina hasta su llegada a la planta de procesamiento. Su importancia radica en que es referenciado directamente por los bounded contexts de Material Operations, Monitoring & Telemetry, Jewelry Inventory e Incident Management, convirtiéndolo en el elemento de mayor cohesión del dominio.
+
+Desde el punto de vista del diseño orientado al dominio, MineralBatch encapsula un ciclo de estados complejo (CREATED → PENDING_ASSIGNMENT → IN_TRANSIT → ARRIVED → PROCESSING → COMPLETED) y contiene value objects críticos como Location (origen y destino), Coordinates (posición GPS en tiempo real), DetectedAnomaly (lista de anomalías registradas durante el transporte) y SensorReading (datos de telemetría IoT). Además, emite cinco domain events que desencadenan procesos en otros bounded contexts: BatchCreatedEvent, BatchAssignedEvent, AnomalyDetectedEvent, BatchArrivedEvent y BatchCompletedEvent.
+
+![MineralBatch Aggregate Diagram](../assets/img/chapter-iv/AGG_MineralBatch_FleetOperations.png)
+
+---
+
+### JewelryCertificate — Jewelry Inventory & Certification Bounded Context
+
+El aggregate JewelryCertificate representa el producto final de toda la cadena de trazabilidad del sistema. Es el artefacto que materializa la promesa de valor de GoldCheck: garantizar al consumidor final que la joya que adquiere proviene de una fuente verificada, ética y rastreable. Su diseño encapsula la lógica de emisión, validación, expiración y revocación de certificados digitales, asegurando la integridad del proceso de certificación.
+
+Contiene el value object QRCodeData, que almacena el código generado, el identificador de la pieza y un hash criptográfico que garantiza la inmutabilidad del certificado. Adicionalmente, incorpora CertificationStandard para asegurar el cumplimiento de normativas de calidad. El aggregate emite tres domain events clave: CertificateIssuedEvent (notifica a Consumer Traceability que un nuevo certificado está disponible para ser vinculado), CertificateRevokedEvent y CertificateExpiredEvent. Es el punto de unión entre la cadena operativa minera y la experiencia del consumidor final.
+
+![JewelryCertificate Aggregate Diagram](../assets/img/chapter-iv/AGG_JewelryCertificate_JewelryInventory.png)
 
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
-**Identity & Access Management**
+El diseño de base de datos de OpalTrace sigue una arquitectura relacional implementada en **Microsoft SQL Server** y **Verbatelo**, organizada en torno a los Bounded Contexts definidos en la arquitectura DDD. Cada Bounded Context posee sus propias tablas con un prefijo identificador (`iam_`, `mineral_`, `custody_`, `refinery_`, `jewelry_`, `consumer_`, `admin_`, `analytics_`, `billing_`), garantizando separación lógica de responsabilidades y bajo acoplamiento entre contextos.
+ 
+Las principales características del diseño son las siguientes. Primero, los Value Objects del dominio se persisten como columnas embebidas dentro de la tabla de su Aggregate Root — por ejemplo, `GPSLocation` se almacena como `location_latitude` y `location_longitude` en `mineral_batches`, evitando joins innecesarios para datos que son parte intrínseca del aggregate. Segundo, los Enums del dominio se implementan como columnas con constraints `CHECK`, garantizando integridad referencial sin tablas adicionales de catálogo. Tercero, las relaciones entre Bounded Contexts se establecen únicamente a través de Foreign Keys hacia las tablas raíz (`iam_organizations`, `iam_user_accounts`, `mineral_batches`), respetando el principio DDD de que los BCs se referencian por identidad y no por objeto. Cuarto, la tabla `traceability_tracking_events` centraliza el historial completo de eventos de trazabilidad de cada Batch a lo largo de toda la cadena de suministro, permitiendo construir el `TraceabilityRecord` sin duplicar información entre contextos. Finalmente, todos los identificadores primarios son de tipo `UNIQUEIDENTIFIER` (UUID), eliminando dependencias de secuencias y facilitando la distribución futura del sistema.
+ 
+A continuación se presentan los diagramas de base de datos para cada Bounded Context, mostrando tablas, columnas, constraints y relaciones.
+ 
+---
+ 
+#### BC: Identity & Access Management
+ 
+El contexto de identidad gestiona las tablas `iam_organizations`, `iam_user_accounts` e `iam_role_assignments`. La tabla `iam_organizations` almacena los datos de cada empresa registrada en la plataforma, incluyendo su tipo (`MINERA`, `TRANSPORTISTA`, `REFINERIA`, `JOYERIA`), su estado de aprobación y el `plan_tier` contratado. La tabla `iam_user_accounts` centraliza las credenciales y el rol de cada usuario, almacenando el `hashed_password` y los claims `role`, `segment` y `plan_tier` que conforman el JWT emitido por este contexto. La tabla `iam_role_assignments` registra el historial de asignaciones de roles por cuenta.
+ 
+![Database BC1 IAM](../assets/img/chapter-iv/DB_BC1_IAM.png)
+ 
+ 
+---
+ 
+#### BC: Mineral Extraction & Offline Ops
+ 
+El contexto de extracción gestiona cuatro tablas. `mineral_batches` es la tabla central del sistema — almacena el Aggregate Root `MineralBatch` con el `traceability_code` único, el `qr_code`, el tipo de mineral, el peso, las coordenadas GPS embebidas (`location_latitude`, `location_longitude`) y el `status` del Batch a lo largo de su ciclo de vida. `mineral_anomaly_reports` registra cada anomalía detectada con su `alert_type` y estado de resolución. `mineral_extraction_records` persiste los registros de extracción con timestamp sellado e inmutable. `mineral_sync_queue_items` gestiona la cola de operaciones offline pendientes de sincronización. Adicionalmente, la tabla `traceability_tracking_events` inicia su historial en este BC con el evento `MINERAL_EXTRACTED`.
+ 
+![Database BC2 Mineral Extraction](../assets/img/chapter-iv/DB_BC2_Mineral%20Extraction%20%26%20Offline%20Ops.png)
+ 
+ 
+---
+ 
+#### BC: Custody Chain & Logistics
+ 
+El contexto de cadena de custodia gestiona cinco tablas. `custody_batches` referencia al `mineral_batches` padre y mantiene el estado de transporte (`EN_ORIGEN`, `EN_TRANSITO`, `ENTREGADO`, `BLOQUEADO`) junto con la última `Location` conocida embebida. `custody_qr_codes` almacena el hash de firma digital del QR Code generado para cada Batch. `custody_transport_operations` registra cada operación de transporte con la ruta, kilómetros estimados y tiempo máximo permitido. `custody_location_updates` persiste cada actualización GPS durante el transporte, asociada a la operación correspondiente. `custody_transfers` registra cada transferencia formal de custodia entre Organizations, constituyendo el `Domain Event` más crítico de la cadena.
+ 
+![Database BC3 Custody Chain](../assets/img/chapter-iv/DB_BC3_Custody%20Chain%20%26%20Logistics.png)
+ 
+---
+ 
+#### BC: Refinery Processing
+ 
+El contexto de refinería gestiona cuatro tablas. `refinery_batches` referencia al `mineral_batches` padre y almacena la invariante de conservación de masa mediante `mass_balance_tolerance_pct` y `mass_balance_is_valid`. El campo `inherited_traceability_code` garantiza que cada Batch en refinería conserve la trazabilidad de su origen. `refinery_child_batches` registra cada sublote generado en la división, con su peso y organización de destino. `refinery_processing_operations` persiste cada operación de procesamiento (`SMELTING`, `REFINING`, `ASSAYING`, `CASTING`). `refinery_shrinkage_records` almacena la merma en cada etapa, con `input_weight`, `output_weight` y `loss_pct`, datos consumidos por el BC8 para los reportes ESG.
+ 
+![Database BC4 Refinery](../assets/img/chapter-iv/DB_BC4_Refinery.png)
+ 
+ 
+---
+ 
+#### BC: Jewelry Inventory & Certification
+ 
+El contexto de joyería gestiona cinco tablas correspondientes a los dos Aggregate Roots del dominio. Para `JewelryProduct`: `jewelry_products` almacena la columna `stock_category` con constraint `CHECK ('CERTIFIED_OPALTRACE', 'EXTERNAL')` que implementa la invariante de segregación ética; `jewelry_inventory_items` gestiona el stock con `StorageLocation` embebida; `jewelry_fabrication_orders` registra las órdenes de fabricación con estado `BLOCKED` cuando se detecta mezcla de stocks; `jewelry_fabrication_order_components` persiste los componentes de cada orden. Para `JewelryCertificate`: `jewelry_certificates` almacena el estado de la Certification de Autenticidad, el `rejection_code` en caso de rechazo, y la URL del PDF almacenado en AWS S3.
+ 
+![Database BC5 Jewelry](../assets/img/chapter-iv/DB_BC5_Jewelry.png)
+ 
+---
+ 
+#### BC: Consumer Experience
+ 
+El contexto de experiencia del consumidor gestiona dos tablas de solo lectura que implementan el patrón CQRS. `consumer_certificates` es una proyección optimizada del estado de certificación de cada Product, indexada por `qr_code_hash` para consultas públicas de alta frecuencia sin autenticación. Almacena el `journey_map_json` con el recorrido geográfico completo del Mineral en formato JSON. `consumer_verification_events` registra cada intento de verificación vía QR Code con su resultado (`SUCCESS`, `FAILED`, `NOT_FOUND`) y el `failure_code` correspondiente si la verificación falló.
+ 
+![Database BC6 Consumer Experience](../assets/img/chapter-iv/DB_BC6_Consumer_Experience.png)
+ 
+---
+ 
+#### BC: Administration & Audit
+ 
+El contexto de administración gestiona la tabla `admin_audit_records`, que implementa el Entity `AuditRecord` con carácter inmutable por diseño — ningún registro de auditoría puede ser modificado una vez creado. Almacena el `event_type` (`ACCOUNT_APPROVED`, `ACCOUNT_REJECTED`, `ORGANIZATION_SUSPENDED`, etc.), el `actor_id` responsable de la acción, la `ip_address` desde donde se ejecutó, y el payload en formato JSON con el estado anterior y posterior del objeto afectado (`payload_before`, `payload_after`). Este contexto referencia a `iam_organizations` e `iam_user_accounts` del BC1 para mantener la trazabilidad administrativa completa.
+ 
+![Database BC7 Administration](../assets/img/chapter-iv/DB_BC7_Administration%20%26%20Audit.png)
+ 
+---
+ 
+#### BC: Reporting & Analytics
+ 
+El contexto de reportes gestiona cuatro tablas de solo lectura orientadas al análisis de datos. `analytics_reports` centraliza cada reporte generado con su tipo y período. `analytics_merma_indicators` persiste el Value Object `MermaIndicator` con `stage_origin`, `stage_destination`, `input_weight`, `output_weight` y `loss_pct` por etapa de procesamiento. `analytics_sustainability_records` almacena el Value Object `SustainabilityRecord` con los tres scores ESG: `environmental_score`, `social_score` y `ethical_score`. `analytics_dashboard_snapshots` captura el estado operativo del sistema en un momento dado, incluyendo `active_batches`, `pending_anomalies`, `certifications_granted` y `certification_rate` para el Dashboard de monitoreo en tiempo real.
+ 
+![Database BC8 Reporting](../assets/img/chapter-iv/DB_BC8_Reporting.png)
 
-![Diagrama de clase 1](../assets/img/chapter-iv/identity-db.png)
-
-**Fleet Operations**
-
-![Diagrama de clase 2](../assets/img/chapter-iv/fleet.png)
-
-**Assist & Maintenance Management**
-
-![Diagrama de clase 3](../assets/img/chapter-iv/assist.png)
-
-**Material Operations**
-
-![Diagrama de clase 4](../assets/img/chapter-iv/material.png)
-
-**Jewelry Inventory & Certification**
-
-![Diagrama de clase 5](../assets/img/chapter-iv/jewelry.png)
-
-**Consumer Traceability**
-
-![Diagrama de clase 6](../assets/img/chapter-iv/consumer.png)
-
-**Analytics**
-
-![Diagrama de clase 7](../assets/img/chapter-iv/analytics.png)
-
-**Monitoring & Telemetry**
-
-![Diagrama de clase 8](../assets/img/chapter-iv/monitoring.png)
-
-**Incident Management**
-
-![Diagrama de clase 9](../assets/img/chapter-iv/incident.png)
-
-**Reporting & Notificacions**
-
-![Diagrama de clase 10](../assets/img/chapter-iv/reporting.png)
-
-**Subscripcions & Billing**
-
-![Diagrama de clase 11](../assets/img/chapter-iv/subscriptions.png)
+---
+ 
+#### BC: Subscriptions & Billing
+ 
+El contexto de suscripciones gestiona tres tablas. `billing_subscriptions` almacena el Aggregate Root `Subscription` con el `plan_tier` contratado, el `billing_cycle` (`MONTHLY`, `ANNUAL`) y el Value Object `FeatureSet` embebido como columnas booleanas (`has_offline_mode`, `has_esg_reporting`, `has_advanced_analytics`, `has_api_access`) y límites numéricos (`max_batches_per_month`, `max_users`). También almacena el `stripe_customer_id` para la integración con Stripe API. `billing_records` persiste cada factura con su monto, moneda, estado (`PENDING`, `PAID`, `OVERDUE`, `CANCELLED`) y el `stripe_invoice_id` de referencia. `billing_plan_change_records` registra el historial de cambios de plan con el tier anterior y nuevo, implementando el Value Object `PlanChangeRecord` de forma inmutable.
+ 
+![Database BC9 Subscriptions Billing](../assets/img/chapter-iv/DB_BC9_Subscriptions%26Billing.png)
+ 
 
 # CAPÍTULO V: Product Implementation, Validation & Deployment
 
@@ -1932,7 +2655,7 @@ Ejemplo en código:
 
 ### 5.1.4. Software Deployment Configuration
 - Creación de la Website (Landing Page):
-1. Se crea un repositorio (goldcheck-website) desde GoldMetri-organization
+1. Se crea un repositorio (goldcheck-website) desde upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment1-screenshoot](../assets/img/chapter-v/deployment-1.png)
 
 2. Agregar a los miembros del equipo
@@ -1943,15 +2666,22 @@ Ejemplo en código:
 
 
 - Creación de WebApp
-1. Creación del repositorio (goldcheck-webapp) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-webapp) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-4.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
 
 - Creación de Platform
-1. Creación del repositorio (goldcheck-platform) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-platform) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-6.png)
+
+2. Agregar a los miembros del equipo
+![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
+
+- Creación de Mockapi
+1. Creación del repositorio (goldcheck-mockapi) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
+![deployment6-screenshoot](../assets/img/chapter-v/deployment-7.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
@@ -1970,10 +2700,10 @@ El Sprint 1 está dedicado exclusivamente a establecer la presencia digital de l
 | **Date** | `2026-04-15` |
 | **Time** | `6:00 pm` |
 | **Location** | Reunión virtual por Discord |
-| **Prepared By** | `[Nombre del Team Leader del grupo]` |
+| **Prepared By** | `Philco Mota, Katty` |
 | **Attendees** | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
-| **Sprint 0 Review Summary** | Se definieron los perfiles de la startup, la problemática del sector minero y los segmentos objetivos (Empresas mineras, joyerías y consumidores finales). Se establecieron los repositorios y la organización en GitHub. |
-| **Sprint 0 Retrospective Summary** | El equipo coincide en la necesidad de mejorar la comunicación asíncrona y respetar los tiempos de revisión de Pull Requests. |
+| **Sprint n - 1 Review Summary** | No aplica. Este es el primer sprint del proyecto |
+| **Sprint n - 1 Retrospective Summary** | No aplica. Este es el primer sprint del proyecto  |
 | **Sprint 1 Goal** | **Our focus is on** delivering the first functional version of the Goldmetrics Landing Page. **We believe it delivers** a clear presentation of our value proposition regarding mineral traceability **to** our target segments (miners, jewelers, consumers). **This will be confirmed when** visitors can access the live website and understand the problem we solve and the features we offer. |
 | **Sprint 1 Velocity** | 20 Story Points |
 | **Sum of Story Points** | `16` |
@@ -1998,9 +2728,8 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
 
-| Sprint # | | | | | | | |
-|:--------:|---|---|---|---|---|---|---|
 | **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
+|:--------:|---|---|---|---|---|---|---|
 | | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
 | | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
 | | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
@@ -2011,7 +2740,9 @@ El objetivo principal de este Sprint es contar con un sitio web estático desple
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de BrandRadar mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en establecer la base técnica de **GoldCheck** mediante el uso de estándares web modernos: HTML5 para la estructura y CSS3 para el diseño visual. Se priorizó una arquitectura de estilos modular, donde cada componente de la Landing Page cuenta con su propia hoja de estilos, facilitando el trabajo paralelo y evitando conflictos en el código.
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
 |:----------:|:------:|:---------:|:--------------:|:-------------------:|:-------------------:|
@@ -2034,9 +2765,6 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 ![Landing Page Desktop 7](../assets/img/footer.png)
 
 
-**URL del Landing Page Desplegado:** [lucky-rolypoly-aaac25.netlify.app](`[URL]`)
-
-
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
@@ -2046,32 +2774,219 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma Netifly.
-1. Se creó una cuenta en la plataforma utilizando el correo del equipo.
-2. Se vinculó la cuenta con la organización de GitHub de Goldmetrics.
-3. Se importó el repositorio `goldmetrics-website`.
-4. Se configuró el autodespliegue asociado a la rama `main`.
+Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma GitHub Pages.
+1. Se creó un repositorio en GitHub para alojar la landing page del proyecto.  
+2. Se subió el código fuente de la landing al repositorio mediante Git y GitHub.  
+3. Se instaló y configuró la dependencia `gh-pages` para realizar el despliegue automático.  
+4. Se configuró el archivo `vite.config.js` con la propiedad `base` correspondiente al nombre del repositorio.  
+5. Se añadieron los scripts `build` y `deploy` en el archivo `package.json`.  
+6. Se generó la versión de producción de la landing mediante el comando `npm run build`.  
+7. Se publicó la aplicación en GitHub Pages utilizando el comando `npm run deploy`.  
+8. Se habilitó GitHub Pages desde la sección `Settings > Pages` del repositorio.  
+9. Se configuró la rama `gh-pages` como fuente oficial de despliegue.  
+10. Se verificó el correcto funcionamiento de la landing accediendo a la URL pública generada por GitHub Pages.
 
-
-![Deployment Evidence 1](../assets/img/despliegue.png)
+![Deployment Evidence 1](../assets/img/chapter-v/despliegue.png)
+![Deployment Evidence 2](../assets/img/chapter-v/despliegue-2.png)
 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Durante este sprint, la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests (PRs) para integrar el trabajo de la rama `develop` a `main`.
 
-![Team Collaboration Sprint 1](../assets/img/chapter-v/collaboration.png)
+![Team Collaboration Sprint 1](../assets/img/chapter-v/sprint-collaboration.png)
 
-## 5.3. Validation Interviews
+### 5.2.2. Sprint 2
 
-### 5.3.1. Diseño de Entrevistas
+#### 5.2.2.1. Sprint Planning 2
 
-### 5.3.2. Registro de Entrevistas
+El Sprint 2 está dedicado al desarrollo y despliegue de la primera versión del Frontend Web Application de GoldMetrics, integrada con una fake API que simula los endpoints de los bounded contexts principales.
 
-### 5.3.3. Evaluaciones según heurísticas
+| Campo | Detalle |
+| :--- | :--- |
+| Sprint # | Sprint 2 |
+| Date | 2026-05-07 |
+| Time | 8:00 pm |
+| Location | Reunión virtual por Discord |
+| Prepared By | Tuesta Girón, Kiara Lucia |
+| Attendees | Armestar Felipa, Adrian / García Paredes, Victor / Navarro Aldoradin, Carolina / Philco Mota, Katty / Tuesta Girón, Kiara |
+| Sprint 1 Review Summary | Se logró desplegar la primera versión del Landing Page de GoldMetrics con las secciones principales dirigidas a los tres segmentos objetivo. Se completó la documentación de los capítulos I al V incluyendo artefactos de UX/UI, diagramas de arquitectura C4, diagramas de clases y base de datos. Se recibieron observaciones del docente sobre la estructura orientada a objetos, los Hypothesis Statements y las Technical Stories. |
+| Sprint 1 Retrospective Summary | El equipo identificó la necesidad de mejorar la coordinación en los tiempos de revisión de Pull Requests y establecer checkpoints más frecuentes. Se acordó realizar seguimiento diario por Discord para mayor visibilidad del avance individual. Se priorizó también resolver los problemas de formato del informe en PDF antes de la entrega del TB1. |
+| Sprint 2 Goal | Our focus is on deploying a functional first version of the GoldMetrics Frontend Web Application integrated with a fake API. We believe it delivers a navigable and interactive experience to the three target segments (mining companies, jewelry stores, and final consumers), allowing them to explore traceability, verification and monitoring features. This will be confirmed when users can access and navigate the main views of the web application from a public URL without errors. |
+| Sprint 2 Velocity | 30 Story Points |
+| Sum of Story Points | 28 |
 
-## 5.4. Video About-the-Product
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para este Sprint 2 enfocado en el desarrollo del Frontend Web Application y la integración con MockAPI, la distribución de liderazgo (L) y colaboración (C) es la siguiente:
+
+| Team Member (Last Name, First Name) | GitHub Username | Frontend Web App (Vue) | MockAPI / Fake API | Corrección Diagramas (Clases & BD) | Corrección Wireframes & User Flows | Sprint Documentation |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| Armestar Felipa, Adrian Andres | Adrian5102 | C | C | C | C | C |
+| García Paredes, Victor Manuel | vicmacode | C | L | C | C | C |
+| Navarro Aldoradin, Carolina Celeste | genixmvp | L | C | C | C | L |
+| Philco Mota, Katty Yolanda | kattyph | L | C | L | C | C |
+| Tuesta Girón, Kiara Lucia | kitu05g | C | C | L | L | C |
+
+L = Leader  |  C = Collaborator
+
+#### 5.2.2.3. Sprint Backlog 2
+
+El objetivo principal de este Sprint es contar con una Web Application desplegada que permita a los tres segmentos objetivo explorar las funcionalidades principales de GoldMetrics integradas con datos de prueba.
+
+| **Sprint 2** | **User Story** | | **Work-Item / Task** | | | | |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Status** |
+| US01 | Visualizar dashboard de trazabilidad | T01 | Implementar vista Dashboard | Desarrollar la vista principal del dashboard con KPIs de activos, alertas y mapa en tiempo real usando Vue y PrimeVue | 5 | Philco, Katty | Done |
+| US01 | Visualizar dashboard de trazabilidad | T02 | Conectar dashboard con MockAPI | Integrar los endpoints de MockAPI para cargar datos de activos y alertas en el dashboard | 3 | García, Victor | Done |
+| US02 | Monitorear traslado de mineral | T03 | Implementar vista de trazabilidad | Desarrollar la vista de trazabilidad con timeline de recorrido del mineral y estado de la carga | 5 | Philco, Katty | Done |
+| US03 | Verificar autenticidad de mineral | T04 | Implementar vista de verificación QR | Desarrollar la vista de búsqueda por ID de lote con resultado de autenticidad para el segmento joyería | 4 | Tuesta, Kiara | Done |
+| US04 | Consultar origen ético de producto | T05 | Implementar vista de producto para consumidor | Desarrollar la vista de detalle de producto con certificado de origen y timeline para consumidor final | 4 | Tuesta, Kiara | Done |
+| US05 | Gestionar suscripción | T06 | Implementar vistas de suscripción | Desarrollar las vistas de selección de plan, método de pago y confirmación de suscripción | 4 | Navarro, Carolina | Done |
+| US06 | Consultar historial de pagos | T07 | Implementar vista de historial de pagos | Desarrollar la vista de historial con tabla filtrable y opción de descarga de factura | 3 | Navarro, Carolina | Done |
+| TS01 | Endpoints fake API | T08 | Configurar recursos en MockAPI | Crear y configurar los recursos de trazabilidad, activos y suscripciones en MockAPI con datos de prueba | 3 | García, Victor | Done |
+| US07 | Actualizar perfil de usuario | T09 | Implementar vista de perfil | Desarrollar la vista de perfil de usuario con formulario de edición de datos | 2 | Navarro, Carolina | Done |
+| - | Correcciones AV1 | T10 | Corregir diagramas de clases y BD | Actualizar diagramas de clases (4.7.1) y base de datos (4.8.1) según observaciones del docente | 3 | Philco, Katty / Tuesta, Kiara | Done |
+| - | Despliegue Frontend | T11 | Desplegar Frontend Web Application | Configurar y ejecutar el despliegue de la aplicación Vue en Netlify | 2 | Navarro, Carolina | Done |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 el equipo se enfocó en el desarrollo del Frontend Web Application utilizando Vue Framework con PrimeVue como biblioteca de componentes UI, siguiendo el Design System definido en el Capítulo IV. Se implementó la integración con MockAPI para simular los endpoints del RESTful API. Cada integrante trabajó en su rama correspondiente y realizó Pull Requests a `develop` al completar cada vista.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| goldcheck-webapp | develop | 5dce6217bcbaf98cc0cb6a2402798c5910a8243e | feat: upload frontend app | Initial upload of the frontend application structure with Vue and PrimeVue setup | 2026-05-14 |
+| goldcheck-webapp | develop | f7d3a2c357b3de18dd45a5a00840d3f674b4c58e | update src with bounded contexts | Restructures source folders following bounded contexts: traceability, subscriptions, IAM and asset management | 2026-05-14 |
+| goldcheck-webapp | develop | f7d3a2c357b3de18dd45a5a00840d3f674b4c58e | modified colors and add subscriptions views | Updates color palette to match GoldMetrics brand guidelines and adds subscription plan selection and confirmation views | 2026-05-14 |
+| goldcheck-webapp | develop | cce9917f21383b2f108b9bffccc9a8331a80cc49 | modify entities | Updates entity models to align with domain-driven design definitions and bounded context structure | 2026-05-14 |
+| goldcheck-mockapi | main | cce9917f21383b2f108b9bffccc9a8331a80cc49 | upload mockapi goldcheck | Uploads MockAPI configuration with resources for traceability, assets, subscriptions and payment history endpoints | 2026-05-13 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+En el Sprint 2 se logró desarrollar y desplegar la primera versión funcional del Frontend Web Application de GoldMetrics. La aplicación cuenta con vistas diferenciadas para cada segmento objetivo: el dashboard de trazabilidad y monitoreo de flota para empresas mineras, el panel de verificación de autenticidad y origen para joyerías, y la vista de consulta de origen ético del producto para consumidores finales. Todas las vistas son responsivas y están integradas con la capa mock configurada en MockAPI.
+
+A continuación se presentan las principales vistas implementadas durante este Sprint:
+
+**GOLDCHECK Mockapi:**
+
+![Mockapi Web](../assets/img/chapter-v/mockapi-goldcheck.png)
+
+**GOLDCHECK Frontend Web App :**
+
+![Minero 1](../assets/img/chapter-v/minero-1.png)
+
+![Minero 2](../assets/img/chapter-v/minero-2.png)
+
+![Minero 3](../assets/img/chapter-v/minero-3.png)
+
+![Minero 4](../assets/img/chapter-v/minero-4.png)
+
+![Minero 5](../assets/img/chapter-v/minero-5.png)
+
+![Minero 6](../assets/img/chapter-v/minero-6.png)
+
+![Minero 7](../assets/img/chapter-v/minero-7.png)
+
+![Minero 8](../assets/img/chapter-v/minero-8.png)
+
+![Minero 9](../assets/img/chapter-v/minero-9.png)
+
+![Minero 10](../assets/img/chapter-v/minero-10.png)
+
+![Minero 11](../assets/img/chapter-v/minero-11.png)
+
+![Joyero 2](../assets/img/chapter-v/joyero-2.png)
+
+![Joyero 3](../assets/img/chapter-v/joyero-3.png)
+
+![Joyero 5](../assets/img/chapter-v/joyero-5.png)
+
+![Joyero 6](../assets/img/chapter-v/joyero-6.png)
+
+![Joyero 7](../assets/img/chapter-v/joyero-7.png)
+
+![Joyero 8](../assets/img/chapter-v/joyero-8.png)
+
+![Consumidor 1](../assets/img/chapter-v/consumidor-1.png)
+
+![Consumidor 2](../assets/img/chapter-v/consumidor-2.png)
 
 
-## Anexos
-Vídeo Exposición: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQDMT9TjIRw1RLKM_7j2hos-AfLlqFAwuKrcE9YKUDOwdWI?e=055arn&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+![Consumidor 4](../assets/img/chapter-v/consumidor-4.png)
+
+![Consumidor 5](../assets/img/chapter-v/consumidor-5.png)
+
+
+
+URL del video de navegación (Microsoft Stream):
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQCM0Lx_OtVUQJrTSpTY9SswAQF1q1ZwS6fIq6fIxeQgPnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SXCbMZ
+
+---
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+El Sprint 2 tuvo como alcance exclusivo la construcción del Frontend Web Application de GoldMetrics. Todos los datos son servidos mediante una capa mock con MockAPI a partir de recursos configurados con datos de prueba, sin conexión a endpoints reales de backend. Por esta razón, no se generó documentación OpenAPI ni se desplegaron Web Services durante esta iteración.
+
+La especificación completa de los endpoints RESTful que el frontend consumirá en producción se encuentra documentada en las Technical Stories del Product Backlog del Capítulo III. Su implementación está planificada para el Sprint 3 dentro del repositorio goldcheck-backend, cubriendo los siguientes bounded contexts: Identity & Access Management con autenticación JWT, Subscriptions & Billing con gestión de planes y facturación, Asset & Maintenance Management con registro y monitoreo de maquinaria, Traceability con seguimiento del recorrido del mineral desde extracción hasta comercialización, y Consumer Experience con verificación pública de autenticidad mediante código QR.
+
+---
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 2 se realizó el despliegue exitoso del Frontend Web Application de GoldMetrics. A continuación:
+1. Se creó una cuenta en Netlify.
+2. Se vinculó la cuenta de Netlify con la organización/repositorio de GitHub del proyecto.  
+3. Se importó el repositorio de la landing page desde GitHub hacia Netlify.  
+4. Se configuró el comando de build (`npm run build`) y la carpeta de publicación (`dist`).  
+5. Se seleccionó la rama principal (`main`) como fuente de despliegue automático.  
+6. Se ejecutó el primer despliegue de la aplicación desde la plataforma Netlify.  
+7. Se habilitó el autodespliegue para actualizar automáticamente la landing en cada push realizado al repositorio.  
+8. Se verificó el correcto funcionamiento de la landing mediante la URL pública generada por Netlify.
+
+URL de la Mockapi desplegado: https://goldcheck-mockapi-production.up.railway.app
+
+URL del Frontend Web Application desplegado: https://luxury-beignet-b30759.netlify.app/
+
+URL del Landing Page integrado con nuestro Frontend: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
+
+
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+Durante este Sprint la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests para integrar el trabajo de las ramas de feature a `develop` y posteriormente a `main`. La coordinación diaria se realizó por Discord.
+
+![Team Collaboration Sprint 2](../assets/img/chapter-v/sprint-collaboration.png)
+
+
+## Anexos Importantes
+URL de la Mockapi desplegado: https://goldcheck-mockapi-production.up.railway.app
+
+URL del Frontend Web Application desplegado: https://luxury-beignet-b30759.netlify.app/
+
+URL del Landing Page integrado con nuestro Frontend: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
+
+URL upc-pre-202610-1asi0730-12053-goldmetrics-expo-tb1: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQB4rryG93n3TJmOjq45RPFXAXI5UyXcV4nDgKvH_Tpa_eU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=wAYu8R 
+
+## Conclusiones:
+**AV1**
+- Validación del problema con usuarios reales: A través de las entrevistas realizadas a los tres segmentos objetivo (empresas mineras, joyerías y consumidores finales), se confirmó que la falta de trazabilidad en la cadena mineral es un problema tangible y costoso. El 100% de los entrevistados mostró interés en herramientas digitales que permitan verificar el origen y autenticidad de los minerales, lo que validó la propuesta de valor de GoldCheck como solución viable para el mercado peruano.
+
+- Definición arquitectónica basada en DDD: La aplicación del enfoque Domain-Driven Design permitió identificar once bounded contexts con responsabilidades claramente delimitadas, desde la extracción del mineral hasta la certificación de la joya. Esta decisión arquitectónica sentó una base sólida y escalable para el desarrollo del producto, evitando acoplamientos innecesarios entre módulos y facilitando el trabajo distribuido del equipo.
+- Alineación entre necesidades del usuario y funcionalidades del sistema: El proceso de Needfinding, junto con la elaboración del Impact Mapping y el Product Backlog, permitió conectar directamente las necesidades identificadas en las entrevistas con las User Stories priorizadas. Cada funcionalidad definida responde a un problema real de alguno de los segmentos, garantizando que el producto tenga orientación al valor desde sus primeras etapas.
+
+**TB1**
+
+- Implementación frontend coherente con la arquitectura DDD: El desarrollo del Single Page Application en Vue 3 respetó fielmente la estructura de bounded contexts definida en el AV1. Cada módulo del frontend sigue una arquitectura de cuatro capas (Presentation, Application, Domain e Infrastructure), lo que facilitó el trabajo paralelo entre integrantes, redujo conflictos en el código y produjo un sistema organizado y mantenible desde la primera iteración funcional.
+- Trazabilidad completa del ciclo mineral demostrada en el producto: Al finalizar el TB1, GoldCheck cuenta con flujos funcionales que cubren el recorrido completo del mineral: desde el registro del lote en la mina, el monitoreo del transporte, la recepción en planta con cálculo de merma, la validación y certificación en la joyería, hasta el escaneo QR por parte del consumidor final. Esto demuestra que el equipo logró traducir la visión del producto en funcionalidades reales y desplegadas, cerrando el ciclo de trazabilidad que motivó el proyecto desde su inicio.
+- Durante el TB1, el equipo generó una documentación arquitectónica completa bajo el modelo C4, abarcando desde el diagrama de contexto del sistema hasta el zoom-in de la capa de presentación por cada bounded context. Esta documentación no solo refleja las decisiones técnicas tomadas durante el desarrollo, sino que garantiza la mantenibilidad y escalabilidad del proyecto hacia futuras iteraciones, estableciendo un estándar de calidad arquitectónica alineado con las buenas prácticas de Domain-Driven Design.
+
+## Bibliografia:
+Canchari, J. (2025). Las pérdidas económicas por minería ilegal equivalen al 2,5% del PBI peruano. Fiscalías Especializadas en Materia Ambiental.
+
+Cruz, R. (2024). Minería ilegal incorpora más de un millón de onzas de oro al mercado formal. Sociedad Nacional de Minería, Petróleo y Energía.
+
+DesdeAdentro. (2025). Trazabilidad del oro: el desafío de separar el mercado informal del formal. Revista DesdeAdentro.
+
+Ministerio de Energía y Minas. (2024). Anuario Minero 2024. Gobierno del Perú. https://www.minem.gob.pe
+
+Núñez, R. (2025). Análisis de producción y exportación de oro en el Perú: brecha de 100 mil toneladas. Anuario Minero 2024, Minem.

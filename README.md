@@ -58,7 +58,59 @@
 
 <div style="page-break-after: always"></div>
 
-## PROJECT REPORT COLLABORATION INSIGHTS
+## Project Report Collaboration Insights
+
+El repositorio del informe del proyecto se encuentra en la organización de GitHub del equipo,
+en el siguiente enlace:
+
+**Report:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-report
+
+---
+
+### AV1
+
+Durante el desarrollo del AV1, el equipo utilizó GitHub como plataforma principal para
+la gestión y colaboración del informe. Cada integrante trabajó sobre ramas individuales
+siguiendo la convención `feature/chapter-#-description`, integrando sus avances mediante
+Pull Requests hacia la rama `develop`. Las contribuciones abarcan la redacción de los
+cinco capítulos del informe, incluyendo el perfil del startup, el análisis de requisitos,
+la especificación de requerimientos, el diseño del producto y la implementación del
+Sprint 1.
+
+A continuación se presentan las evidencias de colaboración en el repositorio del informe
+para esta entrega:
+
+![Team Collaboration Sprint 1](assets/img/chapter-v/sprint-collaboration.png)
+
+---
+
+### TB1
+
+Durante el TB1, la colaboración del equipo se extendió a cinco repositorios de la
+organización GitHub: el repositorio del informe (`goldcheck-report`), el sitio web
+estático (`goldcheck-website`), la aplicación web frontend (`goldcheck-webapp`),
+el mock API backend (`goldcheck-mockapi`) y el repositorio de plataforma
+(`goldcheck-platform`). Cada integrante participó en las correcciones del AV1,
+el desarrollo de la Landing Page y la implementación del frontend organizado por
+Bounded Contexts, siguiendo el flujo GitFlow con ramas `feature/`, `develop` y `main`.
+
+Los repositorios involucrados en esta entrega son:
+
+- **Report:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-report
+- **Website:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-website
+- **Web App:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-webapp
+- **Mock API:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-mockapi
+- **Platform:** https://github.com/upc-pre-202610-1asi0730-12053-goldmetri/goldcheck-platform
+
+A continuación se presentan las evidencias de colaboración por repositorio:
+
+![Team Collaboration Sprint 2](assets/img/chapter-v/sprint-collaboration.png)
+
+![Team Collaboration Sprint 2-1](assets/img/chapter-v/collaboration-1.png)
+
+![Team Collaboration Sprint 2-2](assets/img/chapter-v/collaboration-2.png)
+
+![Team Collaboration Sprint 2-3](assets/img/chapter-v/collaboration-3.png)
 
 <div style="page-break-after: always"></div>
 
@@ -185,5 +237,6 @@
 
 - [5.4. Video About-the-Product](#54-video-about-the-product)
 
-- [Anexos](#55-anexos)
-
+- [Anexos Importantes](#55-anexos-importantes)
+- [Conclusiones](#55-Conclusiones)
+- [Bibliografia](#55-Bibliografia)
