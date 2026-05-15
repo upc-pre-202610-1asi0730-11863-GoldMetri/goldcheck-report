@@ -170,7 +170,7 @@ Ejemplo en código:
 
 ### 5.1.4. Software Deployment Configuration
 - Creación de la Website (Landing Page):
-1. Se crea un repositorio (goldcheck-website) desde GoldMetri-organization
+1. Se crea un repositorio (goldcheck-website) desde upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment1-screenshoot](../assets/img/chapter-v/deployment-1.png)
 
 2. Agregar a los miembros del equipo
@@ -181,15 +181,22 @@ Ejemplo en código:
 
 
 - Creación de WebApp
-1. Creación del repositorio (goldcheck-webapp) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-webapp) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-4.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
 
 - Creación de Platform
-1. Creación del repositorio (goldcheck-platform) dentro de la organización GoldMetri-organization
+1. Creación del repositorio (goldcheck-platform) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
 ![deployment4-screenshoot](../assets/img/chapter-v/deployment-6.png)
+
+2. Agregar a los miembros del equipo
+![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
+
+- Creación de Mockapi
+1. Creación del repositorio (goldcheck-mockapi) dentro de la organización upc-pre-202610-1asi0730-12053-goldmetri
+![deployment6-screenshoot](../assets/img/chapter-v/deployment-7.png)
 
 2. Agregar a los miembros del equipo
 ![deployment5-screenshoot](../assets/img/chapter-v/deployment-2.png)
@@ -280,22 +287,27 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma Netifly.
-1. Se creó una cuenta en la plataforma utilizando el correo del equipo.
-2. Se vinculó la cuenta con la organización de GitHub de Goldmetrics.
-3. Se importó el repositorio `goldmetrics-website`.
-4. Se configuró el autodespliegue asociado a la rama `main`.
+Durante el Sprint 1 se realizó el despliegue exitoso del Landing Page utilizando la plataforma GitHub Pages.
+1. Se creó un repositorio en GitHub para alojar la landing page del proyecto.  
+2. Se subió el código fuente de la landing al repositorio mediante Git y GitHub.  
+3. Se instaló y configuró la dependencia `gh-pages` para realizar el despliegue automático.  
+4. Se configuró el archivo `vite.config.js` con la propiedad `base` correspondiente al nombre del repositorio.  
+5. Se añadieron los scripts `build` y `deploy` en el archivo `package.json`.  
+6. Se generó la versión de producción de la landing mediante el comando `npm run build`.  
+7. Se publicó la aplicación en GitHub Pages utilizando el comando `npm run deploy`.  
+8. Se habilitó GitHub Pages desde la sección `Settings > Pages` del repositorio.  
+9. Se configuró la rama `gh-pages` como fuente oficial de despliegue.  
+10. Se verificó el correcto funcionamiento de la landing accediendo a la URL pública generada por GitHub Pages.
 
-
-![Deployment Evidence 1](../assets/img/despliegue.png)
+![Deployment Evidence 1](../assets/img/chapter-v/despliegue.png)
+![Deployment Evidence 2](../assets/img/chapter-v/despliegue-2.png)
 
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
 
 Durante este sprint, la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests (PRs) para integrar el trabajo de la rama `develop` a `main`.
 
-*(Ve a la pestaña "Insights" > "Contributors" de tu repositorio de GitHub y toma una captura donde se vean los commits de todos los miembros del equipo)*
-![Team Collaboration Sprint 1](../assets/sprints/sprint1-collaboration.png)
+![Team Collaboration Sprint 1](../assets/img/chapter-v/sprint-collaboration.png)
 
 ### 5.2.2. Sprint 2
 
@@ -368,21 +380,54 @@ En el Sprint 2 se logró desarrollar y desplegar la primera versión funcional d
 
 A continuación se presentan las principales vistas implementadas durante este Sprint:
 
-[Screenshot Frontend - Dashboard principal]
+![Minero 1](../assets/img/chapter-v/minero-1.png)
 
-[Screenshot Frontend - Vista de trazabilidad]
+![Minero 2](../assets/img/chapter-v/minero-2.png)
 
-[Screenshot Frontend - Vista de verificación QR]
+![Minero 3](../assets/img/chapter-v/minero-3.png)
 
-[Screenshot Frontend - Vista de producto consumidor final]
+![Minero 4](../assets/img/chapter-v/minero-4.png)
 
-[Screenshot Frontend - Vista de suscripción]
+![Minero 5](../assets/img/chapter-v/minero-5.png)
 
-[Screenshot Frontend - Historial de pagos]
+![Minero 6](../assets/img/chapter-v/minero-6.png)
+
+![Minero 7](../assets/img/chapter-v/minero-7.png)
+
+![Minero 8](../assets/img/chapter-v/minero-8.png)
+
+![Minero 9](../assets/img/chapter-v/minero-9.png)
+
+![Minero 10](../assets/img/chapter-v/minero-10.png)
+
+![Minero 11](../assets/img/chapter-v/minero-11.png)
+
+![Joyero 2](../assets/img/chapter-v/joyero-2.png)
+
+![Joyero 3](../assets/img/chapter-v/joyero-3.png)
+
+![Joyero 5](../assets/img/chapter-v/joyero-5.png)
+
+![Joyero 6](../assets/img/chapter-v/joyero-6.png)
+
+![Joyero 7](../assets/img/chapter-v/joyero-7.png)
+
+![Joyero 8](../assets/img/chapter-v/joyero-8.png)
+
+![Consumidor 1](../assets/img/chapter-v/consumidor-1.png)
+
+![Consumidor 2](../assets/img/chapter-v/consumidor-2.png)
+
+
+![Consumidor 4](../assets/img/chapter-v/consumidor-4.png)
+
+![Consumidor 5](../assets/img/chapter-v/consumidor-5.png)
 
 URL del Frontend Web Application desplegado: 
+https://luxury-beignet-b30759.netlify.app/ 
 
-URL del video de navegación (Microsoft Stream): 
+URL del video de navegación (Microsoft Stream):
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202416107_upc_edu_pe/IQCM0Lx_OtVUQJrTSpTY9SswAQF1q1ZwS6fIq6fIxeQgPnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=SXCbMZ
 
 ---
 
@@ -396,15 +441,23 @@ La especificación completa de los endpoints RESTful que el frontend consumirá 
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 2 se realizó el despliegue exitoso del Frontend Web Application de GoldMetrics. A continuación se describen los pasos realizados:
+Durante el Sprint 2 se realizó el despliegue exitoso del Frontend Web Application de GoldMetrics. A continuación:
+1. Se creó una cuenta en Netlify.
+2. Se vinculó la cuenta de Netlify con la organización/repositorio de GitHub del proyecto.  
+3. Se importó el repositorio de la landing page desde GitHub hacia Netlify.  
+4. Se configuró el comando de build (`npm run build`) y la carpeta de publicación (`dist`).  
+5. Se seleccionó la rama principal (`main`) como fuente de despliegue automático.  
+6. Se ejecutó el primer despliegue de la aplicación desde la plataforma Netlify.  
+7. Se habilitó el autodespliegue para actualizar automáticamente la landing en cada push realizado al repositorio.  
+8. Se verificó el correcto funcionamiento de la landing mediante la URL pública generada por Netlify.
 
-
-URL del Frontend Web Application desplegado: 
-URL del Landing Page: 
+URL del Frontend Web Application desplegado: https://luxury-beignet-b30759.netlify.app/
+URL del Landing Page: https://upc-pre-202610-1asi0730-12053-goldmetri.github.io/goldcheck-website/
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
 Durante este Sprint la colaboración se gestionó íntegramente a través de GitHub. Se utilizaron Pull Requests para integrar el trabajo de las ramas de feature a `develop` y posteriormente a `main`. La coordinación diaria se realizó por Discord.
 
-[Screenshot Team Collaboration Sprint 2]
+![Team Collaboration Sprint 2](../assets/img/chapter-v/sprint-collaboration.png)
+
 
