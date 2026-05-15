@@ -1099,6 +1099,30 @@ A continuación se presentaran los diagramas de clases de los respectivos bounde
 
 ![BC11 - Subscriptions Billing](../assets/img/chapter-iv/BC11_Subscriptions_Billing_Full.png)
 
+## Diagramas de Clases por Aggregate
+
+A continuación se presentan los diagramas de clases de los aggregates más relevantes del sistema GoldCheck, seleccionados por su centralidad en el dominio del negocio y la complejidad de su lógica interna.
+
+---
+
+### MineralBatch — Fleet Operations Bounded Context
+
+El aggregate MineralBatch representa el núcleo del sistema de trazabilidad mineral. Es el artefacto central alrededor del cual gira todo el ciclo de vida del mineral, desde su extracción en la mina hasta su llegada a la planta de procesamiento. Su importancia radica en que es referenciado directamente por los bounded contexts de Material Operations, Monitoring & Telemetry, Jewelry Inventory e Incident Management, convirtiéndolo en el elemento de mayor cohesión del dominio.
+
+Desde el punto de vista del diseño orientado al dominio, MineralBatch encapsula un ciclo de estados complejo (CREATED → PENDING_ASSIGNMENT → IN_TRANSIT → ARRIVED → PROCESSING → COMPLETED) y contiene value objects críticos como Location (origen y destino), Coordinates (posición GPS en tiempo real), DetectedAnomaly (lista de anomalías registradas durante el transporte) y SensorReading (datos de telemetría IoT). Además, emite cinco domain events que desencadenan procesos en otros bounded contexts: BatchCreatedEvent, BatchAssignedEvent, AnomalyDetectedEvent, BatchArrivedEvent y BatchCompletedEvent.
+
+![MineralBatch Aggregate Diagram](../assets/img/chapter-iv/AGG_MineralBatch_FleetOperations.png)
+
+---
+
+### JewelryCertificate — Jewelry Inventory & Certification Bounded Context
+
+El aggregate JewelryCertificate representa el producto final de toda la cadena de trazabilidad del sistema. Es el artefacto que materializa la promesa de valor de GoldCheck: garantizar al consumidor final que la joya que adquiere proviene de una fuente verificada, ética y rastreable. Su diseño encapsula la lógica de emisión, validación, expiración y revocación de certificados digitales, asegurando la integridad del proceso de certificación.
+
+Contiene el value object QRCodeData, que almacena el código generado, el identificador de la pieza y un hash criptográfico que garantiza la inmutabilidad del certificado. Adicionalmente, incorpora CertificationStandard para asegurar el cumplimiento de normativas de calidad. El aggregate emite tres domain events clave: CertificateIssuedEvent (notifica a Consumer Traceability que un nuevo certificado está disponible para ser vinculado), CertificateRevokedEvent y CertificateExpiredEvent. Es el punto de unión entre la cadena operativa minera y la experiencia del consumidor final.
+
+![JewelryCertificate Aggregate Diagram](../assets/img/chapter-iv/AGG_JewelryCertificate_JewelryInventory.png)
+
 ## 4.8. Database Design
 
 ### 4.8.1. Database Diagrams
