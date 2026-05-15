@@ -1003,6 +1003,56 @@ A continuación, se presentan los diagramas de clases back-end correspondientes 
 
 Cada diagrama fue diseñado siguiendo principios de Domain-Driven Design (DDD), separación de responsabilidades y modularidad, permitiendo representar de manera clara la interacción entre entidades del dominio, servicios de aplicación, repositorios y componentes de soporte. Asimismo, estos diagramas sirven como apoyo para comprender la organización interna del sistema y facilitar futuras tareas de mantenimiento, escalabilidad y evolución de la plataforma.
 
+## DIAGRAMAS FRONTEND
+
+![Diagrama de clase FrontEnd](../assets/img/chapter-iv/cdf-frontend-general.png)
+A continuación se presentaran los diagramas de clases de los respectivos bounded context.
+
+**Analytics**
+
+![Diagrama de clase 1](../assets/img/chapter-iv/cdf-analytics.png)
+
+**Asset Maintenance**
+
+![Diagrama de clase 2](../assets/img/chapter-iv/cdf-asset-maintenance.png)
+
+**Consumer Experience**
+
+![Diagrama de clase 3](../assets/img/chapter-iv/cdf-consumer-experience.png)
+
+**Custody Chain**
+
+![Diagrama de clase 4](../assets/img/chapter-iv/cdf-custody-chain.png)
+
+**Fleet Operations**
+
+![Diagrama de clase 5](../assets/img/chapter-iv/cdf-fleet-operations.png)
+
+**Identity & Management**
+
+![Diagrama de clase 6](../assets/img/chapter-iv/cdf-iam.png)
+
+**Incident Management**
+
+![Diagrama de clase 7](../assets/img/chapter-iv/cdf-incident-management.png)
+
+**Mineral Extraction**
+
+![Diagrama de clase 8](../assets/img/chapter-iv/cdf-mineral-extraction.png)
+
+**Monitoring Telemetry**
+
+![Diagrama de clase 9](../assets/img/chapter-iv/cdf-monitoring-telemetry.png)
+
+**Refinery Processing**
+
+![Diagrama de clase 10](../assets/img/chapter-iv/cdf-refinery-processing.png)
+
+**Subscriptions**
+
+![Diagrama de clase 11](../assets/img/chapter-iv/cdf-subscriptions.png)
+
+
 ## DIAGRAMAS BACKEND:
 
 #### BC1 - Identity Access Management
@@ -1095,7 +1145,7 @@ El contexto de refinería gestiona cuatro tablas. `refinery_batches` referencia 
  
 ---
  
-#### BC5: Jewelry Inventory & Certification
+#### BC: Jewelry Inventory & Certification
  
 El contexto de joyería gestiona cinco tablas correspondientes a los dos Aggregate Roots del dominio. Para `JewelryProduct`: `jewelry_products` almacena la columna `stock_category` con constraint `CHECK ('CERTIFIED_OPALTRACE', 'EXTERNAL')` que implementa la invariante de segregación ética; `jewelry_inventory_items` gestiona el stock con `StorageLocation` embebida; `jewelry_fabrication_orders` registra las órdenes de fabricación con estado `BLOCKED` cuando se detecta mezcla de stocks; `jewelry_fabrication_order_components` persiste los componentes de cada orden. Para `JewelryCertificate`: `jewelry_certificates` almacena el estado de la Certification de Autenticidad, el `rejection_code` en caso de rechazo, y la URL del PDF almacenado en AWS S3.
  
