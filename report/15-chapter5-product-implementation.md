@@ -236,9 +236,8 @@ Para este primer Sprint enfocado en el Landing Page y la configuración inicial 
 
 El objetivo principal de este Sprint es contar con un sitio web estático desplegado que presente a Goldmetrics y sus beneficios.
 
-| Sprint # | | | | | | | |
-|:--------:|---|---|---|---|---|---|---|
 | **Sprint 1** | **User Story** | | **Work-Item / Task** | | | | |
+|:--------:|---|---|---|---|---|---|---|
 | | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Estado** |
 | | US01 | Visualizar propuesta de valor | T01 | Diseñar UI en Figma | Elaborar los mockups de la sección Hero y features del LP. | 4 | Navarro, Carolina | Done |
 | | US01 | Visualizar propuesta de valor | T02 | Maquetar HTML/CSS base | Convertir el diseño de Figma a código HTML5 y CSS3 semántico. | 5 | Armestar, Adrian | Done |
@@ -270,9 +269,6 @@ En este primer Sprint se ha logrado el diseño y codificación del Landing Page 
 ![Landing Page Desktop 5](../assets/img/faqs-page.png)
 ![Landing Page Desktop 6](../assets/img/contact-page.png)
 ![Landing Page Desktop 7](../assets/img/footer.png)
-
-
-**URL del Landing Page Desplegado:** [https://vocal-sunburst-4c90ad.netlify.app/](`[URL]`)
 
 
 
@@ -339,9 +335,8 @@ L = Leader  |  C = Collaborator
 
 El objetivo principal de este Sprint es contar con una Web Application desplegada que permita a los tres segmentos objetivo explorar las funcionalidades principales de GoldMetrics integradas con datos de prueba.
 
-| Sprint # | | | | | | | |
-| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Sprint 2** | **User Story** | | **Work-Item / Task** | | | | |
+| :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **ID** | **Título** | **ID** | **Título** | **Descripción** | **Estimación (h)** | **Asignado a** | **Status** |
 | US01 | Visualizar dashboard de trazabilidad | T01 | Implementar vista Dashboard | Desarrollar la vista principal del dashboard con KPIs de activos, alertas y mapa en tiempo real usando Vue y PrimeVue | 5 | Philco, Katty | Done |
 | US01 | Visualizar dashboard de trazabilidad | T02 | Conectar dashboard con MockAPI | Integrar los endpoints de MockAPI para cargar datos de activos y alertas en el dashboard | 3 | García, Victor | Done |
